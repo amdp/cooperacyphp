@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+
+<channel><title>Cooperacy</title><link>https://cooperacy.org</link><description>Cooperacy</description>
+  <item>
+    <title>test</title>
+    <link>http://cooperacy.org/projects</link>
+    <description>Project page test</description>
+  </item>
+  <item>
+    <title>Cooperacy Main Project</title>
+    <link>http://cooperacy.org/view-project/272</link>
+    <description>Main Discussion</description>
+  </item>
+  <item>
+    <title>Cooperacy Management</title>
+    <link>http://cooperacy.org/view-project/378</link>
+    <description>Planning, Progress and general Management</description>
+  </item>
+</channel>
+</rss>

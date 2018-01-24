@@ -1,0 +1,27 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, footer, header, hgroup, menu, nav, section { margin: 0; padding: 0; border: 0; font-size: 100%; font-family: 'avenir';} table { border-collapse: collapse; border-spacing: 0; } img { max-width: 100%; height: auto;}
+headerino {height: 70px; padding-top: 20%; padding-bottom: 20%;}
+body{font-family: 'avenir';font-size:18px;line-height:22px;color:#FFF;background-color:#000;}
+a.equivalence {color: #555555 !important;}
+a.equivalence:hover {color: #FF9000 !important;}
+a.equivalence::after {background-color: #FF9000 !important;}
+a.trust {color: #555555 !important;}
+a.trust:hover {color: #FFD000 !important;}
+a.trust::after {background-color: #FFD000 !important;}
+a.care {color: #555555 !important;}
+a.care:hover {color: #88DD33 !important;}
+a.care::after {background-color: #88DD33 !important;}
+a.transparency {color: #555555 !important;}
+a.transparency:hover {color: #22DDEE !important;}
+a.transparency::after {background-color: #22DDEE !important;}
+a.freedom {color: #555555 !important;}
+a.freedom:hover {color: #4488EE !important;}
+a.freedom::after {background-color: #4488EE !important;}
+a.understanding {color: #555555 !important;}
+a.understanding:hover {color: #AA66DD !important;}
+a.understanding::after {background-color: #AA66DD !important;}
+a.diversity {color: #555555 !important;}
+a.diversity:hover {color: #FF77CC !important;}
+a.diversity::after {background-color: #FF77CC !important;}
+a.iconzine {color: #555555 !important;}
+a.iconzine:hover {color: #555555 !important;}
+a.iconzine::after {background-color: #555555 !important;}
