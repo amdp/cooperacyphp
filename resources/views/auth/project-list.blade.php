@@ -13,7 +13,10 @@
         </div>
         <div class="col-lg-10 col-xs-12">
           <p class="center space subheading freedom up">
-            <a href="{{asset('view-project')}}/{{$item['id_project']}}">{{$item['title_project']}}</a>
+            <a href="{{asset('view-project')}}/{{$item['id_project']}}">{{$item['title_project']}}</a> 
+            @if($item['coordinator']=='yes')
+             <span style="float:right;"><small><a href="#">Edit</a></small></span>
+            @endif
           </p>
           <div style="height:10px"></div>
           @include('auth.partials.votedata')

@@ -8,7 +8,12 @@
   <div class="row">
     <div class="col-lg-12 col-xs-12">
       <div class="panel panel-default noborders noshadows">
-        <p class="heading center equivalence up">{{$project->title_project}} - {{$category->category_name}} Project </p><br>
+        <p class="heading center equivalence up">
+          {{$project->title_project}} - {{$category->category_name}} Project 
+          @if($iscoordinator)
+           <small><a href="#">Edit</a></small>
+          @endif
+        </p><br>
         @if($parent_project)
         <p class="base center equivalence up">Parent project:
         <a href="{{asset('view-project')}}/{{$parent_project->id_project}}">{{$parent_project->title_project}}</a>

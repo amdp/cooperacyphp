@@ -36,9 +36,12 @@ class ProjectController extends Controller
           // Check if already voted
           $totalVoted = ProjectFunctions::totalHasVoted($userID, $query->id_project);
 
+          // Check if logged user is coordinator
+          $iscoordinator = ProjectFunctions::isCoordinator($query->id_project);
         
         $projectarray[] = [
           'id_project' => $query->id_project,
+          'coordinator' => $iscoordinator,
           'title_project' => $query->title_project,
           'img_project' => $query->img_project,
           'content_project' => $query->content_project,
@@ -54,62 +57,7 @@ class ProjectController extends Controller
       return view('auth.project-list', compact('projects'));
   }
   
-  public function oldindex() {
-      $queries = DB::table('coo_project')
-      ->where('type_project',2)
-      ->get();
-      
-      $projectsarray = array();
-      $userID = Auth::user()->id;
-      
-      foreach($queries as $query) {
-        
-          $total_equivalence = ProjectFunctions::voteCount($query->id_project,1);         
-          $total_trust = ProjectFunctions::voteCount($query->id_project,2);     
-          $total_care = ProjectFunctions::voteCount($query->id_project,3); 
-          $total_joke = ProjectFunctions::voteCount($query->id_project,4);
-          $total_commit = ProjectFunctions::voteCount($query->id_project,5);
-          $total_ai = 0; //will be assigned by AI!
-          $total_bizarre = ProjectFunctions::voteCount($query->id_project,7);
-                  
-          // Check if already voted
-          $voted_equivalence = ProjectFunctions::hasVoted($userID, $query->id_project, 1);       
-          $voted_trust = ProjectFunctions::hasVoted($userID, $query->id_project, 2);        
-          $voted_care = ProjectFunctions::hasVoted($userID, $query->id_project, 3);        
-          $voted_joke = ProjectFunctions::hasVoted($userID, $query->id_project, 4);         
-          $voted_commit = ProjectFunctions::hasVoted($userID, $query->id_project, 5);
-          $voted_bizarre = ProjectFunctions::hasVoted($userID, $query->id_project, 7);
-        
-        $projectarray[] = [
-          'id_project' => $query->id_project,
-          'title_project' => $query->title_project,
-          'img_project' => $query->img_project,
-          'content_project' => $query->content_project,
-          'total_equivalence' => $total_equivalence,
-          'voted_equivalence' => $voted_equivalence,
-          'total_trust' => $total_trust,
-          'voted_trust' => $voted_trust,
-          'total_joke' => $total_joke,
-          'voted_joke' => $voted_joke,
-          'total_commit' => $total_commit,
-          'voted_commit' => $voted_commit,
-          'total_care' => $total_care,
-          'voted_care' => $voted_care,
-          'total_bizarre' => $total_bizarre,
-          'voted_bizarre' => $voted_bizarre,
-          'total_ai' => $total_ai
-        
-        ];
-        
-        
-        
-      }
-      
-      $projects = collect($projectarray);
-      //return $projects;
-      return view('auth.projects-list', compact('projects'));
-  }
-  
+    
   public function single($id) {
     
     $userID = Auth::user()->id;
@@ -152,7 +100,9 @@ class ProjectController extends Controller
     $experts = ProjectFunctions::getPeople('expert', $id);
     $reporters = ProjectFunctions::getPeople('reporter', $id);
     
-    
+    // IS USER COORDINATOR?
+    $iscoordinator = ProjectFunctions::isCoordinator($id);
+
     //VOTE COUNT
     $totalVoteCount = ProjectFunctions::totalVoteCount($id);
     
@@ -286,204 +236,10 @@ class ProjectController extends Controller
     $locations = array_reverse($locations);
     $places = collect($locations);
     //return $comments;
-    return view('auth.single-project', compact('project', 'projectinfo', 'projectDescription', 'places', 'parent_project', 'creator', 'coordinators', 'experts', 'reporters', 'category', 'totalVoteCount', 'hasVoted', 'comments'));    
+    return view('auth.single-project', compact('project', 'projectinfo', 'projectDescription', 'places', 'parent_project', 'creator', 'coordinators', 'experts', 'reporters', 'category', 'totalVoteCount', 'hasVoted', 'comments', 'iscoordinator'));    
   }
   
-  public function oldsingle($id) {
-    
-    //GET PROJECT INFO
-    $project = DB::table('coo_project')
-      ->where('id_project', $id)
-      ->first();
-    
-    $projectDescription = ProjectFunctions::getHtmlLinks($project->content_project);
-    
-    
-    
-    // GET PARENT INFO
-    
-    $parent_project = DB::table('coo_project')
-      ->where('id_project', $project->parent_project)
-      ->first();
-    
-    // GET CATEGORY
-    $category = DB::table('coo_category')
-      ->where('id_category', $project->category_project)
-      ->first();
-    
-    //GET PEOPLE
-    $creator = DB::table('users')
-      ->where('id', $project->id_project_owner)
-      ->first();
-    
-    $coordinators = ProjectFunctions::getPeople('coordinator', $project->id_project);
-    $experts = ProjectFunctions::getPeople('expert', $project->id_project);
-    $reporters = ProjectFunctions::getPeople('reporter', $project->id_project);
-    
-    
-    //VOTE COUNT
-    $total_equivalence = ProjectFunctions::voteCount($project->id_project,1);
-    $total_trust = ProjectFunctions::voteCount($project->id_project,2);
-    $total_care = ProjectFunctions::voteCount($project->id_project,3);
-    $total_joke = ProjectFunctions::voteCount($project->id_project,4);
-    $total_commit = ProjectFunctions::voteCount($project->id_project,5);  
-    $total_ai = 0; //will be assigned by AI!
-    $total_bizarre = ProjectFunctions::voteCount($project->id_project,7);
-    $userID = Auth::user()->id;
-    
-    // ALREADY VOTED?
-    $voted_equivalence = ProjectFunctions::hasVoted($userID, $project->id_project, 1);
-    $voted_trust = ProjectFunctions::hasVoted($userID, $project->id_project, 2);
-    $voted_care = ProjectFunctions::hasVoted($userID, $project->id_project, 3);
-    $voted_joke = ProjectFunctions::hasVoted($userID, $project->id_project, 4);
-    $voted_commit = ProjectFunctions::hasVoted($userID, $project->id_project, 5);
-    $voted_bizarre = ProjectFunctions::hasVoted($userID, $project->id_project, 7);
-    
-    //**** GET COMMENTS ******
-   $comments=array(); 
-
-   $commentsL1 = ProjectFunctions::getComments($id,'DESC');
-    
-    foreach ($commentsL1 as $commentL1) {
-        $subcomments = ProjectFunctions::getComments($commentL1->id_project,'ASC'); 
-        
-        $commentsL2=array();
-        foreach ($subcomments as $subcomment) {
-          
-          $subsubcomments = ProjectFunctions::getComments($subcomment->id_project,'ASC');  
-            
-            $commentsL3=array();
-            foreach ($subsubcomments as $subsubcomment) {
-              
-              $commentsL3[] = [
-                'id_comment' => $subsubcomment->id_project,
-                'author_id' => $subsubcomment->UserID,
-                'author_name' => $subsubcomment->UserName,
-                'content' => ProjectFunctions::getHtmlLinks($subsubcomment->content_project),
-                'editcontent' => $subsubcomment->content_project,
-                'date' => $subsubcomment->date_project,
-                'vote_equivalence' => ProjectFunctions::voteCount($subsubcomment->id_project, 1),          
-                'voted_equivalence' => ProjectFunctions::hasVoted($userID, $subsubcomment->id_project, 1), 
-                'vote_trust' => ProjectFunctions::voteCount($subsubcomment->id_project, 2),          
-                'voted_trust' => ProjectFunctions::hasVoted($userID, $subsubcomment->id_project, 2), 
-                'vote_care' => ProjectFunctions::voteCount($subsubcomment->id_project, 3),          
-                'voted_care' => ProjectFunctions::hasVoted($userID, $subsubcomment->id_project, 3), 
-                'vote_joke' => ProjectFunctions::voteCount($subsubcomment->id_project, 4),          
-                'voted_joke' => ProjectFunctions::hasVoted($userID, $subsubcomment->id_project, 4), 
-                'vote_commit' => ProjectFunctions::voteCount($subsubcomment->id_project, 5),          
-                'voted_commit' => ProjectFunctions::hasVoted($userID, $subsubcomment->id_project, 5), 
-                'vote_ai' => 0,
-                'vote_bizarre' => ProjectFunctions::voteCount($subsubcomment->id_project, 5),          
-                'voted_bizarre' => ProjectFunctions::hasVoted($userID, $subsubcomment->id_project, 5), 
-              ];
-              
-            }
-          
-          $commentsL2[] = [
-            'id_comment' => $subcomment->id_project,
-            'author_id' => $subcomment->UserID,
-            'author_name' => $subcomment->UserName,
-            'content' => ProjectFunctions::getHtmlLinks($subcomment->content_project),
-            'editcontent' => $subcomment->content_project,
-            'date' => $subcomment->date_project,
-            'replies' => $commentsL3,
-            'vote_equivalence' => ProjectFunctions::voteCount($subcomment->id_project, 1),          
-            'voted_equivalence' => ProjectFunctions::hasVoted($userID, $subcomment->id_project, 1), 
-            'vote_trust' => ProjectFunctions::voteCount($subcomment->id_project, 2),          
-            'voted_trust' => ProjectFunctions::hasVoted($userID, $subcomment->id_project, 2), 
-            'vote_care' => ProjectFunctions::voteCount($subcomment->id_project, 3),          
-            'voted_care' => ProjectFunctions::hasVoted($userID, $subcomment->id_project, 3), 
-            'vote_joke' => ProjectFunctions::voteCount($subcomment->id_project, 4),          
-            'voted_joke' => ProjectFunctions::hasVoted($userID, $subcomment->id_project, 4), 
-            'vote_commit' => ProjectFunctions::voteCount($subcomment->id_project, 5),          
-            'voted_commit' => ProjectFunctions::hasVoted($userID, $subcomment->id_project, 5), 
-            'vote_ai' => 0,
-            'vote_bizarre' => ProjectFunctions::voteCount($subcomment->id_project, 7),          
-            'voted_bizarre' =>ProjectFunctions:: hasVoted($userID, $subcomment->id_project, 7), 
-            
-          ];
-        }
-
-  
-        $comments[] = [
-          'id_comment' => $commentL1->id_project,
-          'author_id' => $commentL1->UserID,
-          'author_name' => $commentL1->UserName,
-          'content' => ProjectFunctions::getHtmlLinks($commentL1->content_project),
-          'editcontent' => $commentL1->content_project,
-          'date' => $commentL1->date_project,
-          'replies' => $commentsL2,
-          'vote_equivalence' => ProjectFunctions::voteCount($commentL1->id_project, 1),          
-          'voted_equivalence' => ProjectFunctions::hasVoted($userID, $commentL1->id_project, 1),
-          'vote_trust' => ProjectFunctions::voteCount($commentL1->id_project, 2),          
-          'voted_trust' => ProjectFunctions::hasVoted($userID, $commentL1->id_project, 2),
-          'vote_care' => ProjectFunctions::voteCount($commentL1->id_project, 3),          
-          'voted_care' => ProjectFunctions::hasVoted($userID, $commentL1->id_project, 3),
-          'vote_joke' => ProjectFunctions::voteCount($commentL1->id_project, 4),          
-          'voted_joke' => ProjectFunctions::hasVoted($userID, $commentL1->id_project, 4),
-          'vote_commit' => ProjectFunctions::voteCount($commentL1->id_project, 5),          
-          'voted_commit' => ProjectFunctions::hasVoted($userID, $commentL1->id_project, 5),
-          'vote_ai' => 0,
-          'vote_bizarre' => ProjectFunctions::voteCount($commentL1->id_project, 7),          
-          'voted_bizarre' => ProjectFunctions::hasVoted($userID, $commentL1->id_project, 7),             
-        ];
-              
-    }
-    
-    
-    //GET LOCATIONS
-    $locations = array();
-    
-    $child_location = DB::table('coo_project')
-      ->where('id_project', $project->location_project)
-      ->first();
-    
-    $locations[] = [
-      'location_id' => $child_location->id_project,
-      'location_name' => $child_location->title_project
-    ];
-    
-    $parent_location1 = DB::table('coo_project')
-      ->where('id_project', $child_location->parent_project)
-      ->first();
-      
-    if (count($parent_location1)) {
-        $locations[] = [
-          'location_id' => $parent_location1->id_project,
-          'location_name' => $parent_location1->title_project
-          ];
-        
-        $parent_location2 = DB::table('coo_project')
-          ->where('id_project', $parent_location1->parent_project)
-          ->first();
-          
-          if (count($parent_location2)) {
-            $locations[] = [
-              'location_id' => $parent_location2->id_project,
-              'location_name' => $parent_location2->title_project
-              ];
-           
-           $parent_location3 = DB::table('coo_project')
-            ->where('id_project', $parent_location2->parent_project)
-            ->first();
-           
-             if (count($parent_location3)) {
-               $locations[] = [
-                'location_id' => $parent_location3->id_project,
-                'location_name' => $parent_location3->title_project
-                ];
-             }    
-          }
-    }
-    
-    $locations = array_reverse($locations);
-    $places = collect($locations);
-    
-    //return $comments;
-    
-    return view('auth.single-project', compact('project', 'projectDescription', 'places', 'parent_project', 'creator', 'coordinators', 'experts', 'reporters', 'category', 'total_equivalence', 'total_trust', 'total_care', 'total_joke', 'total_commit', 'total_ai', 'total_bizarre', 'voted_equivalence', 'voted_trust', 'voted_care', 'voted_joke', 'voted_commit', 'voted_bizarre', 'commentsL1', 'comments'));    
-  }
-  
+   
   public function read() {
     
     $world = DB::table('coo_project')
