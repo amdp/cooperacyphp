@@ -2,6 +2,7 @@
 
 namespace App\Functions; 
 use DB;
+use Auth;
 
 class ProjectFunctions
 {
@@ -105,5 +106,21 @@ class ProjectFunctions
     public static function getHtmlLinks($content) {
 	    $url = '@(http)?(s)?(://)?(([a-zA-Z])([-\w]+\.)+([^\s\.]+[^\s]*)+[^,.\s])@';
 		return preg_replace($url, '<a href="http$2://$4" target="_blank" title="$0">$0</a>', $content);
+    }
+
+     // isCoordinator($id)
+      // USE: returns 'yes' if logged user is coordinating a project, otherwise returns null
+      // Parameters: $id = project id
+    public static function isCoordinator($id) {
+      $coordinators = ProjectFunctions::getPeople('coordinator', $id);
+      $iscoordinator = null;
+      foreach ($coordinators as $coordinator) {
+        if ($coordinator->id_user == Auth::user()->id) {
+          $iscoordinator = 'yes';
+        }
+      }
+
+      return $iscoordinator;
+
     }
 }
