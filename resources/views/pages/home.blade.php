@@ -4,7 +4,7 @@
 @stop
 @section('content')
 
-<div class="container"><!--BEGIN CONTAINER-->
+<div><!--BEGIN CONTAINER-->
 
   <!--CIRCLE-->
   <div class="row">
@@ -101,8 +101,8 @@
           </a>
         </g>
 
-        <g id="diversityD" display="none" class="noline finger">
-          <a href="http://cooperacy.org/diversity">
+        <g id="diversityD" display="none">
+          <a href="http://cooperacy.org/diversity" class="noline finger">
             <text transform="matrix(1 0 0 1 218 360)" fill="#555555" font-size="65">DIVERSITY</text>
             <line style="display:inline;fill:#555555;stroke:#FF77CC;stroke-width:6;stroke-miterlimit:10;" x1="150" y1="393" x2="600" y2="393"/>
             <text transform="matrix(1 0 0 1 106 443)" display="inline" fill="#555555" stroke="#555555" stroke-miterlimit="10" font-size="25" letter-spacing="2">FUN AND FUNDS FOR EVERYONE OF US</text>
@@ -124,16 +124,9 @@
   <div class="col-md-8"><!--BEGIN CONTENT-->
       <br><br><p class="subheading space" style="text-align:center"><br></p>
 
-      <p class="subheading transparency center space">DISCOVER</p><br>
-      <p class="base">Cooperacy is a cooperative ecosystem. Participating in Cooperacy means being member of and believing in a different model of society, based on distribution of power and wealth. Just like nature distributes its riches into life, in a cooperative ecosystem profits are distributed to those who give life to new projects while governance is distributed in the plurality of the projects. Mimiking the circularity of nature, a cooperative ecosystem fosters a healthy environment, human care, and long term sustainability. Based on the study of Cooperation Science, Cooperacy is a little community that is now getting the attention of citizens, professionals and scientists who join the experimentation of an ecosystem that distributes governance, wealth and services. Find out who we are, why you could be interested in joining us and the latest news of the association.</p><br>
+      <p class="base center">Cooperacy is a scientific project aiming to spread the practice and the awareness of ecosystemic thinking and cooperation.</p><br>
 
-      <p class="subheading understanding center space">LEARN</p><br>
-      <p class="base">Cooperacy is based on learning. Cooperation needs awareness of what is called "ecosystemic thinking", a new way to interpret the world, the society, your daily life decisions in order to create the feeling of cooperation and balance all around you. Joining Cooperacy you can learn a natural way to hold meetings, distribute power, be inclusive in your family, company or community decisions, demand more distributed economy and governance in your nation.<br> We organise monthly webinars in which you can discuss your problems and how they affect the world around you.</p><br>
-
-      <p class="subheading equivalence center space">DO IT TOGETHER</p><br>
-      <p class="base">If you ever wanted to naturally express your personality and your talents, just like living beings behave in a pleasant ecosystem, think about people who can join your ideas or leverage on your skills, and project together! Cooperacy is building up a platform that allows the participants to find people committed to their project: you can participate right today to the co-creation of a social ecosystem platform that will enable the generation of cooperative projects based on distributive economy and shared governance, in order to generate personal enjoyment, collective delight and a pleasant ecosystem.</p><br>
-      <p class="subheading space"  style="text-align:center"><br>TRY THE DIFFERENCE<br>
-          <a class="diversity" href="/register">JOIN THE CO-CREATION</a>
+      <table style="width:100%;"><tr><td style="width:33%" class="subheading transparency center space"><a href="/aboutus">DISCOVER</a></td><td style="width:33%" class="subheading understanding center space"><a href="/cooperation">LEARN</a></td><td style="width:33%" class="subheading equivalence center space"><a href="/platform">DO</a></td></tr></table>
       </p>
     </div><!--END CONTENT-->
 

@@ -5,10 +5,10 @@
 @section('content')
 
 <!--BEGIN CONTAINER-->
-<div class="container">
+<div>
 
   <!--BEGIN SPACER-->
-  <div class="row"><p style="height:20px;"></p></div>
+  <div class="row"><p style="height:30px;"></p></div>
   <!--END SPACER-->
 
   <!--BEGIN HEADER-->
@@ -41,14 +41,14 @@
   </p><br/>
   <p class="subheading freedom center space">VOTING</p><br/>
   <p class="base">Cooperacy is a design democracy, that is, the modules vote ideas first, people afterwards. There is no censorship about the ideas, but they must respect the participant’s enjoyment. The voting is never secret.<br>
-  The decision making is based on approval voting, that is, everyone may vote with a single vote all the ideas they want. If there is not a clear orientation<SUP>2</SUP> after the voting phase, the participants leave their choice to the coordinators or choose with them amongst the seven possible <a href="http://cooperacy.org/solutions" class="care">solutions</a> for the realization of the module’s will:
-  <li>Turns or experimentations, starting from the most voted</li>
-  <li>Give a definite time to test the previous situation and then vote again</li>
-  <li>Change the context and pleasantness of the voting process and vote again</li>
-  <li>Retrieve more information, listen to all the people positions and decide again</li>
-  <li>Separate the module in new ones, splitting eventual budgets</li>
-  <li>Evaluate things through common values or objective criterias and vote again</li>
-  <li>Integrate creatively the different solutions or give them specific roles</li></p>
+  The decision making is based on approval voting, that is, everyone may vote with a single vote all the ideas they want. If there is not a clear orientation<SUP>2</SUP> after the voting phase, the participants leave their choice to the coordinators or choose with them amongst the seven possible <a href="http://cooperacy.org/solutions" class="care">solutions</a> for the realization of the module’s will:<br>
+  - Turns or experimentations, starting from the most voted<br>
+  - Give a definite time to test the previous situation and then vote again<br>
+  - Change the context and pleasantness of the voting process and vote again<br>
+  - Retrieve more information, listen to all the people positions and decide again<br>
+  - Separate the module in new ones, splitting eventual budgets<br>
+  - Evaluate things through common values or objective criterias and vote again<br>
+  - Integrate creatively the different solutions or give them specific roles<br></p>
   <br><br>
 
   <p class="mini">1: DUAL COORDINATION The idea of a coordinating pair came up in order to avoid power to be concentrated in just one person, that receives huge responsibilities and is alone in facing them, or in more than two people, that may generate internal conflictual groups.<br>

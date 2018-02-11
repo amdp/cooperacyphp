@@ -1,10 +1,9 @@
-@extends('layouts.default')
+@extends('layouts.lvapp')
 @section('title')
     Contact us - Cooperacy
 @stop
 @section('content')
-
-
+<br><br><br><br><br>
 <div id="main" class="site-main clr">
 <div id="content-wrap" class="container clr full-screen">
 <section id="primary" class="content-area clr">

@@ -1,7 +1,7 @@
 
 <!--BEGIN NAVBAR-->
 <nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container">
+    <div>
         <div class="navbar-header">
 
             <!-- Collapsed Hamburger -->
@@ -13,7 +13,7 @@
             </button>
 
             <!-- Branding Image -->
-            <a class="navbar-brand" href="{{ url('/') }}">
+            <a href="{{ url('/') }}">
                 <img class="header-logo" src="{{asset('images/wordlogo.png')}}">
             </a>
         </div>
@@ -27,7 +27,7 @@
                 @if (Auth::guest())
                   @include('layouts.public-menu')
                 @else
-                  @include('layouts.public-menu')       
+                  @include('layouts.public-menu')
                     <!--BEGIN AUTH LINKS-->
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle menu-item" data-toggle="dropdown" role="button" aria-expanded="false">
@@ -56,4 +56,3 @@
     </div>
 </nav>
 <!--END NAVBAR-->
-
