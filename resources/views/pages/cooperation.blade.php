@@ -5,10 +5,10 @@
 @section('content')
 
 <!--BEGIN CONTAINER-->
-<div class="container">
+<div>
 
   <!--BEGIN SPACER-->
-  <div class="row"><p style="height:20px;"></p></div>
+  <div class="row"><p style="height:30px;"></p></div>
   <!--END SPACER-->
 
   <!--BEGIN HEADER-->
@@ -29,7 +29,7 @@
   <br><p class="subheading equivalence center space margin">ACTING TOGETHER, WITH MUTUAL ENJOYMENT</p>
   <p class="base">What is Cooperation? You may find different definitions, like pursuing the same goal, helping each other or following rules and requests by others. Feel free to believe in the one that resonate with you most. We compared many of them and the one we chose was based on the idea that cooperation is an action and a feeling of mutual enjoyment: "Cooperation is acting together neutrally with mutual enjoyment."<br><br>
 
-  Cooperation is not linear and simple as it seems. It needs special contexts, ecosystems in which seven conditions are preserved.
+  Cooperation is not linear and simple as it seems. It needs special contexts: social ecosystems in which, according to our scientific model, seven conditions are met.
   </p>
 
   <br><img class="page-header" src="{{asset('/images/equivalence.png')}}"><br>

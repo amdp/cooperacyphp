@@ -5,7 +5,7 @@
 @section('content')
 
 <!--BEGIN CONTAINER-->
-<div class="container">
+<div>
 
     <!--BEGIN SPACER-->
   <div class="row"><p style="height:50px;"></p></div>
@@ -56,16 +56,15 @@
               <li>Lusofona University - CeIED</li>
               <li>TU Delft</li>
               <li>Urbanisticni Institut Republike Slovenije</li>
-	      <li>Luleå Tekniska Universitet</li>
-	      <li>CPHFTW IVS - Techfestival</li>
-	      <li>University of Thessaly</li>
-	      <li>Universitat Jaume I</li>
-	      <li>Fundación Deusto</li>
-	      <li>Alpha Consulting</li>
-	      <li>Università Politecnica delle Marche</li>
-	      <li>IDLab</li>
-	      <li>Università degli Studi di Roma La Sapienza</li>
-	      <li>Purple Network</li>
+      	      <li>Luleå Tekniska Universitet</li>
+      	      <li>CPHFTW IVS - Techfestival</li>
+      	      <li>University of Thessaly</li>
+      	      <li>Universitat Jaume I</li>
+      	      <li>Fundación Deusto</li>
+      	      <li>Alpha Consulting</li>
+      	      <li>Università Politecnica delle Marche</li>
+      	      <li>IDLab</li>
+      	      <li>Università degli Studi di Roma La Sapienza</li>
               </ul>
               </p>
   </div>

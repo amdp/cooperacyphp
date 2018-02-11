@@ -5,10 +5,10 @@
 @section('content')
 
 <!--BEGIN CONTAINER-->
-<div class="container">
+<div >
 
   <!--BEGIN SPACER-->
-  <div class="row"><p style="height:20px;"></p></div>
+  <div class="row"><p style="height:30px;"></p></div>
   <!--END SPACER-->
 
   <!--BEGIN HEADER-->

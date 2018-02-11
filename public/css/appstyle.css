@@ -1,10 +1,10 @@
 /*APPSTYLE.CSS*/
 @font-face {font-family: 'Prompt', sans-serif;}
-body{font-family: 'Prompt', sans-serif; font-size:14px; color:#333333; background-color:#ffffff}
+body{font-family: 'Prompt', sans-serif; font-size:14px; font-weight: 300; color:#000000; background-color:#ffffff}
 
 .circle   {margin: 0 auto;height:60vh;position: relative;margin-top:3vh;}
 .menu-item {font-size:14px;line-height:16px;}
-.base {text-align:justify;font-size:18px;margin-bottom:10px;line-height:24px;}
+.base {text-align:justify;font-size:20px;margin-bottom:10px; line-height: 26px; font-weight:200;}
 .heading {font-size:34px;font-weight:bold;}
 .subheading {font-size:22px;}
 .equivalence {color: #FF9000;}
@@ -39,11 +39,10 @@ li {font-size:18px}
 /*body*/
 .navbar {   height:66px!important; }
 .site-footer {     border-top-color: #d3e0e9;     border-top-style: solid;     border-top-width: 1px;     padding-top: 10px;}
-.navbar-brand {  padding-bottom: 55px!important;   margin-left: -85px!important;}
+.navbar-brand {  padding-bottom: 55px!important;}
 
 .navbar-right {
   margin-top: 10px!important;
-  margin-right: -65px!important
 }
 
 .navbar-toggle {
@@ -57,6 +56,9 @@ li {font-size:18px}
 }
 
 .header-logo {
+  margin-top: 15px;
+  margin-left: 15px;
+  margin-bottom: auto;
   width:230px;
   height:37px;
 }
@@ -96,9 +98,10 @@ a.join-orange {
 .navbar {opacity: 0.8!important;}
 
 img.page-header {
+    margin-top: 0px;
     width: 100%;
     height: auto;
-    vertical-align: middle;
+    vertical-align: top;
     border:none;
 }
 

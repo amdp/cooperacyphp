@@ -53,10 +53,6 @@
 </ul>
 </li>
 
-@if (Auth::guest())
-<li><a href="{{ route('login') }}" style="padding-top:8px"><img class="navbar-icons" style="width:35px; height:35px;" title="LOGIN" src="images/loginbase.png" alt="LOGIN" onmouseover="this.src='images/loginhover.png'" onmouseclick="this.src='images/loginbase.png'" onmouseout="this.src='images/loginbase.png'"><span class="menu-item alt-login">LOGIN</span></a></li>
-@endif
-
 <li class="dropdown">
 <a href="#" class="dropdown-toggle menu-item" data-toggle="dropdown" role="button" aria-expanded="false">SCIENCE</a>
 <ul class="dropdown-menu" role="menu">
@@ -80,4 +76,8 @@
 </li>
 </ul>
 </li>
+<li class="menu-item">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</li>
+@if (Auth::guest())
+<li><a href="{{ route('login') }}" class="menu-item">LOGIN</span></a></li>
+@endif
 <!--END PUBLIC MENU-->

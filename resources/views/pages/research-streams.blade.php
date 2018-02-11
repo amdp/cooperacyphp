@@ -5,7 +5,7 @@
 @section('content')
 
 <!--BEGIN CONTAINER-->
-<div class="container">
+<div>
 
     <!--BEGIN SPACER-->
   <div class="row"><p style="height:50px;"></p></div>
@@ -32,13 +32,16 @@
               Our future streams of research will be:<br>
               <ol>
               <li>Main Cooperation Science framework</li>
-              <li>Cooperation Context Index for countries
+              <li>Cooperation Context Index for countries</li>
               <li>Online groups relative analysis based on benefit and relation indicators</li>
               <li>Semantics of Cooperation</li>
               <li>Game theory and Evolutionary biology</li>
               <li>Neuroscience of Cooperation</li>
-              <li>Complex systems applied to Governance</li>
-              <li>Complex systems applied to Commons Economy</li>
+              <li>Complex Systems Science applied to Cooperation</li>
+              <li>Cooperation Networks</li>
+              <li>Ecology and Ecosystem Science applied to Cooperation</li>
+              <li>Cooperation Science applied to Governance</li>
+              <li>Cooperation Science applied to the study of the Commons</li>
               <li>Cooperative production industries-based Economy</li>
               </ol></p>
   </div>

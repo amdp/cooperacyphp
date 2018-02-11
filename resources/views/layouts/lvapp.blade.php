@@ -2,7 +2,6 @@
 <html lang="en">
   <head>
     <link href="/css/appstyle.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Prompt:300" rel="stylesheet">
     <link href="/css/app.css" rel="stylesheet">
     <link href="/css/iubenda.css" rel="stylesheet">
 
