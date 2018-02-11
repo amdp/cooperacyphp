@@ -32,6 +32,7 @@ body{font-family: 'Prompt', sans-serif; font-size:14px; font-weight: 300; color:
 .roundmodule {border-radius: 90px;}
 .mini {text-align:justify;font-size:12px;}
 .finger {cursor: pointer;}
+.noline { text-decoration:none!important; }
 
 li {font-size:18px}
 
@@ -65,7 +66,7 @@ li {font-size:18px}
 
 p {margin-bottom: auto;}
 
-.noline { text-decoration:none!important; }
+
 
 
 
