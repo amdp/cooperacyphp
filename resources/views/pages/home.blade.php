@@ -126,7 +126,7 @@
 
       <p class="base center">Cooperacy is a scientific project aiming to spread the practice and the awareness of ecosystemic thinking and cooperation.</p><br>
 
-      <table style="width:100%;"><tr><td style="width:33%" class="subheading center"><a href="/aboutus" class="noline transparency space">DISCOVER</a></td><td style="width:33%" class="subheading center"><a href="/cooperation" class="noline understanding space">LEARN</a></td><td style="width:33%" class="subheading center"><a href="/platform" class="noline equivalence space">DO</a></td></tr></table>
+      <table style="width:100%;"><tr><td style="width:33%" class="subheading center"><a href="/aboutus" class="noline transparency space">DISCOVER</a></td><td style="width:33%" class="subheading center"><a href="/cooperation" class="noline understanding space">LEARN</a></td><td style="width:33%" class="subheading center"><a href="/projects" class="noline equivalence space">DO</a></td></tr></table>
       </p>
     </div><!--END CONTENT-->
 
