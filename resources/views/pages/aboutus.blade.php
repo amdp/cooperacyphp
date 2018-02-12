@@ -29,7 +29,7 @@
 
 <!-- journey anytime you will feel lost you can summon a mentor to guide you -->
 
-  <p class="base care">Imagine our society as a worldwide cooperative ecosystem.</p>
+  <p class="base transparency ">Imagine our society as a worldwide cooperative ecosystem.</p>
 
   <p class="base">We want to spread cooperation and ecosystemic thinking in human communities through scientific research, narratives and applications.<br><br>
 

@@ -159,6 +159,10 @@ Route::get('/platform', function () {
     return view('pages.platform');
 });
 
+Route::get('projects', [
+      'as' => 'projects',
+      'uses' => 'PublicController@projects']);
+
 
 
 
@@ -422,7 +426,7 @@ Route::get('/dummy-list', [
   'middleware' => ['auth', 'member'],
   'as' => 'dummy-project',
   'uses' => 'ProjectController@dummysingle']);
-  
+
  // Route::get('/registersec', function () {
     // return view('auth.register-ok');
 // });

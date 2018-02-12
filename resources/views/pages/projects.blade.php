@@ -26,14 +26,19 @@
 
   <!--BEGIN CONTENT-->
   <div class="col-md-8">
-  <p class="subheading trust center space margin">1. THE PLATFORM</p>
-  <p class="base">The first is the platform you see in “How it works”, it will be ready soon and we already have some participants. Nevertheless, you and us need the help of everyone! Please join Cooperacy and help us with our “One little task per week” members program!</p>
+  <p class="base">Cooperacy has three levels of activities. You can support our efforts by joining one of them.<br></p>
+  <p class="subheading trust center space margin">THE PLATFORM</p>
+  <p class="base">The first is the platform described in the discover section. We hope it will be ready soon and we have already made some testing. Nevertheless, we need the support of everyone in order to reach 7000 members, which is our first milestone:</p>
 
-  <p class="subheading trust center space margin">2. THE SCIENTIFIC RESEARCH</p>
-  <p class="base">We’re doing great with Cooperation Science! Our model was at two conferences by MIT in the US, and this year, 2017, we are presenting in Macao our international Cooperation Context Index for countries. Have a look at the science part of our website or learn about the conditions of cooperation in the learning area!</p>
+  <table border="2"><tbody><tr><td style="width:{{round($membersnumber/7000*100, $precision=2)}}%; background-color:#FF9900;">&nbsp</td><td>&nbsp {{round($membersnumber/7000*100, $precision=2)}}%  </td></tr></tbody></table><br><br>
 
-  <p class="subheading trust center space margin">3. THE ACROYOGA COURSE</p>
-  <p class="base">We closed the subscriptions to our Acroyoga course. We will start over this fall, stay tuned and have a look at the pics in the Stories page!</p>
+  <p class="base">Please join Cooperacy and help us to get to the first platform release!</p>
+
+  <p class="subheading trust center space margin">THE SCIENTIFIC RESEARCH</p>
+  <p class="base">We’re doing great with Cooperation Science! Our model was at two conferences by MIT in the US, and this year, 2017, we presented in Macao our international Cooperation Context Index by countries. Have a look at the science part of our website and, if you are an academic, please join us and our team of researchers!</p>
+
+  <p class="subheading trust center space margin">THE CORPORATE SIDE</p>
+  <p class="base">Are you part of the corporate world? Would you like to apply the Cooperation Science in your company processes? Feel free to contact us and ask for more information!</p>
   </div>
   <!--END CONTENT-->
 

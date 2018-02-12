@@ -9,6 +9,9 @@
     <a href="{{URL::to('/aboutus')}}" class="menu-item">ABOUT US</a>
   </li>
   <li>
+    <a href="{{URL::to('/platform')}}" class="menu-item">THE PLATFORM</a>
+  </li>
+  <li>
     <a href="{{URL::to('/news')}}" class="menu-item">NEWS</a>
   </li>
 </ul>
@@ -36,13 +39,10 @@
 <a href="#" class="dropdown-toggle menu-item" data-toggle="dropdown" role="button" aria-expanded="false">DO</a>
 <ul class="dropdown-menu" role="menu">
   <li>
-    <a href="{{URL::to('/platform')}}" class="menu-item">THE PLATFORM</a>
-  </li>
-  <li>
-    <a href="{{URL::to('/howitworks')}}" class="menu-item">HOW IT WORKS</a>
-  </li>
-  <li>
     <a href="{{URL::to('/projects')}}" class="menu-item">PROJECTS</a>
+  </li>
+  <li>
+    <a href="{{URL::to('/howitworks')}}" class="menu-item">HOW THE PLATFORM WORKS</a>
   </li>
   <li>
     <a href="{{URL::to('/stories')}}" class="menu-item">STORIES</a>

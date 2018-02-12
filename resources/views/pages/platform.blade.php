@@ -5,10 +5,10 @@
 @section('content')
 
 <!--BEGIN CONTAINER-->
-<div class="container">
+<div>
 
   <!--BEGIN SPACER-->
-  <div class="row"><p style="height:20px;"></p></div>
+  <div class="row"><p style="height:30px;"></p></div>
   <!--END SPACER-->
 
   <!--BEGIN HEADER-->
@@ -26,17 +26,26 @@
   <!--BEGIN CONTENT-->
   <div class="col-md-8">
 
-  <p class="subheading understanding center space margin">IF YOU COULD CHANGE THE WORLD WITH 1 EURO PER MONTH,<br>WOULD YOU DO IT?</p>
-  <p class="base">Our idea of a platform for ideas to be realized is the base for a strong change in the world, and it will be financed just with one euro per month. It's a challenge we want to overcomew because we really think it could become real.</p>
+  <p class="subheading transparency center space margin">WHAT IF YOU COULD CHANGE THE WORLD WITH 1 EURO PER MONTH..
+    <br>WOULD YOU DO IT?</p>
+  <p class="base">We think that a little effort by everyone could be able to generate a major change. This belief stands at the base of the platform we're setting up. We want to create a place in which ideas get funded by that simple single euro provided every month by everyone of us.<br><br>
+  Nice, but.. how?</p>
 
-  <p class="subheading understanding center space margin">BUYING OUR WORLD BACK</p>
-  <p class="base">The ideas generated within the platform will generate salaries for the people who would like to commit to the projects in complete freedom, and surplus that will be reused in the platform to develop new ideas or buy assets like parts of lands to protect, houses to rent for reinvesting the earnings, etc. It will be like a cycle. We want to create value and with that value to buy our world back.</p>
+  <p class="subheading equivalence center space margin">DESIGN DEMOCRACY, PROPORTIONAL REDISTRIBUTIVE FUNDING, ECOSYSTEMIC LEARNING</p>
+  <p class="base">In Cooperacy we don't want just to realise the ideas of the participants, but also to create a social ecosystem based on redistribution of wealth. Therefore we have invented three powerful social technologies: "Design Democracy", "Proportional Redistributive Funding", "Ecosystemic Learning".</p>
 
-  <p class="subheading understanding center space margin">IMAGINE</p>
-  <p class="base">Imagine a social change that is possible exclusively according to the number of people participating. Imagine a million people, a million euro per month transforming the world. Imagine that money could be only used when a collective will is found, and a joint enjoyable idea is realized. Imagine a wind of many and many single euros blowing ideas all over the world and realizing them.</p>
+  <span class="subheading equivalence">Design Democracy</span>
+  <p class="base">First of all, we thought about a mechanism that would allow to distribute resources to ideas, according to how much the same ideas are desired by the participants, with their will expressed through votes: the common money goes proportionally according to the votes the ideas received. Keeping it simple: people desing ideas, votes bring resources.</p>
 
-  <p class="subheading understanding center space margin">THE PLATFORM</p>
-  <p class="base">The platform will allow us to choose the best ideas and proportionally finance them according to the principles of cooperation. A big data memory will learn from our actions and even suggest, in the long run, which ideas are good or have good development possibilities and which ones aren't. Our international "multi-Local" holding will grow strong enough to resemble a multinational with a colorful heart. A huge, international foundation coordinating different ideas from all over the world. The more local activities, the more we can transform the world and start a worldwide community respectful of the environment and of all the human beings with their undeniable rights.</p>
+  <span class="subheading equivalence">Proportional Redistributive Funding</span>
+  <p class="base">When an idea is funded and produces wealth, its profits go back to the platform and get proportionally redistributed in order to fund other ideas, creating a virtuous circle that generates wealth for everyone.</p>
+
+  <span class="subheading equivalence">Ecosystemic Learning</span>
+  <p class="base">An artificial intelligence will analyse all the data coming from the platform and learn, in the long run, best practices in order to help the people to realise their ideas. We think about this as an ecosystemic deep learning. The platform will in facts allow us to choose the best projects and proportionally finance them according to the principles of cooperation.</p>
+
+  <p class="subheading transparency center space margin">IMAGINE</p>
+  <p class="base">Imagine the effect of one million people bringing together their little economic effort. Imagine a million euros per month transforming the world. This money flow will be used only when a common will is found. Only jointly enjoyable ideas will be realized. Imagine a social change that is possible exclusively according to the number of people participating.<br>
+  Would you like to help this to happen?</p>
 
   </div>
   <!--END CONTENT-->
