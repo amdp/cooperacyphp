@@ -33,7 +33,7 @@ body{font-family: 'Prompt', sans-serif; font-size:14px; font-weight: 300; color:
 .mini {text-align:justify;font-size:12px;}
 .finger {cursor: pointer;}
 .noline { text-decoration:none!important; }
-.containerone {margin-left:30px; margin-right:30px;}
+.containerone {margin-left:30px; margin-right:30px; margin-top: 80px;}
 
 li {font-size:18px}
 

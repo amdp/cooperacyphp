@@ -7,10 +7,6 @@
 <!--BEGIN CONTAINER-->
 <div class="containerone">
 
-  <!--BEGIN SPACER-->
-  <div class="row"><p style="height:90px;"></p></div>
-  <!--END SPACER-->
-
   <!--BEGIN ROW-->
   <div class="row">
 
