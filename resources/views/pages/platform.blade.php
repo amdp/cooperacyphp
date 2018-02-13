@@ -5,7 +5,7 @@
 @section('content')
 
 <!--BEGIN CONTAINER-->
-<div>
+<div class="containerone">
 
   <!--BEGIN SPACER-->
   <div class="row"><p style="height:30px;"></p></div>
@@ -26,8 +26,8 @@
   <!--BEGIN CONTENT-->
   <div class="col-md-8">
 
-  <p class="subheading transparency center space margin">WHAT IF YOU COULD CHANGE THE WORLD WITH 1 EURO PER MONTH..
-    <br>WOULD YOU DO IT?</p>
+  <p class="subheading transparency center margin">What if you could change the world with just one euro per month..
+    <br>would you do it?</p>
   <p class="base">We think that a little effort by everyone could be able to generate a major change. This belief stands at the base of the platform we're setting up. We want to create a place in which ideas get funded by that simple single euro provided every month by everyone of us.<br><br>
   Nice, but.. how?</p>
 

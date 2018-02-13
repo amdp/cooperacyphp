@@ -5,7 +5,7 @@
 @section('content')
 
 <!--BEGIN CONTAINER-->
-<div class="container">
+<div class="containerone">
 
   <!--BEGIN SPACER-->
   <div class="row"><p style="height:90px;"></p></div>
@@ -27,9 +27,9 @@
     <p class="base" style="text-align:center;">
     <br><br>Welcome to Cooperacy<br><br>
     By using this website<br>
-    (the “Site”) or http://cooperacy.org (the “Link”), or its services (the “Services”)<br> 
-    and other supplementary websites (the “Sites”)<br> 
-    owned and offered by<br> 
+    (the “Site”) or http://cooperacy.org (the “Link”), or its services (the “Services”)<br>
+    and other supplementary websites (the “Sites”)<br>
+    owned and offered by<br>
     Cooperacy, Associazione per la Ricerca Scientifica, or in English Cooperacy Research Association, together with its subsidiaries, affiliates, agents, representatives, consultants, employees, officers, directors, coordinators and parents (collectively “Cooperacy”), situated in Milan via dei Cappuccini 11, registered in the Italian Agenzia delle Entrate, you are agreeing to these legally binding Agreements (“Agreements”).<br><br>
 
     These Agreements are written in English.<br>
@@ -93,7 +93,7 @@
   <p class="base">Thus, if you are or represent the owner of an Intellectual Property Right and you consider that any of the materials posted by the users infringes your right, you may send a notice to us, to include the following information: precise identification of the content or material posted on the Site that you consider to infringe your Intellectual Property Rights and that you wish to be removed from the Site; relevant proof to emphasize that you are entitled to act as owner of the Intellectual Property Rights over the content/material; correct and complete information necessary for Cooperacy to contact you: name, phone number, e-mail, address; signature of the Intellectual Property owner or of the person authorized to act on behalf of the owner.</p><br>
 
   <p class="base">Also, Cooperacy will prohibit the access of users that usually infringe the present Agreements, being entitled to definitely close the accounts of these users. There is a repeated breach when user has been warned for minimum two times and/or the content posted was removed for minimum two times from the Site because infringing on the Site Agreements.</p><br>
-  
+
   <p class="base">When you publish content or information, it means that you are allowing everyone, including people off of Cooperacy, to access and use that information, and to associate it with you (i.e., your name and profile picture). Cooperacy appreciates your feedback or other suggestions about Cooperacy, but you understand that Cooperacy may use your feedback or suggestions without any obligation to compensate you for them (just as you have no obligation to offer them).</p><br>
 
   <p class="base">Please also read carefully to understand how Cooperacy use Registration Data and other information that Cooperacy collects from you when you access, visit or use the Site. The Policy is part of and governed by these Agreements, and by accepting these Agreements, you agree that Cooperacy may use Registration Data and other information collected from you in accordance with the terms of the Policy and these Agreements. Cooperacy may share your name, email address, employer’s name, position, favorite contacts, profile picture, feedback, status messages, ideas for Cooperacy Ideas proposals, Projects, and other functionalities with other users of the Cooperacy’s websites as your personal data provided to Cooperacy by you. You are solely responsible for the personal data you provide to Cooperacy, understanding that such profile or personal data could be shared with other users of the Sites. Cooperacy may allow you and other users of the Sites to communicate and interact with each other using Cooperacy's Sites, may use your contact information and profile information to supply with information which is deemed of interest based on data you provide to the use of the Sites and for the use of the Sites. Use of the Sites will be analysed per user of the Sites and the analysis data resulting from this analysis will be used only to provide information to an individual user, to improve the usability of the Sites and of the Cooperacy products and services and will not be shared with other users of the Sites if not otherwise stated in Cooperacy's Agreements, use of the Sites, Privacy Policy and Ideas and Projects-related Privacy Policies and relative documents.</p><br>

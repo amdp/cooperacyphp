@@ -5,7 +5,7 @@
 @section('content')
 
 <!--BEGIN CONTAINER-->
-<div>
+<div class="containerone">
 
    <!--BEGIN SPACER-->
   <div class="row"><p style="height:50px;"></p></div>

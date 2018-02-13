@@ -4,7 +4,8 @@
 @stop
 @section('content')
 
-<div><!--BEGIN CONTAINER-->
+<!--BEGIN CONTAINER-->
+<div class="containerone">
 
   <!--CIRCLE-->
   <div class="row">
