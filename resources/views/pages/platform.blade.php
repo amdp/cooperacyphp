@@ -9,7 +9,7 @@
 
   <!--BEGIN HEADER-->
   <div class="row">
-  <br><img class="page-header" src="{{asset('/images/platform.png')}}"><br>
+  <img class="page-header" src="{{asset('/images/platform.png')}}">
   </div>
   <!--END HEADER-->
 
@@ -22,12 +22,12 @@
   <!--BEGIN CONTENT-->
   <div class="col-md-8">
 
-  <p class="subheading transparency center margin">What if you could change the world with just one euro per month..
+  <p class="subheading transparency margin">What if you could change the world with just one euro per month..
     <br>would you do it?</p>
   <p class="base">We think that a little effort by everyone could be able to generate a major change. This belief stands at the base of the platform we're setting up. We want to create a place in which ideas get funded by that simple single euro provided every month by everyone of us.<br><br>
   Nice, but.. how?</p>
 
-  <p class="subheading equivalence center space margin">DESIGN DEMOCRACY, PROPORTIONAL REDISTRIBUTIVE FUNDING, ECOSYSTEMIC LEARNING</p>
+  <p class="subheading transparency center space margin">DESIGN DEMOCRACY, PROPORTIONAL REDISTRIBUTIVE FUNDING, ECOSYSTEMIC LEARNING</p>
   <p class="base">In Cooperacy we don't want just to realise the ideas of the participants, but also to create a social ecosystem based on redistribution of wealth. Therefore we have invented three powerful social technologies: "Design Democracy", "Proportional Redistributive Funding", "Ecosystemic Learning".</p>
 
   <span class="subheading equivalence">Design Democracy</span>

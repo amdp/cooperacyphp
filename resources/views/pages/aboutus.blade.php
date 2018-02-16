@@ -38,6 +38,8 @@
   Cooperacy Overview evaluates the cooperative ecosystem conditions amongst larger organizations in order to understand their complexity, maintain their balance and promote their resilient growth through focused interventions.<br><br>
 
   Cooperacy Platform is a worldwide scale experiment willing to create a social ecosystem based on distribution of wealth, activities and governance that frees its participants from inducted needs and generates mutual enjoyment for everyone.<br><br>
+
+  Everyone is invited to join the Cooperacy project, it takes only one euro per month to enjoy our <a href="/register">world</a>!
   </p>
 
 
@@ -173,7 +175,7 @@
   <span style="color: #22DDEE;">Paypal:</span> you can access our account from the standard paypal login with COOPERATION + password cooperation2016</p><br>
 
   <p class="subheading transparency center space">LEGAL STUFF</p><br>
-  <p class="base">The Cooperacy Association was founded in Italy, Milan, the 21/07/2015. Its current address is Via Pinamonte da Vimercate 5, 20121 Milano. We&#8217;re planning to institute a foundation in Lithuania or Holland as in other countries the cost is too high.</p><br>
+  <p class="base">The Cooperacy Association was founded in Italy, Milan, the 21/07/2015. Its current address is Via Pinamonte da Vimercate 5, 20121 Milano.</p><br>
 
   <p id="contributors" name="contributors" style="color: #22DDEE; font-size: 24px; font-weight: bold; margin-bottom: 10px;">
 

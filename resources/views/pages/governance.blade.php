@@ -47,7 +47,7 @@
   - Integrate creatively the different solutions or give them specific roles<br></p>
   <br><br>
 
-  <p class="mini">1: DUAL COORDINATION The idea of a coordinating pair came up in order to avoid power to be concentrated in just one person, that receives huge responsibilities and is alone in facing them, or in more than two people, that may generate internal conflictual groups.<br>
+  <p class="mini just">1: DUAL COORDINATION The idea of a coordinating pair came up in order to avoid power to be concentrated in just one person, that receives huge responsibilities and is alone in facing them, or in more than two people, that may generate internal conflictual groups.<br>
   2: VOTING IS INFORMATIVE The voting results are indicators of the participants will, they do not explicitly determine a final decision, because creative proportionality and integration are at the base of cooperation, not winning and losing.</p>
 
   </div>
