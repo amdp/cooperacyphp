@@ -42,9 +42,6 @@
     <a href="{{URL::to('/projects')}}" class="menu-item">PROJECTS</a>
   </li>
   <li>
-    <a href="{{URL::to('/howitworks')}}" class="menu-item">HOW THE PLATFORM WORKS</a>
-  </li>
-  <li>
     <a href="{{URL::to('/stories')}}" class="menu-item">STORIES</a>
   </li>
   <li>

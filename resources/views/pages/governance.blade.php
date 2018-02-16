@@ -32,7 +32,7 @@
 
   <p class="subheading freedom center space">DECISIONS</p><br/>
   <p class="base">Coordinators have the right to take direct decisions. Only when their decision is publicly communicated it becomes effective. When they are in contrast or unsure about what decision to take, coordinators can ask advice to the participants or start a voting phase.<br><br>
-  Participants may oppose the decision. If it&#8217;s just one of them, the opposition is recorded or, when possible, creatively integrated. If the participants are at least two<SUP>2</SUP>, the coordinators should creatively integrate the opposition according to the seven <a href="http://cooperacy.org/solutions" class="care">solutions</a> or start a voting phase.<br><br>
+  Participants may oppose the decision. If it&#8217;s just one of them, the opposition is recorded or, when possible, creatively integrated. If the participants are at least two<SUP>1</SUP>, the coordinators should creatively integrate the opposition according to the seven <a href="http://cooperacy.org/solutions" class="care">solutions</a> or start a voting phase.<br><br>
   Participants may also propose an idea through voting or asking the coordinators for direct approval. The coordinators have no right to vote when they are the voting main subject.
   </p><br/>
   <p class="subheading freedom center space">VOTING</p><br/>
