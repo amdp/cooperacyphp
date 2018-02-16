@@ -45,23 +45,41 @@
   <div class="col-md-8">
   <div class="country-details">
 
-    <table>
-      <tr>
-        <span id='country-value'></span>
-      </tr>
-      <tr>
-        <td>    <span class="detail country" style="font-weight:lighter;"> CCI <span id='CCI-value'></span></span> </td>
-        <td>    <span class="detail equivalence" style="font-weight:lighter; color: #ff9900;">EQUIVALENCE <span id='equivalence-value'></span></span> </td>
-        <td>    <span class="detail reliability" style="font-weight:lighter; color: #ffdd00;">TRUST <span id='reliability-value'></span></span> </td>
-        <td>    <span class="detail care" style="font-weight:lighter; color: #99ff55;">CARE <span id='care-value'></span></span> </td>
-      </tr>
-      <tr>
-        <td>    <span class="detail transparency" style="font-weight:lighter; color: #55ffff;">TRANSPARENCY <span id='transparency-value'></span></span> </td>
-        <td>    <span class="detail freedom" style="font-weight:lighter; color: #0077ee;">FREEDOM <span id='freedom-value'></span></span> </td>
-        <td>    <span class="detail understanding" style="font-weight:lighter; color: #aa77dd;">UNDERSTANDING <span id='understanding-value'></span></span> </td>
-        <td>    <span class="detail diversity" style="font-weight:lighter; color: #ff00ff;">DIVERSITY <span id='diversity-value'></span></span> </td>
-      </tr>
-    </table>
+    <div class="row">
+  <div class="col-lg-12 col-xs-12 text-center">
+    <span id='country-value'></span>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-lg-3 col-xs-12">
+    <span class="detail country" style="font-weight:lighter;"> CCI <span id='CCI-value'></span></span>
+  </div>
+  <div class="col-lg-3 col-xs-12">
+    <span class="detail equivalence" style="font-weight:lighter; color: #ff9900;">EQUIVALENCE <span id='equivalence-value'></span></span>
+  </div>
+  <div class="col-lg-3 col-xs-12">
+    <span class="detail reliability" style="font-weight:lighter; color: #ffdd00;">TRUST <span id='reliability-value'></span></span>
+  </div>
+  <div class="col-lg-3 col-xs-12">
+    <span class="detail care" style="font-weight:lighter; color: #99ff55;">CARE <span id='care-value'></span></span>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-lg-3 col-xs-12">
+    <span class="detail transparency" style="font-weight:lighter; color: #55ffff;">TRANSPARENCY <span id='transparency-value'></span></span>
+  </div>
+  <div class="col-lg-3 col-xs-12">
+    <span class="detail freedom" style="font-weight:lighter; color: #0077ee;">FREEDOM <span id='freedom-value'></span></span>
+  </div>
+  <div class="col-lg-3 col-xs-12">
+    <span class="detail understanding" style="font-weight:lighter; color: #aa77dd;">UNDERSTANDING <span id='understanding-value'></span></span>
+  </div>
+  <div class="col-lg-3 col-xs-12">
+    <span class="detail diversity" style="font-weight:lighter; color: #ff00ff;">DIVERSITY <span id='diversity-value'></span></span>
+  </div>
+</div>
   </div>
   </div>
   <!--END VALUE TABLE-->

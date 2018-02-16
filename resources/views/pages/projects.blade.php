@@ -26,7 +26,10 @@
   <p class="subheading trust center space margin">THE PLATFORM</p>
   <p class="base">The first is the platform described in the discover section. We hope it will be ready soon and we have already made some testing. Nevertheless, we need the support of everyone in order to reach 7000 members, which is our first milestone:</p>
 
-  <table border="2"><tbody><tr><td style="width:{{round($membersnumber/7000*100, $precision=2)}}%; background-color:#FF9900;">&nbsp</td><td>&nbsp {{round($membersnumber/7000*100, $precision=2)}}%  </td></tr></tbody></table><br><br>
+  <div class="progress">
+ <div class="progress-bar" role="progressbar" aria-valuenow="{{round($membersnumber/7000*100, $precision=2)}}"
+ aria-valuemin="0" aria-valuemax="100" style="width:{{round($membersnumber/7000*100, $precision=2)}}%" style="color:#000000; background-color: #FF9000">&nbsp;{{round($membersnumber/7000*100, $precision=2)}}%&nbsp;Complete</div>
+</div>
 
   <p class="base">Please join Cooperacy and help us to get to the first platform release!</p>
 
