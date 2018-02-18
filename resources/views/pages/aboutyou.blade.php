@@ -9,7 +9,7 @@
 
   <!--BEGIN HEADER-->
   <div class="row">
-    <br><img class="page-header" src="{{asset('/images/aboutyou.jpg')}}" alt="Photo by Noah Buscher on Unsplash">
+    <br><img class="page-header" src="{{asset('/images/aboutyou.png')}}" alt="Photo by Noah Buscher on Unsplash">
   </div>
   <!--END HEADER-->
 
