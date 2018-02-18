@@ -127,9 +127,12 @@
 
       <p class="base center">Cooperacy is a scientific project aiming to spread cooperation and ecosystemic awareness.</p><br>
 
-      <table style="width:100%;"><tr><td style="width:33%" class="subheading center"><a href="/aboutus" class="noline transparency space">DISCOVER</a></td><td style="width:33%" class="subheading center"><a href="/cooperation" class="noline understanding space">LEARN</a></td><td style="width:33%" class="subheading center"><a href="/projects" class="noline equivalence space">DO</a></td></tr></table>
-      </p>
-    </div><!--END CONTENT-->
+      <div class="row">
+        <div class="col-lg-4 col-xs-12 subheading center"><a href="/aboutus" class="noline transparency space">DISCOVER</a></div>
+        <div class="col-lg-4 col-xs-12 subheading center"><a href="/cooperation" class="noline understanding space">LEARN</a></div>
+        <div class="col-lg-4 col-xs-12 subheading center"><a href="/projects" class="noline equivalence space">DO</a></div>
+      </div>
+</div><!--END CONTENT-->
 
   <div class="col-md-2"></div>
 

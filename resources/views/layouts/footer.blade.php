@@ -1,7 +1,7 @@
 <!--BEGIN FOOTER-->
 <div id="footer" class="site-footer">
 <!-- #copyright -->
-          <p class="subheading center space" style="margin-bottom:2px"><a href="{{route('register')}}" class="gray noline">JOIN</a> OR <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=YS7MHXBSVDDEU" class="gray noline">DONATE</a></p>
+          <p class="base center space" style="margin-bottom:2px"><a href="{{route('register')}}" class="gray noline">JOIN</a> OR <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=YS7MHXBSVDDEU" class="gray noline">DONATE</a></p>
           <p class="mini center space">
           &copy; 2017 COOPERACY RESEARCH ASSOCIATION - VIA CAPPUCCINI, 11 - 20122 MILAN - FISCAL CODE 97725540153 - <a class="noline gray" href="https://www.iubenda.com/privacy-policy/8141188">PRIVACY POLICY</a> - <a class="noline gray" href="{{route('terms')}}">AGREEMENTS</a></p>
 </div>

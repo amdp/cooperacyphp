@@ -15,7 +15,7 @@
     <meta property="og:type" content="website" />
     <meta property="og:url" content="http://cooperacy.org" />
     <meta property="og:image" content="http://cooperacy.org/images/wordlogoOG.png" />
-    <meta property="og:description" content="Cooperacy is a scientific project aiming to spread the practice and the awareness of ecosystemic thinking and cooperation." />
+    <meta property="og:description" content="Cooperacy is a scientific project aiming to spread cooperation and ecosystemic awareness." />
     <meta property="og:site_name" content="Cooperacy" />
     <!-- end Open graph -->
     <!-- Google Tag Manager -->
