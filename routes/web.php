@@ -75,32 +75,8 @@ Route::get('/solutions', function () {
     return view('pages.solutions');
 });
 
-Route::get('/association', function () {
-    return view('pages.association');
-});
-
 Route::get('/contacts', function () {
     return view('pages.contacts');
-});
-
-Route::get('/equivalence', function () {
-    return view('pages.equivalence');
-});
-
-Route::get('/freedom', function () {
-    return view('pages.freedom');
-});
-
-Route::get('/transparency', function () {
-    return view('pages.transparency');
-});
-
-Route::get('/trust', function () {
-    return view('pages.trust');
-});
-
-Route::get('/understanding', function () {
-    return view('pages.understanding');
 });
 
 Route::get('/aboutus', function () {
@@ -117,10 +93,6 @@ Route::get('/economy', function () {
 
 Route::get('/governance', function () {
     return view('pages.governance');
-});
-
-Route::get('/scienceold', function () {
-    return view('pages.science');
 });
 
 Route::get('/aboutyou', function () {
@@ -143,14 +115,6 @@ Route::get('fun', function () {
     return view('pages.fun');
 });
 
-Route::get('/diversity', function () {
-    return view('pages.diversity');
-});
-
-Route::get('/care', function () {
-    return view('pages.care');
-});
-
 Route::get('/science', function () {
     return view('pages.science');
 });
@@ -163,8 +127,21 @@ Route::get('projects', [
       'as' => 'projects',
       'uses' => 'PublicController@projects']);
 
-
-
+Route::get('/cohackathon', function () {
+          return view('pages.cohackathon');
+      });
+Route::get('/openecosystem', function () {
+          return view('pages.openecosystem');
+      });
+Route::get('/overview', function () {
+          return view('pages.overview');
+      });
+Route::get('/workshops', function () {
+          return view('pages.workshops');
+      });
+Route::get('/paradox', function () {
+          return view('pages.paradox');
+      });
 
 /*****************************************
 ******END PUBLIC ROUTES*******************

@@ -51,6 +51,27 @@
 </li>
 
 <li class="dropdown">
+<a href="#" class="dropdown-toggle menu-item" data-toggle="dropdown" role="button" aria-expanded="false">COORPORATE</a>
+<ul class="dropdown-menu" role="menu">
+  <li>
+    <a href="{{URL::to('/paradox')}}" class="menu-item">A SWEET PARADOX</a>
+  </li>
+  <li>
+    <a href="{{URL::to('/cohackathon')}}" class="menu-item">COHACKATHON</a>
+  </li>
+  <li>
+    <a href="{{URL::to('/openecosystem')}}" class="menu-item">OPEN ECOSYSTEM</a>
+  </li>
+  <li>
+    <a href="{{URL::to('/overview')}}" class="menu-item">OVERVIEW</a>
+  </li>
+  <li>
+    <a href="{{URL::to('/workshops')}}" class="menu-item">WORKSHOPS</a>
+  </li>
+</ul>
+</li>
+
+<li class="dropdown">
 <a href="#" class="dropdown-toggle menu-item" data-toggle="dropdown" role="button" aria-expanded="false">SCIENCE</a>
 <ul class="dropdown-menu" role="menu">
   <li>
