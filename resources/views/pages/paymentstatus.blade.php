@@ -5,11 +5,10 @@
 
 
 <div id="coomain">
-              <h1>Status pagamento</h1>
+              <h1>Status</h1>
 </div>
 
 
 
 @endif
-@endsection 
-
+@endsection

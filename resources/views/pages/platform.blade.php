@@ -43,7 +43,7 @@
   <p class="base">Imagine the effect of one million people bringing together their little economic effort. Imagine a million euros per month transforming the world. This money flow will be used only when a common will is found. Only jointly enjoyable ideas will be realized. Imagine a social change that is possible exclusively according to the number of people participating.<br>
   Would you like to help this to happen?</p>
 
-  <p class="base"><i>For more technical information see the platform <a href="/howitworks">white paper.<a></i></p>
+  <p class="base"><i>For more technical information see the platform <a class="auu" href="/howitworks">white paper<a>.</i></p>
 
   </div>
   <!--END CONTENT-->

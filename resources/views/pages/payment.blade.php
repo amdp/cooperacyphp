@@ -5,12 +5,11 @@
 
 
 <div id="coomain">
-              <h1>Pagina pagamento</h1>
+              <h1>Membership page</h1>
               <form method= "post" action="/payment">
               <button type="submit" class="btn btn-primary">Pay now with PayPal</button>
               </form>
 </div>
 
 @endif
-@endsection 
-
+@endsection

@@ -25,21 +25,21 @@
 
 <!-- journey anytime you will feel lost you can summon a mentor to guide you -->
 
-  <p class="base transparency ">Imagine our society as a worldwide cooperative ecosystem.</p>
+  <p class="base transparency">Imagine our society as a worldwide cooperative ecosystem.</p>
 
   <p class="base">We want to spread cooperation and ecosystemic thinking in human communities through scientific research, narratives and applications.<br><br>
 
   To make this true, we founded Cooperacy, a scientific project extending through different application scales.<br><br>
 
-  Cooperacy Research is the core level, investigating a social ecosystem model based on cooperation science.<br><br>
+  <a class="auh" href="/research">Cooperacy Research</a> is the core level, investigating a social ecosystem model based on cooperation science.<br><br>
 
-  Cooperacy Experience is the live application of the model made for groups, companies and institutions. The participants can enjoy a natural organization able to generate collaboration, innovation and problem solving.<br><br>
+  <a class="auh" href="/openecosystem">Cooperacy Experience</a> is the live application of the model made for groups, companies and institutions. The participants can enjoy a natural organization able to generate collaboration, innovation and problem solving.<br><br>
 
-  Cooperacy Overview evaluates the cooperative ecosystem conditions amongst larger organizations in order to understand their complexity, maintain their balance and promote their resilient growth through focused interventions.<br><br>
+  <a class="auh" href="/overview">Cooperacy Overview</a> evaluates the cooperative ecosystem conditions amongst larger organizations in order to understand their complexity, maintain their balance and promote their resilient growth through focused interventions.<br><br>
 
-  Cooperacy Platform is a worldwide scale experiment willing to create a social ecosystem based on distribution of wealth, activities and governance that frees its participants from inducted needs and generates mutual enjoyment for everyone.<br><br>
+  <a class="auh" href="/platform">Cooperacy Platform</a> is a worldwide scale experiment willing to create a social ecosystem based on distribution of wealth, activities and governance that frees its participants from inducted needs and generates mutual enjoyment for everyone.<br><br>
 
-  Everyone is invited to join the Cooperacy project, it takes only one euro per month to enjoy our <a href="/register">world</a>!
+  Everyone is invited to join the Cooperacy project, it takes only one euro per month to enjoy our <a class="aue" href="/register" >world</a>!
   </p>
 
 
@@ -171,8 +171,8 @@
 
   <p class="subheading transparency center space">FINANCE</p><br>
   <p class="base">We like so much transparency that we want everyone to be able to know our bank account balance and inspect our paypal account. We have nothing to hide.<br>
-  <span style="color: #22DDEE;">Bank account:</span> our IBAN is IT61D0623001623000043225634 - Filiale AG 23 Milano Cariparma di via Moscova, and the current bank balance is around 250 euros &#8211; updated: Jan 2017<br />
-  <span style="color: #22DDEE;">Paypal:</span> you can access our account from the standard paypal login with COOPERATION + password cooperation2016</p><br>
+  <span class="transparency"><strong>Bank account:</strong></span> our IBAN is IT61D0623001623000043225634 - Filiale AG 23 Milano Cariparma di via Moscova, and the current bank balance is around 250 euros &#8211; updated: Jan 2017<br />
+  <span class="transparency"><strong>Paypal:</strong></span> you can access our account from the standard paypal login with COOPERATION + password cooperation2016</p><br>
 
   <p class="subheading transparency center space">LEGAL STUFF</p><br>
   <p class="base">The Cooperacy Association was founded in Italy, Milan, the 21/07/2015. Its current address is Via Pinamonte da Vimercate 5, 20121 Milano.</p><br>
@@ -180,9 +180,9 @@
   <p id="contributors" name="contributors" style="color: #22DDEE; font-size: 24px; font-weight: bold; margin-bottom: 10px;">
 
   <p class="subheading transparency center space">CONTRIBUTORS LIST AND PLANNING</p><br>
-  <p class="base">You can see in our <a style="hover: #22DDEE; text-decoration: underline;" href="https://goo.gl/OYcrOS">planning</a> the list of names as well as the relative monetary value of the activity (including expenses) done as if monetary wages would have been corresponded to the participants. We keep track about it as we would correspond those amounts if we will have the possibility.<br><br>
+  <p class="base">You can see in our <a class="auh" href="https://goo.gl/OYcrOS">planning</a> the list of names as well as the relative monetary value of the activity (including expenses) done as if monetary wages would have been corresponded to the participants. We keep track about it as we would correspond those amounts if we will have the possibility.<br><br>
 
-  And if you don&#8217;t see something you&#8217;re curious of, please <a style="text-decoration: underline;" href="http://cooperacy.org/contacts" class="transparency">ask</a> for more information to be shown in this page.</p><br>
+  And if you don&#8217;t see something you&#8217;re curious of, please <a class="auh" href="http://cooperacy.org/contacts">ask</a> for more information to be shown in this page.</p><br>
 
   </div>
   <!--END CONTENT-->

@@ -27,7 +27,7 @@
   <p class="base">Fun and games make us feel together, especially if the gameplay is not competitive. Fun also includes the bright side of the artistic zest and the power of creative innovation. Art, fun, games and innovation represent the generative side of our lives. This page is dedicated to collective creativity.</p>
   <br><p class="subheading diversity center space margin">COOPERATIVE MONOPOLY</p>
   <p class="base">Cooperative Monopoly is a game that can be played with a standard monopoly set to understand the economic system we live in nowadays. Following these simple steps, you may experience a transition from the standard competitive capitalistic economy to a different one based on cooperation and understanding.<br /><br />
-  We recently discovered Monopoly was invented by <a src="https://en.wikipedia.org/wiki/Lizzie_Magie">Lizzy Magie</a>, a Georgist and game designer from the US. The game was called "The Landlord Game" or "Prosperity". The two names depend on the fact the original game had two set of rules, one almost completely similar to the Monopoly ones, the other one instead based on every land owned by a collective treasury, resembling the "Single Tax" <a src="https://en.wikipedia.org/wiki/Georgism">Georgist</a> approach to the economy that wouldn't exclude anyone from being eliminated from the game.<br /><br />
+  We recently discovered Monopoly was invented by <a class="aud" rc="https://en.wikipedia.org/wiki/Lizzie_Magie">Lizzy Magie</a>, a Georgist and game designer from the US. The game was called "The Landlord Game" or "Prosperity". The two names depend on the fact the original game had two set of rules, one almost completely similar to the Monopoly ones, the other one instead based on every land owned by a collective treasury, resembling the "Single Tax" <a class="auu" src="https://en.wikipedia.org/wiki/Georgism">Georgist</a> approach to the economy that wouldn't exclude anyone from being eliminated from the game.<br /><br />
   We tested the "Prosperity" set of rules and unfortunately they are better than the capitalist ones, but do not reach a full balanced game. We suggest you to try the cooperative monopoly narrative, and see what happens in your case:<br /><br />
   <span class="diversity">1.</span> When the game starts, every participant receives 12 houses that can be set up with no cost. The game proceeds as it normally would in a standard Monopoly game.<br />
   <span class="diversity">2.</span> When the first player runs out of the highest-value banknote type, the <i>participated governance</i> phase begins. In this phase, players can talk to each other with the purpose of forming alliances, sharing ownerships, changing the rules of the game. They can do it when it's the poorest player turn.<br />
@@ -44,7 +44,7 @@
 
   <br><p class="subheading diversity center space margin">FUN: BUILD YOUR OWN PINWHEEL GALAXY</p>
   <p class="base">
-  Making a pinwheel is very nice and you can do this little do-ot-yourself task with your friends. The Pinwheel Galaxy is a spiral-shaped galaxy about 21 million light years away from Earth. The first Cooperacy logo was a colorful pinwheel and that idea still lives in the current rotating logo in the homepage. Celebrate Cooperacy, the eco-system and the cooperation wind by blowing on your DIY Pinwheel Galaxy! To build it, you can follow the instructions carefully put together by no less then <a style="hover: #22DDEE; text-decoration: underline;" href="https://spaceplace.nasa.gov/pinwheel-galaxy/en/">NASA</a>.<br> After you made one, try and make a 7 petals, no-red, pinwheel like the Cooperacy one! If you spin it, the coordinated diversity of the colors will join and produce a white light!</p>
+  Making a pinwheel is very nice and you can do this little do-ot-yourself task with your friends. The Pinwheel Galaxy is a spiral-shaped galaxy about 21 million light years away from Earth. The first Cooperacy logo was a colorful pinwheel and that idea still lives in the current rotating logo in the homepage. Celebrate Cooperacy, the eco-system and the cooperation wind by blowing on your DIY Pinwheel Galaxy! To build it, you can follow the instructions carefully put together by no less then <a class="auu" href="https://spaceplace.nasa.gov/pinwheel-galaxy/en/">NASA</a>.<br> After you made one, try and make a 7 petals, no-red, pinwheel like the Cooperacy one! If you spin it, the coordinated diversity of the colors will join and produce a white light!</p>
 
   <!--BEGIN WHEEL-->
   <div style="position: relative; text-align: center;">
@@ -53,9 +53,6 @@
   <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
   </div>
   <!--END WHEEL-->
-
-  <p style="subheading diversity center space margin">GIVE IT A TRY<br>
-  <a style="color:#FF9000;" href="/register">JOIN THE CHANGE AND HAVE FUN!</a>
 </p><br><br>
 
   </div>
