@@ -1,6 +1,6 @@
 @extends('layouts.lvapp')
 @section('title')
-    Projects - Cooperacy
+    Chapters - Cooperacy
 @stop
 @section('content')
 
@@ -9,7 +9,7 @@
 
   <!--BEGIN HEADER-->
   <div class="row">
-  <br><img class="page-header" src="{{asset('/images/projects.png')}}"><br>
+  <br><img class="page-header" src="{{asset('/images/participate.png')}}"><br>
   </div>
   <!--END HEADER-->
 

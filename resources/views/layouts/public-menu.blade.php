@@ -39,13 +39,13 @@
 <a href="#" class="dropdown-toggle menu-item" data-toggle="dropdown" role="button" aria-expanded="false">DO</a>
 <ul class="dropdown-menu" role="menu">
   <li>
-    <a href="{{URL::to('/projects')}}" class="menu-item">PROJECTS</a>
+    <a href="{{URL::to('/participate')}}" class="menu-item">PARTICIPATE</a>
   </li>
   <li>
-    <a href="{{URL::to('/stories')}}" class="menu-item">STORIES</a>
+    <a href="{{URL::to('/fun')}}" class="menu-item">HAVE FUN</a>
   </li>
   <li>
-    <a href="{{URL::to('/fun')}}" class="menu-item">FUN</a>
+    <a href="{{URL::to('/spread')}}" class="menu-item">SPREAD COOPERATION</a>
   </li>
 </ul>
 </li>
@@ -54,7 +54,7 @@
 <a href="#" class="dropdown-toggle menu-item" data-toggle="dropdown" role="button" aria-expanded="false">COORPORATE</a>
 <ul class="dropdown-menu" role="menu">
   <li>
-    <a href="{{URL::to('/paradox')}}" class="menu-item">A SWEET PARADOX</a>
+    <a href="{{URL::to('/paradox')}}" class="menu-item">THE PARADOX</a>
   </li>
   <li>
     <a href="{{URL::to('/cohackathon')}}" class="menu-item">COHACKATHON</a>

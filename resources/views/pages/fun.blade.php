@@ -23,7 +23,7 @@
   <!--BEGIN CONTENT-->
   <div class="col-md-8">
 
-  <br><p class="subheading diversity center space margin">FUN</p>
+  <br><p class="subheading diversity center space margin">HAVE FUN</p>
   <p class="base">Fun and games make us feel together, especially if the gameplay is not competitive. Fun also includes the bright side of the artistic zest and the power of creative innovation. Art, fun, games and innovation represent the generative side of our lives. This page is dedicated to creativity and cooperation.</p>
 
   <br><p class="subheading diversity center space margin">BUILD YOUR OWN PINWHEEL GALAXY</p>

@@ -1,6 +1,6 @@
 @extends('layouts.lvapp')
 @section('title')
-    About Us - Cooperacy
+    Cohackathon - Cooperacy
 @stop
 @section('content')
 

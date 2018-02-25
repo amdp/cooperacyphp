@@ -1,6 +1,6 @@
 @extends('layouts.lvapp')
 @section('title')
-    The platform - Cooperacy
+    The Platform - Cooperacy
 @stop
 @section('content')
 

@@ -182,7 +182,7 @@
   <p class="subheading transparency center space">CONTRIBUTORS LIST AND PLANNING</p><br>
   <p class="base">You can see in our <a class="auh" href="https://goo.gl/OYcrOS">planning</a> the list of names as well as the relative monetary value of the activity (including expenses) done as if monetary wages would have been corresponded to the participants. We keep track about it as we would correspond those amounts if we will have the possibility.<br><br>
 
-  And if you don&#8217;t see something you&#8217;re curious of, please <a class="auh" href="http://cooperacy.org/contacts">ask</a> for more information to be shown in this page.</p><br>
+  And if you don&#8217;t see something you&#8217;re curious of, please <a class="auh" href="/contact">ask</a> for more information to be shown in this page.</p><br>
 
   </div>
   <!--END CONTENT-->
