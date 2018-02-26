@@ -66,7 +66,7 @@
           <a href="http://cooperacy.org/cooperation" class="noline finger">
             <text transform="matrix(1 0 0 1 276 360)" fill="#555555" font-size="65">TRUST</text>
             <line style="display:inline;fill:#555555;stroke:#FFDD00;stroke-width:6;stroke-miterlimit:10;" x1="150" y1="393" x2="600" y2="393"/>
-            <text transform="matrix(1 0 0 1 238 443)" display="inline" fill="#555555" stroke="#555555" stroke-miterlimit="10" font-size="25" letter-spacing="2">VOTING IDEAS FIRST</text>
+            <text transform="matrix(1 0 0 1 208 443)" display="inline" fill="#555555" stroke="#555555" stroke-miterlimit="10" font-size="25" letter-spacing="2">A DESIGN DEMOCRACY</text>
           </a>
         </g>
 
@@ -90,7 +90,8 @@
           <a href="http://cooperacy.org/cooperation" class="noline finger">
             <text transform="matrix(1 0 0 1 225 360)" fill="#555555" font-size="65">FREEDOM</text>
             <line style="display:inline;fill:#555555;stroke:#4488EE;stroke-width:6;stroke-miterlimit:10;" x1="150" y1="393" x2="600" y2="393"/>
-            <text transform="matrix(1 0 0 1 137 443)" display="inline" fill="#555555" stroke="#555555" stroke-miterlimit="10" font-size="25" letter-spacing="2">PERSONALITY BASED EMPLOYMENT</text>
+            <text transform="matrix(1 0 0 1 153 443)" display="inline" fill="#555555" stroke="#555555" stroke-miterlimit="10"
+            font-size="25" letter-spacing="2">TO RECOGNISE YOUR TRUE SELF</text>
           </a>
         </g>
 
@@ -98,7 +99,7 @@
           <a href="http://cooperacy.org/cooperation" class="noline finger">
             <text transform="matrix(1 0 0 1 120 360)" fill="#555555" font-size="65">UNDERSTANDING</text>
             <line style="display:inline;fill:#555555;stroke:#AA66DD;stroke-width:6;stroke-miterlimit:10;" x1="150" y1="393" x2="600" y2="393"/>
-            <text transform="matrix(1 0 0 1 119 443)" display="inline" fill="#555555" stroke="#555555" stroke-miterlimit="10" font-size="25" letter-spacing="2">A SOCIAL SYSTEM FOR COOPERATION</text>
+            <text transform="matrix(1 0 0 1 100 443)" display="inline" fill="#555555" stroke="#555555" stroke-miterlimit="10" font-size="25" letter-spacing="2">A SOCIAL ECOSYSTEM FOR COOPERATION</text>
           </a>
         </g>
 
@@ -106,7 +107,8 @@
           <a href="http://cooperacy.org/cooperation" class="noline finger">
             <text transform="matrix(1 0 0 1 218 360)" fill="#555555" font-size="65">DIVERSITY</text>
             <line style="display:inline;fill:#555555;stroke:#FF77CC;stroke-width:6;stroke-miterlimit:10;" x1="150" y1="393" x2="600" y2="393"/>
-            <text transform="matrix(1 0 0 1 106 443)" display="inline" fill="#555555" stroke="#555555" stroke-miterlimit="10" font-size="25" letter-spacing="2">FUN AND FUNDS FOR EVERYONE OF US</text>
+            <text transform="matrix(1 0 0 1 80 443)" display="inline" fill="#555555" stroke="#555555" stroke-miterlimit="10"
+            font-size="25" letter-spacing="2">LEVERAGING ON THE POWER OF INCLUSION</text>
           </a>
         </g>
 
