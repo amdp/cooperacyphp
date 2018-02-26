@@ -386,7 +386,200 @@ class ProjectController extends Controller
     return redirect()->route('new-project')->with('data', $message); 
   }
   
+  public function edit($id) {
+
+    //If not coordinator kick out
+    if (!ProjectFunctions::isCoordinator($id)) {
+      return back();
+    }
+
+    $world = DB::table('coo_project')
+      ->where('type_project', 1)
+      ->where('parent_project', null)
+      ->first();
+    
+    $continents = DB::table('coo_project')
+      ->where('type_project', 1)
+      ->where('parent_project', 1)
+      ->orderBy('title_project')
+      ->get();
+  
+    $states = DB::table('coo_project')
+      ->where('type_project', 1)
+      ->where('parent_project', 2)
+      ->orderBy('title_project')
+      ->get();
+     
+    $cities = DB::table('coo_project')
+      ->where('type_project', 1)
+      ->where('parent_project', 10)
+      ->orderBy('title_project')
+      ->get();
+
+    $experts = ProjectFunctions::getPeople('expert', $id);
+    $coordinators = ProjectFunctions::getPeople('coordinator', $id);
+    $reporters = ProjectFunctions::getPeople('reporter', $id);
+    $categories = DB::table('coo_category')->get();
+    $projects = DB::table('coo_project')->where('type_project',2)->whereNotIn('id_project',[272])->get();
+    $locations = ProjectFunctions::getLocations($id);
+    $project = DB::table('coo_project')->where('type_project',2)->where('id_project',$id)->first();
+    return view('auth.edit-project', compact('id', 'world', 'experts', 'reporters', 'coordinators', 'continents', 'states', 'cities', 'categories', 'project', 'projects', 'locations'));
+  }
+
+  public function updateproject(Request $request) {
+    $this->validate($request, [
+    'title_project' => 'required',
+    'content_project' => 'required',
+    'img_project' => 'mimetypes:image/jpeg,image/png',
+    //'budget_project' => 'required_if:zero_budget_project,==,0',
+    ]);
+
+    //Insert new city and get id if present
+    if ($request->LocationID === "new-city"){
+      $LocationID = DB::table('coo_project')->insertGetId([
+        'parent_project' => $request->ParentLocationID,
+        'id_project_owner' => 11,
+        'title_project' => $request->new_city_name,
+        'type_project' => 1      
+      ]);
+    } else {
+      $LocationID = $request->LocationID;
+    }
+
+    //Save image
+    
+    if(!empty($request->file('img_project'))) {
+    
+    $extension = '.jpg';
+    $filename = uniqid().$extension;
+    $destinationPath = public_path('images/projects');
+    $pathToImage = $destinationPath.'/'.$filename;
+
+    Image::configure(array('driver' => 'gd'));
+
+    $image = Image::make($request->file('img_project')->getRealPath());
+    $image->resize(400, null, function ($constraint) {
+        $constraint->aspectRatio();
+    })
+    ->encode('jpg');
+    
+    $image->save($pathToImage);
+    
+    } else if (!empty($request->loadedimage)) {
+      $filename = $request->loadedimage;
+    } else {
+      $filename = "no-image";
+    }
+
+    //Update data
+    DB::table('coo_project')->where('id_project', $request->project_id)
+      ->update([
+        'title_project'       => $request->title_project,
+        'content_project'     => $request->content_project,
+        'img_project'         => $filename,
+        'location_project'    => $LocationID,
+        'budget_project'      => $request->budget_project,
+        'hudget_project'      => $request->hudget_project,
+        'zero_budget_project' => $request->zero_budget_project,
+        'category_project'    => $request->category_project,
+        'parent_project'      => $request->parent_project,
+      ]);
+
+    $arr=array();
+    $arr = $request->all();
+    $coordinators = array();
+    $experts = array();
+    $reporters = array();
+
+        //Extract coordinators, experts, reporters
+    foreach ($arr as $key => $value) {
+      // echo $key.' '.$value.'<br>';
+        if (substr( $key, 0, 11 ) === "coordinator"){
+          $coordinators[]=$value;
+        }
+        if (substr( $key, 0, 6 ) === "expert"){
+          $experts[]=$value;
+        }
+        if (substr( $key, 0, 8 ) === "reporter"){
+          $reporters[]=$value;
+        }    
+    }
+
+    //Delete old relations, save coordinators, experts, reporters
+    if(!empty($coordinators)) {
+            DB::table('coo_user_relations')
+            ->where('id_project', $request->project_id)
+            ->where('relation_value', 'coordinator')
+            ->delete();
+
+            foreach ($coordinators as $coordinator){
+            DB::table('coo_user_relations')->insert([
+              'id_project' => $request->project_id,
+              'id_user' => $coordinator,
+              'relation_value' => 'coordinator'
+            ]);
+           }
+    } else {
+      DB::table('coo_user_relations')
+            ->where('id_project', $request->project_id)
+            ->where('relation_value', 'coordinator')
+            ->delete();
+    }
+
+    if(!empty($experts)) {
+            DB::table('coo_user_relations')
+            ->where('id_project', $request->project_id)
+            ->where('relation_value', 'expert')
+            ->delete();
+
+            foreach ($experts as $expert){
+            DB::table('coo_user_relations')->insert([
+              'id_project' => $request->project_id,
+              'id_user' => $expert,
+              'relation_value' => 'expert'
+            ]);
+           }
+    } else {
+      DB::table('coo_user_relations')
+            ->where('id_project', $request->project_id)
+            ->where('relation_value', 'expert')
+            ->delete();
+    }
+
+    if(!empty($reporters)) {
+            DB::table('coo_user_relations')
+            ->where('id_project', $request->project_id)
+            ->where('relation_value', 'reporter')
+            ->delete();
+
+            foreach ($reporters as $reporter){
+            DB::table('coo_user_relations')->insert([
+              'id_project' => $request->project_id,
+              'id_user' => $reporter,
+              'relation_value' => 'reporter'
+            ]);
+           }
+    } else {
+      DB::table('coo_user_relations')
+            ->where('id_project', $request->project_id)
+            ->where('relation_value', 'reporter')
+            ->delete();
+    }
+
+    $message = "Project successfully edited";
+    return redirect('view-project/'.$request->project_id)->with('data', $message); 
+  }
+
   // AJAX QUERIES
+
+  public function getContinents() {
+    return DB::table('coo_project')
+      ->where('type_project', 1)
+      ->where('parent_project', 1)
+      ->orderBy('title_project')
+      ->get();
+  }
+
   public function getStates($continent) {
     
     $states = DB::table('coo_project')

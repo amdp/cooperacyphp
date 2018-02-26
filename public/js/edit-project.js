@@ -1,11 +1,21 @@
-    // Hide Location form
-    $(document).ready(function(){
-      $('#continent-group').hide();
-      $('#state-group').hide();
-      $('#city-group').hide();
-      $('#new-city-form').hide();
-    });
-    
+$(document).ready(function(){
+
+      if ($('#continents').val()=='empty') {
+          $('#continent-group').hide();
+        }      
+      if ($('#states').val()=='empty') {
+          $('#state-group').hide();
+        }
+      if ($('#cities').val()=='empty') {
+          $('#city-group').hide();
+          $('#new-city-form').hide();
+        }
+
+      updateLocation();
+      if ($('#zero-budget-project').prop('checked')) {
+        updatezerobudget();
+      }
+    });  
         
     // Update Location on visibility
     var updateLocation = function() {
@@ -41,10 +51,27 @@
      
    };
 
-   // Update values on change
-    $('#continent').on('change', function() {
+var updatecontinents = function() {
     
-    var continent = $(this).find(":selected").val();
+    $.ajax({
+      type: 'GET',
+      url: '/get-continents',
+      success: function(data) {
+        $('#continent option').remove();
+        $.each(data, function(){
+            $('#continent select').append('<option value="'+ this.id_project +'">'+ this.title_project +'</option>');
+          });
+        }
+    });
+  
+
+       updateLocation();
+   }
+
+
+   var updatestates = function(cont) {
+    
+    var continent = $(cont).find(":selected").val();
       $.ajax({
         type: 'GET',
         url:'/get-states/'+continent,
@@ -75,12 +102,11 @@
         }
       });
       updateLocation();
-   });
-   
-   
-   $('#state').on('change', function() {
-     
-    var state = $(this).find(":selected").val();
+   }
+
+   var updatecities = function(stat) {
+
+    var state = $(stat).find(":selected").val();
       $.ajax({
         type: 'GET',
         url:'/get-cities/'+state,
@@ -98,7 +124,14 @@
         }
       });
     updateLocation();
-   });
+
+   }
+
+   // Update values on change
+   
+   $('#continent').on('change', function() {updatestates('#continent'); }); 
+  
+   $('#state').on('change', function() { updatecities('#state'); });
    
    $('#city').on('change', function() {
      updateLocation();
@@ -109,16 +142,19 @@
    
    $('#button-continent').click(function(){
     $('#continent-group').toggle();
+    updatecontinents();
     updateLocation();
    });
    
    $('#button-state').click(function(){
     $('#state-group').toggle();
+    updatestates('#continent');
     updateLocation();
    });
    
    $('#button-city').click(function(){
     $('#city-group').toggle();
+    updatecities('#state');
     updateLocation();
    });
    
@@ -128,8 +164,8 @@
     $('#project-budget').val(budget);
     $('#temporary-project-budget').val(budget);
   });
-
-  $('#zero-budget-project').click(function(){
+  
+  var updatezerobudget = function(){
    var tempbudget = $('#temporary-project-budget').val();
    if ($('#zero-budget-project').prop('checked')) {
      $('#project-budget').val(0);
@@ -143,36 +179,40 @@
      $('#budget-project').removeAttr('disabled');
      $('#budget-project').val(tempbudget);
     }
-  });
+  }
+
+  $('#zero-budget-project').click(function () {updatezerobudget();});
   
   //ADD COORDINATORS
-  var i=0;
-  var added=0;
   $('#add-coordinator').click(function(){
+    var added=$('#addedcoordinators').val();
+    added++;
     if (added<2){
       var coordinator = $('#coordinator-project').val();
       var coordinatorID = $('#temp-coordinator').val();
-      $('#coordinator-list').append('<div style="height:3px;"></div><li class="list-group-item" id="coordinator'+i+'">'+coordinator+'<span class="pull-right"><i class="icon-remove" id="'+i+'"></i></span></li>');
-      $('#array-coordinators').append('<input type="hidden" name="coordinator'+i+'" id="data-coordinator'+i+'" value="'+coordinatorID+'"></input>');
-      added++;
-      i++;
-      
+      $('#coordinator-list').append('<div style="height:3px;"></div><li class="list-group-item" id="coordinator'+added+'">'+coordinator+'<span class="pull-right"><i class="icon-remove" id="'+added+'"></i></span></li>');
+      $('#array-coordinators').append('<input type="hidden" name="coordinator'+added+'" id="data-coordinator'+added+'" value="'+coordinatorID+'"></input>');
+      $('#addedcoordinators').val( function(i, oldval) {
+        return parseInt( oldval, 10) + 1;
+      });         
   }
   $('#add-coordinator').attr('disabled', true);
   $('#coordinator-project').val('');
-  console.log('added='+added);
+  
   });
-  
-
-  
+    
   $('#coordinator-list').click(function(e) {
+      var added=$('#addedcoordinators').val();
+      if (added > 0) {
       var id = '#coordinator'+e.target.id;
       var dataid = '#data-coordinator'+e.target.id;
         $(id).remove();
         $(dataid).remove();
-        console.log('removed: '+id);
         added--;
-        console.log('i='+i);
+        $('#addedcoordinators').val( function(i, oldval) {
+          return parseInt( oldval, 10) - 1;
+        });
+      }
   });
   
   // AUTOCOMPLETE COORDINATORS
@@ -208,16 +248,16 @@ $( "#coordinator-project" ).autocomplete({
 
 
 //ADD EXPERTS
-  var j=0;
-  var addedex=0;
   $('#add-expert').click(function(){
-    
+    var addedex=$('#addedexperts').val();
+    addedex++;
       var expert = $('#expert-project').val();
       var expertID = $('#temp-expert').val();
-      $('#expert-list').append('<div style="height:3px;"></div><li class="list-group-item" id="experte'+j+'">'+expert+'<span class="pull-right"><i class="icon-remove" id="e'+j+'"></i></span></li>');
-      $('#array-experts').append('<input type="hidden" name="expert'+j+'" id="data-experte'+j+'" value="'+expertID+'"></input>');
-      addedex++;
-      j++;
+      $('#expert-list').append('<div style="height:3px;"></div><li class="list-group-item" id="experte'+addedex+'">'+expert+'<span class="pull-right"><i class="icon-remove" id="e'+addedex+'"></i></span></li>');
+      $('#array-experts').append('<input type="hidden" name="expert'+addedex+'" id="data-experte'+addedex+'" value="'+expertID+'"></input>');
+      $('#addedexperts').val( function(i, oldval) {
+        return parseInt( oldval, 10) + 1;
+      });  
       $('#add-expert').attr('disabled', true);
       $('#expert-project').val('');
   });
@@ -225,12 +265,15 @@ $( "#coordinator-project" ).autocomplete({
 
   
   $('#expert-list').click(function(e) {
+      var addedex=$('#addedexperts').val();
       var id = '#expert'+e.target.id;
       var dataid = '#data-expert'+e.target.id;
         $(id).remove();
         $(dataid).remove();
-        console.log('removed: '+id);
         addedex--;
+        $('#addedexperts').val( function(i, oldval) {
+        return parseInt( oldval, 10) - 1;
+        });  
   });
   
   // AUTOCOMPLETE EXPERTS
@@ -267,16 +310,16 @@ $( "#coordinator-project" ).autocomplete({
 
 
 //ADD REPORTERS
-  var k=0;
-  var addedre=0;
   $('#add-reporter').click(function(){
-    
+      var addedre=$('#addedreporters').val();
+      addedre++;
       var reporter = $('#reporter-project').val();
       var reporterID = $('#temp-reporter').val();
-      $('#reporter-list').append('<div style="height:3px;"></div><li class="list-group-item" id="reporterr'+k+'">'+reporter+'<span class="pull-right"><i class="icon-remove" id="r'+k+'"></i></span></li>');
-      $('#array-reporters').append('<input type="hidden" name="reporter'+k+'" id="data-reporterr'+k+'" value="'+reporterID+'"></input>');
-      addedre++;
-      k++;
+      $('#reporter-list').append('<div style="height:3px;"></div><li class="list-group-item" id="reporterr'+addedre+'">'+reporter+'<span class="pull-right"><i class="icon-remove" id="r'+addedre+'"></i></span></li>');
+      $('#array-reporters').append('<input type="hidden" name="reporter'+addedre+'" id="data-reporterr'+addedre+'" value="'+reporterID+'"></input>');
+      $('#addedreporters').val( function(i, oldval) {
+        return parseInt( oldval, 10) + 1;
+      });  
       $('#add-reporter').attr('disabled', true);
       $('#reporter-project').val('');
   });
@@ -284,12 +327,16 @@ $( "#coordinator-project" ).autocomplete({
 
   
   $('#reporter-list').click(function(e) {
+      var addedre=$('#addedreporters').val();
+      console.log(e.target.id);
       var id = '#reporter'+e.target.id;
       var dataid = '#data-reporter'+e.target.id;
         $(id).remove();
         $(dataid).remove();
-        console.log('removed: '+id);
         addedre--;
+        $('#addedreporters').val( function(i, oldval) {
+        return parseInt( oldval, 10) - 1;
+        }); 
   });
   
   // AUTOCOMPLETE REPORTERS

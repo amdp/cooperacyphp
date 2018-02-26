@@ -123,4 +123,123 @@ class ProjectFunctions
       return $iscoordinator;
 
     }
+
+    // getLocations($id)
+    // USE: return array with project locations (Continent, State, City)
+    // Parameters: $id = project id
+    public static function getLocations ($id) {
+      $location = DB::table('coo_project')->where('id_project', $id)->value('location_project');
+      $locationcity = array();
+      $locationstate = array();
+      $locationcontinent = array();
+      $places = array();
+      //IS A City?
+      if ($location >=260) {
+        $cityloc = DB::table('coo_project')->where('id_project', $location)->first();
+        $cities = DB::table('coo_project')->where('parent_project',$cityloc->parent_project)->get();
+        foreach ($cities as $city) {
+          if ($city->id_project == $location) {
+            $selected = 'yes';
+          } else {
+            $selected = 'no';
+          }
+          $locationcity[] = [
+            'name'      => $city->title_project,
+            'id'        => $city->id_project,
+            'selected'  => $selected,
+          ];
+        }
+
+        $stateloc = DB::table('coo_project')->where('id_project', $cityloc->parent_project)->first();
+        $states = DB::table('coo_project')->where('parent_project', $stateloc->parent_project)->get();
+        foreach ($states as $state) {
+          if ($state->id_project == $stateloc->id_project) {
+            $selected = 'yes';
+          } else {
+            $selected = 'no';
+          }
+          $locationstate[] = [
+            'name'      => $state->title_project,
+            'id'        => $state->id_project,
+            'selected'  => $selected,
+          ];
+        }
+
+        $continentloc = DB::table('coo_project')->where('id_project', $stateloc->parent_project)->first();
+        $continents = DB::table('coo_project')->where('parent_project', $continentloc->parent_project)->get();
+        foreach ($continents as $continent) {
+          if ($continent->id_project == $continentloc->id_project) {
+            $selected = 'yes';
+          } else {
+            $selected = 'no';
+          }
+          $locationcontinent[] = [
+            'name'      => $continent->title_project,
+            'id'        => $continent->id_project,
+            'selected'  => $selected,
+          ];
+        }
+      }
+
+      //IS A State?
+      if ($location >=10 && $location<260) {
+        $stateloc = DB::table('coo_project')->where('id_project', $location)->first();
+        $states = DB::table('coo_project')->where('parent_project', $stateloc->parent_project)->get();
+        foreach ($states as $state) {
+          if ($state->id_project == $stateloc->id_project) {
+            $selected = 'yes';
+          } else {
+            $selected = 'no';
+          }
+          $locationstate[] = [
+            'name'      => $state->title_project,
+            'id'        => $state->id_project,
+            'selected'  => $selected,
+          ];
+        }
+
+        $continentloc = DB::table('coo_project')->where('id_project', $stateloc->parent_project)->first();
+        $continents = DB::table('coo_project')->where('parent_project', $continentloc->parent_project)->get();
+        foreach ($continents as $continent) {
+          if ($continent->id_project == $continentloc->id_project) {
+            $selected = 'yes';
+          } else {
+            $selected = 'no';
+          }
+          $locationcontinent[] = [
+            'name'      => $continent->title_project,
+            'id'        => $continent->id_project,
+            'selected'  => $selected,
+          ];
+        }
+      }
+
+      //IS A Continent?
+      if ($location >=2 && $location <=9 ) {
+        $continentloc = DB::table('coo_project')->where('id_project', $location)->first();
+        $continents = DB::table('coo_project')->where('parent_project', $continentloc->parent_project)->get();
+        foreach ($continents as $continent) {
+          if ($continent->id_project == $continentloc->id_project) {
+            $selected = 'yes';
+          } else {
+            $selected = 'no';
+          }
+          $locationcontinent[] = [
+            'name'      => $continent->title_project,
+            'id'        => $continent->id_project,
+            'selected'  => $selected,
+          ];
+        }
+      }
+
+      $places = [
+        'city'        => $locationcity,
+        'state'       => $locationstate,
+        'continent'   => $locationcontinent,
+      ];
+
+
+      return $places;
+
+    }
 }

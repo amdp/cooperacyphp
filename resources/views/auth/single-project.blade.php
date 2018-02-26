@@ -3,7 +3,18 @@
 @section('content')
 <!--BEGIN CONTAINER-->
 <div class="container"><br>
-
+<!--FLASH MESSAGE-->
+@if(session('data'))
+<div class="row">
+  <div class="col-sm-12">
+    <div class="alert alert-success alert-dismissable fade in">
+        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+        {{session('data')}}
+    </div>
+  </div> 
+</div>
+@endif
+<!--END FLASH MESSAGE-->
   <!--BEGIN HEADER ROW-->
   <div class="row">
     <div class="col-lg-12 col-xs-12">
@@ -11,7 +22,7 @@
         <p class="heading center equivalence up">
           {{$project->title_project}} - {{$category->category_name}} Project 
           @if($iscoordinator)
-           <small><a href="#">Edit</a></small>
+           <span style="float:right"><small><a href="{{asset('edit-project')}}/{{$project->id_project}}">Edit</a></small></span>
           @endif
         </p><br>
         @if($parent_project)

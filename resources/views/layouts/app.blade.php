@@ -29,7 +29,7 @@
     @if(Route::currentRouteName() == 'newsadmin' || Route::currentRouteName() == 'updatenews')
       <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/css/bootstrap-datepicker.min.css">
     @endif
-    @if(Route::currentRouteName() == 'new-project')
+    @if(Route::currentRouteName() == 'new-project' || Route::currentRouteName() == 'edit-project')
       <link href="/css/jquery-ui.min.css" rel="stylesheet">
       <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
     @endif
@@ -88,6 +88,11 @@
   @if(Route::currentRouteName() == 'new-project')
    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
    <script type="text/javascript" src="js/new-project.js"></script>
+  @endif
+
+  @if(Route::currentRouteName() == 'edit-project')
+   <script type="text/javascript" src="{{asset('js/jquery-ui.min.js')}}"></script>
+   <script type="text/javascript" src="{{asset('js/edit-project.js')}}"></script>
   @endif
 
   @if(Route::currentRouteName() == 'register')

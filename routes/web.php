@@ -140,6 +140,16 @@ Route::get('/view-project/{id}/', [   'middleware' => ['auth', 'member'],
   'as' => 'view-project',
   'uses' => 'ProjectController@single']);
 
+Route::get('/edit-project/{id}/', [
+  'middleware' => ['auth', 'member'],
+  'as' => 'edit-project',
+  'uses' => 'ProjectController@edit']);
+
+Route::post('/edit-project', [
+  'middleware' => ['auth', 'member'],
+  'as' => 'edit-project',
+  'uses' => 'ProjectController@updateproject']);
+
 /*********COMMENT ROUTES***********/
 Route::post('/new-comment', [   'middleware' => ['auth', 'member'],
   'as' => 'new-comment',
@@ -165,6 +175,11 @@ Route::get('/get-states/{continent}', [   'middleware' => ['auth'],
 Route::get('/get-cities/{state}', [   'middleware' => ['auth'],
   'as' => 'get-cities',
   'uses' => 'ProjectController@getCities']);
+
+Route::get('/get-continents', [
+  'middleware' => ['auth'],
+  'as' => 'get-continents',
+  'uses' => 'ProjectController@getContinents']);
 
 Route::get('/get-person/', [   'middleware' => ['auth'],
   'as' => 'get-person',
