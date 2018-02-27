@@ -23,7 +23,7 @@
   <div class="col-md-8">
 
   <br><p class="subheading equivalence center space margin">ACTING TOGETHER, WITH MUTUAL ENJOYMENT</p>
-  <p class="base">What is Cooperation? You may find different definitions, like pursuing the same goal, helping each other or following rules and requests by others. Feel free to believe in the one that resonate with you most. We compared many of them and the one we chose was based on the idea that cooperation is an action and a feeling of mutual enjoyment: "Cooperation is acting together neutrally with mutual enjoyment."<br><br>
+  <p class="base">What is Cooperation? You may find different definitions, like pursuing the same goal, helping each other or following rules and requests by others. Feel free to believe in the one that resonate with you most. In our studies, cooperation seems to be a common origin from where different goals are met. It seems a paradox, but cooperation is more bound to an origin than to a goal. We compared many definitions and the one we chose was based on the idea that cooperation happens, it is something between an action and a feeling: "Cooperation is acting together neutrally with mutual enjoyment."<br><br>
 
   Cooperation is not linear and simple as it seems. It needs special contexts: social ecosystems in which, according to our scientific model, seven conditions are met.
   </p>

@@ -20,27 +20,23 @@
   <div class="col-md-2"></div>
   <!--END LEFT COL-->
 
+    <!-- journey anytime you will feel lost you can summon a mentor to guide you -->
+
   <!--BEGIN CONTENT-->
-  <div class="col-md-8"><br><br>
+  <div class="col-md-8"><br>
+  <p class="base">Cooperacy is a scientific project that through research, applications and narratives supports the social and the natural ecosystems with the energy of cooperation.<br><br>
 
-<!-- journey anytime you will feel lost you can summon a mentor to guide you -->
+  In the specific, the <a class="auh" href="/platform">Cooperacy Platform</a> is a worldwide scale experiment willing to create a social ecosystem based on distribution of wealth, activities and <a class="auh" href="/platform">governance</a>. The many participants collect just one euro per month for their own projects and trigger a redistributive and co-owned-crowdfunding process able to generate an alternative economic ecosystem. We are setting up the platform thanks to the current members effort. Feel free to learn <a class="auh" href="/platform">more</a> and <a class="auh" href=“/login”>help</a> us out.<br><br>
 
-  <p class="base transparency">Imagine our society as a worldwide cooperative ecosystem.</p>
+  <a class="auh" href="/overview">Cooperacy Overview</a> is an evaluation of the cooperation ecosystem conditions amongst larger organizations in order to understand their complexity, maintain their balance and promote their resilient growth through focused interventions. The major output of Cooperacy Overview is the <a class="auh" href=“/cci”>Cooperation Context Index</a>, which shows the possibility of cooperation in most of the countries in the world.<br><br>
 
-  <p class="base">We want to spread cooperation and ecosystemic thinking in human communities through scientific research, narratives and applications.<br><br>
+  <a class="auh" href="/openecosystem">Cooperacy Experience</a> is the live application of the model made for groups, companies and institutions. The participants can enjoy a natural organization able to generate collaboration, innovation and problem solving. Experiencing cooperation in a live event makes it easy to understand its value on a larger scale.<br><br>
 
-  To make this true, we founded Cooperacy, a scientific project extending through different application scales.<br><br>
+  <a class="auh" href="/research">Cooperacy Research</a> is instead the main core level, investigating a social ecosystem model based on cooperation science, and aiming to spread cooperation and ecosystemic awareness also through education.<br><br>
 
-  <a class="auh" href="/research">Cooperacy Research</a> is the core level, investigating a social ecosystem model based on cooperation science.<br><br>
+  <p class="base">If you consider our society as an ecosystem, cooperation is what makes this ecosystem alive. Thinking in terms of ecosystem gives you the ability to connect the different parts of our society and of our natural world together, like a whole living organism. Being part of Cooperacy means supporting that organism with the enjoyment of cooperation.</p>
 
-  <a class="auh" href="/openecosystem">Cooperacy Experience</a> is the live application of the model made for groups, companies and institutions. The participants can enjoy a natural organization able to generate collaboration, innovation and problem solving.<br><br>
-
-  <a class="auh" href="/overview">Cooperacy Overview</a> evaluates the cooperative ecosystem conditions amongst larger organizations in order to understand their complexity, maintain their balance and promote their resilient growth through focused interventions.<br><br>
-
-  <a class="auh" href="/platform">Cooperacy Platform</a> is a worldwide scale experiment willing to create a social ecosystem based on distribution of wealth, activities and governance that frees its participants from inducted needs and generates mutual enjoyment for everyone.<br><br>
-
-  Everyone is invited to join the Cooperacy project, it takes only one euro per month to enjoy our <a class="aue" href="/register" >world</a>!
-  </p>
+  Everyone is invited to join <a class="aue" href="/register >Cooperacy</a> and enjoy doing things <a class="aue" href="/participate”>together</a>. The single euro per month membership fee remains in the common Cooperacy Platform collection fund for you to experiment our inner social ecosystem and have access to our live webinars.</p>
 
 
 <br><br>
