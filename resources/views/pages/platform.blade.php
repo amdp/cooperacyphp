@@ -22,27 +22,25 @@
   <!--BEGIN CONTENT-->
   <div class="col-md-8">
 
-  <p class="subheading transparency margin">What if you could change the world with just one euro per month..</p>
-
   <p class="subheading transparency center space margin">IMAGINE</p>
-  <p class="base">Imagine the effect of one million people bringing together a little economic effort: one euro. Imagine one million euros every month to support the ideas of these people. Imagine an innovative economy that is possible exclusively according to the number of people participating.<br>
-  Would you like to help this to happen?</p>
+  <p class="base">Imagine the effect of one million people bringing together a little economic effort: one euro. Imagine you and all the other people to reciprocally collect one million euros every month to support your ideas. With this collective fund you will generate an innovative economy that will realise more ideas the more people will participate.<br>
+  Would you like to <a class="aue" href="/register">join</a>?</p>
 
-  <p class="subheading transparency center space margin">CO-OWNING A PLATFORM</p>
-  <p class="base">The Cooperacy Platform won't just realise the most wanted ideas proposed by the participants, but also create a social ecosystem based on co-ownership and redistribution of wealth.</p>
+  <p class="subheading transparency center space">CO-OWNING A PLATFORM</p>
+  <p class="base">The Cooperacy Platform won't just realise the most desired ideas proposed by the participants, but also create a social ecosystem based on co-ownership and redistribution of wealth.</p>
 
-  <span class="subheading equivalence">VOTING IDEAS</span>
-  <p class="base">First of all, we thought about a mechanism that would allow to distribute resources to ideas, according to how much the same ideas are desired by the participants, with their will expressed through votes: in facts, the common collected money goes proportionally to the ideas according to the votes received. Keeping it simple: people propose <i>ideas</i>, <i>votes</i> support them.</p>
+  <p class="subheading center space transparency">VOTING IDEAS</p>
+  <p class="base">We thought about a mechanism that would allow to distribute the common resources to the ideas according to how much the same ideas are desired by the participants. Expressing their desire through votes, the common collected money goes proportionally to the ideas according to the votes received. Keeping it simple: people propose <i>ideas</i>, <i>votes</i> allocate their funding.</p>
 
-  <span class="subheading equivalence">REDISTRIBUTING PROFITS</span>
-  <p class="base">When an idea is funded and produces wealth, its profits go back to the platform collected money, in order to fund other ideas and to create a virtuous circle that generates resources for more ideas.</p>
+  <p class="subheading center space transparency">REDISTRIBUTING PROFITS</p>
+  <p class="base">Every idea is co-owned, so when it produces wealth, its profits go back to the platform collected money, in order to fund other ideas and to create a virtuous circle that slowly generates resources for everyone.</p>
 
-  <span class="subheading equivalence">BECOMING A LEARNING ECOSYSTEM</span>
+  <p class="subheading center space equivalence margin">A COOPERATION LEARNING ECOSYSTEM</p>
   <p class="base">An artificial intelligence will learn from all the data coming from the platform and suggest, in the long run, best practices in order to help the people to realise their ideas. We thought about this as an "ecosystemic deep learning". Moreover, the participants can communicate their happiness, so that the "learning ecosystem"  will base its suggestions also on the most human, irrational and personal information of all: mood.</p>
 
 
 
-  <p class="base"><i>For more technical information see the platform <a class="auu" href="/howitworks">white paper<a>.</i></p>
+  <p class="base"><i>For more technical information about the platform, see its <a class="auu" href="/howitworks">white paper<a>.</i></p>
 
   </div>
   <!--END CONTENT-->

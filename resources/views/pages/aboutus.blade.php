@@ -26,9 +26,9 @@
   <div class="col-md-8"><br>
   <p class="base">Cooperacy is a scientific project that through research, applications and narratives supports the social and the natural ecosystems with the energy of cooperation.<br><br>
 
-  In the specific, the <a class="auh" href="/platform">Cooperacy Platform</a> is a worldwide scale experiment willing to create a social ecosystem based on distribution of wealth, activities and <a class="auh" href="/platform">governance</a>. The many participants collect just one euro per month for their own projects and trigger a redistributive and co-owned-crowdfunding process able to generate an alternative economic ecosystem. We are setting up the platform thanks to the current members effort. Feel free to learn <a class="auh" href="/platform">more</a> and <a class="auh" href=“/login”>help</a> us out.<br><br>
+  In the specific, the <a class="auh" href="/platform">Cooperacy Platform</a> is a worldwide scale experiment willing to create a social ecosystem based on distribution of wealth, activities and <a class="auh" href="/platform">governance</a>. The many participants collect just one euro per month for their own projects and trigger a redistributive and co-owned-crowdfunding process able to generate an alternative economic ecosystem. We are setting up the platform thanks to the current members effort. Feel free to learn <a class="auh" href="/platform">more</a> and <a class="auh" href="/login">help</a> us out.<br><br>
 
-  <a class="auh" href="/overview">Cooperacy Overview</a> is an evaluation of the cooperation ecosystem conditions amongst larger organizations in order to understand their complexity, maintain their balance and promote their resilient growth through focused interventions. The major output of Cooperacy Overview is the <a class="auh" href=“/cci”>Cooperation Context Index</a>, which shows the possibility of cooperation in most of the countries in the world.<br><br>
+  <a class="auh" href="/overview">Cooperacy Overview</a> is an evaluation of the cooperation ecosystem conditions amongst larger organizations in order to understand their complexity, maintain their balance and promote their resilient growth through focused interventions. The major output of Cooperacy Overview is the <a class="auh" href="/cci">Cooperation Context Index</a>, which shows the possibility of cooperation in most of the countries in the world.<br><br>
 
   <a class="auh" href="/openecosystem">Cooperacy Experience</a> is the live application of the model made for groups, companies and institutions. The participants can enjoy a natural organization able to generate collaboration, innovation and problem solving. Experiencing cooperation in a live event makes it easy to understand its value on a larger scale.<br><br>
 
@@ -36,12 +36,9 @@
 
   <p class="base">If you consider our society as an ecosystem, cooperation is what makes this ecosystem alive. Thinking in terms of ecosystem gives you the ability to connect the different parts of our society and of our natural world together, like a whole living organism. Being part of Cooperacy means supporting that organism with the enjoyment of cooperation.</p>
 
-  Everyone is invited to join <a class="aue" href="/register >Cooperacy</a> and enjoy doing things <a class="aue" href="/participate”>together</a>. The single euro per month membership fee remains in the common Cooperacy Platform collection fund for you to experiment our inner social ecosystem and have access to our live webinars.</p>
+  Everyone is invited to join <a class="aue" href="/register" >Cooperacy</a> and enjoy doing things <a class="aue" href="/participate">together</a>. The single euro per month membership fee remains in the common Cooperacy Platform collection fund for you to experiment our inner social ecosystem and have access to our live webinars.</p><br><br>
 
-
-<br><br>
-
-    </div>
+  </div>
   <!--END CONTENT-->
 
   <!--BEGIN RIGHT COL-->
