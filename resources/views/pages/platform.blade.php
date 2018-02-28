@@ -38,7 +38,7 @@
   <p class="subheading center space equivalence margin">A COOPERATION LEARNING ECOSYSTEM</p>
   <p class="base">An artificial intelligence will learn from all the data coming from the platform and suggest, in the long run, best practices in order to help the people to realise their ideas. Moreover, the participants can communicate their happiness, so that the "deep learning ecosystem" will base its suggestions not only on data, but also on the most human, irrational and personal information of all: mood.</p>
 
-  <p class="base"><i>For more technical information about the platform, see its <a class="auu" href="/howitworks">white paper<a>.</i></p>
+  <p class="base"><i>For more technical information about the platform, see its <a class="auu" href="/howitworks">white paper</a>.</i></p>
 
   <p class="base">We would be very happy to see you on board. One euro per month is really a small effort to see how much can be done when we join our forces. Enter the <a class="aue" href="/register">Cooperacy</a> world. Let's do it together!</p>
 
