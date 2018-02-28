@@ -127,7 +127,7 @@
   <div class="col-md-8"><!--BEGIN CONTENT-->
       <p class="subheading space" style="text-align:center"><br></p>
 
-      <p class="base center">Cooperacy is a scientific project that fosters cooperation in social ecosystems</p><br><br>
+      <p class="base center">Cooperacy is a scientific project fostering cooperation in social ecosystems</p><br><br>
 
       <div class="row">
         <div class="col-lg-4 col-xs-12 subheading center"><a href="/aboutus" class="noline transparency space">DISCOVER</a></div>
