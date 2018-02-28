@@ -36,7 +36,7 @@
 
   <p class="base">If you consider our society as an ecosystem, cooperation is what makes this ecosystem alive. Thinking in terms of ecosystems gives you the ability to connect the different parts of our society and of our natural world together, like a whole living organism. Being part of Cooperacy means supporting this organism with the enjoyment of cooperation.</p>
 
-  <p class="base">The single euro per month membership fee goes in the common Cooperacy Platform collected money for you to experiment or support the cooperation-based social ecosystem and have access to our live webinars. If you believe in cooperation, join our group and start participating!</p><br><br>
+  <p class="base">The single euro per month membership fee goes in the common Cooperacy Platform collected money for you to experiment or support the cooperation-based social ecosystem and have access to our live webinars. If you believe in cooperation, join our group and start <a class="aue" href="/participate">participating</a> now!</p><br><br>
 
   </div>
   <!--END CONTENT-->
