@@ -21,8 +21,7 @@
 
   <!--BEGIN CONTENT-->
   <div class="col-md-8">
-
-  <p class="subheading transparency center space margin">IMAGINE</p>
+  <p class="subheading transparency center space">IMAGINE</p>
   <p class="base">Imagine the effect of one million people bringing together a little economic effort: one euro. Imagine you and all the other people to reciprocally collect one million euros every month to support your ideas. With this collective fund you will generate an innovative economy in which the more people will participate the more the same people's ideas will be realized.<br>
   Would you like to <a class="aue" href="/register">join</a>?</p>
 
@@ -40,7 +39,7 @@
 
   <p class="base"><i>For more technical information about the platform, see its <a class="auu" href="/howitworks">white paper</a>.</i></p>
 
-  <p class="base">We would be very happy to see you on board. One euro per month is really a small effort to see how much can be done when we join our forces. Enter the <a class="aue" href="/register">Cooperacy</a> world. Let's do it together!</p>
+  <p class="base">We would be very happy to see you on board. One euro per month is really a small effort to see how much can be done when we join our forces. Enter the <a class="aue" href="/register">Cooperacy</a> world.. let's do it together!</p>
 
   </div>
   <!--END CONTENT-->
