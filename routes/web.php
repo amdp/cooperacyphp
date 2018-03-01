@@ -24,7 +24,7 @@ Route::get('/project-articles', ['as' => 'project-articles','uses' => function (
 Route::get('/research-streams', ['as' => 'research-streams','uses' => function () {return view('pages.research-streams');}]);
 Route::get('/network', ['as' => 'network','uses' => function () {return view('pages.network');}]);
 Route::get('/cooperation', function () {return view('pages.cooperation');});
-Route::get('/proportions', function () {return view('pages.proportions');});
+Route::get('/integration', function () {return view('pages.integration');});
 Route::get('/solutions', function () {return view('pages.solutions');});
 Route::get('/contact', function () {return view('pages.contact');});
 Route::get('/aboutus', function () {return view('pages.aboutus');});

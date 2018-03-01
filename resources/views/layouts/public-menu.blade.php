@@ -24,7 +24,7 @@
     <a href="{{URL::to('/cooperation')}}" class="menu-item">COOPERATION</a>
   </li>
   <li>
-  <a href="{{URL::to('/proportions')}}" class="menu-item">PROPORTIONS</a>
+  <a href="{{URL::to('/proportions')}}" class="menu-item">INTEGRATION</a>
   </li>
   <li>
   <a href="{{URL::to('/solutions')}}" class="menu-item">SOLUTIONS</a>

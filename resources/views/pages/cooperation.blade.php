@@ -107,7 +107,7 @@
   <p class="base">Equivalence is not a mere accounting of things. You may enjoy food, a new car, but also a good friendship. An equivalence of real benefits is found when anybody gets equivalent goods, services or valuables as the other participants. An equivalence of relational benefits, instead, happens when you are as averagely happy as the other participants are. The first one is good, it is usually called a win-win, but it is not enough. Cooperation is not a mere goods and services exchange, but a pleasant relational exchange too.
   Cooperation emerges -and it found as evident- when in a social ecosystem there are good benefits and good relations for everyone.<br><br><br></p>
 
-  <p class="base">To support your social context to become a social ecosystem, learn about the <a class="aue" href="/proportions">proportional creative integration</a> and the different <a class="aue" href="/solutions">solutions</a> that can resolve eventual contextual contrasts.</p>
+  <p class="base">To support your social context to become a social ecosystem, learn about the <a class="aue" href="/integration">proportional creative integration</a> and the different <a class="aue" href="/solutions">solutions</a> that can resolve eventual contextual contrasts.</p>
 
   </div>
   <!--END CONTENT-->

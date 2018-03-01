@@ -24,7 +24,9 @@
   <div class="col-md-8"><br><br>
 
     <p class="subheading freedom center">OPENING THE ECOSYSTEM SPACE</p>
-    <p class="base">The Open Ecosystem is used by Cooperacy for enabling system thinking and complex approach in meetings. It merges Cooperation Science, Open Space Technology and the Journey Narratives. It is based on three phases.</p><br>
+    <p class="base">The Open Ecosystem is used by Cooperacy for enabling system thinking and complex approach in meetings. It merges Cooperation Science, Open Space Technology and the Journey Narratives. It is based on three phases.</p><br><br>
+
+    <img src="https://cooperacy.org/images/news/5a8a063bccce6.jpg" alt="null" class="img-responsive"><br><br>
 
     <p class="subheading freedom center">I - THE GATHERING</p>
     <p class="base">In a participants circle, a facilitator asks people to listen to their feelings and to express any concerns to the context surrounding them. The facilitator also explains the Journey Narrative to the circle: the present situation is shown with all the limitations, the efforts done so far and the positive outcomes. The meeting continues with describing what would have happened in the future if the desires and dreams of the participants would come true. This leads to the ideas ecosystem.</p><br>
