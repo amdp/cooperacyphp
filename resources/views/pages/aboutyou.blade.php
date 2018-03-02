@@ -44,7 +44,7 @@ Another possibility, instead, is that you are concerned about wars and hunger an
 Or maybe, instead, you’ve just been looking for a way to make your <a class="aue" href="/participate">daily little effort</a> valuable to bring the changes you wish for.<br><br>
 
 All these are different beliefs, but together, they can create a wealthy and enjoyable social ecosystem. Your belief becomes even more crucial when seen together with the other ones.<br><br>
-<a class="auc" href="/register">Join</a> Cooperacy. Start your personal journey into a world of cooperation.</p><br>
+<a class="aue" href="/register">Join</a> Cooperacy. Start your personal journey into a World of Cooperation.</p><br>
 
   </p>
 

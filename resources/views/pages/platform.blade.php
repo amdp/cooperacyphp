@@ -38,7 +38,8 @@
 
   <p class="base"><i>For more technical information about the platform, see its <a class="auu" href="/howitworks">white paper</a>.</i></p>
 
-  <p class="base">We would be very happy to see you on board. One euro per month is really a small effort to see how much can be done when we join our forces. Enter the <a class="aue" href="/register">Cooperacy</a> world.. let's do it together!</p>
+  <p class="base">We would be very happy to see you on board. One euro per month is really a small effort to see how much can be done when we join our forces.<br><br>
+  Enter the <a class="aue" href="/register">Cooperacy</a> Platform.. let's start doing things together!</p>
 
   </div>
   <!--END CONTENT-->

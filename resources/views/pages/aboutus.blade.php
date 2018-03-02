@@ -122,32 +122,16 @@
     </div>
   </div>
 
-  <div class="row">
+  <!--<div class="row">
     <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 text-center">
       <img class="img-responsive" style="margin:0 auto;" src="{{asset('images/giovanna.png')}}" alt="null" /><br>
       <p>Giovanna Littardi<br><i>First Guitarist</i></p>
-    </div>
-
-        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 text-center">
-
-    </div>
-        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 text-center">
+    </div> -->
 
     </div>
   </div><br><br>
 
-
-
-
-    </div>
   <!--END CONTENT-->
-
-  <!--BEGIN RIGHT COL-->
-  <div class="col-md-2"></div>
-  <!--END RIGHT COL-->
-
-  </div>
-  <!--END ROW-->
 
   <!--BEGIN ROW-->
   <div class="row">
@@ -159,23 +143,20 @@
   <!--BEGIN CONTENT-->
   <div class="col-md-8"><br>
 
-  <p class="subheading transparency center space">APPROACH</p><br>
-  <p class="base">Explore our transparent world: the money flow is crystal clear, so it is our legal status, whoever helps us is registered in our contributions list, our research and organizational team is listed below.<br></p>
-
   <p class="subheading transparency center space">FINANCE</p><br>
   <p class="base">We like so much transparency that we want everyone to be able to know our bank account balance and inspect our paypal account. We have nothing to hide.<br>
-  <span class="transparency up">Bank account:</span> our IBAN is IT61D0623001623000043225634 - Filiale AG 23 Milano Cariparma di via della Moscova, and the current bank balance is around 250 euros &#8211; updated: Jan 2017<br />
+  <span class="transparency up">Bank account:</span> our IBAN is IT61D0623001623000043225634 - Filiale AG 23 Milano Cariparma di via della Moscova, and the current bank balance is around 150 euros &#8211; updated: Jan 2018<br />
   <span class="transparency up">Paypal:</span> you can access our account from the standard paypal login with COOPERATION + password cooperation2016</p><br>
 
   <p class="subheading transparency center space">LEGAL STUFF</p><br>
-  <p class="base">The Cooperacy Association was founded in Italy, Milan, the 21/07/2015. Its current address is Via della Moscova 39, 20121 Milano.</p><br>
+  <p class="base">The Cooperacy Association was founded in Italy, Milan, the day 21/07/2015. Its current address is Via della Moscova 39, 20121 Milano.</p><br>
 
   <p id="contributors" name="contributors" style="color: #22DDEE; font-size: 24px; font-weight: bold; margin-bottom: 10px;">
 
   <p class="subheading transparency center space">CONTRIBUTORS LIST AND PLANNING</p><br>
   <p class="base">You can see in our <a class="auh" href="https://goo.gl/OYcrOS">planning</a> the list of names as well as the relative monetary value of the activity (including expenses) done as if monetary wages would have been corresponded to the participants. We keep track about it as we would correspond those amounts if we will have the possibility.<br><br>
 
-  And if you don&#8217;t see something you&#8217;re curious of, please <a class="auh" href="/contact">ask</a> for more information to be shown in this page.</p><br>
+  We're still doing some more work to allow better transparency. If you don&#8217;t see something you&#8217;re curious of, please <a class="auh" href="/contact">ask</a> for more information to be shown in this page.</p><br>
 
   </div>
   <!--END CONTENT-->
