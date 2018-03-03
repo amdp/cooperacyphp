@@ -21,7 +21,7 @@ Route::get('/research', ['as' => 'research','uses' => function () {return view('
 Route::get('/cci', ['as' => 'cci','uses' => function () {return view('pages.cci');}]);
 Route::get('/science', ['as' => 'science','uses' => function () {return view('pages.science');}]);
 Route::get('/project-articles', ['as' => 'project-articles','uses' => function () {return view('pages.project-articles');}]);
-Route::get('/research-streams', ['as' => 'research-streams','uses' => function () {return view('pages.research-streams');}]);
+Route::get('/streams', ['as' => 'streams','uses' => function () {return view('pages.streams');}]);
 Route::get('/network', ['as' => 'network','uses' => function () {return view('pages.network');}]);
 Route::get('/cooperation', function () {return view('pages.cooperation');});
 Route::get('/integration', function () {return view('pages.integration');});

@@ -88,7 +88,7 @@
   <!--END ROW-->
 
 <!--BEGIN CONTAINER-->
-<div class="container">
+<div class="containerone">
 
   <!--BEGIN SPACER-->
   <div class="row"><p style="height:20px;"></p></div>
@@ -111,9 +111,9 @@
               It is based on the Cooperation Science framework and shows a non-performative map of the prevalent condition of cooperation over the seven others: equivalence, trust, care, transparency, freedom, understanding, diversity; and a level of the possibility to establish cooperation in each country analyzed. The results can be consulted in the interactive map, that shows 139 countries with 2017 CCI index data and 39 with the 2016 one. The impact of every condition of cooperation over the whole index is similar, with the exception of the diversity condition which is currently irrelevant, as it depends on the others. Usually high diversity becomes a plus when the CCI index is higher than one. Countries with a CCI value of more than two leverage over the diversity, while countries close to 0 and lower usually turn high diversity into conflicts.
               <br><br>
               <p class="subheading understanding center space margin">THE INDEXES</p>
-              The list of indexes spans through 2014-2016 data retrieved from online public sources: BTI-Project; EIU - Democracy Index; Ethnologue linguistic diversity by country; Freedom house; Global Corruption Barometer - Transparency International; Global Food Security Index; The World Bank; ipu.org; UNHCR; SE4ALL; OECD National Accounts data files; Internal Displacement Monitoring Centre; UN Inter-agency Group for Child Mortality Estimation; UN Office on Drugs and Crime's International Homicide Statistics database; UNESCO; UNICEF; WHO; JMP; FAO; U.N. Population Division; Eurostat; Human Trafficking Report; Infoplease refined by internal research; International Budget Partnership; International consortium of investigative journalists; Internet live stats; Pew Research Center RDI; Transparency International; Wikileaks; World Economic Forum; World Press Freedom Index. We will soon openly release the CCI data files.<br><br>
+              <p class="base">The list of indexes spans through 2014-2016 data retrieved from online public sources: BTI-Project; EIU - Democracy Index; Ethnologue linguistic diversity by country; Freedom house; Global Corruption Barometer - Transparency International; Global Food Security Index; The World Bank; ipu.org; UNHCR; SE4ALL; OECD National Accounts data files; Internal Displacement Monitoring Centre; UN Inter-agency Group for Child Mortality Estimation; UN Office on Drugs and Crime's International Homicide Statistics database; UNESCO; UNICEF; WHO; JMP; FAO; U.N. Population Division; Eurostat; Human Trafficking Report; Infoplease refined by internal research; International Budget Partnership; International consortium of investigative journalists; Internet live stats; Pew Research Center RDI; Transparency International; Wikileaks; World Economic Forum; World Press Freedom Index. We will soon openly release the CCI data files.</p><br><br>
               <p class="subheading understanding center space margin">THE MODEL</p>
-              The Cooperation Model developed by Cooperacy and the related CCI, based on rigourous scientific confrontation on the cooperation theory literature and different - still ongoing - research streams, has gathered so much interest in such a small amount of time that different european and international Universities and Institutions, organizations and even business events and courses are supporting, establishing a partnership or disseminating it.<br><br></p>
+              <p class="base">The Cooperation Model developed by Cooperacy and the related CCI, based on rigourous scientific confrontation on the cooperation theory literature and different - still ongoing - research streams, has gathered so much interest in such a small amount of time that different european and international Universities and Institutions, organizations and even business events and courses are supporting, establishing a partnership or disseminating it.</p><br><br>
   </div>
   <!--END CONTENT-->
 

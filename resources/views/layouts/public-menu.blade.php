@@ -87,7 +87,7 @@
     <a href="{{URL::to('/project-articles')}}" class="menu-item">PROJECT ARTICLES</a>
   </li>
   <li>
-    <a href="{{URL::to('/research-streams')}}" class="menu-item">RESEARCH STREAMS</a>
+    <a href="{{URL::to('/streams')}}" class="menu-item">RESEARCH STREAMS</a>
   </li>
   <li>
   <a href="{{URL::to('/network')}}" class="menu-item">NETWORK</a>

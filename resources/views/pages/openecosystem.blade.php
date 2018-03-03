@@ -34,6 +34,8 @@
     <p class="subheading freedom center">II - THE ECOSYSTEM</p>
     <p class="base">The people start going to the center of the circle in order to express their ideas or to share informations by topics. In case of a two-days event, an informative day comes before a final ideas day. The ideas or the informative topics are written on a common board with a time and a space in which they will be discussed. The group is "dissected" and "dies" according to a specific narrative, story or myth. Its parts form new groups and circles. Now and then an "exploration flow" is performed. Coordination and diffusion of knowledge are the transformation tools to solve the exposed limitations and problematics.</p><br>
 
+    <div class="center"><video width="480px" height="360px" controls="controls"><source src="https://youtube.com/watch?v=9YSy7bUw5EM" type="video/mp4" alt="null"></video></div>
+
     <p class="subheading freedom center">III - THE FINAL CIRCLE</p>
     <p class="base">New awareness is spread through the participants. The ideas proposed are listed and voted according to: costs and benefits; personal trust; emotional power; transparency; participants commitment; understandability; innovation and creative power of the idea. From the voting review a future agenda is made based on a common dictionary, a redistribution of workload and resources and a common roadmap.</p><br>
     <br>
