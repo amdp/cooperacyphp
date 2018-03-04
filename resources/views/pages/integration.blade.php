@@ -1,6 +1,6 @@
 @extends('layouts.lvapp')
 @section('title')
-    Proportions - Cooperacy
+    Integration - Cooperacy
 @stop
 @section('content')
 

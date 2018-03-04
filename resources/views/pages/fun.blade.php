@@ -23,12 +23,12 @@
   <!--BEGIN CONTENT-->
   <div class="col-md-8">
 
-  <br><p class="subheading diversity center space margin">HAVE FUN</p>
-  <p class="base">Fun and games make us feel together, especially if the gameplay is not competitive. Fun also includes the bright side of the artistic zest and the power of creative innovation. Art, fun, games and innovation represent the generative side of our lives. This page is dedicated to creativity and cooperation.</p>
+  <br><p class="subheading diversity center space margin">FUN</p>
+  <p class="base">Fun and games make us feel together, especially if the gameplay is not too competitive. Fun enhances the bright side of the artistic zest and the power of creative innovation. Art brings our <a class="aud" href="/cooperation#diversity">diversity</a> to become beauty. Art, fun, games and innovation represent the generative side of our lives. This page is dedicated to fun, creativity and cooperation.</p>
 
   <br><p class="subheading diversity center space margin">BUILD YOUR OWN PINWHEEL GALAXY</p>
   <p class="base">
-  Making a pinwheel is very nice and you can do this little do-it-yourself craft with your friends. The Pinwheel Galaxy is a spiral-shaped galaxy about 21 million light years away from Earth. The first Cooperacy logo was a colorful pinwheel and that idea still lives in the current circular rotating logo in the homepage. The Cooperacy members chose the pinwheel as the symbol of cooperation because whe the diversity of the colors spins, it becomes a white light. Celebrate cooperation blowing on a pinwheel made of stars! To build it, you can follow the instructions carefully put together by no less then <a class="auu" href="https://spaceplace.nasa.gov/pinwheel-galaxy/en/">NASA</a>.<br> After you made one, try and make a 7 petals, no-red, pinwheel like the Cooperacy original logo!</p>
+  Making a pinwheel is very nice and you can do this little do-it-yourself craft with your friends. The Pinwheel Galaxy is a spiral-shaped galaxy about 21 million light years away from Earth. The first Cooperacy logo was a colorful pinwheel and that idea still lives in the current rotating rainbow circle logo in the homepage. The Cooperacy members chose the pinwheel as the symbol of cooperation because whe the diversity of the colors spins, it becomes a common, intense, white light. Celebrate cooperation blowing on a pinwheel made of stars! To build it, you can follow the instructions carefully put together by <a class="auu" href="https://spaceplace.nasa.gov/pinwheel-galaxy/en/">NASA</a>.<br> After you made one, try and make a 7 petals pinwheel with no red, like the Cooperacy original logo!</p>
 
   <!--BEGIN WHEEL-->
   <div style="position: relative; text-align: center;">
@@ -40,7 +40,7 @@
 
   <br><p class="subheading diversity center space margin">COOPERATIVE MONOPOLY</p>
   <p class="base">Cooperative Monopoly is a game that can be played with a standard monopoly set to understand the economic system we live in nowadays. Following these simple steps, you may experience a transition from the standard competitive economy to a different one based on cooperation.<br /><br />
-  We recently discovered Monopoly was invented by <a class="aud" rc="https://en.wikipedia.org/wiki/Lizzie_Magie">Lizzy Magie</a>, a <a class="auu" src="https://en.wikipedia.org/wiki/Georgism">Georgist</a> and game designer from the US. The game was called "The Landlord Game" or "Prosperity". The two names depend on the fact the original game had two set of rules, one quite similar to the Monopoly ones, the other one based on the idea that every land was owned by a collective treasury that wouldn't exclude anyone from being eliminated from the game.<br /><br />
+  We recently discovered Monopoly was invented by <a class="aud" rc="https://en.wikipedia.org/wiki/Lizzie_Magie">Lizzy Magie</a>, a <a class="auu" src="https://en.wikipedia.org/wiki/Georgism">Georgist</a> and game designer from the US. The game was called "The Landlord Game" or "Prosperity". The two names depend on the fact the original game had two set of rules, one quite similar to the Monopoly ones (The Landlord), the other one based on the idea that every land was owned by a collective treasury that wouldn't exclude anyone from being eliminated from the game (Prosperity).<br /><br />
   We tested the "Prosperity" set of rules and unfortunately, although they are better than the competitive ones, they do not reach a full balanced game. We suggest you to try the cooperative monopoly narrative, and see what happens in your case:<br /></p>
   <p class="diversity center space"> NARRATIVE ONE</p>
   <p class="mini just">A quick way to experience a cooperative social ecosystem is to play the Monopoly game with this different mechanism:<br>

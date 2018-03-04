@@ -13,7 +13,7 @@
 <p style="padding-top:1vw"></p>
 <div id="coomain" name="coomain">
           <p id="contact" name="contact" class="transparency subheading center space">CONTACT US</p><br />
-            <p class="base">Contact us or feel free to ask us anything it's not clear yet.</p>
+            <p class="base">Contact us or feel free to ask us anything that is not clear yet.</p>
 
                         <div role="form" class="wpcf7" id="wpcf7-f1303-p20-o1" lang="en-US" dir="ltr">
 
