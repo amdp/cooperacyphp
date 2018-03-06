@@ -156,7 +156,8 @@
   <p class="subheading transparency center space">CONTRIBUTORS LIST AND PLANNING</p><br>
   <p class="base">You can see in our <a class="auh" href="https://goo.gl/OYcrOS">planning</a> the list of names as well as the relative monetary value of the activity (including expenses) done as if monetary wages would have been corresponded to the participants. We keep track about it as we would correspond those amounts if we will have the possibility.<br><br>
 
-  We're still doing some more work to allow better transparency. If you don&#8217;t see something you&#8217;re curious of, please <a class="auh" href="/contact">ask</a> for more information to be shown in this page.</p><br>
+  We're still doing some more work to allow better transparency. If you don't see something you're curious of, please <a class="auh" href="/contact">ask</a> for more information to be shown in this page.<br>
+  Moreover, if you want, have a look at what could be <a class="auc" href="/aboutyou">your</a> interest in Cooperacy.</p>
 
   </div>
   <!--END CONTENT-->

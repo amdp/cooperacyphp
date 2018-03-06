@@ -60,7 +60,10 @@
   <span class="diversity">7.</span> When the depressed dictator goes away, the <i>creativity</i> final phase can be started: the whole city is owned by the participants and is in common. The players are free to imagine a new city that works differently, every one of them may choose their area and color of concern, keeping in mind the city needs energy, water, food production, and the like. Every color may be dedicated to a need, a service or an activity. The city is free to imagine a new social ecosystem based on the beliefs and ideas of the players!<br>
   <br>
   These are two example narratives, but of course you can set your own and enjoy your city!
-  </p><br><br>
+  </p><br>
+
+  <br><p class="subheading diversity center space margin">COOPERATON AND FUN</p>
+  <p class="base">You may also imagine new gamifications based on a cooperation-based gameplay, or structured with an ecosystemic thinking approach. To learn more about the possibilities of integrating cooperation in your dynamics or your narratives, have a look at our <a class="auu" href="/cooperation">learning area.</a></p><br><br><br>
 
   </div>
   <!--END CONTENT-->
