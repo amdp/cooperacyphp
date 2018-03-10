@@ -75,7 +75,7 @@
 <a href="#" class="dropdown-toggle menu-item" data-toggle="dropdown" role="button" aria-expanded="false">SCIENCE</a>
 <ul class="dropdown-menu" role="menu">
   <li>
-    <a href="{{URL::to('/coscience')}}" class="menu-item">COOPERACY RESEARCH ASSOCIATION</a>
+    <a href="{{URL::to('/science')}}" class="menu-item">COOPERACY RESEARCH ASSOCIATION</a>
   </li>
     <li>
     <a href="{{URL::to('/coscience')}}" class="menu-item">COOPERATION SCIENCE</a>
