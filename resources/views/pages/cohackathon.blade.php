@@ -24,14 +24,15 @@
   <div class="col-md-8"><br><br>
 
     <p class="subheading freedom center">HACKING AND COHACKING</p>
-    <p class="base">The cooperative hackathon represents the next step of the classic hackathon. In the original version the participants compete either alone or in teams to win a prize in a given time. The participants are requested to show an innovative idea in beta phase for a client. The award is assigned by an external jury or directly by the client itself.</p><br>
+    <p class="base">The <a class="aue" href="/cooperation">cooperation</a>-based hackathon represents the next step of the classic hackathon. In the classic version the company or the organization invites several developers and designers to create an application based on the some specific briefing. The participants compete either alone or in teams to win a prize in a given time. They are requested to show an alpha demo of their innovative application. The award is assigned by an external jury or directly by the client itself.</p><br>
 
     <p class="subheading freedom center">HACKING THE HACKATHON</p>
-    <p class="base">In the Cohackathon the competitive side is used only in the selection of the best ideas. The realisation of the prototypes and the final presentation instead are developed by all the participants so that the award can be collectively achieved.</p><br>
+    <p class="base">In the Cohackathon the competitive side is used only in the selection of the best ideas. Being a transparent process, sometimes this can lead to an <a class="aud" href="/integration">integration</a> that makes more ideas to merge and become more powerful. The realisation of the prototypes and the final presentation are developed by all the participants so that the award can be collectively achieved.</p><br>
 
     <p class="subheading freedom center">THE PLEASURE OF HACKING TOGETHER</p>
-    <p class="base">The Cohackathon guarantees the same innovation output of the hackathon, with the advantage to focus all the available resources on the ideas development, generating a satisfactory feeling in all the attendants.</p><br>
-    <br>
+    <p class="base">The Cohackathon leverages on the full <a class="aud" href="/diversity">diversity</a> potential of the present participants. The same innovation output of the hackathon, if not even more, is achieved, with the advantage to focus all the available resources on the ideas development and realisation. Avoiding a single winner, moreover, generates a satisfactory feeling in all the attendants, which participate in the future dissemination of the ourput.<br><br>
+    When the company does not need an application solving its specific indications right away, a different, live, open meeting is possible: the <a class="auf" href="/openecosystem">Open Ecosystem</a>.
+    <br><br><br></p>
 
 </div></div></div>
 <!--END CONTAINER-->
