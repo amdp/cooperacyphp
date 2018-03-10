@@ -1,6 +1,6 @@
 @extends('layouts.lvapp')
 @section('title')
-    Cooperation Science - Cooperacy
+    Cooperacy Research - Cooperacy
 @stop
 @section('content')
 
@@ -9,7 +9,7 @@
 
   <!--BEGIN HEADER-->
   <div class="row">
-  <img class="page-header" src="{{asset('/images/cooperationscience.png')}}">
+  <img class="page-header" src="{{asset('/images/science.png')}}">
   </div>
 
   <!--END HEADER-->
@@ -23,12 +23,18 @@
 
   <!--BEGIN CONTENT-->
   <div class="col-md-8">
-  <p class="subheading understanding center space margin">COOPERATION SCIENCE FROM A INTERDISCIPLINARY APPROACH</p>
+  <p class="subheading understanding center space margin">COOPERACY RESEARCH ASSOCIATION</p>
               <p class="base">
-              Humans live in a reality that is observed by the physics perspective and subsequent complex system approach. Being humans life forms, they are observed also by biology through genetic and natural selection dynamics. Furthermore, human consciousness allow self-observation with specific behavioral sciences, psychology, sociology, anthropology and etology. Human cooperation may show similarities with that of other animals, even if some eusocial behaviors may show important differences, like those found in the primatology field. As part of current society, they interact at a social level with economic and governance aspects that are also part of scientific investigations and simplified models like those of the game theory and agent-based modeling. Human languages semantics may contain hints of their communication processes, and be a prelude to the findings about cooperation at a philosophical level. Neuroscience may explain cooperation as an emergent complex phenomenon coming out from the interaction of basic rewards seeking. From the neuroscience of rewards, necessary to human survival, we can go back to evolutionary biological behaviors and to physics- and statistical mechanics-related elimination of local entropy.<br>
-              Thus, when observing the human interaction called cooperation we start from a system approach that is investigated also with the help of all the above mentioned disciplines.<br><br>
-              <p class="base">
-              The Cooperation Science model proposed compares the results of these different disciplines. We are about to release the first edition of this investigation, that specifically combines a general framework with the mentioned semantic, evolutionary biology, game theory, and neuroscience based approaches. We would also like to provide a subsequent economic model for a social system based on cooperation science.
+              Cooperacy Research Association represents the scientific branch of Cooperacy, founded as an independent research group on the 23rd September 2014.<br><br>
+
+              The research investigation questions what is <a class="ae" href="/cooperation">Cooperation</a> and what are its conditions, in order to <a class="au" href="/cooperation#understanding">understand</a> how to <a class="ac" href="/cooperation#care">coordinate</a> human <a class="ad" href="/cooperation#diversity">diversity</a> towards mutual enjoyment and better ecosystemic awareness.<br>
+
+              During 2014, a group of 7 independent researchers investigated from different disciplines and perspectives the model of Cooperation Science developed by Alessandro Merletti De Palo based on an extensive literature review about Cooperation and its many different frameworks.<br><br>
+              The model, based on interdisciplinary systemic approach, was confirmed by the investigations results, and the subsequent paper was accepted at the M.I.T. 2015 <a class="au" href="http://cci.mit.edu/">Collective Intelligence</a> Conference in Santa Clara, organized by the <a class="au" href="https://lsa.umich.edu/cscs">University of Michigan - Ann Arbour</a>.<br><br>
+              Since 2015 the Cooperacy group became the Cooperacy Research Association legal entity with the official registration in Milan together with the co-founder Ilario Tito.<br><br>
+              <p class="base">The Cooperation Science framework has been presented in 2015 at the <a class="au" href="http://2015.ouisharefest.com/">OuiShareFest</a>, the leading worldwide event about the emerging phenomenon of the Sharing Economy, held in Paris. Afterwards our approach has been refined with semantic clusters and shown during the <a class="au" href="https://www.iasc-commons.org/">IASC</a> <a class="au" href="http://urbancommons.labgov.it/">conference</a> in Bologna organized by LabGov.<br>
+              In 2016 Cooperacy has been invited in the first International Conference on Positive Peace held by the Institute for Economics and Peace at Stanford and presented the model at the <a class="au" href="http://summit.g0v.tw/2016/">g0v Conference</a> in Taipei as well as in Germany, Hamburg, at the official <a class="au" href="http://www.openproduction.info/">Conference for Coproduction systems</a>. Our preliminary <a class="au" href="/cci">Cooperation Context Index</a> together with Facebook Group Cooperation analysis were presented at the <a class="au" href="https://sites.google.com/a/stern.nyu.edu/collective-intelligence-conference/">2016 Collective Intelligence Conference</a> at the <a class="au" href="http://www.stern.nyu.edu/">New York Stern School of Business</a>.<br>
+              In June 2017 the Cooperation Context Index got accepted in Macau at the <a class="au" href="http://www.must.edu.mo/en/msb/meeting/pls2017">PLS-SEM</a> International Conference where the updated index was disclosed. In September 2017 Cooperacy has been invited to hold two workshops at the <a class="au" href="http://techfestival.co/">Techfestival</a> week in Copenhagen and to be part of the <a class="au" href="http://techfestival.co/cph150/">cph150</a>, a progressive 2-day think tank on the relationship between technologies and humans who produced the <a class="au" href="https://copenhagenletter.org/">Copenhagen Letter</a>.<br>
               </p>
   </div>
   <!--END CONTENT-->

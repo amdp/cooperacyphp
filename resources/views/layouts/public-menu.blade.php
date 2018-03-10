@@ -75,10 +75,10 @@
 <a href="#" class="dropdown-toggle menu-item" data-toggle="dropdown" role="button" aria-expanded="false">SCIENCE</a>
 <ul class="dropdown-menu" role="menu">
   <li>
-    <a href="{{URL::to('/research')}}" class="menu-item">COOPERACY RESEARCH ASSOCIATION</a>
+    <a href="{{URL::to('/coscience')}}" class="menu-item">COOPERACY RESEARCH ASSOCIATION</a>
   </li>
     <li>
-    <a href="{{URL::to('/science')}}" class="menu-item">COOPERATION SCIENCE</a>
+    <a href="{{URL::to('/coscience')}}" class="menu-item">COOPERATION SCIENCE</a>
   </li>
   <li>
     <a href="{{URL::to('/cci')}}" class="menu-item">COOPERATION CONTEXT INDEX</a>

@@ -17,37 +17,36 @@
 
 Route::get('/', ['as' => 'main', 'uses' => function () { return view('pages.home'); }]);
 Route::get('/terms', ['as' => 'terms','uses' => function () {return view('pages.terms');}]);
-Route::get('/research', ['as' => 'research','uses' => function () {return view('pages.research');}]);
-Route::get('/cci', ['as' => 'cci','uses' => function () {return view('pages.cci');}]);
-Route::get('/science', ['as' => 'science','uses' => function () {return view('pages.science');}]);
-Route::get('/project-articles', ['as' => 'project-articles','uses' => function () {return view('pages.project-articles');}]);
-Route::get('/streams', ['as' => 'streams','uses' => function () {return view('pages.streams');}]);
-Route::get('/network', ['as' => 'network','uses' => function () {return view('pages.network');}]);
+Route::get('/contact', function () {return view('pages.contact');});
+
+Route::get('/aboutyou', function () {return view('pages.aboutyou');});
+Route::get('/aboutus', function () {return view('pages.aboutus');});
+Route::get('/platform', function () {return view('pages.platform');});
+Route::get('/howitworks', function () {return view('pages.howitworks');});
+Route::get('/news', [   'as' => 'news',  'uses' => 'NewsController@index']);
+
 Route::get('/cooperation', function () {return view('pages.cooperation');});
 Route::get('/integration', function () {return view('pages.integration');});
 Route::get('/solutions', function () {return view('pages.solutions');});
-Route::get('/contact', function () {return view('pages.contact');});
-Route::get('/aboutus', function () {return view('pages.aboutus');});
-Route::get('/howitworks', function () {return view('pages.howitworks');});
-Route::get('/economy', function () {return view('pages.economy');});
 Route::get('/governance', function () {return view('pages.governance');});
-Route::get('/aboutyou', function () {return view('pages.aboutyou');});
-Route::get('/stories', function () {return view('pages.stories');});
+
+Route::get('/participate', function () {return view('pages.participate');});
+Route::get('/participate', [  'as' => 'participate',  'uses' => 'PublicController@membersnumber']);
 Route::get('fun', function () {return view('pages.fun');});
-Route::get('/science', function () {return view('pages.science');});
-Route::get('/platform', function () {return view('pages.platform');});
+Route::get('/spread', function () { return view('pages.spread');});
+
+Route::get('/paradox', function () { return view('pages.paradox');});
 Route::get('/cohackathon', function () { return view('pages.cohackathon'); });
 Route::get('/openecosystem', function () { return view('pages.openecosystem'); });
 Route::get('/overview', function () { return view('pages.overview'); });
 Route::get('/workshops', function () { return view('pages.workshops'); });
-Route::get('/paradox', function () { return view('pages.paradox');});
-Route::get('/coolearning', function () { return view('pages.coolearning');});
-Route::get('/participate', function () { return view('pages.participate');});
-Route::get('/chapters', function () { return view('pages.chapters');});
-Route::get('/spread', function () { return view('pages.spread');});
-Route::get('/participate', function () {return view('pages.participate');});
-Route::get('/participate', [  'as' => 'participate',  'uses' => 'PublicController@membersnumber']);
-Route::get('/news', [   'as' => 'news',  'uses' => 'NewsController@index']);
+
+Route::get('/science', ['as' => 'science','uses' => function () {return view('pages.science');}]);
+Route::get('/coscience', function () {return view('pages.coscience');});
+Route::get('/cci', ['as' => 'cci','uses' => function () {return view('pages.cci');}]);
+Route::get('/project-articles', ['as' => 'project-articles','uses' => function () {return view('pages.project-articles');}]);
+Route::get('/streams', ['as' => 'streams','uses' => function () {return view('pages.streams');}]);
+Route::get('/network', ['as' => 'network','uses' => function () {return view('pages.network');}]);
 
 /*****************************************
 ******END PUBLIC ROUTES*******************

@@ -1,9 +1,9 @@
 <!--BEGIN FOOTER-->
 <div id="footer" class="site-footer">
 <!-- #copyright -->
-          <p class="base center space" style="margin-bottom:2px"><a href="{{route('register')}}" class="aue" style="background-image:none">JOIN</a> OR <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=YS7MHXBSVDDEU" class="aut" style="background-image:none">DONATE</a></p>
+          <p class="base center space" style="margin-bottom:2px"><a href="{{route('register')}}" class="ae" style="background-image:none">JOIN</a> OR <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=YS7MHXBSVDDEU" class="at" style="background-image:none">DONATE</a></p>
           <p class="mini center space">
-          &copy; COOPERACY RESEARCH ASSOCIATION 2015-2018 - VIA DELLA MOSCOVA, 39 - 20121 MILAN ITALY EU - FISCAL CODE 97725540153<br><a class="auh" href="https://www.iubenda.com/privacy-policy/8141188">PRIVACY POLICY</a> <a class="auh" href="{{route('terms')}}">AGREEMENTS</a> <a class="auh" href="/contact">CONTACT</a></p>
+          &copy; COOPERACY RESEARCH ASSOCIATION 2015-2018 - VIA DELLA MOSCOVA, 39 - 20121 MILAN ITALY EU - FISCAL CODE 97725540153<br><a class="ai" href="https://www.iubenda.com/privacy-policy/8141188">PRIVACY POLICY</a> <a class="ai" href="{{route('terms')}}">AGREEMENTS</a> <a class="ai" href="/contact">CONTACT</a></p>
 </div>
 <!--END FOOTER-->
 
