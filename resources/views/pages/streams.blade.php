@@ -26,20 +26,24 @@
   <p class="subheading understanding space center margin">RESEARCH STREAMS</p>
               <p class="base">
               Our future streams of research will be:<br>
-              <ol>
-              <li>Main Cooperation Science framework</li>
-              <li>Cooperation Context Index for countries</li>
-              <li>Online groups relative analysis based on benefit and relation indicators</li>
-              <li>Semantics of Cooperation</li>
-              <li>Game theory and Evolutionary biology</li>
-              <li>Neuroscience of Cooperation</li>
-              <li>Complex Systems Science applied to Cooperation</li>
-              <li>Cooperation Networks</li>
-              <li>Ecology and Ecosystem Science applied to Cooperation</li>
-              <li>Cooperation Science applied to Governance</li>
-              <li>Cooperation Science applied to the study of the Commons</li>
-              <li>Cooperative production industries-based Economy</li>
-              </ol></p>
+              <br>
+              - Main Cooperation Science framework<br>
+              - Cooperation Context Index for countries<br>
+              - Online groups relative analysis based on benefit and relation indicators<br>
+              - Semantics of Cooperation<br>
+              - Game theory and Evolutionary biology<br>
+              - Neuroscience of Cooperation<br>
+              - Complex Systems Science applied to Cooperation<br>
+              - Cooperation Networks<br>
+              - Ecology and Ecosystem Science applied to Cooperation<br>
+              - Cooperation Science applied to Governance<br>
+              - Cooperation Science applied to the study of the Commons<br>
+              - Cooperative production industries-based Economy<br>
+              </p><br>
+
+              <p class="base">If you are interested as a researcher in one of these fields, please feel free to <a class="ae" href="/register">join</a> or <a class="ai" href="/contact">contact</a> us.
+              </p>
+
   </div>
   <!--END CONTENT-->
 

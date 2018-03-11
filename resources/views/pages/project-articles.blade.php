@@ -33,9 +33,9 @@
               <li>In publication: Cooperation and Collective Intelligence, LabGov and IASC selection from the Conference of Urban Commons, Bologna</li>
               <li>Cooperation: the Art of Mutual Enjoyment, Springer</li>
               <li>Conference paper, Partial Least Square 2017 international conference, Introducing a Cooperation Context Index for countries</li>
-              </ul></p><p class="base">
-              Project page: <a class="au" href="http://www.researchgate.net/project/Cooperation-Science">www.researchgate.net/project/Cooperation-Science</a><br><br>
-              Our investigation is therefore currently being described qualitatively and quantitatively at a scientific level, never the less we cooperate with common people coherently with our model that is based on the diversity theorem. Everyone is invited to participate and cooperate with us with mutual enjoyment. <br><br>You can even help us now, answering only two questions in our online <a class="au" href="https://docs.google.com/forms/d/e/1FAIpQLSeiH8qMbsnRJQVt5n1CS1KPsJfsxBQML3hAbImpaDqiIuVrQw/viewform">questionnaire.</a>
+              </ul></p>
+              <p class="base">Project page: <a class="au" href="http://www.researchgate.net/project/Cooperation-Science">www.researchgate.net/project/Cooperation-Science</a><br><br>
+              Our investigation is therefore currently being described qualitatively and quantitatively at a scientific level, never the less we cooperate with common people coherently with our model that is inclusive, considering diversity a strong potential. Everyone is therefore invited to participate and cooperate with us. <br><br>You can <a class="ae" href="/register">join</a> Cooperacy or even help us now, answering only two questions in our online <a class="au" href="https://docs.google.com/forms/d/e/1FAIpQLSeiH8qMbsnRJQVt5n1CS1KPsJfsxBQML3hAbImpaDqiIuVrQw/viewform">questionnaire.</a>
               </p>
   </div>
   <!--END CONTENT-->

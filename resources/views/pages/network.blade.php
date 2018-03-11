@@ -26,42 +26,43 @@
   <p class="subheading understanding center space margin">NETWORK</p>
               <p class="base">
               Current universities and institutions in contact with Cooperacy Research Association:<br>
-              <ul>
-              <li>The University of Michigan: Center for the Study of Complex Systems</li>
-              <li>M.I.T.: Centre for Collective Intelligence</li>
-              <li>OuiShare</li>
-              <li>Institute for Economics and Peace</li>
-              <li>LabGov</li>
-              <li>IASC</li>
-              <li>Mykolo Romerio Universitetas</li>
-              <li>Centre National de la Recherche Scientifique - Paris</li>
-              <li>Universidad de Malaga</li>
-              <li>University of Coimbra</li>
-              <li>University of Manchester</li>
-              <li>Delft University of Technology</li>
-              <li>DemocracyOS</li>
-              <li>Ancona University</li>
-              <li>Meet the Media Guru</li>
-              <li>Marconi University</li>
-              <li>Bicocca University</li>
-              <li>Slovak Academy of Science</li>
-              <li>Them Games</li>
-              <li>Milano-Bicocca University</li>
-              <li>The University of Milan</li>
-              <li>Ghent University</li>
-              <li>Lusofona University - CeIED</li>
-              <li>TU Delft</li>
-              <li>Urbanisticni Institut Republike Slovenije</li>
-      	      <li>Luleå Tekniska Universitet</li>
-      	      <li>CPHFTW IVS - Techfestival</li>
-      	      <li>University of Thessaly</li>
-      	      <li>Universitat Jaume I</li>
-      	      <li>Fundación Deusto</li>
-      	      <li>Alpha Consulting</li>
-      	      <li>Università Politecnica delle Marche</li>
-      	      <li>IDLab</li>
-      	      <li>Università degli Studi di Roma La Sapienza</li>
-              </ul>
+              <br>
+              - The University of Michigan: Center for the Study of Complex Systems<br>
+              - M.I.T.: Centre for Collective Intelligence<br>
+              - OuiShare<br>
+              - Institute for Economics and Peace<br>
+              - LabGov<br>
+              - IASC<br>
+              - Mykolo Romerio Universitetas<br>
+              - Centre National de la Recherche Scientifique - Paris<br>
+              - Universidad de Malaga<br>
+              - University of Coimbra<br>
+              - University of Manchester<br>
+              - Delft University of Technology<br>
+              - DemocracyOS<br>
+              - Ancona University<br>
+              - Meet the Media Guru<br>
+              - Marconi University<br>
+              - Bicocca University<br>
+              - Slovak Academy of Science<br>
+              - Them Games<br>
+              - Milano-Bicocca University<br>
+              - The University of Milan<br>
+              - Ghent University<br>
+              - Lusofona University - CeIED<br>
+              - TU Delft<br>
+              - Urbanisticni Institut Republike Slovenije<br>
+      	      - Luleå Tekniska Universitet<br>
+      	      - CPHFTW IVS - Techfestival<br>
+      	      - University of Thessaly<br>
+      	      - Universitat Jaume I<br>
+      	      - Fundación Deusto<br>
+      	      - Alpha Consulting<br>
+      	      - Università Politecnica delle Marche<br>
+      	      - IDLab<br>
+      	      - Università degli Studi di Roma La Sapienza<br>
+              <br>
+              If you represent a University, a scientific institution or any related organisation and want to join our network feel free to <a class="ai" href="/contact">contact</a> us.
               </p>
   </div>
   <!--END CONTENT-->
