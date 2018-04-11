@@ -235,9 +235,26 @@ Route::post('payment', ['as' => 'payment','uses' => 'PaypalController@subscribe'
 **********************************/
 
 
+/**********************************
+******ADMIN EXPERIMENTAL ROUTES****
+**********************************/
+
+Route::get('/manageplans', [   'middleware' => ['auth', 'admin'],
+  'as' => 'manageplans',
+  'uses' => 'AdminController@manageplans']);
 
 
+Route::get('/setApiState', [   'middleware' => ['auth', 'admin'],
+'as' => 'setApiState',
+'uses' => 'PaymentController@setApiState']);
 
+/**********************************
+******PAYPAL EXPERIMENTAL ROUTES***
+**********************************/
+
+Route::get('/getplaninfo/{id}', [   'middleware' => ['auth', 'admin'],
+  'as' => 'getplaninfo',
+  'uses' => 'PaymentController@getPlanInfo']);
 
 
 

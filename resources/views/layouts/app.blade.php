@@ -54,6 +54,34 @@
   </div>
   @include('layouts.footer')
   <!-- Scripts -->
+  @if(Route::currentRouteName() == 'manageplans')
+          <script>
+            function updateApiStatus(status, response){
+              $.ajax({
+                url: '/setApiState/',
+                type : 'get',
+                cache : false,
+                data: {term: status}, 
+                success: function(data) {
+                            $.map(data, function (el) {
+                              if (el.status == 'sandbox') {
+                                $('#sandbox-button').attr('class', 'btn btn-success');
+                                $('#live-button').attr('class', 'btn btn-default');
+                              } else if (el.status == 'live') {
+                                $('#live-button').attr('class', 'btn btn-success');
+                                $('#sandbox-button').attr('class', 'btn btn-default');
+                              }
+                            });
+                          },
+                  
+                  error: function(jqXHR, textStatus, errorThrown){
+                      console.log( textStatus);
+                  }    
+              });
+            }
+          </script>
+  @endif
+
   @if(Route::currentRouteName() == 'newsadmin' || Route::currentRouteName() == 'updatenews')
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/js/bootstrap-datepicker.min.js"></script>
     <script>

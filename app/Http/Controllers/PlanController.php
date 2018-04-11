@@ -20,6 +20,7 @@ use PayPal\Api\Currency;
 use PayPal\Api\MerchantPreferences;
 use PayPal\Api\PaymentDefinition;
 use PayPal\Api\Plan;
+use PayPal\Api\PlanList;
 use PayPal\Api\PatchRequest;
 use PayPal\Api\Patch;
 use PayPal\Api\Agreement;
@@ -240,6 +241,7 @@ class PlanController extends Controller
         
       return view('thanks');
     }
+
 
     // public function updatepass() {
 

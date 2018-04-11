@@ -605,7 +605,7 @@ class ProjectController extends Controller
   public function getPerson() {
     $person = $_GET['term'];
     $queries = DB::table('users')
-    ->where('name', 'like', '%'.$person.'%')
+    ->where('name', 'like', $person.'%')
     ->where('member',1)
     ->orWhere('admin',1)
     ->get();

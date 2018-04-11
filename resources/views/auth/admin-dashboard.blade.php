@@ -8,7 +8,7 @@
         <li><a href="{{ route('projects-list') }}">View projects</a></li>
         <li><a href="{{ route('new-project') }}">Insert a new project</a></li>
         <li><a href="{{ route('newsmanage') }}">Manage news</a></li>
-        <li><a href="{{ route('createplan') }}">Create subscription plan</a></li>
+        <li><a href="{{ route('manageplans') }}">Manage subscription plans</a></li>
     </ul>
     </p>
   </div>
