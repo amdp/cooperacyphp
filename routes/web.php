@@ -248,6 +248,10 @@ Route::get('/setApiState', [   'middleware' => ['auth', 'admin'],
 'as' => 'setApiState',
 'uses' => 'PaymentController@setApiState']);
 
+Route::get('/listPlansAjax', [   'middleware' => ['auth', 'admin'],
+'as' => 'listPlansAjax',
+'uses' => 'AdminController@listPlansAjax']);
+
 /**********************************
 ******PAYPAL EXPERIMENTAL ROUTES***
 **********************************/

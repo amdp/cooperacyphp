@@ -67,9 +67,13 @@
                               if (el.status == 'sandbox') {
                                 $('#sandbox-button').attr('class', 'btn btn-success');
                                 $('#live-button').attr('class', 'btn btn-default');
+                                $('.live-plan').remove();
+                                plansByStatus(el.status);
                               } else if (el.status == 'live') {
                                 $('#live-button').attr('class', 'btn btn-success');
                                 $('#sandbox-button').attr('class', 'btn btn-default');
+                                $('.sandbox-plan').remove();
+                                plansByStatus(el.status);
                               }
                             });
                           },
@@ -79,6 +83,39 @@
                   }    
               });
             }
+            
+            function plansByStatus(status, response) {
+              $.ajax({
+                url: '/listPlansAjax/',
+                type : 'get',
+                cache : false,
+                data: {term: status}, 
+                success: function(data) {
+                            $.map(data, function (el) {
+                              
+                              if(el.api_status=='sandbox'){
+                                var rowclass = 'sandbox-plan';
+                              } else {
+                                var rowclass = 'live-plan';
+                              }
+                              
+                              if(el.status='ACTIVE'){
+                                var buttons='<button id="plan-active-button" class="btn btn-success" onclick="updatePlanStatus(\'ACTIVE\')">Active</button><button id="plan-inactive-button" class="btn btn-default" onclick="updatePlanStatus(\'INACTIVE\')">Inactive</button>';
+                              } else {
+                                var buttons='<button id="plan-active-default" class="btn btn-success" onclick="updatePlanStatus(\'ACTIVE\')">Active</button><button id="plan-inactive-button" class="btn btn-success" onclick="updatePlanStatus(\'INACTIVE\')">Inactive</button>';
+                              }
+
+                              $('#planlist').append('<tr class="'+rowclass+'"><td>'+el.id+'</td><td>'+el.plan_id+'</td><td>'+el.desc+'</td><td><div class="btn-group">'+buttons+'</div></td></tr>');
+
+                            });
+                          },
+                  
+                  error: function(jqXHR, textStatus, errorThrown){
+                      console.log( textStatus);
+                  }    
+              });
+            }
+
           </script>
   @endif
 

@@ -32,23 +32,40 @@
                         <div class="col-lg-9 col-xs-12">
                             <h4>Paypal Plans</h4>
                             <table class="table">
-                            <thead>
-                                <tr>
-                                    <td><strong>ID</strong></td>
-                                    <td><strong>Description</strong></td>
-                                </tr>
-                                @foreach($plans as $plan)
-                                <tr>
-                                    <td>{{$plan->ID}}</td>
-                                    <td>{{$plan->plan_id}}</td>
-                                </tr>
-                                @endforeach
-                            </thead>
+                                <thead>
+                                    <tr>
+                                        <td><strong>#</strong></td>
+                                        <td><strong>ID</strong></td>
+                                        <td><strong>Description</strong></td>
+                                        <td><strong>Status</strong></td>
+                                    </tr>
+                                </thead>
+                                <tbody id="planlist">
+                                    @foreach($paypalplans as $plan)
+                                    <tr class="{{$plan->plan_api_status}}-plan">
+                                        <td>{{$plan->id}}</td>
+                                        <td>{{$plan->plan_id}}</td>
+                                        <td>{{$plan->plan_description}}</td>
+                                        <td>
+                                        @if($plan->plan_status == 'ACTIVE')
+                                            <div class="btn-group">
+                                                <button id="plan-active-button" class="btn btn-success" onclick="updatePlanStatus('ACTIVE')">Active</button>
+                                                <button id="plan-inactive-button" class="btn btn-default" onclick="updatePlanStatus('INACTIVE')">Inactive</button>
+                                            </div>
+                                        @else
+                                            <div class="btn-group">
+                                                <button id="plan-active-button" class="btn btn-default" onclick="updatePlanStatus('ACTIVE')">Active</button>
+                                                <button id="plan-inactive-button" class="btn btn-success" onclick="updatePlanStatus('INACTIVE')">Inactive</button>
+                                            </div>
+                                        @endif
+                                        </td>
+                                    </tr>
+                                    @endforeach
+                                </tbody>
                             </table>
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
 

@@ -26,13 +26,28 @@ class PaymentController extends Controller
         
     }
 
+    public function setPlanState() {
+
+        $planid     = $_GET['planid'];
+        $state      = $_GET['state'];
+
+        $updatePlan = new PayPalFunctions;
+
+        $result = array([
+            'status' => $updatePlan->setPlanState($planid, $state)->state
+        ]);
+
+        return $result;       
+       
+    }
+
     /*TEST ROUTES*/
 
     public function setPlanStatus($id, $status) {
 
         $updatePlan = new PayPalFunctions;
 
-        return $updatePlan->setPlanState($id, $status);
+        return $updatePlan->setPlanState($id, $status)->state;
 
     }
 
@@ -40,7 +55,7 @@ class PaymentController extends Controller
 
         $planinfo = new PayPalFunctions;
             
-        return $planinfo->getPlanInfo($id)->toJson();
+        return $planinfo->getPlanInfo($id);
                
     }
 
