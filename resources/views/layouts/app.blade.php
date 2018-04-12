@@ -99,14 +99,45 @@
                                 var rowclass = 'live-plan';
                               }
                               
-                              if(el.status='ACTIVE'){
-                                var buttons='<button id="plan-active-button" class="btn btn-success" onclick="updatePlanStatus(\'ACTIVE\')">Active</button><button id="plan-inactive-button" class="btn btn-default" onclick="updatePlanStatus(\'INACTIVE\')">Inactive</button>';
+                              if(el.status=='ACTIVE'){
+                                var buttons='<button disabled="disabled" id="plan-active-button'+el.id+'" class="btn btn-success" onclick="updatePlanStatus(\'ACTIVE\',\''+el.id+'\',\''+el.plan_id+'\')">Active</button><button id="plan-inactive-button'+el.id+'" class="btn btn-default" onclick="updatePlanStatus(\'INACTIVE\',\''+el.id+'\',\''+el.plan_id+'\')">Inactive</button>';
                               } else {
-                                var buttons='<button id="plan-active-default" class="btn btn-success" onclick="updatePlanStatus(\'ACTIVE\')">Active</button><button id="plan-inactive-button" class="btn btn-success" onclick="updatePlanStatus(\'INACTIVE\')">Inactive</button>';
+                                var buttons='<button id="plan-active-button'+el.id+'" class="btn btn-default" onclick="updatePlanStatus(\'ACTIVE\',\''+el.id+'\',\''+el.plan_id+'\')">Active</button><button disabled="disabled" id="plan-inactive-button'+el.id+'" class="btn btn-success" onclick="updatePlanStatus(\'INACTIVE\',\''+el.id+'\',\''+el.plan_id+'\')">Inactive</button>';
                               }
 
                               $('#planlist').append('<tr class="'+rowclass+'"><td>'+el.id+'</td><td>'+el.plan_id+'</td><td>'+el.desc+'</td><td><div class="btn-group">'+buttons+'</div></td></tr>');
 
+                            });
+                          },
+                  
+                  error: function(jqXHR, textStatus, errorThrown){
+                      console.log( textStatus);
+                  }    
+              });
+            }
+
+            function updatePlanStatus(command, id, planid) {
+              $.ajax({
+                url: '/updatePlanAjax/',
+                type : 'get',
+                cache : false,
+                data: {com: command,
+                       uid: id,
+                       pid: planid
+                      }, 
+                success: function(data) {
+                            $.map(data, function (el) {
+                              if (el.status == 'ACTIVE') {
+                                $('#plan-active-button'+el.id).attr('class', 'btn btn-success');
+                                $('#plan-active-button'+el.id).attr('disabled', true);
+                                $('#plan-inactive-button'+el.id).attr('class', 'btn btn-default');
+                                $('#plan-inactive-button'+el.id).removeAttr("disabled");
+                              } else {
+                                $('#plan-active-button'+el.id).attr('class', 'btn btn-default');
+                                $('#plan-active-button'+el.id).removeAttr("disabled");
+                                $('#plan-inactive-button'+el.id).attr('class', 'btn btn-success');
+                                $('#plan-inactive-button'+el.id).attr('disabled', true);
+                              }
                             });
                           },
                   

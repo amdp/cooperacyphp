@@ -38,6 +38,28 @@ class AdminController extends Controller
 
         return $results;
 
-    } 
+    }
+    
+    public function updatePlanAjax() {
+
+        $command = $_GET['com'];
+        $id = $_GET['uid'];
+        $planid = $_GET['pid'];
+
+        $updatePlan = new PayPalFunctions;
+
+        $newstate = $updatePlan->setPlanState($planid, $command)->state;
+
+        //Update DB
+        DB::table('paypal_plans')->where('id',$id)->update(['plan_status'=>$newstate]);
+
+        $result = array([
+            'id'        => $id,
+            'status'    => $newstate
+        ]);
+
+        return $result;
+
+    }
 
 }

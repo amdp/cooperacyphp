@@ -49,13 +49,13 @@
                                         <td>
                                         @if($plan->plan_status == 'ACTIVE')
                                             <div class="btn-group">
-                                                <button id="plan-active-button" class="btn btn-success" onclick="updatePlanStatus('ACTIVE')">Active</button>
-                                                <button id="plan-inactive-button" class="btn btn-default" onclick="updatePlanStatus('INACTIVE')">Inactive</button>
+                                                <button disabled="disabled" id="plan-active-button{{$plan->id}}" class="btn btn-success" onclick="updatePlanStatus('ACTIVE','{{$plan->id}}','{{$plan->plan_id}}')">Active</button>
+                                                <button id="plan-inactive-button{{$plan->id}}" class="btn btn-default" onclick="updatePlanStatus('INACTIVE','{{$plan->id}}','{{$plan->plan_id}}')">Inactive</button>
                                             </div>
                                         @else
                                             <div class="btn-group">
-                                                <button id="plan-active-button" class="btn btn-default" onclick="updatePlanStatus('ACTIVE')">Active</button>
-                                                <button id="plan-inactive-button" class="btn btn-success" onclick="updatePlanStatus('INACTIVE')">Inactive</button>
+                                                <button id="plan-active-button{{$plan->id}}" class="btn btn-default" onclick="updatePlanStatus('ACTIVE','{{$plan->id}}','{{$plan->plan_id}}')">Active</button>
+                                                <button disabled="disabled" id="plan-inactive-button{{$plan->id}}" class="btn btn-success" onclick="updatePlanStatus('INACTIVE','{{$plan->id}}','{{$plan->plan_id}}')">Inactive</button>
                                             </div>
                                         @endif
                                         </td>

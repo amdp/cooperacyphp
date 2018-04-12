@@ -252,6 +252,10 @@ Route::get('/listPlansAjax', [   'middleware' => ['auth', 'admin'],
 'as' => 'listPlansAjax',
 'uses' => 'AdminController@listPlansAjax']);
 
+Route::get('/updatePlanAjax', [   'middleware' => ['auth', 'admin'],
+'as' => 'updatePlanAjax',
+'uses' => 'AdminController@updatePlanAjax']);
+
 /**********************************
 ******PAYPAL EXPERIMENTAL ROUTES***
 **********************************/
