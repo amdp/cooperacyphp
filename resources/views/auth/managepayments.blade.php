@@ -16,10 +16,11 @@
                 
                 <div class="container">
                     <div class="row">
-                        <col-lg-12 class="col-xs-12">
+
+                        <div class="col-lg-3 col-xs-12">
                             <h4>API Status</h4>
                             <div class="btn-group">
-                                @if($status=='sandbox')
+                                @if($apistatus=='sandbox')
                                     <button id="sandbox-button" class="btn btn-success" onclick="updateApiStatus('sandbox')">Sandbox</button>
                                     <button id="live-button" class="btn btn-default" onclick="updateApiStatus('live')">Live</button>
                                 @else
@@ -27,7 +28,24 @@
                                     <button id="live-button" class="btn btn-success" onclick="updateApiStatus('live')">Live</button>
                                 @endif
                             </div>
-                        </col-lg-12>
+                        </div>
+                        <div class="col-lg-9 col-xs-12">
+                            <h4>Paypal Plans</h4>
+                            <table class="table">
+                            <thead>
+                                <tr>
+                                    <td><strong>ID</strong></td>
+                                    <td><strong>Description</strong></td>
+                                </tr>
+                                @foreach($plans as $plan)
+                                <tr>
+                                    <td>{{$plan->ID}}</td>
+                                    <td>{{$plan->plan_id}}</td>
+                                </tr>
+                                @endforeach
+                            </thead>
+                            </table>
+                        </div>
                     </div>
                 </div>
 

@@ -257,6 +257,11 @@ Route::get('/getplaninfo/{id}', [   'middleware' => ['auth', 'admin'],
   'uses' => 'PaymentController@getPlanInfo']);
 
 
+Route::get('/setplanstatus/{id}/{status}', [   'middleware' => ['auth', 'admin'],
+  'as' => 'setplanstatus',
+  'uses' => 'PaymentController@setPlanStatus']);
+
+
 
 
 

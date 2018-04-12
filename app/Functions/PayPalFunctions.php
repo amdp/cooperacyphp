@@ -5,6 +5,8 @@ use DB;
 use PayPal\Rest\ApiContext;
 use PayPal\Auth\OAuthTokenCredential;
 use PayPal\Api\Plan;
+use PayPal\Api\PatchRequest;
+use PayPal\Api\Patch;
 
 class PayPalFunctions
 {
@@ -71,6 +73,37 @@ class PayPalFunctions
           
         return $planInfo;
                
+    }
+
+    public function setPlanState($planId, $state) {
+
+        $planinfo = Plan::get($planId, $this->_api_context);
+
+        try {
+            $patch = new Patch();      
+
+            $patch->setOp('replace')
+                ->setPath('/')
+                ->setValue(json_decode(
+                    '{
+                        "state": "'.$state.'"
+                    }'
+                ));
+
+            $patchRequest = new PatchRequest();
+            $patchRequest->addPatch($patch);
+      
+            $planinfo->update($patchRequest, $this->_api_context);
+      
+            $updatedPlan = Plan::get($planId, $this->_api_context);
+      
+            } catch (Exception $ex) {
+                //ResultPrinter::printError("Updated the Plan Payment Definition", "Plan", null, $patchRequest, $ex);
+                exit(1);
+            }
+
+            return $updatedPlan;
+
     }
 
 }

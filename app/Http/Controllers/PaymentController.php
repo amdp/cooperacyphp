@@ -10,6 +10,8 @@ use DB;
 class PaymentController extends Controller
 {
     
+    /*AJAX FUNCTIONS*/
+
     public function setApiState() {
 
         $option = $_GET['term'];
@@ -24,6 +26,16 @@ class PaymentController extends Controller
         
     }
 
+    /*TEST ROUTES*/
+
+    public function setPlanStatus($id, $status) {
+
+        $updatePlan = new PayPalFunctions;
+
+        return $updatePlan->setPlanState($id, $status);
+
+    }
+
     public function getPlanInfo($id) {
 
         $planinfo = new PayPalFunctions;
@@ -31,5 +43,6 @@ class PaymentController extends Controller
         return $planinfo->getPlanInfo($id)->toJson();
                
     }
+
 
 }
