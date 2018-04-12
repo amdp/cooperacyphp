@@ -56,7 +56,12 @@
   <!-- Scripts -->
   @if(Route::currentRouteName() == 'manageplans')
           <script>
+            $(document).ready(function() {
+              $('.loader').hide();
+            });
+
             function updateApiStatus(status, response){
+              $('.loader').show();
               $.ajax({
                 url: '/setApiState/',
                 type : 'get',
@@ -69,11 +74,13 @@
                                 $('#live-button').attr('class', 'btn btn-default');
                                 $('.live-plan').remove();
                                 plansByStatus(el.status);
+                                $('.loader').hide();
                               } else if (el.status == 'live') {
                                 $('#live-button').attr('class', 'btn btn-success');
                                 $('#sandbox-button').attr('class', 'btn btn-default');
                                 $('.sandbox-plan').remove();
                                 plansByStatus(el.status);
+                                $('.loader').hide();
                               }
                             });
                           },
@@ -117,6 +124,7 @@
             }
 
             function updatePlanStatus(command, id, planid) {
+              $('.loader').show();
               $.ajax({
                 url: '/updatePlanAjax/',
                 type : 'get',
@@ -139,6 +147,7 @@
                                 $('#plan-inactive-button'+el.id).attr('disabled', true);
                               }
                             });
+                            $('.loader').hide();
                           },
                   
                   error: function(jqXHR, textStatus, errorThrown){

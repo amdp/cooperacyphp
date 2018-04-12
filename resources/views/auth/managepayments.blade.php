@@ -1,8 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
+@include('auth.loader')
 <div class="container">
-
 <div class="row">
     <col-lg-12 class="col-xs-12">
     <h3>Manage Subscription Plans</h3>
