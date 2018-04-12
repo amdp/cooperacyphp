@@ -197,7 +197,7 @@ Route::get('/update-vote/', [   'middleware' => ['auth', 'member'],
 *****************************************/
 
 /**********************************
-******BEGIN PAYPAL*****************
+******BEGIN OLD PAYPAL*****************
 **********************************/
 
 Route::get('/createplan', [   'middleware' => ['auth', 'admin'],
@@ -213,7 +213,7 @@ Route::get('pay', ['as' => 'pay','uses' => function () {  return view('pay');}])
 Route::post('pay', ['as' => 'pay','uses' => 'PlanController@pay',
 ]);
 
-Route::get('thanks', ['as' => 'thanks','uses' => 'PlanController@confirm']);
+//Route::get('thanks', ['as' => 'thanks','uses' => 'PlanController@confirm']);
 
 Route::get('check', [ 'as' => 'check',
 'uses' => 'PaypalController@getPaymentStatus']);
@@ -231,7 +231,7 @@ Route::post('payment', ['as' => 'payment','uses' => 'PaypalController@subscribe'
 ]);
 
 /**********************************
-******END PAYPAL*****************
+******END OLD PAYPAL*****************
 **********************************/
 
 
@@ -242,7 +242,6 @@ Route::post('payment', ['as' => 'payment','uses' => 'PaypalController@subscribe'
 Route::get('/manageplans', [   'middleware' => ['auth', 'admin'],
   'as' => 'manageplans',
   'uses' => 'AdminController@manageplans']);
-
 
 Route::get('/setApiState', [   'middleware' => ['auth', 'admin'],
 'as' => 'setApiState',
@@ -269,10 +268,25 @@ Route::get('/setplanstatus/{id}/{status}', [   'middleware' => ['auth', 'admin']
   'as' => 'setplanstatus',
   'uses' => 'PaymentController@setPlanStatus']);
 
+Route::get('/subscribe', [
+  'middleware' => ['auth'],
+  'as' => 'subscribe',
+  'uses' => 'PaymentController@subscribe']);
 
+Route::post('/preauthorize', [
+  'middleware' => ['auth'],
+  'as' => 'preauthorize',
+  'uses' => 'PaymentController@preauthorize']);
 
+Route::get('thanks', [
+  'middleware' => ['auth'],
+  'as' => 'thanks',
+  'uses' => 'PaymentController@confirm']);
 
-
+Route::post('executepayment', [
+  'middleware' => ['auth'],
+  'as' => 'executepayment',
+  'uses' => 'PaymentController@pay']);
 
 
 

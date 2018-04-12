@@ -7,6 +7,10 @@ use PayPal\Auth\OAuthTokenCredential;
 use PayPal\Api\Plan;
 use PayPal\Api\PatchRequest;
 use PayPal\Api\Patch;
+use PayPal\Api\OverrideChargeModel;
+use PayPal\Api\Currency;
+use PayPal\Api\Agreement;
+use PayPal\Api\Payer;
 
 class PayPalFunctions
 {
@@ -103,6 +107,81 @@ class PayPalFunctions
             }
 
             return $updatedPlan;
+
+    }
+
+    public function setPayment($planId, $chargeId, $email) {
+
+      $atime = strtotime('+1 hour', time()); 
+      $today = gmdate("Y-m-d\TH:i:s\Z", $atime);
+      // CREATE BILLING AGREEMENT OBJECT
+      
+      
+      $updatedPlan = Plan::get($planId, $this->_api_context); 
+      // Create new agreement
+        $agreement = new Agreement();
+        $agreement->setName($updatedPlan->name)
+          ->setDescription($updatedPlan->description)
+          ->setStartDate($today);
+        
+                
+        
+        $overrideChargeModel = new OverrideChargeModel();
+        $overrideChargeModel->setChargeId($chargeId)
+          ->setAmount(new Currency(array('value' => 0, 'currency' => 'EUR')));
+                
+        
+        
+        // Set plan id
+        $plan = new Plan();
+        
+        $plan->setId($planId);
+       
+        $agreement->setPlan($plan);
+
+        // Add payer type
+        $payer = new Payer();
+        $payer->setPaymentMethod('paypal');
+        $payer->setPayerInfo(array('email'=>$email));
+
+        $agreement->setPayer($payer);
+
+        echo $agreement;
+        try {
+        // Create agreement
+        $agreement = $agreement->create($this->_api_context);
+        
+        // Extract approval URL to redirect user
+        $approvalUrl = $agreement->getApprovalLink();
+        
+        } catch (PayPal\Exception\PayPalConnectionException $ex) {
+          echo $ex->getCode();
+          echo $ex->getData();
+          die($ex);
+        } catch (Exception $ex) {
+        die($ex);
+      }
+      
+      return $approvalUrl;  
+
+    }
+
+    public function pay($token) {
+
+        $agreement = new \PayPal\Api\Agreement();
+
+        try {
+          // Execute agreement
+          $agreement->execute($token, $this->_api_context);
+        } catch (PayPal\Exception\PayPalConnectionException $ex) {
+          echo $ex->getCode();
+          echo $ex->getData();
+          die($ex);
+        } catch (Exception $ex) {
+          die($ex);
+        }
+
+        return $agreement;
 
     }
 
