@@ -44,7 +44,6 @@
                 <h3>Your subscription will expire on 
                         {{date('d F Y',strtotime($subscriptioninfo->agreement_details->last_payment_date)+2592000)}}
                     </h3>
-                    <button id="reactivate-membership-button" class="btn btn-success" data-toggle="modal" data-target="#reactivatemembership">Reactivate Subscription</button>
                 @endif
 
 
@@ -69,32 +68,6 @@
                     <div class="modal-footer">
                         <button type="button" class="btn btn-success" data-dismiss="modal">Back</button>
                         {!! Form::submit ('Cancel subscription', ['id' => 'delete', 'class' => 'btn btn-danger']) !!}
-                        {{ Form::hidden('id', $subscriptioninfo->id) }}
-                        {!! Form::close() !!}
-                    </div>
-                    </div>
-
-                </div>
-            </div>
-
-            <div id="reactivatemembership" class="modal fade" role="dialog">
-                <div class="modal-dialog">
-
-                    <!-- Modal content-->
-                    <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <h4 class="modal-title">Reactivate membership</h4>
-                    </div>
-                    <div class="modal-body">
-                        <h5>Great news!</h5>
-                        <p>We were looking forward to see you again!</p>
-                        {!! Form::open ( array ('route' => 'reactivatemembership')) !!}
-                    
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-warning" data-dismiss="modal">Back</button>
-                        {!! Form::submit ('Reactivate', ['id' => 'delete', 'class' => 'btn btn-success']) !!}
                         {{ Form::hidden('id', $subscriptioninfo->id) }}
                         {!! Form::close() !!}
                     </div>
