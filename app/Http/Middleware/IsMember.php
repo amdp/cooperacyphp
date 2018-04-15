@@ -39,7 +39,7 @@ class IsMember
         //Redirect to profile basic members
         if (Auth::user()->member_type=='basic')
         {
-            return redirect('pay'); 
+            return redirect('profile'); 
         }
 
         //Authorize

@@ -89,6 +89,8 @@ Route::get('/warning', [   'as' => 'warning',
 Route::get('/members', function () {
   return view('pages.protected');});
 
+
+
 // NEWSLETTER ROUTES
 Route::get('/newsmanage', [   'middleware' => ['auth', 'admin'],
   'as' => 'newsmanage',
@@ -121,6 +123,9 @@ Route::post('/deletenewsletter', [   'middleware' => ['auth', 'admin'],
   'as' => 'deletenewsletter',
   'uses' => 'NewsController@delete']);
 
+Route::get('/profile', [   'middleware' => ['auth'],
+  'as' => 'profile',
+  'uses' => 'ProfileController@index']);
 
 /******PROJECT ROUTES********/
 Route::get('/new-project', [   'middleware' => ['auth', 'member'],
