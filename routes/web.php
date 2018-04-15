@@ -80,7 +80,7 @@ Route::get('/home', [   'middleware' => ['member'],
 
 Route::get('/forbidden', [   'as' => 'forbidden',
   'uses' => function () {
-  return view('forbidden');}]);
+  return view('auth.forbidden');}]);
 
 Route::get('/warning', [   'as' => 'warning',
   'uses' => function () {
