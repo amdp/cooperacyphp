@@ -41,6 +41,9 @@
                     </h3>
                     <button id="cancel-membership-button" class="btn btn-primary" data-toggle="modal" data-target="#cancelmembership">Cancel Subscription</button>
                 @elseif($subscriptioninfo->state=='Cancelled')
+                <h3>Your subscription will expire on 
+                        {{date('d F Y',strtotime($subscriptioninfo->agreement_details->last_payment_date)+2592000)}}
+                    </h3>
                     <button id="reactivate-membership-button" class="btn btn-success" data-toggle="modal" data-target="#reactivatemembership">Reactivate Subscription</button>
                 @endif
 
