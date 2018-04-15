@@ -61,6 +61,14 @@ class PaymentController extends Controller
                
     }
 
+    public function getSubInfo($id) {
+
+        $subinfo = new PayPalFunctions;
+            
+        return $subinfo->getSubInfo($id);
+               
+    }
+
     public function subscribe() {
 
         $option = DB::table('site_options')->where('option_name','PayPalApi')->value('option_value');
@@ -160,9 +168,29 @@ class PaymentController extends Controller
             'member_payment'    =>  'PayPal',
             'member_status'     =>  $agreement->state,
         ]);
-        
+
             //return $agreement;
         return view('auth.thanks');
+
+    }
+
+    public function cancelmembership(Request $request) {
+
+        $agreement = new PayPalFunctions;
+
+        $cancel = $agreement->cancelMembership($request->id);
+
+        return redirect('profile');
+
+    }
+
+    public function reactivatemembership(Request $request) {
+
+        $agreement = new PayPalFunctions;
+
+        $reactivate = $agreement->reactivateMembership($request->id);
+
+        return redirect('profile');
 
     }
 

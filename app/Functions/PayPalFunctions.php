@@ -8,6 +8,7 @@ use PayPal\Api\Plan;
 use PayPal\Api\PatchRequest;
 use PayPal\Api\Patch;
 use PayPal\Api\OverrideChargeModel;
+use PayPal\Api\AgreementStateDescriptor;
 use PayPal\Api\Currency;
 use PayPal\Api\Agreement;
 use PayPal\Api\Payer;
@@ -182,6 +183,62 @@ class PayPalFunctions
         }
 
         return $agreement;
+
+    }
+
+    public function getSubInfo($id) {
+
+        try {
+            $agreement = Agreement::get($id, $this->_api_context);
+            } catch (Exception $ex) {
+                 exit(1);
+            }
+        
+        return $agreement;
+
+    }
+
+    public function cancelMembership($id) {
+
+        $agreementId = $id;                  
+        $agreement = new Agreement();            
+
+        $agreement->setId($agreementId);
+        $agreementStateDescriptor = new AgreementStateDescriptor();
+        $agreementStateDescriptor->setNote("Cancel the agreement");
+
+        try {
+            $agreement->cancel($agreementStateDescriptor, $this->_api_context);
+            $cancelAgreementDetails = Agreement::get($agreement->getId(), $this->_api_context);                
+        } catch (Exception $ex) { 
+            
+            exit(1);
+            
+        }
+
+        return $agreement;
+
+    }
+
+    public function reactivateMembership($id) {
+              
+        $agreement = new Agreement();            
+
+        $agreement->setId($id);
+        $agreementStateDescriptor = new AgreementStateDescriptor();
+        $agreementStateDescriptor->setNote("Reactivating the agreement");
+
+        try {
+            $agreement->reActivate($agreementStateDescriptor, $this->_api_context);
+            //$reactivateAgreementDetails = Agreement::get($agreement->getId(), $this->_api_context);                
+        } catch (Exception $ex) { 
+            
+            exit(1);
+            
+        }
+
+        return $agreement;
+
 
     }
 

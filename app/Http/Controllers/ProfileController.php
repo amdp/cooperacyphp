@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 use App\Http\Controllers\Controller;
 use DB;
 use Auth;
+use App\Functions\PayPalFunctions;
 
 class ProfileController extends Controller
 {
@@ -12,9 +13,35 @@ class ProfileController extends Controller
 
         //Detect user status (Active, Expiring, No subscription, Pending payment)
         $user = DB::table('users')->where('id', Auth::user()->id)->first();
-        $panel = 'subscription';
+        if($user->member_type=='member') {
+            //Get subscription info
+            if($user->member_status=='Active') {
+                
+                $getinfo = new PayPalFunctions;
+                $subscription=DB::table('paypal_memberships')
+                    ->where('user_id', Auth::user()->id)
+                    ->where('state','Active')
+                    ->orderBy('updated','DESC')
+                    ->first();
+                $subscriptioninfo = $getinfo->getSubInfo($subscription->agreement_id);
 
-        return view('auth.profile', compact('panel', 'user'));
+                $panel = 'personal';
+
+            } else if ($user->member_status=='Cancelled') {
+
+                $panel = 'subscription';
+
+            }
+
+        } else {
+
+            $panel = 'personal';
+            $subscriptioninfo = null;
+
+        }
+        
+
+        return view('auth.profile', compact('panel', 'user', 'subscriptioninfo'));
 
     }
 

@@ -268,6 +268,9 @@ Route::get('/getplaninfo/{id}', [   'middleware' => ['auth', 'admin'],
   'as' => 'getplaninfo',
   'uses' => 'PaymentController@getPlanInfo']);
 
+Route::get('/getsubinfo/{id}', [   'middleware' => ['auth', 'admin'],
+  'as' => 'getplaninfo',
+  'uses' => 'PaymentController@getSubInfo']);
 
 Route::get('/setplanstatus/{id}/{status}', [   'middleware' => ['auth', 'admin'],
   'as' => 'setplanstatus',
@@ -293,9 +296,15 @@ Route::post('executepayment', [
   'as' => 'executepayment',
   'uses' => 'PaymentController@pay']);
 
+Route::post('cancelmembership', [
+  'middleware' => ['auth'],
+  'as' => 'cancelmembership',
+  'uses' => 'PaymentController@cancelmembership']);
 
-
-
+Route::post('reactivatemembership', [
+  'middleware' => ['auth'],
+  'as' => 'reactivatemembership',
+  'uses' => 'PaymentController@reactivatemembership']);
 
 
 
