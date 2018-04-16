@@ -145,7 +145,7 @@
 
   <p class="subheading transparency center space">FINANCE</p><br>
   <p class="base">We like so much transparency that we want everyone to be able to know our bank account balance and inspect our paypal account. We have nothing to hide.<br>
-  <span class="transparency up">Bank account:</span> our IBAN is IT61D0623001623000043225634 - Filiale AG 23 Milano Cariparma di via della Moscova, and the current bank balance is around 150 euros &#8211; updated: Jan 2018<br />
+  <span class="transparency up">Bank account:</span> our IBAN is IT61D0623001623000043225634 - Filiale AG 23 Milano Cariparma di via della Moscova, and the current bank balance is around 200 euros, updated: 14 April 2018<br />
   <span class="transparency up">Paypal:</span> you can access our account from the standard paypal login with COOPERATION + password cooperation2016</p><br>
 
   <p class="subheading transparency center space">LEGAL STUFF</p><br>
