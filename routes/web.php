@@ -32,6 +32,7 @@ Route::get('/governance', function () {return view('pages.governance');});
 
 Route::get('/participate', function () {return view('pages.participate');});
 Route::get('/participate', [  'as' => 'participate',  'uses' => 'PublicController@membersnumber']);
+Route::get('/journey', function () { return view('pages.journey'); });
 Route::get('fun', function () {return view('pages.fun');});
 Route::get('/spread', function () { return view('pages.spread');});
 

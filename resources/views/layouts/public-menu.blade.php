@@ -42,6 +42,9 @@
     <a href="{{URL::to('/participate')}}" class="menu-item">PARTICIPATE</a>
   </li>
   <li>
+    <a href="{{URL::to('/journey')}}" class="menu-item">THE JOURNEY</a>
+  </li>
+  <li>
     <a href="{{URL::to('/fun')}}" class="menu-item">HAVE FUN</a>
   </li>
   <li>

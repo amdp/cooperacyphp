@@ -14,7 +14,7 @@
       <strong>Participant</strong> is our only membership level (The 16% more – 0.16 euros – is the cost of paypal fees)</p><p style="font-size: 14px;">
                 If you want to donate more, use the ‘donate’ button. You won’t receive additional privileges if you give more. But you can of course be proud of it.</p>
 
-    <p style="font-size: 14px;"><strong>No paypal?</strong> Please use paypal until we setup a different payment method. We need some trust. We plan to have another option before the end of the year.</p>
+    <p style="font-size: 14px;"><strong>No paypal?</strong> Without paypal, we ask you to provide one year membership (12 euros) bank transfer: our IBAN is IT61D0623001623000043225634 - Filiale AG 23 Milano Cariparma di via della Moscova. Once done, please provide us emailing a receipt to memberships@cooperacy.org.</p>
 
     <p style="font-size: 14px;"><strong>Low income country?</strong> We’ll soon adapt the fees to the different currencies purchasing power.</p>
 
