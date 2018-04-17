@@ -116,4 +116,17 @@ class Functions
 
 	}
 
+	public static function notifyPayPalPayment() {
+		$data = array([
+			'email' => Auth::user()->email
+		]);
+
+		Mail::send('emails.paypalpayment', ['name' => $data], function($message) use($email) {
+            $message->to('cooperacy@cooperacy.org')
+            ->from('cooperacy@cooperacy.org','Cooperacy')
+            ->subject('Subscription confirmed from '.$data['email']);
+        	});
+
+	}
+
 }

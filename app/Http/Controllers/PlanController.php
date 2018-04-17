@@ -26,6 +26,7 @@ use PayPal\Api\Agreement;
 use PayPal\Api\AgreementDetails;
 use PayPal\Api\ShippingAddress;
 use Illuminate\Support\Facades\Input;
+use App\Functions\Functions;
 use Session;
 use Redirect;
 use Auth;
@@ -237,7 +238,9 @@ class PlanController extends Controller
           'updated_at' => $time,
           'member' => 1]);
         }
-        
+      
+      Functions::notifyPayPalPayment();
+
       return view('thanks');
     }
 
