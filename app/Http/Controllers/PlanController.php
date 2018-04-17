@@ -152,7 +152,7 @@ class PlanController extends Controller
       // Get registered plan info
       //$planDesc=DB::table('plans')->where('status', 'ACTIVE')->orderBy('id', 'DESC')->first();// LIVE
       $planDesc=DB::table('plans')->where('id', 17)->first(); // SANDBOX ONLY
-      
+
       $email = Auth::user()->email;
       
       $atime = strtotime('+1 hour', time()); // PROBLEMA: controllare data server!

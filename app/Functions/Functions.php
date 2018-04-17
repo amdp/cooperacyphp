@@ -121,10 +121,12 @@ class Functions
 			'email' => Auth::user()->email
 		]);
 
+		$email = Auth::user()->email;
+
 		Mail::send('emails.paypalpayment', ['name' => $data], function($message) use($email) {
             $message->to('cooperacy@cooperacy.org')
             ->from('cooperacy@cooperacy.org','Cooperacy')
-            ->subject('Subscription confirmed from '.$data['email']);
+            ->subject('Subscription confirmed from '.$email);
         	});
 
 	}
