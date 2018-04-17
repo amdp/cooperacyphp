@@ -30,7 +30,7 @@
 
   <br><img id="diversity" name="diversity" class="page-header" src="{{asset('/images/diversity.png')}}"><br>
 
-    <p class="subheading diversity center space margin">WE'RE DIFFERENT</p>
+    <p class="subheading diversity center space margin">WE'RE ALL DIFFERENT</p>
     <p class="base">Diversity is a pre-condition of cooperation that always exists in any ecosystem. It is also a <i>condition</i> because it <i>should not be inhibited</i>. Cooperation is different from fanaticism and homologation, where every individual must conform to a unique idea, lifestyle, cult, imagery or human mechanisation. Without diversity, we lose beauty and innovation. Standardised jobs or constrained life dynamics, like workers in the industrial revolution factories, inhibit the emergence of cooperation. Having <a class="ad" href="/fun">fun</a>, playing games and telling different, intimate stories helps the emergence and the possibility of cooperation.</p>
 
     <p class="subheading diversity center space margin">OUR EVOLUTIVE ADVANTAGE</p>
