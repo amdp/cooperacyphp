@@ -204,7 +204,7 @@ class ProjectController extends Controller
       ->where('id_project', $child_location->parent_project)
       ->first();
       
-    if (count($parent_location1)) {
+    if (!empty($parent_location1)) {
         $locations[] = [
           'location_id' => $parent_location1->id_project,
           'location_name' => $parent_location1->title_project
@@ -214,7 +214,7 @@ class ProjectController extends Controller
           ->where('id_project', $parent_location1->parent_project)
           ->first();
           
-          if (count($parent_location2)) {
+          if (!empty($parent_location2)) {
             $locations[] = [
               'location_id' => $parent_location2->id_project,
               'location_name' => $parent_location2->title_project
@@ -224,7 +224,7 @@ class ProjectController extends Controller
             ->where('id_project', $parent_location2->parent_project)
             ->first();
            
-             if (count($parent_location3)) {
+             if (!empty($parent_location3)) {
                $locations[] = [
                 'location_id' => $parent_location3->id_project,
                 'location_name' => $parent_location3->title_project
