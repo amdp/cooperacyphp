@@ -60,7 +60,7 @@
   <div class="form-group">
     <div class="col-md-6 col-md-offset-4">
       <input type = "checkbox" id="checkread"></input>
-        <label for="checkread">I have read the <a class="transparency" href="{{asset('terms')}}">Terms and contitions</a></label>
+        <label for="checkread">I have read the <a class="transparency" href="{{asset('terms')}}">Terms and contitions</a> and the <a class="transparency" target="_blank" href="https://www.iubenda.com/privacy-policy/8141188">privacy policy</a></label>
     </div>
   </div>
   <div class="form-group">
