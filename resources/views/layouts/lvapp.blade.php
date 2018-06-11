@@ -49,8 +49,8 @@
         #cocircle {transform-origin: center center; -webkit-transform-origin: center center;animation: wheel 5s ease-out; }
         .desc     {width:100%;position:relative;opacity:0;font-size:20px;text-align:justify;}
         .explain  { font-size: smaller; border-top: 1px solid gray; margin-top: 3px;padding-top: 7px; }
-        #typo     {animation: fade-in 3s forwards; } #payoff   {animation: fade-in 3s 2s forwards; }
-        #homefade {animation: fadeino 3s forwards; animation-delay: 5s; }
+        #typo     {animation: fade-in 3s forwards; } #payoff   {animation: fade-in 3s 1s forwards; }
+        #homefade {animation: fadeino 3s forwards; animation-delay: 1s; }
         @keyframes        wheel { 0% { transform: rotateZ(0deg); } 100% { transform:rotateZ(1080deg); } }
         @keyframes        fade-in { 0% { opacity: 0; } 100% { opacity: 1; } }
         @keyframes        fadeino { 0% { opacity: 0; } 100% { opacity: 1; } }

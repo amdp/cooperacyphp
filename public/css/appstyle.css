@@ -32,6 +32,8 @@ body{font-family: 'Prompt', sans-serif; font-size:14px; font-weight: 300; color:
 .roundmodule {border-radius: 90px;}
 .mini {font-size:16px; font-weight:200;}
 .finger {cursor: pointer;}
+.it {font-style: italic;}
+.bb {font-weight: bold;}
 .noline { text-decoration:none!important; }
 .containerone {margin-left:30px; margin-right:30px; margin-top: 80px;}
 .just{justify}
