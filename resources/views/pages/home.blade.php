@@ -127,7 +127,7 @@
   <div class="col-md-8"><!--BEGIN CONTENT-->
 
     <div class="row"><br>
-      <div class="col-lg-4 col-xs-12 subheading center"><a href="/aboutus" class="noline transparency space">DISCOVER</a></div>
+      <div class="col-lg-4 col-xs-12 subheading center"><a href="/aboutyou" class="noline transparency space">DISCOVER</a></div>
       <div class="col-lg-4 col-xs-12 subheading center"><a href="/cooperation" class="noline understanding space">LEARN</a></div>
       <div class="col-lg-4 col-xs-12 subheading center"><a href="/projects" class="noline equivalence space">DO</a></div>
 
