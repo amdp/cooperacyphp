@@ -1,0 +1,20 @@
+.carousel--testimonials {
+  margin: 15px auto;
+  height: 360px;
+
+  & > .carousel-inner {
+    margin: auto;
+    width: 72%;
+  }
+
+  & > .carousel-control {
+    background: transparent;
+    width: 10%;
+
+    .carousel-icon {
+      color: #797979;
+      font-size: 2.3em;
+      top: 25%;
+    }
+  }
+}
