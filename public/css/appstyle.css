@@ -5,6 +5,7 @@ body{font-family: 'Prompt', sans-serif; font-size:14px; font-weight: 300; color:
 .circle   {margin: 0 auto;height:60vh;position: relative;margin-top:3vh;}
 .menu-item {font-size:14px;line-height:16px;}
 .base {text-align:justify;font-size:20px;margin-bottom:10px; line-height: 29px; font-weight:200;}
+.quote {text-align:justify;font-size:16px;margin-bottom:10px; line-height: 24px; font-weight:200;}
 .heading {font-size:34px;font-weight:bold;}
 .subheading {font-size:22px;}
 .equivalence {color: #FF9000;}

@@ -4,7 +4,8 @@
     <link href="/css/appstyle.css" rel="stylesheet">
     <link href="/css/app.css" rel="stylesheet">
     <link href="/css/iubenda.css" rel="stylesheet">
-
+    <meta name="description" content="Cooperacy is a no-profit project aiming to spread cooperation science in social ecosystems.">
+    <!-- <meta name="nosnippets"> -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
