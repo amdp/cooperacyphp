@@ -24,17 +24,17 @@
   <div class="col-md-8">
   <p class="base">Cooperacy activities are growing! You can support our efforts by joining one of them.<br></p>
   <p class="subheading equivalence center space margin">THE PLATFORM</p>
-  <p class="base">Our main effort is to develop our <a class="ae" href="/platform">platform</a> as described in the discover section. We hope it will be ready soon. Although we have already made some testing we still have to reach 7000 members to make it appealing, dynamic and sustainable. This is our first milestone:</p>
+  <p class="base">Our main effort is to develop our <a class="ae" href="/platform">platform</a>. It is already functional, but it needs some improvements. Although we have already made some testing we still have to reach 3000 members to make it appealing, dynamic and sustainable. This is our first milestone, to get more participants: we are currently {{$membersnumber}}!</p>
 
   <div class="progress">
-  <div class="progress-bar" role="progressbar" aria-valuenow="{{round($membersnumber/7000*100, $precision=2)}}"
-  aria-valuemin="0" aria-valuemax="100" style="width:{{round($membersnumber/7000*100, $precision=2)}}%" style="color:#000000; background-color: #FF9000">&nbsp;{{round($membersnumber/7000*100, $precision=2)}}%&nbsp;Complete</div></div>
+  <div class="progress-bar" role="progressbar" aria-valuenow="{{round($membersnumber/3000*100, $precision=2)}}"
+  aria-valuemin="0" aria-valuemax="100" style="width:{{round($membersnumber/3000*100, $precision=2)}}%" style="color:#000000; background-color: #FF9000">&nbsp;{{round($membersnumber/3000*100, $precision=2)}}%&nbsp;Complete</div></div>
 
   <p class="subheading equivalence center space margin">COOPERACY MESSENGERS</p>
   <p class="base">Our communication group needs new members to help with the texts, the graphics, the translations and the front end coding. If you have any of these skills and you are willing to participate please <a class="ae" href="/register">join</a> and <a class="at" href="/contact">contact us.</a></p>
 
   <p class="subheading equivalence center space margin">COOPERACY CODERS</p>
-  <p class="base">If we had enough coders we would need a lot less than 7000 members to support and maintain the platform. If you would like to participate in an open project in which your experience will be of great value for the group while the final output will be a human centered designed tool to foster human cooperation, we are really happy to introduce you to our <a class="at" href="/contact">coding team</a>.</p>
+  <p class="base">If we had enough coders we would need a lot less than 3000 members to support and maintain the platform. If you would like to participate in an open project in which your experience will be of great value for the group while the final output will be a human centered designed tool to foster human cooperation, we are really happy to introduce you to our <a class="at" href="/contact">coding team</a>.</p>
 
   <p class="subheading equivalence center space margin">COOPERACY EDUCATION</p>
   <p class="base"><a class="at" href="/contact">Help us</a> with the online live webinars and in preparing the materials for the courses!</p>
