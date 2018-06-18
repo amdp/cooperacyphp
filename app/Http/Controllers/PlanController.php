@@ -64,7 +64,7 @@ class PlanController extends Controller
           ->setFrequency('MONTH')
           ->setFrequencyInterval("1")
           ->setCycles("0")
-          ->setAmount(new Currency(array('value' => 1.16, 'currency' => 'EUR')));
+          ->setAmount(new Currency(array('value' => 1.00, 'currency' => 'EUR')));
       // Charge Models
       $chargeModel = new ChargeModel();
       $chargeModel->setType('TAX')
