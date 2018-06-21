@@ -133,7 +133,7 @@
 
       <br><br><br><p class="base center">Cooperacy is a no-profit project aiming to spread cooperation science in social ecosystems.<br><br>A social ecosystem is an ecosystem with human presence. Humans alter the ecosystem with their social behavior in a good way when they redistribute their happiness: wealth, decisions and activities should flow where life and development need them, like in a natural ecosystem.<br><br>Joining Cooperacy is important today, if we want to experience sound social ecosystems at the personal, corporate and international levels.</p><br><br>
 
-      <div class="quote it">In Cooperacy I’ve seen the freedom of the individual in relation to the freedom of others, a continuous oscillation of equilibria, with unassuming attitude, following an easy flow and the spontaneous actions of people.</div><div class="quote up equivalence">Carola</div><br><br>
+      <div class="quote it">In Cooperacy I’ve seen the freedom of the individual in relation to the freedom of others, a continuous oscillation of equilibria, with unassuming attitude, following an easy flow and the spontaneous actions of people.</div><div class="quote up equivalence">Carol</div><br><br>
 
       <div class="quote it">I see Cooperacy - beyond its social goal – as a path made of people who want to improve themselves and the world around them, building something beautiful and useful for all.
       In a world based on the mindless continuous consumption of goods, living on a different constructive mentality can be an amazing gift for ourselves and the people we love.
@@ -202,9 +202,9 @@
       </div><div class="quote up understanding">Sarah</div><br><br>-->
 
       <div class="quote it">In these months I've seen people of different perspecitves to come and participate. While in Cooperacy, many of them decided to make big changes in their private lives. Cooperacy has been a common "origin" able to make them to desire and recognize themselves in the actions they do everyday. They experienced the feeling of cooperation and naturally desired their world to be a pleasant and enjoyable place for everyone.
-      </div><div class="quote up diversity">Alessandro</div><br><br>
+      </div><div class="quote up diversity">Alex</div><br><br>
 
-      <div class="base center"><a class="ae" href="/register">Join</a> Cooperacy today, or <a class="ai" href="https://www.cooperacy.org/contact">contact us</a> for more information and volunteering. Join our mutual effort.</p><br></div>
+      <div class="base center"><a class="ae" href="/register">Join</a> Cooperacy today, or <a class="ai" href="https://www.cooperacy.org/contact">contact us</a> for more information and volunteering.</p><br></div>
 
 </div>
 
