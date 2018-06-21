@@ -139,10 +139,10 @@
       In a world based on the mindless continuous consumption of goods, living on a different constructive mentality can be an amazing gift for ourselves and the people we love.
     </div><div class="quote up trust">Lorenzo</div><br><br>
 
-      <div class="quote it">There will be a day in which human beings will look to each other with the same love they have for their children. A day in which we will all be mutually parents and children at the same time. You don’t ask yourself if investing energy for a child will bring you an economic advantage. Now it’s not like that yet, but there are many movements indicating that global awareness is changing. Directions are visible and the so called “critical mass” is gradually becoming consistent. Cooperacy is one of this good movements having strong correlations with the concreteness of doing. I really feel like an ancient knight when I pay my humble duty - a small thing to do, but a big impulse to the nobility of my spirit.
+      <!-- <div class="quote it">There will be a day in which human beings will look to each other with the same love they have for their children. A day in which we will all be mutually parents and children at the same time. You don’t ask yourself if investing energy for a child will bring you an economic advantage. Now it’s not like that yet, but there are many movements indicating that global awareness is changing. Directions are visible and the so called “critical mass” is gradually becoming consistent. Cooperacy is one of this good movements having strong correlations with the concreteness of doing. I really feel like an ancient knight when I pay my humble duty - a small thing to do, but a big impulse to the nobility of my spirit.
       </div><div class="quote up care">Albino</div><br><br>
 
-      <div class="quote it">I felt Cooperacy in my belly, since the first read. Then to make it go up and reach my mind, I fight with it. Yes, it’s like getting into fights. It drains me out and at the same time it lends a hand to make me get up again. It challenges me every day, it turns upside down my perspectives, it opens myself to new possibilities. It teaches me, while other times it allows me to teach or better share what I think I have learned.
+       <div class="quote it">I felt Cooperacy in my belly, since the first read. Then to make it go up and reach my mind, I fight with it. Yes, it’s like getting into fights. It drains me out and at the same time it lends a hand to make me get up again. It challenges me every day, it turns upside down my perspectives, it opens myself to new possibilities. It teaches me, while other times it allows me to teach or better share what I think I have learned.
       It’s my inner mountain.
       </div><div class="quote up transparency">Beatrice</div><br><br>
 
@@ -199,12 +199,12 @@
       </div><div class="quote up freedom">Francesco</div><br><br>
 
       <div class="quote it">Cooperacy has been growing these months a lot and it is impressive to see the continuous exchange of ideas, the cheerfulness and the seriousness with which the participants cooperate together in the projects.
-      </div><div class="quote up understanding">Sarah</div><br><br>
+      </div><div class="quote up understanding">Sarah</div><br><br>-->
 
-      <div class="quote it">In these months I've seen people of different perspecitves to come and participate. While in Cooperacy, many of them decided to make big changes in their private lives. Cooperacy has been a common "origin" able to make them to desire and recognize themselves in the actions they do everyday. They experienced the feeling of cooperation and naturally desired their social ecosystem to be based on redistribution of wealth, activities and power with proportional creative integration. In other words, the world as a pleasant and enjoyable place for everyone.
+      <div class="quote it">In these months I've seen people of different perspecitves to come and participate. While in Cooperacy, many of them decided to make big changes in their private lives. Cooperacy has been a common "origin" able to make them to desire and recognize themselves in the actions they do everyday. They experienced the feeling of cooperation and naturally desired their world to be a pleasant and enjoyable place for everyone.
       </div><div class="quote up diversity">Alessandro</div><br><br>
 
-      <div class="base center"><a class="ae" href="/register">Join</a> Cooperacy today, or <a class="ai" href="https://www.cooperacy.org/contact">contact us</a> for more information. The World needs our mutual effort.</p><br></div>
+      <div class="base center"><a class="ae" href="/register">Join</a> Cooperacy today, or <a class="ai" href="https://www.cooperacy.org/contact">contact us</a> for more information and volunteering. Join our mutual effort.</p><br></div>
 
 </div>
 
