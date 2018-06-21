@@ -4,7 +4,7 @@
     <link href="/css/appstyle.css" rel="stylesheet">
     <link href="/css/app.css" rel="stylesheet">
     <link href="/css/iubenda.css" rel="stylesheet">
-    <meta name="description" content="Cooperacy is a no-profit project aiming to spread cooperation science in social ecosystems.">
+    <meta name="description" content="Cooperacy is a no-profit scientific project aiming to spread cooperation between humans and their ecosystem.">
     <!-- <meta name="nosnippets"> -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,7 +16,7 @@
     <meta property="og:type" content="website" />
     <meta property="og:url" content="http://cooperacy.org" />
     <meta property="og:image" content="http://cooperacy.org/images/wordlogoOG.png" />
-    <meta property="og:description" content="Cooperacy is a scientific project aiming to spread cooperation and ecosystemic awareness." />
+    <meta property="og:description" content="Cooperacy is a no-profit scientific project aiming to spread cooperation between humans and their ecosystem." />
     <meta property="og:site_name" content="Cooperacy" />
     <!-- end Open graph -->
     <!-- Google Tag Manager -->

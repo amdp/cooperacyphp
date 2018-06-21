@@ -11,9 +11,6 @@
   <li>
     <a href="{{URL::to('/platform')}}" class="menu-item">THE PLATFORM</a>
   </li>
-  <li>
-    <a href="{{URL::to('/news')}}" class="menu-item">NEWS</a>
-  </li>
 </ul>
 </li>
 
@@ -35,7 +32,7 @@
 </ul>
 </li>
 
-<li class="dropdown">
+<!-- <li class="dropdown">
 <a href="#" class="dropdown-toggle menu-item" data-toggle="dropdown" role="button" aria-expanded="false">DO</a>
 <ul class="dropdown-menu" role="menu">
   <li>
@@ -51,7 +48,7 @@
     <a href="{{URL::to('/spread')}}" class="menu-item">SPREAD COOPERATION</a>
   </li>
 </ul>
-</li>
+</li> -->
 
 <li class="dropdown">
 <a href="#" class="dropdown-toggle menu-item" data-toggle="dropdown" role="button" aria-expanded="false">COORPORATE</a>
@@ -94,6 +91,9 @@
   </li>
   <li>
   <a href="{{URL::to('/network')}}" class="menu-item">NETWORK</a>
+</li>
+<li>
+  <a href="{{URL::to('/news')}}" class="menu-item">NEWS</a>
 </li>
 </ul>
 </li>

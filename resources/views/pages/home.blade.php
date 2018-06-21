@@ -56,50 +56,50 @@
 
         <g id="equivalenceD" display="none">
           <a href="http://cooperacy.org/cooperation" class="noline finger">
-            <text transform="matrix(1 0 0 1 163 360)" fill="#555555" font-size="65">EQUIVALENCE</text>
+            <text transform="matrix(1 0 0 1 157 360)" fill="#555555" font-size="65">EQUIVALENCE</text>
             <line style="display:inline;fill:#555555;stroke:#FF9000;stroke-width:6;stroke-miterlimit:10;" x1="150" y1="393" x2="600" y2="393"/>
-            <text transform="matrix(1 0 0 1 310 443)" display="inline" fill="#555555" stroke="#555555" stroke-miterlimit="10" font-size="25" letter-spacing="2">EVERYONE</text>
+            <text transform="matrix(1 0 0 1 205 443)" display="inline" fill="#555555" stroke="#555555" stroke-miterlimit="10" font-size="25" letter-spacing="2">EVERYONE IS IMPORTANT</text>
           </a>
         </g>
 
         <g id="trustD" display="none">
           <a href="http://cooperacy.org/cooperation" class="noline finger">
-            <text transform="matrix(1 0 0 1 276 360)" fill="#555555" font-size="65">TRUST</text>
+            <text transform="matrix(1 0 0 1 278 360)" fill="#555555" font-size="65">TRUST</text>
             <line style="display:inline;fill:#555555;stroke:#FFDD00;stroke-width:6;stroke-miterlimit:10;" x1="150" y1="393" x2="600" y2="393"/>
-            <text transform="matrix(1 0 0 1 210 443)" display="inline" fill="#555555" stroke="#555555" stroke-miterlimit="10" font-size="25" letter-spacing="2">ONE EURO PER MONTH</text>
+            <text transform="matrix(1 0 0 1 186 443)" display="inline" fill="#555555" stroke="#555555" stroke-miterlimit="10" font-size="25" letter-spacing="2">PEOPLE COUNT ON OTHERS</text>
           </a>
         </g>
 
         <g id="careD" display="none">
           <a href="http://cooperacy.org/cooperation" class="noline finger">
-            <text transform="matrix(1 0 0 1 289 360)" fill="#555555" font-size="65">CARE</text>
+            <text transform="matrix(1 0 0 1 286 360)" fill="#555555" font-size="65">CARE</text>
             <line style="display:inline;fill:#555555;stroke:#88DD33;stroke-width:6;stroke-miterlimit:10;" x1="150" y1="393" x2="600" y2="393"/>
-            <text transform="matrix(1 0 0 1 200 443)" display="inline" fill="#555555" stroke="#555555" stroke-miterlimit="10" font-size="25" letter-spacing="2">TO FULFILL OUR DESIRES</text>
+            <text transform="matrix(1 0 0 1 153 443)" display="inline" fill="#555555" stroke="#555555" stroke-miterlimit="10" font-size="25" letter-spacing="2">PEOPLE CARE FOR EACH OTHER</text>
           </a>
         </g>
 
         <g id="transparencyD" display="none">
           <a href="http://cooperacy.org/cooperation" class="noline finger">
-            <text transform="matrix(1 0 0 1 135 360)" fill="#555555" font-size="65">TRANSPARENCY</text>
+            <text transform="matrix(1 0 0 1 132 360)" fill="#555555" font-size="65">TRANSPARENCY</text>
             <line style="display:inline;fill:#555555;stroke:#22DDEE;stroke-width:6;stroke-miterlimit:10;" x1="150" y1="393" x2="600" y2="393"/>
-            <text transform="matrix(1 0 0 1 260 443)" display="inline" fill="#555555" stroke="#555555" stroke-miterlimit="10" font-size="25" letter-spacing="2">CLEARLY VISIBLE</text>
+            <text transform="matrix(1 0 0 1 168 443)" display="inline" fill="#555555" stroke="#555555" stroke-miterlimit="10" font-size="25" letter-spacing="2">PEOPLE WANT TO BE HONEST</text>
           </a>
         </g>
 
         <g id="freedomD" display="none">
           <a href="http://cooperacy.org/cooperation" class="noline finger">
-            <text transform="matrix(1 0 0 1 225 360)" fill="#555555" font-size="65">FREEDOM</text>
+            <text transform="matrix(1 0 0 1 222 360)" fill="#555555" font-size="65">FREEDOM</text>
             <line style="display:inline;fill:#555555;stroke:#4488EE;stroke-width:6;stroke-miterlimit:10;" x1="150" y1="393" x2="600" y2="393"/>
-            <text transform="matrix(1 0 0 1 180 443)" display="inline" fill="#555555" stroke="#555555" stroke-miterlimit="10"
-            font-size="25" letter-spacing="2">FOLLOWING OUR TRUE SELF</text>
+            <text transform="matrix(1 0 0 1 154 443)" display="inline" fill="#555555" stroke="#555555" stroke-miterlimit="10"
+            font-size="25" letter-spacing="2">PEOPLE FOLLOW THEIR DESIRES</text>
           </a>
         </g>
 
         <g id="understandingD" display="none">
           <a href="http://cooperacy.org/cooperation" class="noline finger">
-            <text transform="matrix(1 0 0 1 120 360)" fill="#555555" font-size="65">UNDERSTANDING</text>
+            <text transform="matrix(1 0 0 1 118 360)" fill="#555555" font-size="65">UNDERSTANDING</text>
             <line style="display:inline;fill:#555555;stroke:#AA66DD;stroke-width:6;stroke-miterlimit:10;" x1="150" y1="393" x2="600" y2="393"/>
-            <text transform="matrix(1 0 0 1 125 443)" display="inline" fill="#555555" stroke="#555555" stroke-miterlimit="10" font-size="25" letter-spacing="2">WITH THE PERSPECTIVE OF OTHERS</text>
+            <text transform="matrix(1 0 0 1 84 443)" display="inline" fill="#555555" stroke="#555555" stroke-miterlimit="10" font-size="25" letter-spacing="2">PEOPLE TRY TO UNDERSTAND EACH OTHER</text>
           </a>
         </g>
 
@@ -107,8 +107,8 @@
           <a href="http://cooperacy.org/cooperation" class="noline finger">
             <text transform="matrix(1 0 0 1 218 360)" fill="#555555" font-size="65">DIVERSITY</text>
             <line style="display:inline;fill:#555555;stroke:#FF77CC;stroke-width:6;stroke-miterlimit:10;" x1="150" y1="393" x2="600" y2="393"/>
-            <text transform="matrix(1 0 0 1 148 443)" display="inline" fill="#555555" stroke="#555555" stroke-miterlimit="10"
-            font-size="25" letter-spacing="2">AND THE WISDOM OF INCLUSION</text>
+            <text transform="matrix(1 0 0 1 155 443)" display="inline" fill="#555555" stroke="#555555" stroke-miterlimit="10"
+            font-size="25" letter-spacing="2">PEOPLE WANT TO BE INCLUDED</text>
           </a>
         </g>
 
@@ -129,17 +129,18 @@
     <div class="row"><br>
       <div class="col-lg-4 col-xs-12 subheading center"><a href="/aboutyou" class="noline transparency space">DISCOVER</a></div>
       <div class="col-lg-4 col-xs-12 subheading center"><a href="/cooperation" class="noline understanding space">LEARN</a></div>
-      <div class="col-lg-4 col-xs-12 subheading center"><a href="/projects" class="noline equivalence space">DO</a></div>
+      <div class="col-lg-4 col-xs-12 subheading center"><a href="/register" class="noline equivalence space">JOIN</a></div>
 
-      <br><br><br><p class="base center">Cooperacy is a no-profit project aiming to spread cooperation science in social ecosystems.<br><br>A social ecosystem is an ecosystem with human presence. Humans alter the ecosystem with their social behavior in a good way when they redistribute their happiness: wealth, decisions and activities should flow where life and development need them, like in a natural ecosystem.<br><br>Joining Cooperacy is important today, if we want to experience sound social ecosystems at the personal, corporate and international levels.</p><br><br>
+      <br><br><br><p class="base center">Cooperacy is a no-profit scientific project aiming to spread cooperation between humans and their ecosystem.<br><br>Joining Cooperacy is important today, if we want to experience sound social ecosystems at the personal, corporate and international levels.</p><br><br>
 
-      <div class="quote it">In Cooperacy I’ve seen the freedom of the individual in relation to the freedom of others, a continuous oscillation of equilibria, with unassuming attitude, following an easy flow and the spontaneous actions of people.</div><div class="quote up equivalence">Carol</div><br><br>
+      <div class="quote it">In Cooperacy I’ve seen the freedom of the individual in relation to the freedom of others, a continuous oscillation of equilibria, with unassuming attitude, following an easy flow and the spontaneous actions of people.</div><div class="quote up care">Carol</div><br><br>
 
       <div class="quote it">I see Cooperacy - beyond its social goal – as a path made of people who want to improve themselves and the world around them, building something beautiful and useful for all.
       In a world based on the mindless continuous consumption of goods, living on a different constructive mentality can be an amazing gift for ourselves and the people we love.
-    </div><div class="quote up trust">Lorenzo</div><br><br>
+      </div><div class="quote up diversity">Lorenzo</div><br><br>
 
-      <!-- <div class="quote it">There will be a day in which human beings will look to each other with the same love they have for their children. A day in which we will all be mutually parents and children at the same time. You don’t ask yourself if investing energy for a child will bring you an economic advantage. Now it’s not like that yet, but there are many movements indicating that global awareness is changing. Directions are visible and the so called “critical mass” is gradually becoming consistent. Cooperacy is one of this good movements having strong correlations with the concreteness of doing. I really feel like an ancient knight when I pay my humble duty - a small thing to do, but a big impulse to the nobility of my spirit.
+      <!--
+      <div class="quote it">A social ecosystem is an ecosystem with human presence. Humans alter the ecosystem with their social behavior in a good way when they redistribute their happiness: wealth, decisions and activities should flow where life and development need them, like in a natural ecosystem. There will be a day in which human beings will look to each other with the same love they have for their children. A day in which we will all be mutually parents and children at the same time. You don’t ask yourself if investing energy for a child will bring you an economic advantage. Now it’s not like that yet, but there are many movements indicating that global awareness is changing. Directions are visible and the so called “critical mass” is gradually becoming consistent. Cooperacy is one of this good movements having strong correlations with the concreteness of doing. I really feel like an ancient knight when I pay my humble duty - a small thing to do, but a big impulse to the nobility of my spirit.
       </div><div class="quote up care">Albino</div><br><br>
 
        <div class="quote it">I felt Cooperacy in my belly, since the first read. Then to make it go up and reach my mind, I fight with it. Yes, it’s like getting into fights. It drains me out and at the same time it lends a hand to make me get up again. It challenges me every day, it turns upside down my perspectives, it opens myself to new possibilities. It teaches me, while other times it allows me to teach or better share what I think I have learned.
@@ -202,9 +203,9 @@
       </div><div class="quote up understanding">Sarah</div><br><br>-->
 
       <div class="quote it">In these months I've seen people of different perspecitves to come and participate. While in Cooperacy, many of them decided to make big changes in their private lives. Cooperacy has been a common "origin" able to make them to desire and recognize themselves in the actions they do everyday. They experienced the feeling of cooperation and naturally desired their world to be a pleasant and enjoyable place for everyone.
-      </div><div class="quote up diversity">Alex</div><br><br>
+      </div><div class="quote up equivalence">Alex</div><br><br>
 
-      <div class="base center"><a class="ae" href="/register">Join</a> Cooperacy today, or <a class="ai" href="https://www.cooperacy.org/contact">contact us</a> for more information and volunteering.</p><br></div>
+      <div class="base center"><a class="ae" href="/register">Join</a> Cooperacy today, or <a class="ai" href="https://www.cooperacy.org/contact">contact us</a> for more information or volunteering.</p><br></div>
 
 </div>
 
