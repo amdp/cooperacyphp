@@ -24,8 +24,8 @@
 
   <br><p class="subheading equivalence center space margin">ACTING TOGETHER, WITH MUTUAL ENJOYMENT</p>
   <p class="base">Cooperation means acting together with mutual enjoyment of everyone involved. A cooperation must also have neutral or positive effects on anybody or anything <i>external</i> to the interaction.<br>
-  Cooperation is a specific dynamic that happens only when the context, or better the <i>social ecosystem</i>, allows it to emerge. It is an original circumstance from where different goals, rarely a similar one, are achieved.<br><br>
-  According to our <a class="au" href="/project-articles">scientific model</a>, the social ecosystem in which cooperation may emerge should meet seven conditions to allow the presence of cooperation.
+  Cooperation is a specific dynamic that happens only when the context, or better the <i>social ecosystem</i>, allows it to emerge. It is an original circumstance from where different goals, sometimes a similar one, are achieved.<br><br>
+  According to our <a class="au" href="/project-articles">scientific model</a>, the social ecosystem in which cooperation may emerge should meet seven conditions.
   </p>
 
   <br><img id="diversity" name="diversity" class="page-header" src="{{asset('/images/diversity.png')}}"><br>
