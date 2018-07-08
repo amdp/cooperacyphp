@@ -2,27 +2,23 @@
 
 @section('content')
 <div class="container">
-    <div class="jumbotron">
+    <div class="containerone">
     @if(session('data'))
-    <h1>SUBSCRIPTION CANCELLED</h1>
-    <h2>YOU HAVE {{session('data')}} DAYS LEFT. STAY WITH US!</h2>
+    <p class="base understanding center space up">Subscription cancelled.<br><br>
+    You have {{session('data')}} days left to join us!</p>
     @else
-    <h1>JOIN - STEP 2</h1>
-    <h2>PAY SUBSCRIPTION TO COMPLETE REGISTRATION</h2>
+    <p class="base equivalence center space up">Step 2: the voluntary pooling<br><br></p>
     @endif
-    <p style="font-size: 14px;">
-      <strong>Participant</strong> is our only membership level (The 16% more – 0.16 euros – is the cost of paypal fees)</p><p style="font-size: 14px;">
-                If you want to donate more, use the ‘donate’ button. You won’t receive additional privileges if you give more. But you can of course be proud of it.</p>
+    <p class="base">The Cooperacy membership is based on voluntary pooling. All of us send just one euro per month: the money is pooled to finance future ideas and projects, included yours. If you do not believe it, you can see what we've done with the money directly from the public paypal account: go to the standard paypal login and enter our account with COOPERATION + password cooperation2016.<br><br>
 
-    <p style="font-size: 14px;"><strong>No paypal?</strong> Without paypal, we ask you to provide one year membership (12 euros) bank transfer: our IBAN is IT61D0623001623000043225634 - Filiale AG 23 Milano Cariparma di via della Moscova. Once done, please provide us emailing a receipt to memberships@cooperacy.org.</p>
+    If you don't like paypal, you can pool one year membership (12 euros) via bank transfer: our IBAN is IT61D0623001623000043225634 - Filiale AG 23 Milano Cariparma di via della Moscova.<br><br>
 
-    <p style="font-size: 14px;"><strong>Low income country?</strong> We’ll soon adapt the fees to the different currencies purchasing power.</p>
+    If you are living in a low income country, you can pool with a lower amount if you help us adapt the amount to the different purchasing power of your nation.<br><br>
 
-    <p style="font-size: 14px;">The price for membership is <strong>€1.16 per Month.</strong>
-    </p>
     {!! Form::open(array('url' => 'pay', 'method' => 'post')) !!}
-                    {!! Form::submit('PAY SUBSCRIPTION WITH PAYPAL', ['class'=>'btn btn-primary btn-block']) !!}
+                    {!! Form::submit('Voluntary pooling through PayPal', ['class'=>'btn btn-primary btn-block']) !!}
                     {!! Form::close() !!}
-    </div>
+    <br><a class="ae" href="mailto:membershp@cooperacy.org"><div class="btn btn-primary btn-block">Send us your voluntary pooling bank transfer receipt instead</div></a></p>
+  </div><br>
 </div>
 @endsection
