@@ -32,7 +32,7 @@
   <a class="ai" href="/openecosystem">Cooperacy Experience</a> is the live application of the Cooperacy model. The participants of any organization or community can enjoy a natural social system able to generate collaboration, innovation and problem solving.<br><br>
   <a class="ai" href="/science">Cooperacy Research</a> is instead a continuous scientific investigation about possible social systems based on cooperation and ecosystemic awareness.<br><br>
 
-  <p class="base">If you consider our society and its natural ecosystem as a whole living organism, being part of Cooperacy means supporting this organism with the enjoyment of cooperation. <a class="ae" href="/join">Joining</p> the voluntary pool will let you experiment and support a different social ecosystem based on cooperation and common enjoyment.</p><br><br>
+  <p class="base">If you consider our society and its natural ecosystem as a whole living organism, being part of Cooperacy means supporting this organism with the enjoyment of cooperation. <a class="ae" href="/join">Joining</a> the voluntary pool will let you experiment and support a different social ecosystem based on cooperation and common enjoyment.</p><br><br>
 
   </div>
   <!--END CONTENT-->
