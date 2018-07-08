@@ -131,7 +131,7 @@
       <div class="col-lg-4 col-xs-12 subheading center"><a href="/cooperation" class="noline understanding space">LEARN</a></div>
       <div class="col-lg-4 col-xs-12 subheading center"><a href="/register" class="noline equivalence space">JOIN</a></div>
 
-      <br><br><br><p class="base center">Cooperacy is a no-profit scientific project aiming to spread cooperation between humans and their ecosystem.<br><br>Joining Cooperacy is important today, if we want to experience sound social ecosystems at the <a href="/aboutyou" class="ad">personal</a>, <a href="/paradox" class="af">corporate</a> and <a href="/cci" class="au">international</a> levels.</p><br><br>
+      <br><br><br><p class="base center">Cooperacy is a nonprofit scientific project aiming to spread cooperation between humans and their ecosystem.<br><br>Joining Cooperacy is important today, if we want to experience sound social ecosystems at the <a href="/aboutyou" class="ad">personal</a>, <a href="/paradox" class="af">corporate</a> and <a href="/cci" class="au">international</a> levels.</p><br><br>
 
       <div class="quote it">In Cooperacy I’ve seen the freedom of the individual in relation to the freedom of others, a continuous oscillation of equilibria, with unassuming attitude, following an easy flow and the spontaneous actions of people.</div><div class="quote up care">Carol</div><br><br>
 
