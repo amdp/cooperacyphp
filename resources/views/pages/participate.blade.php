@@ -22,9 +22,9 @@
 
   <!--BEGIN CONTENT-->
   <div class="col-md-8">
-  <p class="base">Cooperacy activities are growing! You can support our efforts by joining one of them.<br></p>
+  <p class="base">Cooperacy activities are growing! You can support our efforts by joining one of them:<br></p>
   <p class="subheading equivalence center space margin">THE PLATFORM</p>
-  <p class="base">Our main effort is to develop our <a class="ae" href="/platform">platform</a>. It is already functional, but it needs some improvements. Although we have already made some testing we still have to reach 3000 members to make it appealing, dynamic and sustainable. This is our first milestone, to get more participants: we are currently {{$membersnumber}}!</p>
+  <p class="base">Our main effort is to finish the development of our ideas <a class="ae" href="/platform">platform</a>. We have trialled some activities which have created surplus and this has been returned to the Cooperacy pool. We invite members to propose further ideas that will stimulate sustainable surplus growth. Although we have already made some testing we still have to reach 3000 members to make the platform appealing, dynamic and sustainable. This is our first milestone, to get more participants: we are currently {{$membersnumber}}, coming from Italy, Germany, United States, Brazil, Iran!</p>
 
   <div class="progress">
   <div class="progress-bar" role="progressbar" aria-valuenow="{{round($membersnumber/3000*100, $precision=2)}}"
@@ -40,11 +40,12 @@
   <p class="base"><a class="at" href="/contact">Help us</a> with the online live webinars and in preparing the materials for the courses!</p>
 
   <p class="subheading equivalence center space margin">COOPERACY ACROYOGA</p>
-  <p class="base">This project was led by Igor Carravetta and Carola Ravaschino in 2016.</p>
+
+  <p class="base">Acroyoga merges acrobatic movements with simple yoga positions. It is based on the <a class="ae" href="/cooperation">cooperation</a> and <a class="at" href="/cooperation#trust">trust</a> between two people and one supervisor. The cooperation in this case is based on how the bodies balances depend on the reciprocal <a class="au" href="/cooperation#understanding">understanding</a> of the participants. It is an activity that highlights the values of Cooperacy and has been developed following the Cooperacy governance system.</p>
   <div class="center"><video width="480px" height="360px" controls>
   <source src="{{asset('images/acrocoo.mov')}}" type="video/mp4" alt="null">
   </video></div><br>
-  <p class="base">During one of the first Cooperacy meetings, we were discussing how to test the voting system and do something together. Igor and Carola, at the time, were doing Acroyoga, which merges acrobatic movements with simple yoga positions. It is based on the cooperation and trust between two people and one supervisor. It's a different cooperation compared to the standard actions we do together, in this case the bodies balances depend on the reciprocal perception and understanding of the participants. The group voted and we funded and helped the weekly course from October to March. It has been an amazing experience. Igor and Carola are happy to start over, if you want just drop a <a class="at" href="/contact">line</a> asking for them.</p>
+  <p class="base">This project was led by Igor Carravetta and Carola Ravaschino in 2016. During one of the first Cooperacy meetings, we were discussing how to test the <a class="af" href="/governance">voting system</a> and do something together. The group voted and we funded and helped the weekly course from October to March. It has been an amazing experience. Igor and Carola are happy to start over, if you want just drop a <a class="at" href="/contact">line</a> asking for them.</p>
 
   <p class="subheading equivalence center space margin">EXPERIMENTAL PROJECTS</p>
   <p class="base">This is a non-exaustive list of the projects we are currently testing.</p>
