@@ -65,9 +65,6 @@
   <a href="{{URL::to('/integration')}}" class="menu-item">INTEGRATION</a>
   </li>
   <li>
-  <a href="{{URL::to('/solutions')}}" class="menu-item">SOLUTIONS</a>
-  </li>
-  <li>
     <a href="{{URL::to('/cci')}}" class="menu-item">COOPERATION CONTEXT INDEX</a>
   </li>
   <li>

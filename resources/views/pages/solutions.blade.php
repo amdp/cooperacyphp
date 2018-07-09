@@ -10,7 +10,7 @@
 
   <!--BEGIN HEADER-->
   <div class="row">
-    <br><img class="page-header" src="{{asset('/images/solutions.png')}}"><br>
+    <br><img class="page-header" src="{{asset('/images/solutions.png')}}"><br><img class="page-header">
   </div>
   <!--END HEADER-->
 

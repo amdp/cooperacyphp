@@ -33,7 +33,7 @@
   <p class="subheading freedom center space">DECISIONS</p><br/>
   <p class="base">Coordinators have the right to take direct decisions. Only when their decision is publicly communicated it becomes effective. When they are in contrast or unsure about what decision to take, coordinators can ask advice to the participants or start a voting phase.<br>
   Participants can propose decisions as well through voting or asking the coordinators for direct approval. The coordinators have no right to vote when they are the voting main subject.<br>
-  Participants may also oppose the coordinators decisions. If it's just one of them, the opposition is recorded or, when possible, proportionally and creatively <a class="ad" href="/integration">integrated</a>. If the opposing participants are at least two<SUP>1</SUP>, the coordinators should proportionally and creatively <a class="ad" href="/integration">integrate</a> the opposition according to the seven <a class="ae" href="/solutions">solutions</a> or alternatively start a voting phase.<br><br>
+  Participants may also oppose the coordinators decisions. If it's just one of them, the opposition is recorded or, when possible, proportionally and creatively <a class="ad" href="/integration">integrated</a>. If the opposing participants are at least two<SUP>1</SUP>, the coordinators should proportionally and creatively <a class="ad" href="/integration">integrate</a> the opposition according to the seven <a class="ae" href="/integration#solutions">solutions</a> or alternatively start a voting phase.<br><br>
 
   <br><img class="page-header" src="{{asset('/images/decisions.png')}}">
 
