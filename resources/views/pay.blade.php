@@ -15,7 +15,7 @@
 
     If you are living in a low income country, you can pool with a lower amount if you help us adapt the amount to the different purchasing power of your nation.<br><br>
 
-    {!! Form::open(array('url' => 'pay', 'method' => 'post')) !!}
+    {!! Form::open(array('url' => 'pool', 'method' => 'post')) !!}
                     {!! Form::submit('Voluntary pooling through PayPal', ['class'=>'btn btn-primary btn-block']) !!}
                     {!! Form::close() !!}
     <br><a class="ae" href="mailto:membershp@cooperacy.org"><div class="btn btn-primary btn-block">Send us your voluntary pooling bank transfer receipt instead</div></a></p>

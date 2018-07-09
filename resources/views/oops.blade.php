@@ -8,8 +8,8 @@
                 <div class="panel-heading">Oooops!</div>
 
                 <div class="panel-body">
-                    Something went wrong with your payment.
-                   
+                    Something went wrong with your pooling.
+
                 </div>
             </div>
         </div>

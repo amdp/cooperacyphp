@@ -28,7 +28,7 @@ class RegisterController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/pay';
+    protected $redirectTo = '/pool';
 
     /**
      * Create a new controller instance.
@@ -63,20 +63,20 @@ class RegisterController extends Controller
      * @return User
      */
     protected function create(array $data)
-    {   
-        
+    {
+
         Mail::send('emails.welcome', [], function($message) use($data) {
-    
-            
+
+
             $message->to($data['email'])
             ->bcc('cooperacy@cooperacy.org','Cooperacy')
             ->from('cooperacy@cooperacy.org','Cooperacy')
             ->subject('One more step to join Cooperacy');
-            
-    
+
+
         });
-        
-        
+
+
         return User::create([
             'name' => $data['name'],
             'email' => $data['email'],

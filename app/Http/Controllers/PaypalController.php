@@ -36,7 +36,7 @@ use Illuminate\Http\Request;
 class PaypalController extends Controller
 {
     private $_api_context;
-    
+
     public function __construct()
     {
         //setup PayPal api context
@@ -44,7 +44,7 @@ class PaypalController extends Controller
         $this->_api_context = new ApiContext(new OAuthTokenCredential($paypal_conf['client_id'], $paypal_conf['secret']));
         $this->_api_context->setConfig($paypal_conf['settings']);
     }
-    
+
     public function subscribe() {
       $plan = new Plan();
       // # Basic Information
@@ -70,7 +70,7 @@ class PaypalController extends Controller
       $paymentDefinition->setChargeModels(array($chargeModel));
       $merchantPreferences = new MerchantPreferences();
       $baseUrl = url('/');
-      
+
       // ReturnURL and CancelURL are not required and used when creating billing agreement with payment_method as "credit_card".
       // However, it is generally a good idea to set these values, in case you plan to create billing agreements which accepts "paypal" as payment_method.
       // This will keep your plan compatible with both the possible scenarios on how it is being used in agreement.
@@ -82,7 +82,7 @@ class PaypalController extends Controller
           ->setSetupFee(new Currency(array('value' => 0, 'currency' => 'EUR')));
       $plan->setPaymentDefinitions(array($paymentDefinition));
       $plan->setMerchantPreferences($merchantPreferences);
-      
+
       //For Sample Purposes Only.
       $request = clone $plan;
       ### Create Plan
@@ -96,13 +96,13 @@ class PaypalController extends Controller
       // NOTE: PLEASE DO NOT USE RESULTPRINTER CLASS IN YOUR ORIGINAL CODE. FOR SAMPLE ONLY
       //ResultPrinter::printResult("Created Plan", "Plan", $output->getId(), $request, $output);
       echo $output;
-            
+
       $planId = $output->getId();
-         
+
       $active = $plan->getState();
       echo $planId.'<br>';
       echo $active.'<br>';
-      
+
       // PATCH PLAN, set state to ACTIVE
       try {
       $patch = new Patch();
@@ -115,7 +115,7 @@ class PaypalController extends Controller
       // $chargeModel = $chargeModels[0];
       // $chargeModelId = $chargeModel->getId();
 
-      
+
       $patch->setOp('replace')
           ->setPath('/')
           ->setValue(json_decode(
@@ -136,14 +136,14 @@ class PaypalController extends Controller
       }
 
     //ResultPrinter::printResult("Updated the Plan Payment Definition", "Plan", $plan->getId(), $patchRequest, $plan);
-    
-    
+
+
     $updatedPlan = Plan::get($planId, $this->_api_context);
-    return $updatedPlan;     
-      
+    return $updatedPlan;
+
     }
-    
-    public function pay() {
+
+    public function pool() {
       $planId='P-2RD76633VR406933V27CMR3A';
       $atime = strtotime('+1 hour', time()); // PROBLEMA: controllare data server!
       $today = gmdate("Y-m-d\TH:i:s\Z", $atime);
@@ -154,20 +154,20 @@ class PaypalController extends Controller
         $agreement->setName($updatedPlan->name)
           ->setDescription($updatedPlan->description)
           ->setStartDate($today);
-        
-                
-        
+
+
+
         $overrideChargeModel = new OverrideChargeModel();
         $overrideChargeModel->setChargeId('CHM-0X0167156X813701UUQFYDGA')
           ->setAmount(new Currency(array('value' => 0, 'currency' => 'EUR')));
-                
-        
-        
+
+
+
         // Set plan id
         $plan = new Plan();
-        
+
        $plan->setId($planId);
-       
+
         $agreement->setPlan($plan);
 
         // Add payer type
@@ -189,10 +189,10 @@ class PaypalController extends Controller
         try {
         // Create agreement
         $agreement = $agreement->create($this->_api_context);
-        
+
         // Extract approval URL to redirect user
         $approvalUrl = $agreement->getApprovalLink();
-        
+
         } catch (PayPal\Exception\PayPalConnectionException $ex) {
           echo $ex->getCode();
           echo $ex->getData();
@@ -200,15 +200,15 @@ class PaypalController extends Controller
         } catch (Exception $ex) {
         die($ex);
       }
-      
+
       return redirect($approvalUrl);
-      
+
     }
-    
+
     public function confirm(Request $request) {
-      
+
       $token = $request->token;
- 
+
         $agreement = new \PayPal\Api\Agreement();
 
         try {
@@ -221,7 +221,7 @@ class PaypalController extends Controller
         } catch (Exception $ex) {
           die($ex);
         }
-        
+
         $id = Auth::user()->id;
         $transaction_id = $agreement->id;
         $status = $agreement->state;
@@ -234,13 +234,13 @@ class PaypalController extends Controller
           'transaction_created_at' => $time,
           'member' => 1]);
         }
-        
+
       return view('thanks', compact('agreement'));
     }
-    
-    
+
+
     public function getPaymentStatus() {
-      
+
       $id = Auth::user()->id;
       $trans_id=DB::table('users')->where('id', $id)->pluck('transaction_id');
       $agreementId=$trans_id[0];
@@ -254,40 +254,40 @@ class PaypalController extends Controller
       // NOTE: PLEASE DO NOT USE RESULTPRINTER CLASS IN YOUR ORIGINAL CODE. FOR SAMPLE ONLY
       // ResultPrinter::printResult("Retrieved an Agreement", "Agreement", $agreement->getId(), $createdAgreement->getId(), $agreement);
       $state = $agreement->state;
-      
+
       $last_payment_date = strtotime($agreement->getAgreementDetails()->getLastPaymentDate());
       $days_toend = 30 - floor((time() - $last_payment_date)/60/60/24);
-      
+
       if ($state == "Active") {
         $message = "Your subscription is active";
       } else if ($state == "Cancelled") {
-        
+
         if ($days_toend <= 0) {
           // not member, update DB
         } else {
           $message = "You have cancelled your subscription, you still have ".$days_toend." days left.";
-        }      
-        
+        }
+
       }
-        
+
       return $agreement;
-             
+
       }
-    
-    
+
+
     public function getPlanList() {
-      
+
       try {
       $params = array('page' => '0');
       $listplan= Plan::all($params, $this->_api_context);
-      
+
       } catch (Exception $ex) {
       // NOTE: PLEASE DO NOT USE RESULTPRINTER CLASS IN YOUR ORIGINAL CODE. FOR SAMPLE ONLY
       // ResultPrinter::printError("Retrieved an Agreement", "Agreement", $agreement->getId(), $createdAgreement->getId(), $ex);
       exit(1);
       }
-        
+
       return $listplan;
-             
+
       }
 }

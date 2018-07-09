@@ -1,6 +1,6 @@
 <!--BEGIN PUBLIC MENU-->
 <li class="dropdown">
-<a href="#" class="dropdown-toggle menu-item" data-toggle="dropdown" role="button" aria-expanded="false">DISCOVER</a>
+<a href="#" class="dropdown-toggle menu-item" data-toggle="dropdown" role="button" aria-expanded="false">THE PROJECT</a>
 <ul class="dropdown-menu" role="menu">
   <li>
     <a href="{{URL::to('/aboutyou')}}" class="menu-item">ABOUT YOU</a>
@@ -11,27 +11,11 @@
   <li>
     <a href="{{URL::to('/platform')}}" class="menu-item">THE PLATFORM</a>
   </li>
-</ul>
-</li>
-
-<li class="dropdown">
-<a href="#" class="dropdown-toggle menu-item" data-toggle="dropdown" role="button" aria-expanded="false">LEARN</a>
-<ul class="dropdown-menu" role="menu">
-  <li>
-    <a href="{{URL::to('/cooperation')}}" class="menu-item">COOPERATION</a>
-  </li>
-  <li>
-  <a href="{{URL::to('/integration')}}" class="menu-item">INTEGRATION</a>
-  </li>
-  <li>
-  <a href="{{URL::to('/solutions')}}" class="menu-item">SOLUTIONS</a>
-  </li>
   <li>
     <a href="{{URL::to('/governance')}}" class="menu-item">GOVERNANCE</a>
   </li>
 </ul>
 </li>
-
 <!-- <li class="dropdown">
 <a href="#" class="dropdown-toggle menu-item" data-toggle="dropdown" role="button" aria-expanded="false">DO</a>
 <ul class="dropdown-menu" role="menu">
@@ -57,13 +41,13 @@
     <a href="{{URL::to('/paradox')}}" class="menu-item">THE PARADOX</a>
   </li>
   <li>
-    <a href="{{URL::to('/cohackathon')}}" class="menu-item">COHACKATHON</a>
-  </li>
-  <li>
     <a href="{{URL::to('/openecosystem')}}" class="menu-item">OPEN ECOSYSTEM</a>
   </li>
   <li>
     <a href="{{URL::to('/overview')}}" class="menu-item">OVERVIEW</a>
+  </li>
+  <li>
+    <a href="{{URL::to('/cohackathon')}}" class="menu-item">COHACKATHON</a>
   </li>
   <li>
     <a href="{{URL::to('/workshops')}}" class="menu-item">WORKSHOPS</a>
@@ -75,26 +59,23 @@
 <a href="#" class="dropdown-toggle menu-item" data-toggle="dropdown" role="button" aria-expanded="false">SCIENCE</a>
 <ul class="dropdown-menu" role="menu">
   <li>
-    <a href="{{URL::to('/science')}}" class="menu-item">COOPERACY RESEARCH ASSOCIATION</a>
+    <a href="{{URL::to('/cooperation')}}" class="menu-item">COOPERATION</a>
   </li>
-    <li>
-    <a href="{{URL::to('/coscience')}}" class="menu-item">COOPERATION SCIENCE</a>
+  <li>
+  <a href="{{URL::to('/integration')}}" class="menu-item">INTEGRATION</a>
+  </li>
+  <li>
+  <a href="{{URL::to('/solutions')}}" class="menu-item">SOLUTIONS</a>
   </li>
   <li>
     <a href="{{URL::to('/cci')}}" class="menu-item">COOPERATION CONTEXT INDEX</a>
   </li>
   <li>
-    <a href="{{URL::to('/project-articles')}}" class="menu-item">PROJECT ARTICLES</a>
+    <a href="{{URL::to('/science')}}" class="menu-item">COOPERACY RESEARCH ASSOCIATION</a>
   </li>
   <li>
-    <a href="{{URL::to('/streams')}}" class="menu-item">RESEARCH STREAMS</a>
+    <a href="{{URL::to('/news')}}" class="menu-item">NEWS</a>
   </li>
-  <li>
-  <a href="{{URL::to('/network')}}" class="menu-item">NETWORK</a>
-</li>
-<li>
-  <a href="{{URL::to('/news')}}" class="menu-item">NEWS</a>
-</li>
 </ul>
 </li>
 <li class="menu-item">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</li>

@@ -47,13 +47,13 @@ Route::get('/login', function () {
     return view('auth.login');
 });
 
-Route::get('/map', [ 
+Route::get('/map', [
 'as' => 'map',
 'uses' => 'MapController@showCountries']);
 
 Route::get('/testdb', 'Test@getData');
 
-Route::post('sendmessage', [ 
+Route::post('sendmessage', [
     'as' => 'sendmessage',
     'uses' => 'MessageController@send',
 ]);
@@ -76,36 +76,36 @@ Route::get('/members', function () {
   return view('pages.protected');
 });
 
-Route::post('pay', [ 
-    'as' => 'pay',
-    'uses' => 'PaypalController@pay',
+Route::post('pool', [
+    'as' => 'pool',
+    'uses' => 'PaypalController@pool',
 ]);
 
-Route::get('thanks', [ 
+Route::get('thanks', [
     'as' => 'thanks',
     'uses' => 'PaypalController@confirm']);
 
-Route::get('check', [ 
+Route::get('check', [
 'as' => 'check',
 'uses' => 'PaypalController@getPaymentStatus']);
 
-Route::get('checkplan', [ 
+Route::get('checkplan', [
 'as' => 'checkplan',
 'uses' => 'PaypalController@getPlanList']);
-    
-Route::get('oops', [ 
+
+Route::get('oops', [
     'as' => 'oops',
     'uses' => function () {
   return view('oops');
 }]);
 
-Route::get('ending', [ 
+Route::get('ending', [
     'as' => 'ending',
     'uses' => function () {
   return view('ending');
 }]);
 
-Route::post('payment', [ 
+Route::post('payment', [
     'as' => 'payment',
     'uses' => 'PaypalController@subscribe',
 ]);

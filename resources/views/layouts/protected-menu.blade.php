@@ -19,8 +19,8 @@
 
     @elseif(Auth::check() && Auth::user()->member==null)
     <!--NOT YET MEMBER MENU-->
-    <li><a href="{{ route('pay') }}" class="menu-item">Complete registration</a></li>
-    
+    <li><a href="{{ route('pool') }}" class="menu-item">Complete registration</a></li>
+
     @elseif(Auth::check())
     <!--MEMBER MENU-->
       <li>

@@ -37,7 +37,7 @@ use Illuminate\Http\Request;
 class PlanController extends Controller
 {
     private $_api_context;
-    
+
     public function __construct()
     {
         //setup PayPal api context
@@ -45,7 +45,7 @@ class PlanController extends Controller
         $this->_api_context = new ApiContext(new OAuthTokenCredential($paypal_conf['client_id'], $paypal_conf['secret']));
         $this->_api_context->setConfig($paypal_conf['settings']);
     }
-    
+
     /* CREATE SUBSCRIPTION PLAN*/
     public function createplan() {
       $plan = new Plan();
@@ -72,7 +72,7 @@ class PlanController extends Controller
       $paymentDefinition->setChargeModels(array($chargeModel));
       $merchantPreferences = new MerchantPreferences();
       $baseUrl = url('/');
-      
+
       // ReturnURL and CancelURL are not required and used when creating billing agreement with payment_method as "credit_card".
       // However, it is generally a good idea to set these values, in case you plan to create billing agreements which accepts "paypal" as payment_method.
       // This will keep your plan compatible with both the possible scenarios on how it is being used in agreement.
@@ -84,7 +84,7 @@ class PlanController extends Controller
           ->setSetupFee(new Currency(array('value' => 0, 'currency' => 'EUR')));
       $plan->setPaymentDefinitions(array($paymentDefinition));
       $plan->setMerchantPreferences($merchantPreferences);
-      
+
       //For Sample Purposes Only.
       $request = clone $plan;
       ### Create Plan
@@ -98,20 +98,20 @@ class PlanController extends Controller
       // NOTE: PLEASE DO NOT USE RESULTPRINTER CLASS IN YOUR ORIGINAL CODE. FOR SAMPLE ONLY
       //ResultPrinter::printResult("Created Plan", "Plan", $output->getId(), $request, $output);
       echo $output;
-            
+
       $planId = $output->getId();
-         
+
       $active = $plan->getState();
       echo $planId.'<br>';
       echo $active.'<br>';
-      
+
       // PATCH PLAN, set state to ACTIVE
       try {
       $patch = new Patch();
 
-   
 
-      
+
+
       $patch->setOp('replace')
           ->setPath('/')
           ->setValue(json_decode(
@@ -132,54 +132,54 @@ class PlanController extends Controller
       }
 
     //ResultPrinter::printResult("Updated the Plan Payment Definition", "Plan", $plan->getId(), $patchRequest, $plan);
-    
-    
+
+
     $updatedPlan = Plan::get($planId, $this->_api_context);
-    $charge_id=$updatedPlan->payment_definitions[0]->charge_models[0]->id; 
+    $charge_id=$updatedPlan->payment_definitions[0]->charge_models[0]->id;
     DB::table('plans')->insert([
       'plan_id' => $updatedPlan->id,
       'status' => $updatedPlan->state,
       'charge_id' => $charge_id,
       ]);
-    
-      return redirect('createplan')->with('status', 'New subscription plan created');   
-      
+
+      return redirect('createplan')->with('status', 'New subscription plan created');
+
     }
 
     /*PAY FOR LATEST SUBSCRIPTION*/
-    public function pay() {
+    public function pool() {
 
       // Get registered plan info
       $planDesc=DB::table('plans')->where('status', 'ACTIVE')->orderBy('id', 'DESC')->first();// LIVE
       //$planDesc=DB::table('plans')->where('id', 17)->first(); // SANDBOX ONLY
 
       $email = Auth::user()->email;
-      
+
       $atime = strtotime('+1 hour', time()); // PROBLEMA: controllare data server!
       $today = gmdate("Y-m-d\TH:i:s\Z", $atime);
       // CREATE BILLING AGREEMENT OBJECT
-      
-      
-      $updatedPlan = Plan::get($planDesc->plan_id, $this->_api_context); 
+
+
+      $updatedPlan = Plan::get($planDesc->plan_id, $this->_api_context);
       // Create new agreement
         $agreement = new Agreement();
         $agreement->setName($updatedPlan->name)
           ->setDescription($updatedPlan->description)
           ->setStartDate($today);
-        
-                
-        
+
+
+
         $overrideChargeModel = new OverrideChargeModel();
         $overrideChargeModel->setChargeId($planDesc->charge_id)
           ->setAmount(new Currency(array('value' => 0, 'currency' => 'EUR')));
-                
-        
-        
+
+
+
         // Set plan id
         $plan = new Plan();
-        
+
         $plan->setId($planDesc->plan_id);
-       
+
         $agreement->setPlan($plan);
 
         // Add payer type
@@ -193,10 +193,10 @@ class PlanController extends Controller
         try {
         // Create agreement
         $agreement = $agreement->create($this->_api_context);
-        
+
         // Extract approval URL to redirect user
         $approvalUrl = $agreement->getApprovalLink();
-        
+
         } catch (PayPal\Exception\PayPalConnectionException $ex) {
           echo $ex->getCode();
           echo $ex->getData();
@@ -204,14 +204,14 @@ class PlanController extends Controller
         } catch (Exception $ex) {
         die($ex);
       }
-      
-      return redirect($approvalUrl);  
+
+      return redirect($approvalUrl);
   }
 
   public function confirm(Request $request) {
-      
+
       $token = $request->token;
- 
+
         $agreement = new \PayPal\Api\Agreement();
 
         try {
@@ -224,7 +224,7 @@ class PlanController extends Controller
         } catch (Exception $ex) {
           die($ex);
         }
-        
+
         $id = Auth::user()->id;
         $transaction_id = $agreement->id;
         $status = $agreement->state;
@@ -238,7 +238,7 @@ class PlanController extends Controller
           'updated_at' => $time,
           'member' => 1]);
         }
-      
+
       Functions::notifyPayPalPayment();
 
       return view('thanks');

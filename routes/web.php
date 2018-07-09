@@ -45,7 +45,7 @@ Route::get('/workshops', function () { return view('pages.workshops'); });
 Route::get('/science', ['as' => 'science','uses' => function () {return view('pages.science');}]);
 Route::get('/coscience', function () {return view('pages.coscience');});
 Route::get('/cci', ['as' => 'cci','uses' => function () {return view('pages.cci');}]);
-Route::get('/project-articles', ['as' => 'project-articles','uses' => function () {return view('pages.project-articles');}]);
+Route::get('/articles', ['as' => 'articles','uses' => function () {return view('pages.project-articles');}]);
 Route::get('/streams', ['as' => 'streams','uses' => function () {return view('pages.streams');}]);
 Route::get('/network', ['as' => 'network','uses' => function () {return view('pages.network');}]);
 
@@ -209,9 +209,9 @@ Route::post('/createplan', [   'middleware' => ['auth', 'admin'],
   'as' => 'createplan',
   'uses' => 'PlanController@createplan']);
 
-Route::get('pay', ['as' => 'pay','uses' => function () {  return view('pay');}]);
+Route::get('pool', ['as' => 'pool','uses' => function () {  return view('pool');}]);
 
-Route::post('pay', ['as' => 'pay','uses' => 'PlanController@pay',
+Route::post('pool', ['as' => 'pool','uses' => 'PlanController@pool',
 ]);
 
 Route::get('thanks', ['as' => 'thanks','uses' => 'PlanController@confirm']);

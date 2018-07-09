@@ -10,10 +10,10 @@
                 <div class="panel-body">
                     You must subscribe.
 
-                    {!! Form::open(array('url' => 'pay', 'method' => 'post')) !!}
+                    {!! Form::open(array('url' => 'pool', 'method' => 'post')) !!}
                     {!! Form::submit('Subscribe') !!}
                     {!! Form::close() !!}
-                    
+
                 </div>
             </div>
         </div>
