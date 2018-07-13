@@ -45,7 +45,7 @@ Route::get('/workshops', function () { return view('pages.workshops'); });
 Route::get('/science', ['as' => 'science','uses' => function () {return view('pages.science');}]);
 Route::get('/coscience', function () {return view('pages.coscience');});
 Route::get('/cci', ['as' => 'cci','uses' => function () {return view('pages.cci');}]);
-Route::get('/articles', ['as' => 'articles','uses' => function () {return view('pages.project-articles');}]);
+Route::get('/articles', ['as' => 'articles','uses' => function () {return view('pages.articles');}]);
 Route::get('/streams', ['as' => 'streams','uses' => function () {return view('pages.streams');}]);
 Route::get('/network', ['as' => 'network','uses' => function () {return view('pages.network');}]);
 

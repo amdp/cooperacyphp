@@ -2,11 +2,9 @@
 
 @section('content')
 <div class="container">
-        <div class="jumbotron">
-            <h1>THANK YOU!</h1>
-            <h2>CONGRATULATIONS, YOU ARE NOW A MEMBER OF COOPERACY.</h2>
-            <a href="{{url('/home')}}"><h2>GO TO BETA DASHBOARD</h2></a>
-        </div>
-    </div>
+    <div class="containerone">
+    <p class="base equivalence center space up">THANK YOU<br><br></p>
+    <p class="base">Thank you, you are now member of Cooperacy. Try the beta <a href="{{url('/home')}}">dashboard</a> or contact other members, they will be happy to help :-).</p>
+  </div><br>
 </div>
 @endsection
