@@ -1,14 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-<<<<<<< HEAD
-    <link href="/css/appstyle.css" rel="stylesheet">
-    <link href="/css/app.css" rel="stylesheet">
-    <link href="/css/iubenda.css" rel="stylesheet">
-    <meta name="description" content="Cooperacy is a no-profit scientific project aiming to spread cooperation between humans and their ecosystem.">
-=======
     <meta name="description" content="Cooperacy is a no-profit project aiming to spread cooperation science in social ecosystems.">
->>>>>>> slideshow
     <!-- <meta name="nosnippets"> -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
