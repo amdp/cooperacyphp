@@ -133,79 +133,133 @@
 
       <br><br><br><p class="base center">Cooperacy is a nonprofit scientific project aiming to spread cooperation between humans and their ecosystem.<br><br>Joining Cooperacy is important today, if we want to experience sound social ecosystems at the <a href="/aboutyou" class="ad">personal</a>, <a href="/paradox" class="af">corporate</a> and <a href="/cci" class="au">international</a> levels.</p><br><br>
 
-      <div class="quote it">In Cooperacy I’ve seen the freedom of the individual in relation to the freedom of others, a continuous oscillation of equilibria, with unassuming attitude, following an easy flow and the spontaneous actions of people.</div><div class="quote up care">Carol</div><br><br>
+      <div id="testimonials" class="carousel carousel--testimonials slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item item active">
+            <div class="quote it">In Cooperacy I’ve seen the freedom of the individual in relation to the freedom of others, a continuous oscillation of equilibria, with unassuming attitude, following an easy flow and the spontaneous actions of people.</div>
+            <div class="quote up equivalence">Carola</div><br><br>
+          </div>
 
-      <div class="quote it">I see Cooperacy - beyond its social goal – as a path made of people who want to improve themselves and the world around them, building something beautiful and useful for all.
-      In a world based on the mindless continuous consumption of goods, living on a different constructive mentality can be an amazing gift for ourselves and the people we love.
-      </div><div class="quote up diversity">Lorenzo</div><br><br>
+          <div class="carousel-item item">
+            <div class="quote it">I see Cooperacy - beyond its social goal – as a path made of people who want to improve themselves and the world around them, building something beautiful and useful for all.
+            In a world based on the mindless continuous consumption of goods, living on a different constructive mentality can be an amazing gift for ourselves and the people we love.
+            </div><div class="quote up trust">Lorenzo</div><br><br>
+          </div>
 
-      <!--
-      <div class="quote it">A social ecosystem is an ecosystem with human presence. Humans alter the ecosystem with their social behavior in a good way when they redistribute their happiness: wealth, decisions and activities should flow where life and development need them, like in a natural ecosystem. There will be a day in which human beings will look to each other with the same love they have for their children. A day in which we will all be mutually parents and children at the same time. You don’t ask yourself if investing energy for a child will bring you an economic advantage. Now it’s not like that yet, but there are many movements indicating that global awareness is changing. Directions are visible and the so called “critical mass” is gradually becoming consistent. Cooperacy is one of this good movements having strong correlations with the concreteness of doing. I really feel like an ancient knight when I pay my humble duty - a small thing to do, but a big impulse to the nobility of my spirit.
-      </div><div class="quote up care">Albino</div><br><br>
+          <div class="carousel-item item">        
+            <div class="quote it">There will be a day in which human beings will look to each other with the same love they have for their children. A day in which we will all be mutually parents and children at the same time. You don’t ask yourself if investing energy for a child will bring you an economic advantage. Now it’s not like that yet, but there are many movements indicating that global awareness is changing. Directions are visible and the so called “critical mass” is gradually becoming consistent. Cooperacy is one of this good movements having strong correlations with the concreteness of doing. I really feel like an ancient knight when I pay my humble duty - a small thing to do, but a big impulse to the nobility of my spirit.
+            </div><div class="quote up care">Albino</div><br><br>
+          </div>
+          
+          <div class="carousel-item item">
+            <div class="quote it">I felt Cooperacy in my belly, since the first read. Then to make it go up and reach my mind, I fight with it. Yes, it’s like getting into fights. It drains me out and at the same time it lends a hand to make me get up again. It challenges me every day, it turns upside down my perspectives, it opens myself to new possibilities. It teaches me, while other times it allows me to teach or better share what I think I have learned.
+            It’s my inner mountain.
+            </div><div class="quote up transparency">Beatrice</div><br><br>
+          </div>
 
-       <div class="quote it">I felt Cooperacy in my belly, since the first read. Then to make it go up and reach my mind, I fight with it. Yes, it’s like getting into fights. It drains me out and at the same time it lends a hand to make me get up again. It challenges me every day, it turns upside down my perspectives, it opens myself to new possibilities. It teaches me, while other times it allows me to teach or better share what I think I have learned.
-      It’s my inner mountain.
-      </div><div class="quote up transparency">Beatrice</div><br><br>
+          <div class="carousel-item item">
+            <div class="quote it">Cooperacy, for me, it’s overall doing things together cheerfully.
+              I hope you can have fun in Cooperacy like I do, participating to its construction with your ideas and your enthusiasm.
+            </div><div class="quote up freedom">Ilario</div><br><br>
+          </div>
 
-      <div class="quote it">Cooperacy, for me, it’s overall doing things together cheerfully.
-      I hope you can have fun in Cooperacy like I do, participating to its construction with your ideas and your enthusiasm.
-    </div><div class="quote up freedom">Ilario</div><br><br>
+          <div class="carousel-item item">
+            <div class="quote it">Most of my friends remember me with my age. 15. I'm Kurd and raised in Qorveh, where Turks, Kurds, Persians coexist together (#diversity ;-) ). My mother is a Turk and my father is a Kurd. I'm a #gamification consultant. In Cooperacy I found that game design (and gamification) has a bad paradigm nowadays: cooperation is better (competition sucks ;-) ). As a game designer, accepting this fact was very hard for me. In game design and gamification, we have a lot of theories, techniques, and systems quoted on competition, a powerful drive in the human mind. Now with Cooperacy, We are trying to design games and ARGs to teach cooperation to high school students. And as an Iranian, I really love to test this gamified system to help my people. And make the world a better place. It is what Alessandro taught me: “it's not me, nor you, but the things we can do together.”
+            </div><div class="quote up understanding">Ali</div><br><br>
+          </div>
+          
+          <div class="carousel-item item">
+            <div class="quote it">It was a feeling of serendipity, calm awareness going through my smile. It was a particular period of my life: I had realized not only the present condition of the world we are living in, but also the great opportunity We have to address its problems. I simply thought:“I need to act, now”. I recognized in Cooperacy a peaceful awareness but also a decisive willingness to make it happen. Thanks to Cooperacy I did get to know several people, lovable people and I have been “since then” an enthusiast messenger of Cooperacy's values. I am truly fascinated by Cooperacy especially because its ideas are simpler to experience than to explain. There’s research in it, social research. And I strongly believe that this kind of approach is crucial in our time. I trust Cooperacy, nowadays this is an incredibly effective starting point. While writing this my hands literally cried over my laptop lol
+            </div><div class="quote up diversity">Davide</div><br><br>
+          </div>
 
-    <div class="quote it">Most of my friends remember me with my age. 15. I'm Kurd and raised in Qorveh, where Turks, Kurds, Persians coexist together (#diversity ;-) ). My mother is a Turk and my father is a Kurd. I'm a #gamification consultant. In Cooperacy I found that game design (and gamification) has a bad paradigm nowadays: cooperation is better (competition sucks ;-) ). As a game designer, accepting this fact was very hard for me. In game design and gamification, we have a lot of theories, techniques, and systems quoted on competition, a powerful drive in the human mind. Now with Cooperacy, We are trying to design games and ARGs to teach cooperation to high school students. And as an Iranian, I really love to test this gamified system to help my people. And make the world a better place. It is what Alessandro taught me: “it's not me, nor you, but the things we can do together.”
-    </div><div class="quote up understanding">Ali</div><br><br>
+          <div class="carousel-item item">
+            <div class="quote it">To me, it seemed a different idea than the others I heard about, during a period in which words like “start-up”, “business angel” and “innovation” were imposing themselves on the media agenda. Moved by the curiosity raised during the conversations with the group - that was forming and growing in the meantime - I read the book The Chalice and the Blade by R. Eisler. I found it so interesting that I thought it was worthy taking part in a more active way.
+            </div><div class="quote up understanding">Giosetta</div><br><br>
+          </div>
 
-      <div class="quote it">It was a feeling of serendipity, calm awareness going through my smile. It was a particular period of my life: I had realized not only the present condition of the world we are living in, but also the great opportunity We have to address its problems. I simply thought:“I need to act, now”. I recognized in Cooperacy a peaceful awareness but also a decisive willingness to make it happen. Thanks to Cooperacy I did get to know several people, lovable people and I have been “since then” an enthusiast messenger of Cooperacy's values. I am truly fascinated by Cooperacy especially because its ideas are simpler to experience than to explain. There’s research in it, social research. And I strongly believe that this kind of approach is crucial in our time. I trust Cooperacy, nowadays this is an incredibly effective starting point. While writing this my hands literally cried over my laptop lol
-    </div><div class="quote up diversity">Davide</div><br><br>
+          <div class="carousel-item item">
+            <div class="quote it">My first impression was I didn’t understand what was this group who was suggesting ways to make other people better communicate between themselves, nevertheless my internal curiosity spirit led me to meet Alessandro, Sara, Bea, Ilario and other coordinators of Cooperacy. At the end my inner spirit admitted Cooperacy has no definitions, you can only perceive it while you live it surrounded by the enthusiasm and the force of its participants.
+            </div><div class="quote up freedom">Walter</div><br><br>
+          </div>
 
-      <div class="quote it">To me, it seemed a different idea than the others I heard about, during a period in which words like “start-up”, “business angel” and “innovation” were imposing themselves on the media agenda. Moved by the curiosity raised during the conversations with the group - that was forming and growing in the meantime - I read the book The Chalice and the Blade by R. Eisler. I found it so interesting that I thought it was worthy taking part in a more active way.
-      </div><div class="quote up understanding">Giosetta</div><br><br>
+          <div class="carousel-item item">
+            <div class="quote it">Cooperacy is something I’ve been thinking about for some time, since when I understood that competition creates unhappiness.
+            </div><div class="quote up transparency">Justin</div><br><br>
+          </div>
 
+          <div class="carousel-item item">
+            <div class="quote it">A year ago Facebook showed me the Cooperacy link and I literally dove in it because I felt it was like the water in which I always wanted to swim into. In these months I often had the fear to drown and I went back to the shore. Nevertheless, the will to be in the waters has been stronger and thanks to some patient guidance by Alessandro, the sustain of Ilario and Beatrice I am learning to stay in the waters even when it frightens me, to trust the group and to flow together with all the rest.
+              I feel like I am becoming water too and it’s amazing!
+            </div><div class="quote up care">Sara</div><br><br>
+          </div>
 
-      <div class="quote it">My first impression was I didn’t understand what was this group who was suggesting ways to make other people better communicate between themselves, nevertheless my internal curiosity spirit led me to meet Alessandro, Sara, Bea, Ilario and other coordinators of Cooperacy. At the end my inner spirit admitted Cooperacy has no definitions, you can only perceive it while you live it surrounded by the enthusiasm and the force of its participants.
-      </div><div class="quote up freedom">Walter</div><br><br>
+          <div class="carousel-item item">
+            <div class="quote it">What brought you to join Cooperacy?
+              The fact that Cooperacy is trying to dissolve the most toxic superstition: the myth according to which the world is nothing more that a bloody battlefield in which “kill or be killed” it’s the only valid strategy.
+            </div><div class="quote up trust">Nicola</div><br><br>
+          </div>
 
-      <div class="quote it">Cooperacy is something I’ve been thinking about for some time, since when I understood that competition creates unhappiness.
-      </div><div class="quote up transparency">Justin</div><br><br>
+          <div class="carousel-item item">
+            <div class="quote it">Born and raised in a small town in Trentino, surrounded by mountains and nature: a place where the sense of community, the value of cooperation and the care for the environment are strongly felt. Cooperacy!
+            </div><div class="quote up equivalence">Federica</div><br><br>      
+          </div>
 
-      <div class="quote it">A year ago Facebook showed me the Cooperacy link and I literally dove in it because I felt it was like the water in which I always wanted to swim into. In these months I often had the fear to drown and I went back to the shore. Nevertheless, the will to be in the waters has been stronger and thanks to some patient guidance by Alessandro, the sustain of Ilario and Beatrice I am learning to stay in the waters even when it frightens me, to trust the group and to flow together with all the rest.
-      I feel like I am becoming water too and it’s amazing!
-    </div><div class="quote up care">Sara</div><br><br>
+          <div class="carousel-item item">
+            <div class="quote it">I needed a little bit of color in the gray days of mine. And in Cooperacy there is a rainbow of personalities one different than another, all full of enthusiasm and energy, with which to share ideas and work together.
+              In Cooperacy I found a lot of people who work together well, and that overall they have fun doing it.
+            </div><div class="quote up diversity">Enea</div><br><br>
+          </div>
 
-      <div class="quote it">What brought you to join Cooperacy?
-      The fact that Cooperacy is trying to dissolve the most toxic superstition: the myth according to which the world is nothing more that a bloody battlefield in which “kill or be killed” it’s the only valid strategy.
-    </div><div class="quote up trust">Nicola</div><br><br>
+          <div class="carousel-item item">
+            <div class="quote it">Although I have always been a supporter of a model based on hierarchies, I have always wondered if the world I dreamed was the right one. Discussing with Alessandro and listening to the Cooperacy concept, I was intrigued by the thought that something could (and perhaps should) change compared to certain ideas, appreciating the innovative way in which the cooperation science interpreted models.
+            </div><div class="quote up equivalence">Sabatino</div><br><br>
+          </div>
 
-      <div class="quote it">Born and raised in a small town in Trentino, surrounded by mountains and nature: a place where the sense of community, the value of cooperation and the care for the environment are strongly felt. Cooperacy!
-      </div><div class="quote up equivalence">Federica</div><br><br>
+          <div class="carousel-item item">
+            <div class="quote it">A mechanism that sets the human being in the centre of everything.
+              I said to myself: here there’s a new and original material, so I jumped on this train which costs just a coffee per month!
+            </div><div class="quote up trust">Franz</div><br><br>
+          </div>
 
-      <div class="quote it">I needed a little bit of color in the gray days of mine. And in Cooperacy there is a rainbow of personalities one different than another, all full of enthusiasm and energy, with which to share ideas and work together.
-      In Cooperacy I found a lot of people who work together well, and that overall they have fun doing it.
-    </div><div class="quote up diversity">Enea</div><br><br>
+          <div class="carousel-item item">
+            <div class="quote it">I new since time that worst damage in most of human social environments come from the fact that every relationship starts with the presumption of knowing how to relate, communicate and cooperate. This presumption is false in almost all cases.
+              We need courage, creativity and competence to change this condition, and Cooperacy has all the needed skills to accomplish it.
+            </div><div class="quote up care">Igor</div><br><br>
+          </div>
 
-    <div class="quote it">Although I have always been a supporter of a model based on hierarchies, I have always wondered if the world I dreamed was the right one. Discussing with Alessandro and listening to the Cooperacy concept, I was intrigued by the thought that something could (and perhaps should) change compared to certain ideas, appreciating the innovative way in which the cooperation science interpreted models.
-    </div><div class="quote up equivalence">Sabatino</div><br><br>
+          <div class="carousel-item item">
+            <div class="quote it">In Cooperacy I look for a model that would bring cooperation without leveraging over “noble sentiments”.
+            </div><div class="quote up transparency">Marco</div><br><br>
+          </div>
 
-      <div class="quote it">A mechanism that sets the human being in the centre of everything.
-      I said to myself: here there’s a new and original material, so I jumped on this train which costs just a coffee per month!
-    </div><div class="quote up trust">Franz</div><br><br>
+          <div class="carousel-item item">
+            <div class="quote it">Cooperacy has been able to bring the creation of a smooth flow of communication in a social environment that wasn’t incline to establish good relations between the people. That is why I came to see what happens here. Without knowing if I will be able to be useful, but with that feeling that I want to understand something that intrigues me and to understand how to utilise it, I decided to join.
+            </div><div class="quote up freedom">Francesco</div><br><br>
+          </div>
 
-      <div class="quote it">I new since time that worst damage in most of human social environments come from the fact that every relationship starts with the presumption of knowing how to relate, communicate and cooperate. This presumption is false in almost all cases.
-      We need courage, creativity and competence to change this condition, and Cooperacy has all the needed skills to accomplish it.
-    </div><div class="quote up care">Igor</div><br><br>
+          <div class="carousel-item item">
+            <div class="quote it">Cooperacy has been growing these months a lot and it is impressive to see the continuous exchange of ideas, the cheerfulness and the seriousness with which the participants cooperate together in the projects.
+            </div><div class="quote up understanding">Sarah</div><br><br>
+          </div>
 
-      <div class="quote it">In Cooperacy I look for a model that would bring cooperation without leveraging over “noble sentiments”.
-      </div><div class="quote up transparency">Marco</div><br><br>
-
-      <div class="quote it">Cooperacy has been able to bring the creation of a smooth flow of communication in a social environment that wasn’t incline to establish good relations between the people. That is why I came to see what happens here. Without knowing if I will be able to be useful, but with that feeling that I want to understand something that intrigues me and to understand how to utilise it, I decided to join.
-      </div><div class="quote up freedom">Francesco</div><br><br>
-
-      <div class="quote it">Cooperacy has been growing these months a lot and it is impressive to see the continuous exchange of ideas, the cheerfulness and the seriousness with which the participants cooperate together in the projects.
-      </div><div class="quote up understanding">Sarah</div><br><br>-->
-
-      <div class="quote it">In these months I've seen people of different perspecitves to come and participate. While in Cooperacy, many of them decided to make big changes in their private lives. Cooperacy has been a common "origin" able to make them to desire and recognize themselves in the actions they do everyday. They experienced the feeling of cooperation and naturally desired their world to be a pleasant and enjoyable place for everyone.
-      </div><div class="quote up equivalence">Alex</div><br><br>
-
-      <div class="base center"><a class="ae" href="/register">Join</a> Cooperacy today, or <a class="ai" href="https://www.cooperacy.org/contact">contact us</a> for more information or volunteering.</p><br></div>
+          <div class="carousel-item item">
+            <div class="quote it">In these months I've seen people of different perspecitves to come and participate. While in Cooperacy, many of them decided to make big changes in their private lives. Cooperacy has been a common "origin" able to make them to desire and recognize themselves in the actions they do everyday. They experienced the feeling of cooperation and naturally desired their social ecosystem to be based on redistribution of wealth, activities and power with proportional creative integration. In other words, the world as a pleasant and enjoyable place for everyone.
+            </div><div class="quote up diversity">Alessandro</div><br><br>
+          </div>
+        </div>
+        
+        <a class="carousel-control left" href="#testimonials" role="button" data-slide="prev">
+          <span class="icon-prev carousel-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control right" href="#testimonials" role="button" data-slide="next">
+          <span class="icon-next carousel-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+      
+      <div class="base center"><a class="ae" href="/register">Join</a> Cooperacy today, or <a class="ai" href="https://www.cooperacy.org/contact">contact us</a> for more information. The World needs our mutual effort.</p><br></div>
 
 </div>
 

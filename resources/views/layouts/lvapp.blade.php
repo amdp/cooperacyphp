@@ -1,10 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link href="/css/appstyle.css" rel="stylesheet">
-    <link href="/css/app.css" rel="stylesheet">
-    <link href="/css/iubenda.css" rel="stylesheet">
-    <meta name="description" content="Cooperacy is a no-profit scientific project aiming to spread cooperation between humans and their ecosystem.">
+    <meta name="description" content="Cooperacy is a no-profit project aiming to spread cooperation science in social ecosystems.">
     <!-- <meta name="nosnippets"> -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -27,6 +24,12 @@
     })(window,document,'script','dataLayer','GTM-WV53RSJ');</script>
     <!-- End Google Tag Manager -->
     <title>@yield('title')</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Prompt:200,300,400" rel="stylesheet">
+
+    <link href="/css/app.css" rel="stylesheet">
+    <link href="/css/appstyle.css" rel="stylesheet">
+    <link href="/css/iubenda.css" rel="stylesheet">
 
     @if(Route::currentRouteName() == 'research' || Route::currentRouteName() == 'cci')
       <!--BEGIN CUSTOM MAP STYLE-->

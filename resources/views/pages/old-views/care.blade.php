@@ -3,7 +3,7 @@
     Care - Cooperacy
 @stop
 @section('content')
-
+<!--TEST-->
 <!--BEGIN CONTAINER-->
 <div class="container">
 
