@@ -146,7 +146,7 @@ class PlanController extends Controller
 
     }
 
-    /*PAY FOR LATEST SUBSCRIPTION*/
+    /* PAY FOR LATEST SUBSCRIPTION */
     public function pool() {
 
       // Get registered plan info
