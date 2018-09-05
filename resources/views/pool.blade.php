@@ -18,7 +18,7 @@
     {!! Form::open(array('url' => 'pool', 'method' => 'post')) !!}
                     {!! Form::submit('VOLUNTARY POOLING THROUGH PAYPAL', ['class'=>'btn btn-primary btn-block']) !!}
                     {!! Form::close() !!}
-    <br><br>
+    <p class="mini">If you encounter any problem please screenshot any error and write us!</p><br><br>
 
     <p class="base">Pool instead via bank transfer sending us a code/receipt or contact us for suggestions, questions, requests:</p>
     <div role="form" class="wpcf7" id="wpcf7-f1303-p20-o1" lang="en-US" dir="ltr">
