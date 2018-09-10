@@ -16,7 +16,10 @@
             <p class="base center">Contact us or feel free to ask us anything that is not clear yet.</p>
 
                         <div role="form" class="wpcf7" id="wpcf7-f1303-p20-o1" lang="en-US" dir="ltr">
-
+                        
+                        @if(session('data'))
+                        <p class="transparency heading center space">{{session('data')}}</p>
+                        @else
                         {{ Form::open(array('url' => 'sendmessage', 'novalidate'=>'novalidate')) }}
 
 
@@ -47,9 +50,19 @@
                         'class' => 'wpcf7-form-control wpcf7-textarea',
                         'aria-invalid' => 'false',]) }}</span></p>
 
+                        <p class="mini">{!! app('captcha')->display(); !!}</p>
+                        <div style="height:1em;"></div>
+                        
                         <p class="mini"><input type="submit" value="Send" class="wpcf7-form-control wpcf7-submit" /></p>
+                        
                         <div class="wpcf7-response-output wpcf7-display-none"></div>
+                          @if($errors->first())
+                          <p style="color:red;"><strong>Error! </strong>{{$errors->first('name')}} {{$errors->first('email')}} {{$errors->first('subject')}} {{$errors->first('message')}} {{$errors->first('g-recaptcha-response')}}</p>
+                          @endif
+                        <div style="height:1em;"></div>
+
                         {{ Form::close() }}
+                        @endif
 
                       </p>
     </div>
