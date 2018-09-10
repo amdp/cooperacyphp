@@ -17,7 +17,7 @@
 
 Route::get('/', ['as' => 'main', 'uses' => function () { return view('pages.home'); }]);
 Route::get('/terms', ['as' => 'terms','uses' => function () {return view('pages.terms');}]);
-Route::get('/contact', function () {return view('pages.contact');});
+Route::get('/contact', ['as' => 'contact', 'uses' => function () {return view('pages.contact'); }]);
 
 Route::get('/aboutyou', function () {return view('pages.aboutyou');});
 Route::get('/aboutus', function () {return view('pages.aboutus');});

@@ -37,7 +37,7 @@ class MessageController extends Controller
       $mailSent = true;
       $message = 'Thank you for your message. We will reply as soon as possible.';
    
-      return view('pages.contact')->with('data', $message); 
+      return redirect()->route('contact')->with('data', $message); 
  
       
     }
