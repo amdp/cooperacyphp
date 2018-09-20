@@ -258,6 +258,10 @@ Route::post('payment', ['as' => 'payment','uses' => 'PaypalController@subscribe'
 ****EXPERIMENTAL OR TESTING ROUTES***********
 ********************************************/
 
+Route::get('/test-mail', [   'middleware' => ['auth', 'admin'],
+  'as' => 'test-mail',
+  'uses' => 'ExperimentalController@testmail']);
+
 Route::get('/dummy-list', [   'middleware' => ['auth', 'member'],
   'as' => 'dummy-list',
   'uses' => 'ProjectController@dummyindex']);
