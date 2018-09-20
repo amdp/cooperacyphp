@@ -23,6 +23,50 @@
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-WV53RSJ');</script>
     <!-- End Google Tag Manager -->
+
+    <!-- Web Push // WORK IN PROGRESS LEAVE AS IT IS -->
+    <!--<script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('sw.js').then(function(reg) {
+        console.log('Service Worker Registered!', reg);
+
+        reg.pushManager.getSubscription().then(function(sub) {
+          if (sub === null) {
+            // Update UI to ask user to register for Push
+            console.log('Not subscribed to push service!');
+          } else {
+            // We have a subscription, update the database
+            console.log('Subscription object: ', sub);
+          }
+        });
+      })
+       .catch(function(err) {
+        console.log('Service Worker registration failed: ', err);
+      });
+    }
+    Notification.requestPermission(function(status) {
+    console.log('Notification permission status:', status);
+    });
+    if (Notification.permission === "blocked") {alert('ok, thanks the same!')}
+    else{     function displayNotification() {
+      if (Notification.permission == 'granted') {
+          navigator.serviceWorker.getRegistration().then(function(reg) {
+            var options = {
+              body: 'Here is a notification body!',
+              vibrate: [10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10],
+              data: {
+                dateOfArrival: Date.now(),
+                primaryKey: 1
+              },
+              actions: [
+                {action: 'explore', title: 'Explore this new world'},
+                {action: 'close', title: 'Close notification'},
+              ]
+            };
+            reg.showNotification('Hello world!', options);
+          });}}}
+    </script>
+    <!-- End Web Push -->
     <title>@yield('title')</title>
 
     <link href="https://fonts.googleapis.com/css?family=Prompt:200,300,400" rel="stylesheet">
