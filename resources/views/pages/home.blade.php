@@ -127,14 +127,14 @@
   <div class="col-md-8"><!--BEGIN CONTENT-->
 
     <div class="row"><br>
-      <div class="col-lg-4 col-xs-12 subheading center"><a href="/platform" class="noline transparency space">DISCOVER</a></div>
-      <div class="col-lg-4 col-xs-12 subheading center"><a href="/cooperation" class="noline understanding space">LEARN</a></div>
-      <div class="col-lg-4 col-xs-12 subheading center"><a href="/register" class="noline equivalence space">JOIN</a></div>
 
-      <br><br><br><p class="base center">Cooperacy is a nonprofit scientific project aiming to spread cooperation between humans and their ecosystem.<br><br>We're setting up a very special <a href="/platform" class="ae">platform</a> in which, supported by money, people help each other to realise what they want for their lives and take decisions together in a very productive way. <br><br>
-      <a href="/register" class="ae">Joining</a> Cooperacy is entertaining and makes you learn how to develop ejoyable cooperations in your <a href="/aboutyou" class="ad">personal</a> relations, in the <a href="/coorporate" class="af">corporate</a> world and at the <a href="/cci" class="au">international</a> level.</p><br><br>
+      <div class="row"><br><br><br><p class="base center">Cooperacy is a nonprofit scientific project aiming to spread cooperation between humans and their ecosystem.<br><br>We're setting up a very special <a href="/platform" class="ae">platform</a> in which, supported by money, people help each other to realise what they want for their lives and take decisions together in a very productive way. <br><br>
+      <a href="/register" class="ae">Joining</a> Cooperacy is entertaining and makes you learn how to develop enjoyable cooperations in your <a href="/aboutyou" class="ad">personal</a> relations, in the <a href="/coorporate" class="af">corporate</a> world and at the <a href="/cci" class="au">international</a> level.</p><br><br>
 
-      <div id="testimonials" class="carousel carousel--testimonials slide" data-ride="carousel">
+      <div class="row"><div class="col-lg-4 col-xs-12 subheading center"><a href="/platform" class="noline transparency space">DISCOVER</a></div><div class="col-lg-4 col-xs-12 subheading center"><a href="/cooperation" class="noline understanding space">LEARN</a></div><div class="col-lg-4 col-xs-12 subheading center"><a href="/register" class="noline equivalence space">JOIN</a></div></div><br><br>
+
+
+      <!--      <div id="testimonials" class="carousel carousel--testimonials slide" data-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item item active">
             <div class="quote it">In Cooperacy I’ve seen the freedom of the individual in relation to the freedom of others, a continuous oscillation of equilibria, with unassuming attitude, following an easy flow and the spontaneous actions of people.</div>
@@ -258,7 +258,7 @@
           <span class="icon-next carousel-icon" aria-hidden="true"></span>
           <span class="sr-only">Next</span>
         </a>
-      </div>
+      </div> -->
 
       <div class="base center"><a class="ae" href="/register">Join</a> Cooperacy today, or <a class="ai" href="https://www.cooperacy.org/contact">contact us</a> for more information.</p><br></div>
 
