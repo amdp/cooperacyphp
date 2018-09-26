@@ -38,7 +38,7 @@
 <a href="#" class="dropdown-toggle menu-item" data-toggle="dropdown" role="button" aria-expanded="false">COORPORATE</a>
 <ul class="dropdown-menu" role="menu">
   <li>
-    <a href="{{URL::to('/paradox')}}" class="menu-item">THE PARADOX</a>
+    <a href="{{URL::to('/coorporate')}}" class="menu-item">THE PARADOX</a>
   </li>
   <li>
     <a href="{{URL::to('/openecosystem')}}" class="menu-item">OPEN ECOSYSTEM</a>

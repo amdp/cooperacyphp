@@ -132,7 +132,7 @@
       <div class="col-lg-4 col-xs-12 subheading center"><a href="/register" class="noline equivalence space">JOIN</a></div>
 
       <br><br><br><p class="base center">Cooperacy is a nonprofit scientific project aiming to spread cooperation between humans and their ecosystem.<br><br>We're setting up a very special <a href="/platform" class="ae">platform</a> in which, supported by money, people help each other to realise what they want for their lives and take decisions together in a very productive way. <br><br>
-      <a href="/register" class="ae">Joining</a> Cooperacy is entertaining and makes you learn how to develop ejoyable cooperations in your <a href="/aboutyou" class="ad">personal</a> relations, in the <a href="/paradox" class="af">corporate</a> world and at the <a href="/cci" class="au">international</a> level.</p><br><br>
+      <a href="/register" class="ae">Joining</a> Cooperacy is entertaining and makes you learn how to develop ejoyable cooperations in your <a href="/aboutyou" class="ad">personal</a> relations, in the <a href="/coorporate" class="af">corporate</a> world and at the <a href="/cci" class="au">international</a> level.</p><br><br>
 
       <div id="testimonials" class="carousel carousel--testimonials slide" data-ride="carousel">
         <div class="carousel-inner">
