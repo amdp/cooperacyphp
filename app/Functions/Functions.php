@@ -1,5 +1,5 @@
 <?php
-namespace App\Functions; 
+namespace App\Functions;
 
 use DB;
 use Auth;
@@ -15,9 +15,9 @@ class Functions
 		$title = DB::table('coo_project')->where('id_project', $id)->value('title_project');
 		$comments = ProjectFunctions::getComments($id,'DESC');
     	foreach ($comments as $comment) {
-    		$subcomments = ProjectFunctions::getComments($comment->id_project,'ASC'); 
+    		$subcomments = ProjectFunctions::getComments($comment->id_project,'ASC');
     		foreach ($subcomments as $subcomment) {
-        	$subsubcomments = ProjectFunctions::getComments($subcomment->id_project,'ASC');  
+        	$subsubcomments = ProjectFunctions::getComments($subcomment->id_project,'ASC');
       			foreach ($subsubcomments as $subsubcomment) {
 	      			$messages[] = [
 	      				'comment'	=>	$subsubcomment,
@@ -32,10 +32,10 @@ class Functions
 	      	$messages[] = [
 	      		'comment'	=>	$comment,
 	      	];
-	     }  
+	     }
 
 	    $emails = array();
-	    
+
 	    foreach ($messages as $message) {
 	    	$emails[] = [
 	    		'name'  => $message['comment']->UserName,
@@ -93,7 +93,7 @@ class Functions
 		$admins = DB::table('users')
 			->where('admin',1)
 			->select('name','email')->get();
-		
+
 		$emails = ($members->merge($oldmembers))->merge($admins);
 
 		foreach ($emails as $email) {
@@ -140,10 +140,10 @@ class Functions
             $message->to($email)
             ->bcc('cooperacy@cooperacy.org','Cooperacy')
             ->from('cooperacy@cooperacy.org','Cooperacy')
-            ->subject('A warm welcome to Cooperacy');
+            ->subject('Welcome to Cooperacy!');
 
         });
 
-	} 
+	}
 
 }
