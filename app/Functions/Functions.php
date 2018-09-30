@@ -131,4 +131,21 @@ class Functions
 
 	}
 
+	public static function thanksUser() {
+
+		Mail::send('emails.welcome-paid', [], function($message) use($data) {
+			
+			$data = array([
+				'email' => Auth::user()->email
+			]);
+
+            $message->to($data['email'])
+            ->bcc('cooperacy@cooperacy.org','Cooperacy')
+            ->from('cooperacy@cooperacy.org','Cooperacy')
+            ->subject('A warm welcome to Cooperacy');
+
+        });
+
+	} 
+
 }

@@ -240,6 +240,7 @@ class PlanController extends Controller
         }
 
       Functions::notifyPayPalPayment();
+      Functions::tanksUser();
 
       return view('thanks');
     }
