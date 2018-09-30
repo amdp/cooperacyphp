@@ -292,6 +292,9 @@ Route::post('sendmessage', ['as' => 'sendmessage','uses' => 'MessageController@s
 Route::get('testmail', ['as' => 'testmail','uses' => 'TestMailController@test',
 ]);
 
+Route::get('testmail-paid', ['as' => 'testmail-paid','uses' => 'TestMailController@testpaid',
+]);
+
 //Route::get('/home', 'HomeController@index');
 // Route::get('/updatepass', [ //   'as' => 'updatepass',
 //   'uses' => 'PlanController@updatepass']);
