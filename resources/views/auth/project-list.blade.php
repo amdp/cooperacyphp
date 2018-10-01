@@ -6,21 +6,20 @@
   <p class="center space heading equivalence">PROJECTS</p><br>
   @foreach($projects as $item)
   <div class="row">
-    <div class="panel panel-default sweetround noshadows">
-      <div class="panel-body noshadows">
-        <div class="col-lg-2 col-xs-12">
-          <img class="img-responsive roundmodule" src="{{asset('images/projects')}}/{{$item['img_project']}}">
-        </div>
-        <div class="col-lg-10 col-xs-12">
-          <p class="center space subheading freedom up">
-            <a href="{{asset('view-project')}}/{{$item['id_project']}}">{{$item['title_project']}}</a> 
+        <div class="col-lg-11 col-xs-12">
+          <p class="space subheading up">
+            <a href="{{asset('view-project')}}/{{$item['id_project']}}">{{$item['title_project']}}</a>
             @if($item['coordinator']=='yes')
              <span style="float:right;"><small><a href="{{asset('edit-project')}}/{{$item['id_project']}}">Edit</a></small></span>
             @endif
           </p>
-          <div style="height:10px"></div>
-          @include('auth.partials.votedata')
+          <div style="height:2px"></div>
+
           <p>{{$item['content_project']}}</p>
+
+        </div>
+        <!-- --><div class="col-lg-1 col-xs-12">
+          <img class="img-responsive roundmodule" src="{{asset('images/projects')}}/{{$item['img_project']}}">
         </div>
 
         <script type="text/javascript">
@@ -89,8 +88,8 @@
               );
           </script>
       </div>
-    </div>
-  </div>
+  <br>
+  @include('auth.partials.votedata')
   @endforeach
   <input id="userID" type="hidden" value="{{Auth::user()->id}}">
 </div>
