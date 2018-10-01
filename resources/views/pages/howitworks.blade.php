@@ -100,33 +100,34 @@
                 <div class="col-lg-10 col-xs-12 base">EFFECT</div>
               </div>
               <div class="row">
-                <div class="col-lg-2 col-xs-12 base equivalence">Up</div>
-                <div class="col-lg-10 col-xs-12 base">It determines the proportional allocation of funds. Principle: Equivalence. Technical: the proportions are calculated with the number of the Up (equivalence or orange) votes the budget idea has, divided by the total of all the Up votes all the ideas have (Vi / Vt ). Upvoters become participants of the future projects.</div>
+                <div class="col-lg-2 col-xs-12 base equivalence">Equivalence</div>
+                <div class="col-lg-10 col-xs-12 base">It determines the proportional allocation of funds. Technical: the proportions are calculated with the number of the equivalence votes the idea has, divided by the total of all the equivalence votes all the ideas have (Ei / Et ). Equivalence-voters become participants of the future projects.
+                </div>
               </div>
               <div class="row">
                 <div class="col-lg-2 col-xs-12 base trust">Trust</div>
-                <div class="col-lg-10 col-xs-12 base">Trust votes make the project skip the first budget milestone. Principle: Trust. Technical: if trust votes are more than 75% of Up votes (TVi >75%Vi) the first budget milestone is directly approved. Trust votes in a "budget 0 idea" indicate participation as a Trustee, that is, as a client, affiliate, pre-buy, subscription to a course or pre-purchase to a concert. This vinculates the trustee to the payment of the relative pre-purchase or fee after the first milestone is passed.</div>
+                <div class="col-lg-10 col-xs-12 base">Trust votes make the project skip the first budget step. Technical: if trust votes are more than 75% of equivalence votes (Ti > 75% Ei) the first budget step is directly approved. Trust votes in a "budget 0 idea" indicate participation as a Trustee, that is, as a client, affiliate, pre-buy, subscription to a course or pre-purchase to a concert. This vinculates the trustee to the payment of the relative pre-purchase or fee after the first milestone is passed.</div>
               </div>
               <div class="row">
-                <div class="col-lg-2 col-xs-12 base care">Heartvote</div>
-                <div class="col-lg-10 col-xs-12 base">It’s for sustainability projects or ones that generate emotional response in the voter. The emotional response in the future could also be generated thanks to biofeedback sensors. When heartvoted, the project gains higher visibility. Principle: Care. Technical: Ideas visibility is enhanced by heart votes percentages (HVi /HVt )</div>
+                <div class="col-lg-2 col-xs-12 base care">Care</div>
+                <div class="col-lg-10 col-xs-12 base">It’s for sustainability projects or ones that generate emotional response in the voter. The emotional response in the future could also be generated thanks to biofeedback sensors. When care-voted, the project gains higher visibility. Technical: Ideas visibility is enhanced by Care votes percentages (Ci / Ct )</div>
               </div>
               <div class="row">
-                <div class="col-lg-2 col-xs-12 base transparency">Crystal</div>
-                <div class="col-lg-10 col-xs-12 base">This vote determines wether the idea is not hiding some information or cheating or spamming. Principle: Transparency. Technical: If the number of negative crystal votes, subtracted of half of the trust votes, are more than 25% of Up votes (JVt-50%*TVt > 25%*Vt ) the idea or project is blocked until the coordinators clarify. After 90 days of this blockage the budget is turned back to the collection fund.
-                Negative crystal voters are not anonymous since the beginning. High Joke voted ideas go to a final year list in which the most Joke voted idea wins the prize of joke/trolling idea of the year.</div>
+                <div class="col-lg-2 col-xs-12 base transparency">Transparency</div>
+                <div class="col-lg-10 col-xs-12 base">This vote determines wether the idea is hiding some information or cheating or spamming. Technical: if the number of transparency votes, subtracted of half of the trust votes, are more than 25% of Equivalence votes (Ii - 50% Ti > 25% Ei ) the idea or project is blocked until the values are back to normal ( Ii - 50% Ti < 25% Ei ) After 90 days of blockage, the idea is removed and the budget is turned back to the collection fund. During this period the participants can better explain to voters the idea development in order to provoke a change in the number of transparency and trust votes. If the idea is unblocked, the count of 90 days is canceled. Transparency voters are never anonymous. Highly transparency-voted ideas go to a final year list in which the most transparency-voted idea wins the prize of joke/trolling idea of the year. (When clicking, insert an alert that explains the functioning). </div>
               </div>
               <div class="row">
-                <div class="col-lg-2 col-xs-12 base freedom">Commitment</div>
-                <div class="col-lg-10 col-xs-12 base">Commitment means you would like to work for the project. If the project needs human resources, it will choose you from the commitment list first. Principle: Freedom. Technical: Commitment blue votes fill in the requested hudget. People who Commit-voted an idea become participants when the idea turns into a project.</div>
+                <div class="col-lg-2 col-xs-12 base freedom">Freedom</div>
+                <div class="col-lg-10 col-xs-12 base">Freedom-voting means you would like to work for the idea. Technical: if a hudget is requested, freedom-votes count for the requested hudget. Moreover, freedom-voters will be chosen automatically unless their number is higher than the requested hudget, in which case a selection will occur.
+                If a hudget is not requested, the idea participants will first review the freedom-voters list for the budget release step "human resources". Freedom-voters automatically become participants when the idea turns into a project.</div>
               </div>
               <div class="row">
                 <div class="col-lg-2 col-xs-12 base understanding">Understanding</div>
-                <div class="col-lg-10 col-xs-12 base">This vote refers to how much the idea is comprehensible. It is an information for the idea proposer. The vote is also given an automatic amount by the Ecosystemic Learning artificial intelligence. This influences the participants with statistic motivations that include contextual information, fundamental to understand if the automated suggestion is helpful. Principle: Understanding</div>
+                <div class="col-lg-10 col-xs-12 base">This vote refers to the idea comprehension/smartness/nerditude. It is an information for the idea proposer. Technical: if the understanding-votes are above the 75th percentile (Ui > Ût + Ût/2) the budget release step "Fine Tuning" is automatically approved. A number of understanding-votes will also be given by the Ecosystemic Learning artificial intelligence, that will evaluate data and contextual information.</div>
               </div>
               <div class="row">
-                <div class="col-lg-2 col-xs-12 base diversity">Bizarre</div>
-                <div class="col-lg-10 col-xs-12 base">When a project has a strong “bizardry” (bizarre votes), it has more opportunities to be randomly approved. Principle: Diversity. Technical: Every idea has a bizardry percentage (BVi / BVt ). Every idea, the first day of a season, is given a random percentage value between 0% and 10%, to which bizardry percentage is added. The idea that has the highest percentage has a virtual added Up votes percentage of +50% [(Vi+50%*Vt ) / Vt ]. Last minute high increments of bizarre votes will be turned into joke votes.</div>
+                <div class="col-lg-2 col-xs-12 base diversity">Diversity</div>
+                <div class="col-lg-10 col-xs-12 base">When a project has a strong “bizardry” (diversity-votes), it has more opportunities to be randomly approved. Technical: ideas has a diversity percentage ( Di / Dt ). Every idea, the first day of a season (equinoxes and solstices), is given a random percentage value between 0% and 10%, to which the diversity percentage is added and then randomly multiplied by -1. The idea that has the highest “Bizardry” has a virtual added equivalence-votes percentage of +50% [( Ei + 50% Et ) / Et ].</div>
               </div>
 
 
@@ -145,11 +146,11 @@
             <p class="subheading understanding center space margin">CO-DONATIONS</p>
             <p class="base">Co-donation is an alternative way in which you can help an idea to find its budget. When you hit on co-donate, you choose a maximum amount you are willing to donate for filling up the idea budget, if all the other co-donators are willing to donate the same. The system periodically evaluates the lowest of all amounts promised and multiplies for the number of the co-donators in order to see if the total budget is reached. If not, the system evaluates other combination possibilities able to reach the budget, like excluding lower donation amounts. Once a possible co-donation is found, the idea is turned into a project and the codonations are billed to your bank account, credit card or any other possibility the website allows.</p>
 
-            <p class="subheading understanding center space margin">BUDGET RELEASE</p>
-            <p class="base">The budget release process is divided into 7 phases and every phase has a three days approval voting time in which the process could be halted and the people in charge can be changed for corruption or security reasons. Only people who upvoted, participated or are relative to the module will be notified of the phases. Participants are therefore allowed to vote even if they are external to the module but only if they really care, as they won’t be notified otherwise. Every step is also voted for its transparency and sustainability.</p><br>
+            <p class="subheading understanding center space margin">BUDGET RELEASE STEPS</p>
+            <p class="base">The budget release process is divided into 7 steps which have a three days approval voting time in which the process could be halted and the people in charge can be changed for corruption or security reasons. Only people who equivalence-voted, participated or are relative to the module will be notified of the phases. Participants are therefore allowed to vote even if they are external to the module but only if they really care, as they won’t be notified otherwise. Every step is also voted for its transparency and sustainability.</p><br>
 
             <div class="row">
-              <div class="col-lg-4 col-xs-12 base freedom">MILESTONES</div>
+              <div class="col-lg-4 col-xs-12 base freedom">STEPS</div>
               <div class="col-lg-4 col-xs-12 base">% Released</div>
               <div class="col-lg-4 col-xs-12 base">% Incremental</div>
             </div>
