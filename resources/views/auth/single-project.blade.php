@@ -11,7 +11,7 @@
         <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
         {{session('data')}}
     </div>
-  </div> 
+  </div>
 </div>
 @endif
 <!--END FLASH MESSAGE-->
@@ -20,7 +20,7 @@
     <div class="col-lg-12 col-xs-12">
       <div class="panel panel-default noborders noshadows">
         <p class="heading center equivalence up">
-          {{$project->title_project}} - {{$category->category_name}} Project 
+          {{$project->title_project}} - {{$category->category_name}} Project
           @if($iscoordinator)
            <span style="float:right"><small><a href="{{asset('edit-project')}}/{{$project->id_project}}">Edit</a></small></span>
           @endif

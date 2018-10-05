@@ -149,7 +149,7 @@
           jQuery(window).on('load',function () {randomtype();})
         </script>
       @endif
-      @if(Route::currentRouteName() == 'research' || Route::currentRouteName() == 'cci')
+      @if(Route::currentRouteName() == 'cci')
         <script src='{{asset('js/map.js')}}'></script>
     @endif
 </body>
