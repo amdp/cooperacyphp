@@ -258,10 +258,6 @@ Route::post('payment', ['as' => 'payment','uses' => 'PaypalController@subscribe'
 ****EXPERIMENTAL OR TESTING ROUTES***********
 ********************************************/
 
-Route::get('/test-mail', [   'middleware' => ['auth', 'admin'],
-  'as' => 'test-mail',
-  'uses' => 'ExperimentalController@testmail']);
-
 Route::get('/dummy-list', [   'middleware' => ['auth', 'member'],
   'as' => 'dummy-list',
   'uses' => 'ProjectController@dummyindex']);
@@ -289,11 +285,13 @@ Route::get('/map', [ 'as' => 'map',
 Route::post('sendmessage', ['as' => 'sendmessage','uses' => 'MessageController@send',
 ]);
 
-Route::get('testmail', ['as' => 'testmail','uses' => 'TestMailController@test',
-]);
+Route::get('/testmail', [   'middleware' => ['auth', 'admin'],
+  'as' => 'testmail',
+  'uses' => 'TestMailController@testmail']);
 
-Route::get('testmail-paid', ['as' => 'testmail-paid','uses' => 'TestMailController@testpaid',
-]);
+Route::get('/testmailpaid', [   'middleware' => ['auth', 'admin'],
+  'as' => 'testmailpaid',
+  'uses' => 'TestMailController@testmailpaid']);
 
 //Route::get('/home', 'HomeController@index');
 // Route::get('/updatepass', [ //   'as' => 'updatepass',

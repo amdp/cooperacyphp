@@ -1,12 +1,10 @@
 <?php
 namespace App\Http\Controllers;
-
 use Mail;
 
 
 class ExperimentalController extends Controller
 {
-
   public function testmail() {
 
     Mail::send('emails.welcome-paid', [], function($message) {
