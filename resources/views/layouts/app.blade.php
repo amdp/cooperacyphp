@@ -31,7 +31,6 @@
     @endif
     @if(Route::currentRouteName() == 'new-project' || Route::currentRouteName() == 'edit-project')
       <link href="/css/jquery-ui.min.css" rel="stylesheet">
-      <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
     @endif
     <!-- Scripts -->
     <script src="/js/app.js"></script>
@@ -118,7 +117,7 @@
 
   @if(Route::currentRouteName() == 'view-project')
     <script type="text/javascript">
-      
+
 
    var updateVote = function(clicked, userID, projectID) {
      console.log('Clicked on: ' + clicked);
@@ -277,10 +276,10 @@ $('#eq-popover').popover();
       }
    });
   </script>
-  @endif 
-  
-  
-  
+  @endif
+
+
+
   @if(Route::currentRouteName() == 'project-list')
   <script type="text/javascript">
   var updateVote = function(clicked, userID, projectID) {
@@ -342,8 +341,8 @@ $('#eq-popover').popover();
 
   </script>
   @endif
-  
-  
+
+
 
 </body>
 </html>

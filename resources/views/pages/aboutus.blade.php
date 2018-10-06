@@ -281,14 +281,11 @@
         </div><div class="quote up diversity">Alessandro</div><br><br>
       </div>
     </div>
-
-    <a class="carousel-control left" href="#testimonials" role="button" data-slide="prev">
-      <span class="icon-prev carousel-icon" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
+    <a class="carousel-control left equivalence" href="#testimonials" role="button" data-slide="prev" style="text-align: right">
+      <span> < </span>
     </a>
-    <a class="carousel-control right" href="#testimonials" role="button" data-slide="next">
-      <span class="icon-next carousel-icon" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
+    <a class="carousel-control right equivalence" href="#testimonials" role="button" data-slide="next" style="text-align: left">
+      <span> > </span>
     </a>
   </div>
 </div>
