@@ -30,13 +30,13 @@ class ProjectController extends Controller
 
       foreach($queries as $query) {
 
-          $totalVoteCount = ProjectFunctions::totalVoteCount($query->id_project);
+          $totalVoteCount = Functions::totalVoteCount($query->id_project);
 
           // Check if already voted
-          $totalVoted = ProjectFunctions::totalHasVoted($userID, $query->id_project);
+          $totalVoted = Functions::totalHasVoted($userID, $query->id_project);
 
           // Check if logged user is coordinator
-          $iscoordinator = ProjectFunctions::isCoordinator($query->id_project);
+          $iscoordinator = Functions::isCoordinator($query->id_project);
 
         $projectarray[] = [
           'id_project' => $query->id_project,
@@ -65,7 +65,7 @@ class ProjectController extends Controller
       ->where('id_project', $id)
       ->first();
 
-    $projectDescription = ProjectFunctions::getHtmlLinks($project->content_project);
+    $projectDescription = Functions::getHtmlLinks($project->content_project);
 
     $labelDescription = [
             'Click if you like this project',
@@ -95,18 +95,18 @@ class ProjectController extends Controller
       ->where('id', $project->id_project_owner)
       ->first();
 
-    $coordinators = ProjectFunctions::getPeople('coordinator', $id);
-    $experts = ProjectFunctions::getPeople('expert', $id);
-    $reporters = ProjectFunctions::getPeople('reporter', $id);
+    $coordinators = Functions::getPeople('coordinator', $id);
+    $experts = Functions::getPeople('expert', $id);
+    $reporters = Functions::getPeople('reporter', $id);
 
     // IS USER COORDINATOR?
-    $iscoordinator = ProjectFunctions::isCoordinator($id);
+    $iscoordinator = Functions::isCoordinator($id);
 
     //VOTE COUNT
-    $totalVoteCount = ProjectFunctions::totalVoteCount($id);
+    $totalVoteCount = Functions::totalVoteCount($id);
 
     // ALREADY VOTED?
-    $hasVoted = ProjectFunctions::totalHasVoted($userID, $id);
+    $hasVoted = Functions::totalHasVoted($userID, $id);
 
     $projectinfo = [
       'id_project' => $project->id_project,
@@ -128,15 +128,15 @@ class ProjectController extends Controller
       'Click if you think this comment is smart, creative or out of the box'
    ];
 
-   $commentsL1 = ProjectFunctions::getComments($id,'DESC');
+   $commentsL1 = Functions::getComments($id,'DESC');
 
     foreach ($commentsL1 as $commentL1) {
-        $subcomments = ProjectFunctions::getComments($commentL1->id_project,'ASC');
+        $subcomments = Functions::getComments($commentL1->id_project,'ASC');
 
         $commentsL2=array();
         foreach ($subcomments as $subcomment) {
 
-          $subsubcomments = ProjectFunctions::getComments($subcomment->id_project,'ASC');
+          $subsubcomments = Functions::getComments($subcomment->id_project,'ASC');
 
             $commentsL3=array();
             foreach ($subsubcomments as $subsubcomment) {
@@ -145,11 +145,11 @@ class ProjectController extends Controller
                 'id_project' => $subsubcomment->id_project,
                 'author_id' => $subsubcomment->UserID,
                 'author_name' => $subsubcomment->UserName,
-                'content' => ProjectFunctions::getHtmlLinks($subsubcomment->content_project),
+                'content' => Functions::getHtmlLinks($subsubcomment->content_project),
                 'editcontent' => $subsubcomment->content_project,
                 'date' => $subsubcomment->date_project,
-                'totalVotes' => ProjectFunctions::totalVoteCount($subsubcomment->id_project),
-                'hasVoted' => ProjectFunctions::totalHasVoted($userID, $subsubcomment->id_project),
+                'totalVotes' => Functions::totalVoteCount($subsubcomment->id_project),
+                'hasVoted' => Functions::totalHasVoted($userID, $subsubcomment->id_project),
                 'labelDescription' => $labelDescriptionComments,
               ];
 
@@ -159,12 +159,12 @@ class ProjectController extends Controller
             'id_project' => $subcomment->id_project,
             'author_id' => $subcomment->UserID,
             'author_name' => $subcomment->UserName,
-            'content' => ProjectFunctions::getHtmlLinks($subcomment->content_project),
+            'content' => Functions::getHtmlLinks($subcomment->content_project),
             'editcontent' => $subcomment->content_project,
             'date' => $subcomment->date_project,
             'replies' => $commentsL3,
-            'totalVotes' => ProjectFunctions::totalVoteCount($subcomment->id_project),
-            'hasVoted' => ProjectFunctions::totalHasVoted($userID, $subcomment->id_project),
+            'totalVotes' => Functions::totalVoteCount($subcomment->id_project),
+            'hasVoted' => Functions::totalHasVoted($userID, $subcomment->id_project),
             'labelDescription' => $labelDescriptionComments,
 
           ];
@@ -175,12 +175,12 @@ class ProjectController extends Controller
           'id_project' => $commentL1->id_project,
           'author_id' => $commentL1->UserID,
           'author_name' => $commentL1->UserName,
-          'content' => ProjectFunctions::getHtmlLinks($commentL1->content_project),
+          'content' => Functions::getHtmlLinks($commentL1->content_project),
           'editcontent' => $commentL1->content_project,
           'date' => $commentL1->date_project,
           'replies' => $commentsL2,
-          'totalVotes' => ProjectFunctions::totalVoteCount($commentL1->id_project),
-          'hasVoted' => ProjectFunctions::totalHasVoted($userID, $commentL1->id_project),
+          'totalVotes' => Functions::totalVoteCount($commentL1->id_project),
+          'hasVoted' => Functions::totalHasVoted($userID, $commentL1->id_project),
           'labelDescription' => $labelDescriptionComments,
         ];
 
@@ -388,7 +388,7 @@ class ProjectController extends Controller
   public function edit($id) {
 
     //If not coordinator kick out
-    if (!ProjectFunctions::isCoordinator($id)) {
+    if (!Functions::isCoordinator($id)) {
       return back();
     }
 
@@ -415,12 +415,12 @@ class ProjectController extends Controller
       ->orderBy('title_project')
       ->get();
 
-    $experts = ProjectFunctions::getPeople('expert', $id);
-    $coordinators = ProjectFunctions::getPeople('coordinator', $id);
-    $reporters = ProjectFunctions::getPeople('reporter', $id);
+    $experts = Functions::getPeople('expert', $id);
+    $coordinators = Functions::getPeople('coordinator', $id);
+    $reporters = Functions::getPeople('reporter', $id);
     $categories = DB::table('coo_category')->get();
     $projects = DB::table('coo_project')->where('type_project',2)->whereNotIn('id_project',[272])->get();
-    $locations = ProjectFunctions::getLocations($id);
+    $locations = Functions::getLocations($id);
     $project = DB::table('coo_project')->where('type_project',2)->where('id_project',$id)->first();
     return view('auth.edit-project', compact('id', 'world', 'experts', 'reporters', 'coordinators', 'continents', 'states', 'cities', 'categories', 'project', 'projects', 'locations'));
   }

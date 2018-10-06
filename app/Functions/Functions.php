@@ -5,7 +5,6 @@ use DB;
 use Auth;
 use Mail;
 use Illuminate\Support\Collection;
-use App\Functions\ProjectFunctions;
 
 class Functions
 {
@@ -13,11 +12,11 @@ class Functions
 	public static function notifyComment($id, $commentid, $content) {
 		$messages=array();
 		$title = DB::table('coo_project')->where('id_project', $id)->value('title_project');
-		$comments = ProjectFunctions::getComments($id,'DESC');
+		$comments = Functions::getComments($id,'DESC');
     	foreach ($comments as $comment) {
-    		$subcomments = ProjectFunctions::getComments($comment->id_project,'ASC');
+    		$subcomments = Functions::getComments($comment->id_project,'ASC');
     		foreach ($subcomments as $subcomment) {
-        	$subsubcomments = ProjectFunctions::getComments($subcomment->id_project,'ASC');
+        	$subsubcomments = Functions::getComments($subcomment->id_project,'ASC');
       			foreach ($subsubcomments as $subsubcomment) {
 	      			$messages[] = [
 	      				'comment'	=>	$subsubcomment,
@@ -146,10 +145,7 @@ class Functions
 
 	}
 
-}
 
-class ProjectFunctions
-{
    	// voteCount ($id_project, $voteCode)
 	// USE: count total votes for a project
 	// Parameters:
@@ -185,7 +181,7 @@ class ProjectFunctions
 
       for ($i=1; $i<8; $i++) {
         if($i!==6) {
-          $totalVoteCount[$i] = ProjectFunctions::voteCount($id_project, $i);
+          $totalVoteCount[$i] = Functions::voteCount($id_project, $i);
         } else {
           $totalVoteCount[$i] = 0;
         }
@@ -201,7 +197,7 @@ class ProjectFunctions
 
       for ($i=1; $i<8; $i++) {
         if($i!==6) {
-          $totalHasVoted[$i] = ProjectFunctions::hasVoted($userID, $id_project, $i);
+          $totalHasVoted[$i] = Functions::hasVoted($userID, $id_project, $i);
         } else {
           $totalHasVoted[$i] = null;
         }
@@ -256,7 +252,7 @@ class ProjectFunctions
       // USE: returns 'yes' if logged user is coordinating a project, otherwise returns null
       // Parameters: $id = project id
     public static function isCoordinator($id) {
-      $coordinators = ProjectFunctions::getPeople('coordinator', $id);
+      $coordinators = Functions::getPeople('coordinator', $id);
       $iscoordinator = null;
       foreach ($coordinators as $coordinator) {
         if ($coordinator->id_user == Auth::user()->id) {
