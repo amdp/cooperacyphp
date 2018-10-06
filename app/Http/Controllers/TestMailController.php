@@ -11,10 +11,7 @@ class TestMailController extends Controller
             ->from('cooperacy@cooperacy.org', 'Cooperacy')
             ->subject('Welcome to Cooperacy');
         });
-}
 
-class ExperimentalController extends Controller
-{
   public function testmailpaid() {
     Mail::send('emails.welcome-paid', [], function($message) {
         $message->to('cooperacy@cooperacy.org','Cooperacy')
