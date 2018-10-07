@@ -22,7 +22,7 @@ Route::get('/contact', ['as' => 'contact', 'uses' => function () {return view('p
 Route::get('/aboutyou', function () {return view('pages.aboutyou');});
 Route::get('/aboutus', function () {return view('pages.aboutus');});
 Route::get('/platform', function () {return view('pages.platform');});
-Route::get('/howitworks', function () {return view('pages.howitworks');});
+Route::get('/whitepaper', function () {return view('pages.whitepaper');});
 Route::get('/news', [   'as' => 'news',  'uses' => 'NewsController@index']);
 
 Route::get('/cooperation', function () {return view('pages.cooperation');});
@@ -267,9 +267,6 @@ Route::get('/dummy-list', [   'middleware' => ['auth', 'member'],
   'uses' => 'ProjectController@dummysingle']);
 
  // Route::get('/registersec', function () {// return view('auth.register-ok');// });
-
-// Route::get('/howitworks2', function () {
-//     return view('pages.howitworks2');// });
 
 Route::get('/test', function () {return view('duplicates-and-or-working-pages-do-not-delete.test');});
 

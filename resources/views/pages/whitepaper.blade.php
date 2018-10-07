@@ -1,6 +1,6 @@
 @extends('layouts.lvapp')
 @section('title')
-    How it works - Cooperacy
+    White Paper - Cooperacy
 @stop
 @section('content')
 
@@ -9,7 +9,7 @@
 
   <!--BEGIN HEADER-->
   <div class="row">
-  <br><img class="page-header" src="{{asset('/images/howitworks.png')}}"><br>
+  <br><img class="page-header" src="{{asset('/images/whitepaper.png')}}"><br>
   </div>
   <!--END HEADER-->
 

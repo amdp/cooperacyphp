@@ -6,13 +6,10 @@
 
 <!--BEGIN CONTAINER-->
 <div style="margin-left:30px; margin-right:30px;">
-
-  <!--CIRCLE-->
-  <div class="row">
-    <br><br><br>
-
-    <div class="circle">
-      <svg xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" x="0px" y="0px" viewBox="0 0 750 750">
+ <!--CIRCLE-->
+ <div class="row"><br><br><br>
+  <div class="circle">
+   <svg xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" x="0px" y="0px" viewBox="0 0 750 750">
         <g id="cocircle">
           <linearGradient id="gequivalence" gradientUnits="userSpaceOnUse" x1="219" y1="58" x2="530" y2="58">
 	           <stop  offset="0" style="stop-color:#FF8366"/><stop  offset="0.5" style="stop-color:#FF9000"/><stop  offset="1" style="stop-color:#FFB600"/>
@@ -111,58 +108,29 @@
             font-size="25" letter-spacing="2">PEOPLE WANT TO BE INCLUDED</text>
           </a>
         </g>
+    </svg>
 
-      </svg>
+  </div> <!--END CIRCLE-->
 
-    </div> <!--END CIRCLE-->
+ </div><!--END ROW-->
 
-  </div><!--END ROW-->
-
-<div id="homefade" style="opacity:0"><!--START FADING-->
-
+ <div id="homefade" style="opacity:0"><!--START FADING-->
   <div class="row"><!--BEGIN ROW-->
-
-  <div class="col-md-2"></div>
-
-  <div class="col-md-8"><!--BEGIN CONTENT-->
-
-    <div class="row"><br>
-
-      <div class="row"><br>
-      <div class="row"><div class="col-lg-4 col-xs-12 subheading center"><a href="/platform" class="noline transparency space">DISCOVER</a></div><div class="col-lg-4 col-xs-12 subheading center"><a href="/cooperation" class="noline understanding space">LEARN</a></div><div class="col-lg-4 col-xs-12 subheading center"><a href="/register" class="noline equivalence space">JOIN</a></div></div><br><br>
-
-	<p class="base center">Cooperacy is a nonprofit scientific project aiming to spread cooperation between humans and their ecosystem.<br><br>We're setting up a very special <a href="/platform" class="ae">platform</a> in which, supported by money, people help each other to realise what they want for their lives and take decisions together in a very productive way. <br><br>
-      <a href="/register" class="ae">Joining</a> Cooperacy is entertaining and makes you learn how to develop enjoyable cooperations in your <a href="/aboutyou" class="ad">personal</a> relations, in the <a href="/coorporate" class="af">corporate</a> world and at the <a href="/cci" class="au">international</a> level.</p><br><br>
-
-
-
-      <!--       -->
-
+   <div class="col-md-2"></div>
+   <div class="col-md-8"><!--BEGIN CONTENT-->
+      <div class="row">
+       <div class="col-lg-4 col-xs-12 subheading center"><a href="/platform" class="noline transparency space">DISCOVER</a></div>
+       <div class="col-lg-4 col-xs-12 subheading center"><a href="/cooperation" class="noline understanding space">LEARN</a></div>
+       <div class="col-lg-4 col-xs-12 subheading center"><a href="/register" class="noline equivalence space">JOIN</a></div>
+      </div><br><br>
+      <p class="base center">Cooperacy is a nonprofit scientific project aiming to spread cooperation between humans and their ecosystem.<br><br>We're setting up a very special <a href="/platform" class="ae">platform</a> in which, supported by money, people help each other to realise what they want for their lives and take decisions together in a very productive way. <br><br>
+      <a href="/register" class="ae">Joining</a> Cooperacy is entertaining and makes you learn how to develop enjoyable cooperations in your <a href="/aboutyou" class="ad">personal</a> relations, in the <a href="/coorporate" class="af">corporate</a> world and at the <a href="/cci" class="au">international</a> level.
+      </p><br><br>
       <div class="base center"><a class="ae" href="/register">Join</a> Cooperacy today, or <a class="ai" href="https://www.cooperacy.org/contact">contact us</a> for more information.</p><br></div>
-
-</div>
-
-
-</div><!--END CONTENT-->
-
-  <div class="col-md-2"></div>
-
-  </div><!--END ROW-->
-
-  <div class="row"><!--BEGIN ROW-->
-
-          <p style="text-align:center;">
-
-
-
-          </p>
-
-  </div><!--END ROW-->
-
-
-</div> <!--END FADING-->
-
-
+   </div><!--END CONTENT-->
+   <div class="col-md-2"></div>
+  </div>
+ </div> <!--END FADING-->
 </div> <!--END CONTAINER-->
 
 @stop

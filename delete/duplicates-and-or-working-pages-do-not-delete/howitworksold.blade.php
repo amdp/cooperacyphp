@@ -12,7 +12,7 @@
       <div id="content" class="clr site-content" role="main">
         <article class="clr">
           <div class="entry-content entry clr">
-            <p><img src="{{asset('images/howitworks.png')}}" width="100%" /></p>
+            <p><img src="{{asset('images/whitepaper.png')}}" width="100%" /></p>
             <div id="coomain">
               <p style="color:#BB66DD; font-size: 24px; font-weight:700; margin-bottom:10px;">HOW IT WORKS</p>
               <p style="color:#BB66DD; font-size: 20px; font-weight:700; margin-bottom:10px;">JOINING EMPLOYMENT AND ENTERPRENEURSHIP</p>

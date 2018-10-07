@@ -2,7 +2,7 @@
 
 @section('content')
 <!--BEGIN CONTAINER-->
-<div class="container">
+<div class="container"><br><br>
   <p class="center space heading equivalence">IDEAS</p><br>
   @foreach($projects as $item)
   <div class="row">
