@@ -118,7 +118,7 @@
   <div class="row"><!--BEGIN ROW-->
    <div class="col-md-2"></div>
    <div class="col-md-8"><!--BEGIN CONTENT-->
-      <div class="row">
+      <div class="row"><br><br>
        <div class="col-lg-4 col-xs-12 subheading center"><a href="/platform" class="noline transparency space">DISCOVER</a></div>
        <div class="col-lg-4 col-xs-12 subheading center"><a href="/cooperation" class="noline understanding space">LEARN</a></div>
        <div class="col-lg-4 col-xs-12 subheading center"><a href="/register" class="noline equivalence space">JOIN</a></div>
