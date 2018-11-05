@@ -5,7 +5,7 @@ var options = {
     body: 'This notification was generated from a push!',
     vibrate: [100, 50, 100],
     data: {
-      dateOfArrival: Date.now(),
+      dateOfArrival: new Date(),
       primaryKey: '2'
     },
     actions: [

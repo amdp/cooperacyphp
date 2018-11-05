@@ -23,13 +23,13 @@
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-WV53RSJ');</script>
     <!-- End Google Tag Manager -->
-
+    
     <!-- Web Push // WORK IN PROGRESS LEAVE AS IT IS -->
-    <!--<script>
+    <!--script>
     if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('sw.js').then(function(reg) {
+      navigator.serviceWorker.register('/js/sw.js').then(function(reg) {
         console.log('Service Worker Registered!', reg);
-
+        
         reg.pushManager.getSubscription().then(function(sub) {
           if (sub === null) {
             // Update UI to ask user to register for Push
