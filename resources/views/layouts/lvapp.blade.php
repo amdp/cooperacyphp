@@ -31,13 +31,17 @@
         console.log('Service Worker Registered!', reg);
         
         reg.pushManager.getSubscription().then(function(sub) {
-          if (sub === null) {
-            // Update UI to ask user to register for Push
-            console.log('Not subscribed to push service!');
+          if (sub) {
+              console.log('Subscription object: ', sub);
+              return sub;
           } else {
-            // We have a subscription, update the database
-            console.log('Subscription object: ', sub);
-          }
+              // Update UI to ask user to register for Push
+            console.log('Not subscribed to push service!');
+          }   
+          return serviceWorkerRegistration.pushManager.subscribe({
+        	    userVisibleOnly: true
+        	});
+          
         });
       })
        .catch(function(err) {
@@ -55,7 +59,7 @@
               body: 'Here is a notification body!',
               vibrate: [10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10],
               data: {
-                dateOfArrival: Date.now(),
+                dateOfArrival: new Date(),
                 primaryKey: 1
               },
               actions: [
