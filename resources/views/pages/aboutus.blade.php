@@ -72,7 +72,7 @@
     </div>
     <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 text-center">
   <img class="img-responsive" style="margin:0 auto;" src="{{asset('images/framba.png')}}" alt="null" /><br>
-  <p>Federica Framba<br><i>Art Director</i></p>
+  <p>Federica Framba<br><i>Designer </i></p>
 </div>
     <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 text-center">
       <img class="img-responsive" style="margin:0 auto;" src="{{asset('images/marco.png')}}" alt="null" /><br>
@@ -98,12 +98,6 @@
      <p>Ilario Tito<br><i>Co-founder</i></p>
     </div>
   </div>
-
-  <!--<div class="row">
-    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 text-center">
-      <img class="img-responsive" style="margin:0 auto;" src="{{asset('images/giovanna.png')}}" alt="null" /><br>
-      <p>Giovanna Littardi<br><i>First Guitarist</i></p>
-    </div> -->
 
     </div>
   </div><br><br>
