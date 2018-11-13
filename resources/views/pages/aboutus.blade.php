@@ -66,55 +66,36 @@
       <img class="img-responsive" style="margin:0 auto;" src="{{asset('images/amdp.png')}}" alt="null" /><br>
       <p>Alessandro Merletti De Palo<br><i>Co-founder and coordinator of Cooperacy</i></p>
     </div>
-        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 text-center">
-      <img class="img-responsive" style="margin:0 auto;" src="{{asset('images/ilario.png')}}" alt="null" /><br>
-     <p>Ilario Tito<br><i>Co-founder</i></p>
-    </div>
     <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 text-center">
-  <img class="img-responsive" style="margin:0 auto;" src="{{asset('images/beatrice.png')}}" alt="null" /><br>
- <p>Beatrice Carli Moretti<br><i>Communication Coordinator</i></p>
-</div>
-        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 text-center">
-      <img class="img-responsive" style="margin:0 auto;" src="{{asset('images/curti.png')}}" alt="null" /><br>
-      <p>Ilaria Curti<br><i>Marketing Coordinator</i></p>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 text-center">
-      <img class="img-responsive" style="margin:0 auto;" src="{{asset('images/marco.png')}}" alt="null" /><br>
-      <p>Marco Marincola<br><i>Finance</i></p>
-    </div>
-    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 text-center">
-          <img class="img-responsive" style="margin:0 auto;" src="{{asset('images/giosetta.png')}}" alt="null" /><br>
-          <p>Giosetta Ciuffa<br><i>External Relations</i></p>
-        </div>
-        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 text-center">
       <img class="img-responsive" style="margin:0 auto;" src="{{asset('images/sara.png')}}" alt="null" /><br>
       <p>Sara Conallo<br><i>Jackie of all trades</i></p>
     </div>
-        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 text-center">
-      <img class="img-responsive" style="margin:0 auto;" src="{{asset('images/framba.png')}}" alt="null" /><br>
-      <p>Federica Framba<br><i>Art Director</i></p>
+    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 text-center">
+  <img class="img-responsive" style="margin:0 auto;" src="{{asset('images/framba.png')}}" alt="null" /><br>
+  <p>Federica Framba<br><i>Art Director</i></p>
+</div>
+    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 text-center">
+      <img class="img-responsive" style="margin:0 auto;" src="{{asset('images/marco.png')}}" alt="null" /><br>
+      <p>Marco Marincola<br><i>Engineering Management</i></p>
     </div>
   </div>
 
   <div class="row">
+  <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 text-center">
+        <img class="img-responsive" style="margin:0 auto;" src="{{asset('images/giosetta.png')}}" alt="null" /><br>
+      <p>Giosetta Ciuffa<br><i>External Relations</i></p>
+  </div>
     <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 text-center">
       <img class="img-responsive" style="margin:0 auto;" src="{{asset('images/enea.png')}}" alt="null" /><br>
       <p>Enea Barbetta<br><i>Main Developer</i></p>
     </div>
-        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 text-center">
+    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 text-center">
       <img class="img-responsive" style="margin:0 auto;" src="{{asset('images/valentina.png')}}" alt="null" /><br>
      <p>Valentina Panizza<br><i>Strategic Planning</i></p>
     </div>
-        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 text-center">
-      <img class="img-responsive" style="margin:0 auto;" src="{{asset('images/stefania.png')}}" alt="null" /><br>
-      <p>Stefania Forlani<br><i>Planning Updates</i></p>
-    </div>
-        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 text-center">
-      <img class="img-responsive" style="margin:0 auto;" src="{{asset('images/francesco.png')}}" alt="null" /><br>
-      <p>Francesco Taskayali<br><i>First Pianist</i></p>
+    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 text-center">
+      <img class="img-responsive" style="margin:0 auto;" src="{{asset('images/ilario.png')}}" alt="null" /><br>
+     <p>Ilario Tito<br><i>Co-founder</i></p>
     </div>
   </div>
 
