@@ -214,6 +214,9 @@ Route::get('pool', ['as' => 'pool','uses' => function () {  return view('pool');
 Route::post('pool', ['as' => 'pool','uses' => 'PlanController@pool',
 ]);
 
+Route::get('paypalpay', ['as' => 'paypalpay','uses' => 'PlanController@pool',
+]);
+
 Route::get('thanks', ['as' => 'thanks','uses' => 'PlanController@confirm']);
 
 Route::get('check', [ 'as' => 'check',

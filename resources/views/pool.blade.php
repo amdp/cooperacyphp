@@ -15,9 +15,8 @@
 
     If you are living in a low income country, you can pool with a lower amount if you help us adapt the amount to the different purchasing power of your nation.<br><br>
 
-    {!! Form::open(array('url' => 'pool', 'method' => 'post')) !!}
-                    {!! Form::submit('VOLUNTARY POOLING THROUGH PAYPAL', ['class'=>'btn btn-primary btn-block']) !!}
-                    {!! Form::close() !!}
+    <a target="_blank" href="{{asset('paypalpay')}}" class="btn btn-primary btn-block">VOLUNTARY POOLING THROUGH PAYPAL</a>
+    
     <p class="mini">If you encounter any problem please screenshot any error and write us!</p><br><br>
 
     <p class="base">Pool instead via bank transfer sending us a code/receipt or contact us for suggestions, questions, requests:</p>
