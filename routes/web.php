@@ -290,6 +290,10 @@ Route::get('/testmailpaid', [   'middleware' => ['auth', 'admin'],
   'as' => 'testmailpaid',
   'uses' => 'TestMailController@testmailpaid']);
 
+Route::get('/send-thanks-mail/{email}', [   'middleware' => ['auth', 'admin'],
+  'as' => 'send-thanks-mail',
+  'uses' => 'MessageController@sendThanksMail']);
+  
 //Route::get('/home', 'HomeController@index');
 // Route::get('/updatepass', [ //   'as' => 'updatepass',
 //   'uses' => 'PlanController@updatepass']);

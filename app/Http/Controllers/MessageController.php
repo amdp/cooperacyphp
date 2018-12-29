@@ -41,4 +41,19 @@ class MessageController extends Controller
  
       
     }
+
+    public function sendThanksMail($mail) {
+
+      Mail::send('emails.welcome-paid', [], function($message) use($mail) {
+
+          $message->to($mail)
+          ->bcc('cooperacy@cooperacy.org','Cooperacy')
+          ->from('cooperacy@cooperacy.org','Cooperacy')
+          ->subject('Welcome to Cooperacy!');
+
+      });
+
+      return 'Message sent to: '.$mail;
+
+    }
 }
