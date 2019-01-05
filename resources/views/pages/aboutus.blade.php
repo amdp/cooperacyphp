@@ -72,7 +72,7 @@
     </div>
     <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 text-center">
   <img class="img-responsive" style="margin:0 auto;" src="{{asset('images/framba.png')}}" alt="null" /><br>
-  <p>Federica Framba<br><i>Designer </i></p>
+  <p>Federica Framba<br><i>Designer</i></p>
 </div>
     <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 text-center">
       <img class="img-responsive" style="margin:0 auto;" src="{{asset('images/marco.png')}}" alt="null" /><br>
