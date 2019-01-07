@@ -20,7 +20,7 @@
   <div class="col-md-2"></div>
   <!--END LEFT COL-->
 
-    <!-- journey anytime you will feel lost you can summon a mentor to guide you -->
+    <!-- journey anytime you will feel lost you can summon a mentor to guide you. -->
 
   <!--BEGIN CONTENT-->
   <div class="col-md-8"><br>
