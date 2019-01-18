@@ -63,19 +63,19 @@
 
     <div class="row">
       <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 text-center">
-        <img class="img-responsive" style="margin:0 auto;" src="http://127.0.0.1:8000/images/amdp.png" alt="null"><br>
+        <img class="img-responsive" style="margin:0 auto;" src="https://cooperacy.org/images/amdp.png" alt="null"><br>
         <p>Alessandro Merletti De Palo<br><i>Co-founder and coordinator of Cooperacy</i></p>
       </div>
       <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 text-center">
-        <img class="img-responsive" style="margin:0 auto;" src="http://127.0.0.1:8000/images/mario.png" alt="Mario Sabatino"><br>
+        <img class="img-responsive" style="margin:0 auto;" src="https://cooperacy.org/images/mario.png" alt="Mario Sabatino"><br>
         <p>Mario Sabatino Riontino<br><i>Corporate Project</i></p>
       </div>
       <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 text-center">
-    <img class="img-responsive" style="margin:0 auto;" src="http://127.0.0.1:8000/images/framba.png" alt="null"><br>
+    <img class="img-responsive" style="margin:0 auto;" src="https://cooperacy.org/images/framba.png" alt="null"><br>
     <p>Federica Framba<br><i>Designer</i></p>
   </div>
       <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 text-center">
-        <img class="img-responsive" style="margin:0 auto;" src="http://127.0.0.1:8000/images/alessia.png" alt="null"><br>
+        <img class="img-responsive" style="margin:0 auto;" src="https://cooperacy.org/images/alessia.png" alt="null"><br>
         <p>Alessia De Santis<br><i>Public Administration Projects</i></p>
       </div>
     </div>
@@ -83,21 +83,21 @@
     <div class="row">
 
   <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 text-center">
-          <img class="img-responsive" style="margin:0 auto;" src="http://127.0.0.1:8000/images/giosetta.png" alt="null"><br>
+          <img class="img-responsive" style="margin:0 auto;" src="https://cooperacy.org/images/giosetta.png" alt="null"><br>
         <p>Giosetta Ciuffa<br><i>External Relations</i></p>
     </div><div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 text-center">
-          <img class="img-responsive" style="margin:0 auto;" src="http://127.0.0.1:8000/images/marco.png" alt="null"><br>
+          <img class="img-responsive" style="margin:0 auto;" src="https://cooperacy.org/images/marco.png" alt="null"><br>
         <p>Marco Marincola
   <br><i>Engineer</i></p>
     </div>
 
   <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 text-center">
-        <img class="img-responsive" style="margin:0 auto;" src="http://127.0.0.1:8000/images/ali.png" alt="null"><br>
+        <img class="img-responsive" style="margin:0 auto;" src="https://cooperacy.org/images/ali.png" alt="null"><br>
         <p>Ali Akhtari<br><i>Front-End Developer</i></p>
       </div>
 
   <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 text-center">
-        <img class="img-responsive" style="margin:0 auto;" src="http://127.0.0.1:8000/images/ilario.png" alt="null"><br>
+        <img class="img-responsive" style="margin:0 auto;" src="https://cooperacy.org/images/ilario.png" alt="null"><br>
         <p>Ilario Tito<br><i>Co-founder</i></p>
       </div>
 
@@ -106,11 +106,11 @@
         <br>
 
       </div><div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 text-center">
-        <img class="img-responsive" style="margin:0 auto;" src="http://127.0.0.1:8000/images/sara.png" alt="null"><br>
+        <img class="img-responsive" style="margin:0 auto;" src="https://cooperacy.org/images/sara.png" alt="null"><br>
         <p>Sara Conallo<br><i>Jackie of All Trades</i></p>
       </div>
       <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 text-center">
-        <img class="img-responsive" style="margin:0 auto;" src="http://127.0.0.1:8000/images/enea.png" alt="null"><br>
+        <img class="img-responsive" style="margin:0 auto;" src="https://cooperacy.org/images/enea.png" alt="null"><br>
        <p>Enea Barbetta<br><i>Main Developer</i></p>
       </div>
       <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 text-center">
