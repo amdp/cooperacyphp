@@ -55,50 +55,69 @@
   <div class="col-md-8">
 
 
-  <br><br><p class="subheading transparency center space">THE TEAM</p><br><br>
+    <br><br><p class="subheading transparency center space">THE TEAM</p><br><br>
 
-  <style>table, tbody, tr {border=0 !important; border-collapse: collapse; border-style: hidden !important;}
-        td {border=0 !important; width: 12%;border-collapse: collapse; border-style: hidden !important;}
-  </style>
+    <style>table, tbody, tr {border=0 !important; border-collapse: collapse; border-style: hidden !important;}
+          td {border=0 !important; width: 12%;border-collapse: collapse; border-style: hidden !important;}
+    </style>
 
-  <div class="row">
-    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 text-center">
-      <img class="img-responsive" style="margin:0 auto;" src="{{asset('images/amdp.png')}}" alt="null" /><br>
-      <p>Alessandro Merletti De Palo<br><i>Co-founder and coordinator of Cooperacy</i></p>
-    </div>
-    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 text-center">
-      <img class="img-responsive" style="margin:0 auto;" src="{{asset('images/sara.png')}}" alt="null" /><br>
-      <p>Sara Conallo<br><i>Jackie of all trades</i></p>
-    </div>
-    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 text-center">
-  <img class="img-responsive" style="margin:0 auto;" src="{{asset('images/framba.png')}}" alt="null" /><br>
-  <p>Federica Framba<br><i>Designer</i></p>
-</div>
-    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 text-center">
-      <img class="img-responsive" style="margin:0 auto;" src="{{asset('images/marco.png')}}" alt="null" /><br>
-      <p>Marco Marincola<br><i>Engineering Management</i></p>
-    </div>
+    <div class="row">
+      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 text-center">
+        <img class="img-responsive" style="margin:0 auto;" src="http://127.0.0.1:8000/images/amdp.png" alt="null"><br>
+        <p>Alessandro Merletti De Palo<br><i>Co-founder and coordinator of Cooperacy</i></p>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 text-center">
+        <img class="img-responsive" style="margin:0 auto;" src="http://127.0.0.1:8000/images/mario.png" alt="Mario Sabatino"><br>
+        <p>Mario Sabatino Riontino<br><i>Corporate Project</i></p>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 text-center">
+    <img class="img-responsive" style="margin:0 auto;" src="http://127.0.0.1:8000/images/framba.png" alt="null"><br>
+    <p>Federica Framba<br><i>Designer</i></p>
   </div>
+      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 text-center">
+        <img class="img-responsive" style="margin:0 auto;" src="http://127.0.0.1:8000/images/alessia.png" alt="null"><br>
+        <p>Alessia De Santis<br><i>Public Administration Projects</i></p>
+      </div>
+    </div>
 
-  <div class="row">
+    <div class="row">
+
   <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 text-center">
-        <img class="img-responsive" style="margin:0 auto;" src="{{asset('images/giosetta.png')}}" alt="null" /><br>
-      <p>Giosetta Ciuffa<br><i>External Relations</i></p>
-  </div>
-    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 text-center">
-      <img class="img-responsive" style="margin:0 auto;" src="{{asset('images/enea.png')}}" alt="null" /><br>
-      <p>Enea Barbetta<br><i>Main Developer</i></p>
+          <img class="img-responsive" style="margin:0 auto;" src="http://127.0.0.1:8000/images/giosetta.png" alt="null"><br>
+        <p>Giosetta Ciuffa<br><i>External Relations</i></p>
+    </div><div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 text-center">
+          <img class="img-responsive" style="margin:0 auto;" src="http://127.0.0.1:8000/images/marco.png" alt="null"><br>
+        <p>Marco Marincola
+  <br><i>Engineer</i></p>
     </div>
-    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 text-center">
-      <img class="img-responsive" style="margin:0 auto;" src="{{asset('images/valentina.png')}}" alt="null" /><br>
-     <p>Valentina Panizza<br><i>Strategic Planning</i></p>
-    </div>
-    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 text-center">
-      <img class="img-responsive" style="margin:0 auto;" src="{{asset('images/ilario.png')}}" alt="null" /><br>
-     <p>Ilario Tito<br><i>Co-founder</i></p>
-    </div>
-  </div>
 
+  <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 text-center">
+        <img class="img-responsive" style="margin:0 auto;" src="http://127.0.0.1:8000/images/ali.png" alt="null"><br>
+        <p>Ali Akhtari<br><i>Front-End Developer</i></p>
+      </div>
+
+  <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 text-center">
+        <img class="img-responsive" style="margin:0 auto;" src="http://127.0.0.1:8000/images/ilario.png" alt="null"><br>
+        <p>Ilario Tito<br><i>Co-founder</i></p>
+      </div>
+
+
+  <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 text-center">
+        <br>
+
+      </div><div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 text-center">
+        <img class="img-responsive" style="margin:0 auto;" src="http://127.0.0.1:8000/images/sara.png" alt="null"><br>
+        <p>Sara Conallo<br><i>Jackie of All Trades</i></p>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 text-center">
+        <img class="img-responsive" style="margin:0 auto;" src="http://127.0.0.1:8000/images/enea.png" alt="null"><br>
+       <p>Enea Barbetta<br><i>Main Developer</i></p>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 text-center">
+        <br>
+
+      </div>
+    </div>
     </div>
   </div><br><br>
 
