@@ -20,6 +20,7 @@ Route::get('/terms', ['as' => 'terms','uses' => function () {return view('pages.
 Route::get('/contact', ['as' => 'contact', 'uses' => function () {return view('pages.contact'); }]);
 
 Route::get('/aboutyou', function () {return view('pages.aboutyou');});
+Route::get('/newtest', function () {return view('pages.test');});
 Route::get('/aboutus', function () {return view('pages.aboutus');});
 Route::get('/platform', function () {return view('pages.platform');});
 Route::get('/whitepaper', function () {return view('pages.whitepaper');});
@@ -296,7 +297,7 @@ Route::get('/testmailpaid', [   'middleware' => ['auth', 'admin'],
 Route::get('/send-thanks-mail/{email}', [   'middleware' => ['auth', 'admin'],
   'as' => 'send-thanks-mail',
   'uses' => 'MessageController@sendThanksMail']);
-  
+
 //Route::get('/home', 'HomeController@index');
 // Route::get('/updatepass', [ //   'as' => 'updatepass',
 //   'uses' => 'PlanController@updatepass']);
