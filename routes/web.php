@@ -20,7 +20,7 @@ Route::get('/terms', ['as' => 'terms','uses' => function () {return view('pages.
 Route::get('/contact', ['as' => 'contact', 'uses' => function () {return view('pages.contact'); }]);
 
 Route::get('/aboutyou', function () {return view('pages.aboutyou');});
-Route::get('/newtest', function () {return view('pages.test');});
+Route::get('/newtest', function () {return view('pages.newtest');});
 Route::get('/aboutus', function () {return view('pages.aboutus');});
 Route::get('/platform', function () {return view('pages.platform');});
 Route::get('/whitepaper', function () {return view('pages.whitepaper');});
