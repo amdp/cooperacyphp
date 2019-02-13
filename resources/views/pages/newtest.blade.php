@@ -1,12 +1,12 @@
 @extends('layouts.lvapp')
 @section('title')
-    Test
+    Test (new)
 @stop
 @section('content')
 
 <!--BEGIN CONTAINER-->
-<!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
-<iframe style="margin-top: 60px;" id='player' width="560" height="315" src="https://www.youtube.com/embed/vdb4XGVTHkE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<!-- 1. The <iframe> (and video player) will replace this <div> tag.  -->
+<iframe width="560" height="315" src="https://www.youtube.com/embed/vdb4XGVTHkE?start=561&end=590" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <script>
   // 2. This code loads the IFrame Player API code asynchronously.
