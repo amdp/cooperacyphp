@@ -49,13 +49,13 @@
         </g>
 
         <text id="typo" x="0px" y="0px" transform="matrix(1 0 0 1 132 379)" opacity="0" fill="#555555" font-size="80">COOPERACY</text>
-        <text id="payoff" x="10px" y="0px" transform="matrix(1 0 0 1 144 427)" opacity="0" fill="#555555" stroke="#555555" stroke-miterlimit="10" font-size="28" letter-spacing="7">LET'S DO IT TOGETHER</text>
+        <text id="payoff" x="0px" y="0px" letter-spacing="7" transform="matrix(1 0 0 1 154 435)" opacity="0" stroke="#555555" fill="#555555" font-size="28">LET'S DO IT TOGETHER</text>
 
         <g id="equivalenceD" display="none">
           <a href="http://cooperacy.org/cooperation" class="noline finger">
             <text transform="matrix(1 0 0 1 157 360)" fill="#555555" font-size="65">EQUIVALENCE</text>
             <line style="display:inline;fill:#555555;stroke:#FF9000;stroke-width:6;stroke-miterlimit:10;" x1="150" y1="393" x2="600" y2="393"/>
-            <text transform="matrix(1 0 0 1 205 443)" display="inline" fill="#555555" stroke="#555555" stroke-miterlimit="10" font-size="25" letter-spacing="2">EVERYONE IS IMPORTANT</text>
+            <text transform="matrix(1 0 0 1 225 440)" stroke="#555555" fill="#555555" font-size="25">EVERYONE IS IMPORTANT</text>
           </a>
         </g>
 
@@ -63,7 +63,7 @@
           <a href="http://cooperacy.org/cooperation" class="noline finger">
             <text transform="matrix(1 0 0 1 278 360)" fill="#555555" font-size="65">TRUST</text>
             <line style="display:inline;fill:#555555;stroke:#FFDD00;stroke-width:6;stroke-miterlimit:10;" x1="150" y1="393" x2="600" y2="393"/>
-            <text transform="matrix(1 0 0 1 186 443)" display="inline" fill="#555555" stroke="#555555" stroke-miterlimit="10" font-size="25" letter-spacing="2">PEOPLE COUNT ON OTHERS</text>
+            <text transform="matrix(1 0 0 1 208 443)" stroke="#555555" fill="#555555" font-size="25">PEOPLE COUNT ON OTHERS</text>
           </a>
         </g>
 
@@ -71,7 +71,7 @@
           <a href="http://cooperacy.org/cooperation" class="noline finger">
             <text transform="matrix(1 0 0 1 286 360)" fill="#555555" font-size="65">CARE</text>
             <line style="display:inline;fill:#555555;stroke:#88DD33;stroke-width:6;stroke-miterlimit:10;" x1="150" y1="393" x2="600" y2="393"/>
-            <text transform="matrix(1 0 0 1 153 443)" display="inline" fill="#555555" stroke="#555555" stroke-miterlimit="10" font-size="25" letter-spacing="2">PEOPLE CARE FOR EACH OTHER</text>
+            <text transform="matrix(1 0 0 1 182 443)" stroke="#555555" fill="#555555" font-size="25">PEOPLE CARE FOR EACH OTHER</text>
           </a>
         </g>
 
@@ -79,7 +79,7 @@
           <a href="http://cooperacy.org/cooperation" class="noline finger">
             <text transform="matrix(1 0 0 1 132 360)" fill="#555555" font-size="65">TRANSPARENCY</text>
             <line style="display:inline;fill:#555555;stroke:#22DDEE;stroke-width:6;stroke-miterlimit:10;" x1="150" y1="393" x2="600" y2="393"/>
-            <text transform="matrix(1 0 0 1 168 443)" display="inline" fill="#555555" stroke="#555555" stroke-miterlimit="10" font-size="25" letter-spacing="2">PEOPLE WANT TO BE HONEST</text>
+            <text transform="matrix(1 0 0 1 194 443)" stroke="#555555" fill="#555555" font-size="25">PEOPLE WANT TO BE HONEST</text>
           </a>
         </g>
 
@@ -87,8 +87,7 @@
           <a href="http://cooperacy.org/cooperation" class="noline finger">
             <text transform="matrix(1 0 0 1 222 360)" fill="#555555" font-size="65">FREEDOM</text>
             <line style="display:inline;fill:#555555;stroke:#4488EE;stroke-width:6;stroke-miterlimit:10;" x1="150" y1="393" x2="600" y2="393"/>
-            <text transform="matrix(1 0 0 1 154 443)" display="inline" fill="#555555" stroke="#555555" stroke-miterlimit="10"
-            font-size="25" letter-spacing="2">PEOPLE FOLLOW THEIR DESIRES</text>
+            <text transform="matrix(1 0 0 1 184 443)" stroke="#555555" fill="#555555" font-size="25">PEOPLE FOLLOW THEIR DESIRES</text>
           </a>
         </g>
 
@@ -96,7 +95,7 @@
           <a href="http://cooperacy.org/cooperation" class="noline finger">
             <text transform="matrix(1 0 0 1 118 360)" fill="#555555" font-size="65">UNDERSTANDING</text>
             <line style="display:inline;fill:#555555;stroke:#AA66DD;stroke-width:6;stroke-miterlimit:10;" x1="150" y1="393" x2="600" y2="393"/>
-            <text transform="matrix(1 0 0 1 84 443)" display="inline" fill="#555555" stroke="#555555" stroke-miterlimit="10" font-size="25" letter-spacing="2">PEOPLE TRY TO UNDERSTAND EACH OTHER</text>
+            <text transform="matrix(1 0 0 1 116 443)" stroke="#555555" fill="#555555" font-size="25">PEOPLE TRY TO UNDERSTAND EACH OTHER</text>
           </a>
         </g>
 
@@ -104,8 +103,7 @@
           <a href="http://cooperacy.org/cooperation" class="noline finger">
             <text transform="matrix(1 0 0 1 218 360)" fill="#555555" font-size="65">DIVERSITY</text>
             <line style="display:inline;fill:#555555;stroke:#FF77CC;stroke-width:6;stroke-miterlimit:10;" x1="150" y1="393" x2="600" y2="393"/>
-            <text transform="matrix(1 0 0 1 155 443)" display="inline" fill="#555555" stroke="#555555" stroke-miterlimit="10"
-            font-size="25" letter-spacing="2">PEOPLE WANT TO BE INCLUDED</text>
+            <text transform="matrix(1 0 0 1 180 443)" fill="#555555" stroke="#555555" font-size="25">PEOPLE WANT TO BE INCLUDED</text>
           </a>
         </g>
     </svg>
