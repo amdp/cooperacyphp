@@ -49,7 +49,7 @@
         </g>
 
         <text id="typo" x="0px" y="0px" transform="matrix(1 0 0 1 132 379)" opacity="0" fill="#555555" font-size="80">COOPERACY</text>
-        <text id="payoff" x="0px" y="0px" textLength='470' transform="matrix(1 0 0 1 138 435)" opacity="0" stroke="#555555" fill="#555555" font-size="28">LET'S DO IT TOGETHER</text>
+        <text id="payoff" x="0px" y="0px" textLength='475' transform="matrix(1 0 0 1 138 422)" opacity="0" stroke="#555555" fill="#555555" font-size="28">LET'S DO IT TOGETHER</text>
 
         <g id="equivalenceD" display="none">
           <a href="http://cooperacy.org/cooperation" class="noline finger">
