@@ -1,1 +1,0 @@
-/var/www/naemvi.org/http/databases/index.php

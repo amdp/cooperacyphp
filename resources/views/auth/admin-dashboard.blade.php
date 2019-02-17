@@ -1,7 +1,8 @@
 <div class="row">
   <div class="col-md-2"></div>
   <div class="col-md-8">
-    <p class="subheading center space">COOPERACY PROJECTS BOARD</p>
+    <p class="heading center space equivalence">COOPERACY ADMIN BOARD </p>
+    <p class="subheading center space up" >Welcome {{Auth::user()->name}}</p>
 
     <p class="base center">
     <ul>
