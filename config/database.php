@@ -46,13 +46,13 @@ return [
             'database' => env('DB_DATABASE', 'cooperacy'),
             'username' => env('DB_USERNAME', 'cooperacy'),
             'password' => env('DB_PASSWORD', 'c00p3r4t10n'),
-            'charset' => 'utf8mb4',
-            'collation' => 'utf8mb4_unicode_ci',
+            'charset' => 'utf8',
+            'collation' => 'utf8_unicode_ci',
             'prefix' => '',
             'strict' => true,
             'engine' => null,
         ],
-        
+
         'pgsql' => [
             'driver' => 'pgsql',
             'host' => env('DB_HOST', '127.0.0.1'),

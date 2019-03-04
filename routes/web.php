@@ -30,6 +30,8 @@ Route::get('/cooperation', function () {return view('pages.cooperation');});
 Route::get('/integration', function () {return view('pages.integration');});
 Route::get('/solutions', function () {return view('pages.solutions');});
 Route::get('/governance', function () {return view('pages.governance');});
+Route::get('/memberlist', function () {return view('pages.memberlist');});
+Route::get('/memlist', function () {return view('pages.adminmemberlist');});
 
 Route::get('/participate', function () {return view('pages.participate');});
 Route::get('/participate', [  'as' => 'participate',  'uses' => 'PublicController@membersnumber']);
@@ -91,6 +93,8 @@ Route::get('/warning', [   'as' => 'warning',
 Route::get('/members', function () {
   return view('pages.protected');});
 
+Route::get('/adminmemberlist', [   'middleware' => ['auth', 'admin'],
+    'as' => 'adminmemberlist']);
 // NEWSLETTER ROUTES
 Route::get('/newsmanage', [   'middleware' => ['auth', 'admin'],
   'as' => 'newsmanage',
@@ -305,3 +309,7 @@ Route::get('/send-thanks-mail/{email}', [   'middleware' => ['auth', 'admin'],
 //   'uses' => function () {
 //   return view('home');
 // }]);
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
