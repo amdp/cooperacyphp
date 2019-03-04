@@ -5,11 +5,6 @@ $users = DB::table('users')->get();
 
 <html>
   <body>
-  <?php // Checking user's role ?>
-    @role('writer')
-  <?php /*You can directly check user's permissions:
-  *@can('write') @endcan
-  */ ?>
      <table>
        <tr>
          <td>Name</td>
@@ -23,7 +18,6 @@ $users = DB::table('users')->get();
           <td><?php echo $user->member; ?></td>
         </tr>
       <?php endforeach; ?>
-      @endrole
     </table>
   </body>
 </html>
