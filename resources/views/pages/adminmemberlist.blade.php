@@ -5,11 +5,11 @@ $users = DB::table('users')->get();
 
 <html>
   <body>
-    <!-- Checking the user's role -->
+  <?php // Checking user's role ?>
     @role('writer')
-    <!-- You can check directly user's permissions:
-    * @can('write') @editcan
-  -->
+  <?php /*You can directly check user's permissions:
+  *@can('write') @endcan
+  */ ?>
      <table>
        <tr>
          <td>Name</td>
