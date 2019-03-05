@@ -1,0 +1,29 @@
+table {
+  position: relative;
+  top: 15vh;
+  margin: 0 auto;
+  margin-bottom: 20vh;
+  width: 70%;
+  font-size: 1.5rem;
+}
+.user-table {
+  width: 50%;
+  font-size: 1.3rem;
+}
+.user-table th:nth-of-type(3){
+  text-align: center;
+}
+th {
+  background-color: #333641;
+  color: white;
+  padding: 4px;
+}
+th:last-of-type {
+  text-align: center;
+}
+table tr:nth-child(even) {
+  background: #f8f8f8;
+}
+#membership {
+  text-align: center;
+}

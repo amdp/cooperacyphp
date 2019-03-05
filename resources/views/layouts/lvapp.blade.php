@@ -78,6 +78,8 @@
     <link href="/css/app.css" rel="stylesheet">
     <link href="/css/appstyle.css" rel="stylesheet">
     <link href="/css/iubenda.css" rel="stylesheet">
+    <link href="/css/tables.css" rel="stylesheet">
+
 
     @if(Route::currentRouteName() == 'research' || Route::currentRouteName() == 'cci')
       <!--BEGIN CUSTOM MAP STYLE-->
