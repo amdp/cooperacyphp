@@ -12,7 +12,7 @@ class ProjectController extends Controller
 
   public function index() {
     $queries = DB::table('coo_project')
-      ->where('type_project',2)
+      ->where('stage_project',7)
       ->get();
 
       $projectsarray = array();
@@ -242,30 +242,30 @@ class ProjectController extends Controller
   public function read() {
 
     $world = DB::table('coo_project')
-      ->where('type_project', 1)
+      ->where('category_project', 5)
       ->where('parent_project', null)
       ->first();
 
     $continents = DB::table('coo_project')
-      ->where('type_project', 1)
+      ->where('category_project', 5)
       ->where('parent_project', 1)
       ->orderBy('title_project')
       ->get();
 
     $states = DB::table('coo_project')
-      ->where('type_project', 1)
+      ->where('category_project', 5)
       ->where('parent_project', 2)
       ->orderBy('title_project')
       ->get();
 
     $cities = DB::table('coo_project')
-      ->where('type_project', 1)
+      ->where('category_project', 5)
       ->where('parent_project', 10)
       ->orderBy('title_project')
       ->get();
 
     $categories = DB::table('coo_category')->get();
-    $projects = DB::table('coo_project')->where('type_project',2)->whereNotIn('id_project',[272])->get();
+    $projects = DB::table('coo_project')->where('stage_project',7)->whereNotIn('id_project',[272])->get();
 
     //return $projects;
 
@@ -310,7 +310,7 @@ class ProjectController extends Controller
         'parent_project' => $request->ParentLocationID,
         'id_project_owner' => 11,
         'title_project' => $request->new_city_name,
-        'type_project' => 1
+        'category_project' => 5
       ]);
     } else {
       $LocationID = $request->LocationID;
@@ -347,7 +347,7 @@ class ProjectController extends Controller
       'title_project' => $request->title_project,
       'content_project' => $request->content_project,
       'img_project' => $filename,
-      'type_project' => $request->type_project,
+      'stage_project' => $request->stage_project,
       'budget_project' => $request->budget_project,
       'hudget_project' => $request->hudget_project,
       'zero_budget_project' => $request->zero_budget_project,
@@ -393,24 +393,24 @@ class ProjectController extends Controller
     }
 
     $world = DB::table('coo_project')
-      ->where('type_project', 1)
+      ->where('category_project', 5)
       ->where('parent_project', null)
       ->first();
 
     $continents = DB::table('coo_project')
-      ->where('type_project', 1)
+      ->where('category_project', 5)
       ->where('parent_project', 1)
       ->orderBy('title_project')
       ->get();
 
     $states = DB::table('coo_project')
-      ->where('type_project', 1)
+      ->where('category_project', 5)
       ->where('parent_project', 2)
       ->orderBy('title_project')
       ->get();
 
     $cities = DB::table('coo_project')
-      ->where('type_project', 1)
+      ->where('category_project', 5)
       ->where('parent_project', 10)
       ->orderBy('title_project')
       ->get();
@@ -419,9 +419,9 @@ class ProjectController extends Controller
     $coordinators = Functions::getPeople('coordinator', $id);
     $reporters = Functions::getPeople('reporter', $id);
     $categories = DB::table('coo_category')->get();
-    $projects = DB::table('coo_project')->where('type_project',2)->whereNotIn('id_project',[272])->get();
+    $projects = DB::table('coo_project')->where('stage_project',7)->whereNotIn('id_project',[272])->get();
     $locations = Functions::getLocations($id);
-    $project = DB::table('coo_project')->where('type_project',2)->where('id_project',$id)->first();
+    $project = DB::table('coo_project')->where('stage_project',7)->where('id_project',$id)->first();
     return view('auth.edit-project', compact('id', 'world', 'experts', 'reporters', 'coordinators', 'continents', 'states', 'cities', 'categories', 'project', 'projects', 'locations'));
   }
 
@@ -439,7 +439,7 @@ class ProjectController extends Controller
         'parent_project' => $request->ParentLocationID,
         'id_project_owner' => 11,
         'title_project' => $request->new_city_name,
-        'type_project' => 1
+        'category_project' => 5
       ]);
     } else {
       $LocationID = $request->LocationID;
@@ -573,7 +573,7 @@ class ProjectController extends Controller
 
   public function getContinents() {
     return DB::table('coo_project')
-      ->where('type_project', 1)
+      ->where('stage_project', 7)
       ->where('parent_project', 1)
       ->orderBy('title_project')
       ->get();
@@ -582,7 +582,7 @@ class ProjectController extends Controller
   public function getStates($continent) {
 
     $states = DB::table('coo_project')
-      ->where('type_project', 1)
+      ->where('stage_project', 7)
       ->where('parent_project', $continent)
       ->orderBy('title_project')
       ->get();
@@ -593,7 +593,7 @@ class ProjectController extends Controller
     public function getCities($state) {
 
     $cities = DB::table('coo_project')
-      ->where('type_project', 1)
+      ->where('stage_project', 7)
       ->where('parent_project', $state)
       ->orderBy('title_project')
       ->get();

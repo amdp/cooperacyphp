@@ -23,7 +23,7 @@
         <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
         {{session('data')}}
     </div>
-  </div> 
+  </div>
 </div>
 @endif
 <!--END FLASH MESSAGE-->
@@ -35,7 +35,7 @@
       <div class="panel-heading"><h3>New Project</h3>
       </div>
       <div class="panel-body">
-      
+
       <!--BEGIN ROW-->
         <div class="row">
           <div class="col-lg-12 col-xs-12">
@@ -43,24 +43,24 @@
           </div>
         </div>
         <!--END ROW-->
-        
+
         <!--BEGIN ROW-->
         <div class="row">
           <div class="col-lg-3 col-xs-12">
               <div class="form-group">
                 <label for="img-project">Cover image</label>
                 <input type="file" id="img-project" name="img_project" class="form-control" accept="image/*" aria-describedby="fileHelp"></input>
-                
+
                 <small id="fileHelp" class="form-text text-muted">Upload JPGs or PNGs files</small>
                 <div style="height:10px;"></div>
                 <input type="hidden" name="MAX_UPLOAD_SIZE" value="5000000">
                 <img id="uploadedimage" class="img-responsive"/>
                 <span id="imageerror" style="font-weight: bold; color: red"></span>
               </div>
-              
+
           </div>
-        
-        
+
+
           <div class="col-lg-9 col-xs-12">
             <div class="form-group">
               <label for="title-project">Project title</label>
@@ -73,11 +73,11 @@
           </div>
         </div>
         <!--END ROW-->
-        
-        
 
-      
-      
+
+
+
+
       <!--BEGIN ROW-->
       <div class="row">
         <div class="col-lg-12 col-xs-12">
@@ -85,10 +85,10 @@
         </div>
       </div>
       <!--END ROW-->
-      
+
       <!--BEGIN ROW-->
       <div class="row">
-      
+
         <!--LOCATION-->
         <div class=" col-lg-3 col-xs-12">
         <div class="form-group" id="world">
@@ -106,8 +106,8 @@
           </div>
         </div>
         </div>
-        
-        
+
+
         <div id="continent-group">
         <div class=" col-lg-3 col-xs-12">
             <div class="row">
@@ -127,11 +127,11 @@
               </div>
             </div>
           </div>
-          
+
           <div id="state-group">
           <div class=" col-lg-3 col-xs-12">
             <div class="row">
-              
+
               <div class="form-group" id="state">
               <div class="col-lg-10">
                 <label for="state-select">State</label>
@@ -148,7 +148,7 @@
               </div>
             </div>
           </div>
-          
+
           <div id="city-group">
           <div class=" col-lg-3 col-xs-12">
           <div class="form-group" id="city">
@@ -171,16 +171,16 @@
             </div>
           </div>
           </div>
-          
-          
+
+
           </div>
-        
+
         </div>
         <!--END LOCATION-->
-      
+
         </div>
         <!--END ROW-->
-        
+
         <!--BEGIN ROW-->
         <div class="row">
           <div class="col-lg-12 col-xs-12">
@@ -188,10 +188,10 @@
           </div>
         </div>
         <!--END ROW-->
-        
+
         <!--BEGIN ROW-->
         <div class="row">
-        
+
           <div class="col-lg-4 col-xs-12">
             <div class="form-group">
               <label for="category-project">Category</label>
@@ -203,7 +203,7 @@
               </select>
             </div>
           </div>
-          
+
           <div class="col-lg-2 col-xs-6">
             <div class="form-group">
               <label for="budget-project">Budget ( &euro; )</label>
@@ -214,14 +214,14 @@
               <label for="zero-budget-project">Zero budget</label>
             </div>
           </div>
-          
+
           <div class="col-lg-2 col-xs-6">
             <div class="form-group">
               <label for="budget-project">Hudget</label>
               <input type="number" id="hudget-project" name="hudget_project" class="form-control" value="1"></input>
             </div>
           </div>
-          
+
           <div class="col-lg-4 col-xs-12">
             <div class="form-group">
               <label for="parent-project">Parent project</label>
@@ -236,10 +236,10 @@
               </select>
             </div>
           </div>
-          
+
         </div>
         <!--END ROW-->
-        
+
         <!--EXPERIMENTAL (HIDDEN)--><div style="display:none">
         <!--BEGIN ROW-->
         <div class="row">
@@ -248,7 +248,7 @@
           </div>
         </div>
         <!--END ROW-->
-        
+
         <!--BEGIN ROW-->
         <div class="row">
           <div class="col-lg-12 col-xs-12">
@@ -260,7 +260,7 @@
         </div>
         <!--END ROW-->
         </div><!--END (HIDDEN)-->
-        
+
         <!--BEGIN ROW-->
         <div class="row">
           <div class="col-lg-12 col-xs-12">
@@ -268,10 +268,10 @@
           </div>
         </div>
         <!--END ROW-->
-        
+
         <!--BEGIN ROW-->
         <div class="row">
-        
+
           <!--COORDINATORS-->
           <div class="col-lg-4 col-xs-12">
             <div class="row">
@@ -289,7 +289,7 @@
             </div>
           </div>
           <!--END COORDINATORS-->
-          
+
           <!--EXPERTS-->
           <div class="col-lg-4 col-xs-12">
             <div class="row">
@@ -307,7 +307,7 @@
             </div>
           </div>
           <!--END EXPERTS-->
-          
+
           <!--REPORTERS-->
           <div class="col-lg-4 col-xs-12">
             <div class="row">
@@ -325,12 +325,12 @@
             </div>
           </div>
           <!--END REPORTERS-->
-          
+
         </div>
         <!--END ROW-->
-        
+
       </div>
-      
+
       <div class="panel-footer text-right">
         <button id="submit-button" class="btn btn-success">Save</button>
       </div>
@@ -342,7 +342,7 @@
       <input id="temp-coordinator" type="hidden" value="">
       <input id="no-budget" name="zero_budget_project" type="hidden" value="0">
       <input id="project-budget" name="budget_project" type="hidden" value="">
-      <input id="project-type" name="type_project" type="hidden" value="2">
+      <input id="project-type" name="stage_project" type="hidden" value="7">
       <input id="owner-id" name="id_project_owner" type="hidden" value="{{Auth::user()->id}}">
       <input id="parent-location-value" name="ParentLocationID" type="hidden" value="">
       <input id="location-value" name="LocationID" type="hidden" value="1">

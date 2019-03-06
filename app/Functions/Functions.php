@@ -216,7 +216,7 @@ class Functions
     public static function getComments($parent, $order) {
     return
     DB::table('coo_project')
-          ->where('type_project',3)
+          ->where('stage_project',0)
           ->where('parent_project', $parent)
           ->join('users','users.id','=','coo_project.id_project_owner')
           ->orderBy('coo_project.date_project', $order)

@@ -12,36 +12,36 @@ class CommentController extends Controller
     $userID = $_POST['user_id'];
     $projectID = $_POST['project_id'];
     $content = $_POST['comment_content'];
-    
+
     $commentID = DB::table('coo_project')->insertGetId([
       'id_project_owner' => $userID,
       'title_project' => '',
       'content_project' => $content,
       'parent_project' => $projectID,
-      'type_project' => 3
+      'stage_project' => 0
     ]);
-    
+
     $send = Functions::notifyComment($projectID, $commentID, $content);
-    
+
     return redirect('view-project/'.$projectID.'#comment'.$commentID);
   }
-  
+
     public function reply() {
     $userID = $_POST['user_id'];
     $commentID = $_POST['comment_id'];
     $projectID = $_POST['project_id'];
     $content = $_POST['comment_content'];
-    
+
     $replyID = DB::table('coo_project')->insertGetId([
       'id_project_owner' => $userID,
       'title_project' => '',
       'content_project' => $content,
       'parent_project' => $commentID,
-      'type_project' => 3
+      'stage_project' => 0
     ]);
-    
+
     $send = Functions::notifyComment($projectID, $replyID, $content);
-    
+
     return redirect('view-project/'.$projectID.'#comment'.$replyID);
   }
 
@@ -54,7 +54,7 @@ class CommentController extends Controller
 
     return redirect('view-project/'.$pid.'#comment'.$id);
   }
-  
+
   public function modify(Request $request) {
     $id = $request->comment_id;
     $pid = $request->project_id;
