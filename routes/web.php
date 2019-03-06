@@ -78,8 +78,11 @@ Route::get('/login', function () {return view('auth.login');});
 
 Auth::routes();
 
-Route::get('/home', [   'middleware' => ['member'],
-  'uses' => 'HomeController@index']);
+Route::group(['middleware' => ['permission:user-permissions']], function () {
+
+Route::get('/home', ['uses' => 'HomeController@index']);
+
+});
 
 Route::get('/forbidden', [   'as' => 'forbidden',
   'uses' => function () {
@@ -92,85 +95,83 @@ Route::get('/warning', [   'as' => 'warning',
 Route::get('/members', function () {
   return view('pages.protected');});
 
-Route::get('/adminmemberlist', [   'middleware' => ['auth', 'admin'],
-    'as' => 'adminmemberlist']);
+
 // NEWSLETTER ROUTES
-Route::get('/newsmanage', [   'middleware' => ['auth', 'admin'],
-  'as' => 'newsmanage',
-  'uses' => 'NewsController@manage']);
+Route::group(['middleware' => ['permission:admin-permissions']], function () {
 
-Route::get('/newsadmin', [   'middleware' => ['auth', 'admin'],
-  'as' => 'newsadmin',
-  'uses' => 'NewsController@read']);
+  Route::get('/newsmanage',
+    ['as' => 'newsmanage',
+    'uses' => 'NewsController@manage']);
 
-Route::post('/newsadmin', [   'middleware' => ['auth', 'admin'],
-  'as' => 'newsadmin',
-  'uses' => 'NewsController@save']);
+  Route::get('/newsadmin',
+    ['as' => 'newsadmin',
+    'uses' => 'NewsController@read']);
 
-Route::get('/newssingle/{id}', [   'middleware' => ['auth', 'admin'],
-  'uses' => 'NewsController@readsingle']);
+  Route::post('/newsadmin',
+    ['as' => 'newsadmin',
+    'uses' => 'NewsController@save']);
 
-Route::get('/updatenews/{id?}', [   'middleware' => ['auth', 'admin'],
-  'as' => 'updatenews',
-  'uses' => 'NewsController@readupdate']);
+  Route::get('/newssingle/{id}',
+    ['uses' => 'NewsController@readsingle']);
 
-Route::post('/updatenewsletter', [   'middleware' => ['auth', 'admin'],
-  'as' => 'updatenewsletter',
-  'uses' => 'NewsController@update']);
+  Route::get('/updatenews/{id?}',
+    ['as' => 'updatenews',
+    'uses' => 'NewsController@readupdate']);
 
-Route::get('/updatestatus/{id}/{value}', [   'middleware' => ['auth', 'admin'],
-  'as' => 'updatestatus',
-  'uses' => 'NewsController@setStatus']);
+  Route::post('/updatenewsletter',
+    ['as' => 'updatenewsletter',
+    'uses' => 'NewsController@update']);
 
-Route::post('/deletenewsletter', [   'middleware' => ['auth', 'admin'],
-  'as' => 'deletenewsletter',
-  'uses' => 'NewsController@delete']);
+  Route::get('/updatestatus/{id}/{value}',
+    ['as' => 'updatestatus',
+    'uses' => 'NewsController@setStatus']);
+
+  Route::post('/deletenewsletter',
+    ['as' => 'deletenewsletter',
+    'uses' => 'NewsController@delete']);
+});
+
 
 
 /******PROJECT ROUTES********/
-Route::get('/new-project', [   'middleware' => ['auth', 'member'],
-  'as' => 'new-project',
+Route::group(['middleware' => ['permission:user-permissions']], function () {
+
+Route::get('/new-project', [ 'as' => 'new-project',
   'uses' => 'ProjectController@read']);
 
-Route::post('/new-project', [   'middleware' => ['auth', 'member'],
-  'as' => 'new-project',
+Route::post('/new-project', [ 'as' => 'new-project',
   'uses' => 'ProjectController@save']);
 
-Route::get('/projects-list', [   'middleware' => ['auth', 'member'],
-  'as' => 'projects-list',
+Route::get('/projects-list', [ 'as' => 'projects-list',
   'uses' => 'ProjectController@index']);
 
-Route::get('/view-project/{id}/', [   'middleware' => ['auth', 'member'],
-  'as' => 'view-project',
+Route::get('/view-project/{id}/', [ 'as' => 'view-project',
   'uses' => 'ProjectController@single']);
 
-Route::get('/edit-project/{id}/', [
-  'middleware' => ['auth', 'member'],
-  'as' => 'edit-project',
+Route::get('/edit-project/{id}/', [ 'as' => 'edit-project',
   'uses' => 'ProjectController@edit']);
 
-Route::post('/edit-project', [
-  'middleware' => ['auth', 'member'],
-  'as' => 'edit-project',
+Route::post('/edit-project', [ 'as' => 'edit-project',
   'uses' => 'ProjectController@updateproject']);
 
+});
+
 /*********COMMENT ROUTES***********/
-Route::post('/new-comment', [   'middleware' => ['auth', 'member'],
-  'as' => 'new-comment',
+Route::group(['middleware' => ['permission:user-permissions']], function () {
+
+Route::post('/new-comment', [ 'as' => 'new-comment',
   'uses' => 'CommentController@save']);
 
-Route::post('/reply-comment', [   'middleware' => ['auth', 'member'],
-  'as' => 'reply-comment',
+Route::post('/reply-comment', [ 'as' => 'reply-comment',
   'uses' => 'CommentController@reply']);
 
-Route::post('/delete-comment', [   'middleware' => ['auth', 'member'],
-  'as' => 'delete-comment',
+Route::post('/delete-comment', [ 'as' => 'delete-comment',
   'uses' => 'CommentController@delete']);
 
-Route::post('/modify-comment', [   'middleware' => ['auth', 'member'],
-  'as' => 'modify-comment',
+Route::post('/modify-comment', [ 'as' => 'modify-comment',
   'uses' => 'CommentController@modify']);
 
+});
 /******AJAX QUERIES*****/
 Route::get('/get-states/{continent}', [   'middleware' => ['auth'],
   'as' => 'get-states',
@@ -185,17 +186,20 @@ Route::get('/get-continents', [
   'as' => 'get-continents',
   'uses' => 'ProjectController@getContinents']);
 
-Route::get('/get-person/', [   'middleware' => ['auth'],
+Route::get('/get-person/', [ 'middleware' => ['auth'],
   'as' => 'get-person',
   'uses' => 'ProjectController@getPerson']);
 
-Route::get('/get-expert/', [   'middleware' => ['auth'],
+Route::get('/get-expert/', [ 'middleware' => ['auth'],
   'as' => 'get-expert',
   'uses' => 'ProjectController@getExpert']);
 
-Route::get('/update-vote/', [   'middleware' => ['auth', 'member'],
-  'as' => 'update-vote',
-  'uses' => 'VoteController@updateVote']);
+Route::group(['middleware' => ['permission:user-permissions']], function () {
+
+  Route::get('/update-vote/', [ 'as' => 'update-vote',
+    'uses' => 'VoteController@updateVote']);
+
+  });
 
 /****************************************
 *******END PRIVATE ROUTES****************
@@ -204,14 +208,15 @@ Route::get('/update-vote/', [   'middleware' => ['auth', 'member'],
 /**********************************
 ******BEGIN PAYPAL*****************
 **********************************/
+Route::group(['middleware' => ['permission:admin-permissions']], function () {
 
-Route::get('/createplan', [   'middleware' => ['auth', 'admin'],
-  'as' => 'createplan',
-  'uses' => function() {  return view('createplan');}]);
+  Route::get('/createplan', [ 'as' => 'createplan',
+    'uses' => function() {  return view('createplan');}]);
 
-Route::post('/createplan', [   'middleware' => ['auth', 'admin'],
-  'as' => 'createplan',
-  'uses' => 'PlanController@createplan']);
+  Route::post('/createplan', [ 'as' => 'createplan',
+    'uses' => 'PlanController@createplan']);
+
+  });
 
 Route::get('pool', ['as' => 'pool','uses' => function () {  return view('pool');}]);
 
@@ -265,14 +270,17 @@ Route::post('payment', ['as' => 'payment','uses' => 'PaypalController@subscribe'
 ****EXPERIMENTAL OR TESTING ROUTES***********
 ********************************************/
 
-Route::get('/dummy-list', [   'middleware' => ['auth', 'member'],
+Route::group(['middleware' => ['permission:user-permissions']], function () {
+
+Route::get('/dummy-list', [
   'as' => 'dummy-list',
   'uses' => 'ProjectController@dummyindex']);
 
-  Route::get('/dummy-project/{id}/', [   'middleware' => ['auth', 'member'],
+  Route::get('/dummy-project/{id}/', [
   'as' => 'dummy-project',
   'uses' => 'ProjectController@dummysingle']);
 
+});
  // Route::get('/registersec', function () {// return view('auth.register-ok');// });
 
 Route::get('/test', function () {return view('duplicates-and-or-working-pages-do-not-delete.test');});
@@ -289,18 +297,18 @@ Route::get('/map', [ 'as' => 'map',
 Route::post('sendmessage', ['as' => 'sendmessage','uses' => 'MessageController@send',
 ]);
 
-Route::get('/testmail', [   'middleware' => ['auth', 'admin'],
-  'as' => 'testmail',
+Route::group(['middleware' => ['permission:admin-permissions']], function () {
+
+Route::get('/testmail', [ 'as' => 'testmail',
   'uses' => 'TestMailController@testmail']);
 
-Route::get('/testmailpaid', [   'middleware' => ['auth', 'admin'],
-  'as' => 'testmailpaid',
+Route::get('/testmailpaid', [ 'as' => 'testmailpaid',
   'uses' => 'TestMailController@testmailpaid']);
 
-Route::get('/send-thanks-mail/{email}', [   'middleware' => ['auth', 'admin'],
-  'as' => 'send-thanks-mail',
+Route::get('/send-thanks-mail/{email}', [ 'as' => 'send-thanks-mail',
   'uses' => 'MessageController@sendThanksMail']);
 
+});
 //Route::get('/home', 'HomeController@index');
 // Route::get('/updatepass', [ //   'as' => 'updatepass',
 //   'uses' => 'PlanController@updatepass']);

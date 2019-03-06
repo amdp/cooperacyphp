@@ -6,9 +6,6 @@ use Illuminate\Http\Request;
 use Spatie\Permission\Models\Role;
 use Spatie\Permission\Models\Permission;
 use Illuminate\Support\Facades\DB;
-use Illuminate\Support\Facades\USER;
-
-
 
 class HomeController extends Controller
 {
@@ -29,34 +26,16 @@ class HomeController extends Controller
      */
     public function index()
     {
-      /* CREATE NEW Role
-      * Role::create(['name' => 'role'])
-      /* CREATE NEW Permission
-      * Permission::create(['name' => 'permission'])
-      (You can find these in roles and permissions tables in the database)
-      */
+      $admin = Role::findByName('admin');
+      $user = Role::findByName('user');
+      $admin_permissions = Permission::findByName('admin-permissions');
+      $user_permissions = Permission::findByName('user-permissions');
 
-      /* GRANT Permission TO Role */
-      $writer = Role::findById(5);
-      $admin = Role::findById(6);
-      $write = Permission::findById(5);
-      $manage = Permission::findById(6);
-      $writer->syncPermissions($write);
-      $admin->syncPermissions([$write, $manage]);
-      /* (Check role_has_permissions table) */
+      $admin->syncPermissions([$admin_permissions, $user_permissions]);
+      $user->givePermissionTo($user_permissions);
 
-      /* ASSIGN Roles TO Users */
-      auth()->user()->assignRole('writer');
-      /* (Check model_has_roles table) */
-
-      /* You can give direct permissions to the users:
-      * $user->givePermissionTo('edit articles');
-      */
-
-      /* RETURN User Permissions
-      * return auth()->user()->getAllPermissions;
-      */
-
+      auth()->user()->assignRole('user');
+      
       return view('home');
     }
 }
