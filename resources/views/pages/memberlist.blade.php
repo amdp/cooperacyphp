@@ -12,10 +12,10 @@ $allUsers = DB::table('users')->get();
 
 <html>
   <body>
-    <table @role('writer') class="admin-table" @endrole @role('admin') class='member-table' @endrole>
+    <table @role('admin') class="admin-table" @endrole @role('user') class='member-table' @endrole>
       <tr>
         <th>Name</th>
-        @role('writer')
+        @role('admin')
         <th>Email Address</th>
         @endrole
         <th>Created</th>
@@ -24,10 +24,10 @@ $allUsers = DB::table('users')->get();
       </tr>
       <?php foreach ($allUsers as $user): ?>
        <tr class="table-content">
-         @role('admin')
+         @role('user')
          <td><?php if($user->member === 1 || $user->admin === 1) echo $user->name; ?></td>
          @endrole
-         @role('writer')
+         @role('admin')
          <td> <?php echo $user->name ?></td>
          <td><?php echo $user->email; ?></td>
          @endrole

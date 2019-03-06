@@ -30,7 +30,7 @@ Route::get('/cooperation', function () {return view('pages.cooperation');});
 Route::get('/integration', function () {return view('pages.integration');});
 Route::get('/solutions', function () {return view('pages.solutions');});
 Route::get('/governance', function () {return view('pages.governance');});
-Route::get('/memberlist', function () {return view('pages.memberlist');});
+Route::get('/memberlist', ['as' => 'member-list', function () {return view('pages.memberlist');}]);
 
 Route::get('/participate', function () {return view('pages.participate');});
 Route::get('/participate', [  'as' => 'participate',  'uses' => 'PublicController@membersnumber']);

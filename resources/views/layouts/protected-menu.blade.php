@@ -8,6 +8,9 @@
         <a href="{{ route('projects-list') }}" class="menu-item">VIEW PROJECTS</a>
       </li>
       <li>
+        <a href="{{ route('member-list') }}" class="menu-item">VIEW MEMBERS</a>
+      </li>
+      <li>
         <a href="{{ route('new-project') }}" class="menu-item">NEW PROJECT</a>
       </li>
       <li>
@@ -28,6 +31,9 @@
       </li>
       <li>
         <a href="{{ route('projects-list') }}" class="menu-item">VIEW PROJECTS</a>
+      </li>
+      <li>
+        <a href="{{ route('member-list') }}" class="menu-item">VIEW MEMBERS</a>
       </li>
       <li>
         <a href="{{ route('new-project') }}" class="menu-item">NEW PROJECT</a>
