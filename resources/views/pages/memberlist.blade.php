@@ -6,34 +6,42 @@
 
 <?php
 use Illuminate\Support\Facades\DB;
-$users = DB::table('users')->where('member', 1)->orWhere('admin', 1)->get();
+$activeUsers = DB::table('users')->where('member', 1)->orWhere('admin', 1)->get();
+$allUsers = DB::table('users')->get();
 ?>
 
 <html>
   <body>
-    @role('writer')
-    <table class="user-table">
-       <tr>
-         <th>Name</th>
-         <th>Created</th>
-         <th>Member</th>
-         <th>Admin</th>
+    <table @role('writer') class="admin-table" @endrole @role('admin') class='member-table' @endrole>
+      <tr>
+        <th>Name</th>
+        @role('writer')
+        <th>Email Address</th>
+        @endrole
+        <th>Created</th>
+        <th>Member</th>
+        <th>Admin</th>
+      </tr>
+      <?php foreach ($allUsers as $user): ?>
+       <tr class="table-content">
+         @role('admin')
+         <td><?php if($user->member === 1 || $user->admin === 1) echo $user->name; ?></td>
+         @endrole
+         @role('writer')
+         <td> <?php echo $user->name ?></td>
+         <td><?php echo $user->email; ?></td>
+         @endrole
+         <td><?php if($user->member ===1 || $user->admin ===1){
+                   $date = $user->created_at;
+                   $year = explode(" ", $date)[0];
+                   echo $year;
+                 };
+          ?></td>
+         <td id='membership'><?php if($user->member === 1)echo '&#10004;'; ?></td>
+         <td id='membership'><?php if($user->admin === 1)echo '&#10004;'; ?></td>
        </tr>
-       <?php foreach ($users as $user): ?>
-        <tr>
-          <td><?php echo $user->name; ?></td>
-          <td><?php if($user->member ===1 || $user->admin ===1){
-                    $date = $user->created_at;
-                    $year = explode(" ", $date)[0];
-                    echo $year;
-                  };
-           ?></td>
-          <td id='membership'><?php if($user->member === 1)echo '&#10004;'; ?></td>
-          <td id='membership'><?php if($user->admin === 1)echo '&#10004;'; ?></td>
-        </tr>
-      <?php endforeach; ?>
-      @endrole
-    </table>
+     <?php endforeach; ?>
+   </table>
   </body>
 </html>
 @stop

@@ -31,9 +31,6 @@ Route::get('/integration', function () {return view('pages.integration');});
 Route::get('/solutions', function () {return view('pages.solutions');});
 Route::get('/governance', function () {return view('pages.governance');});
 Route::get('/memberlist', function () {return view('pages.memberlist');});
-Route::get('/memlist', function () {return view('pages.adminmemberlist');});
-Route::group(['middleware' => ['role:admin']], function () {
-});
 
 Route::get('/participate', function () {return view('pages.participate');});
 Route::get('/participate', [  'as' => 'participate',  'uses' => 'PublicController@membersnumber']);

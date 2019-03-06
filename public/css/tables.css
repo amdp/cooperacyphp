@@ -1,28 +1,24 @@
-table {
+.admin-table, .member-table {
   position: relative;
   top: 15vh;
   margin: 0 auto;
   margin-bottom: 20vh;
   width: 70%;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
 }
-.user-table {
-  width: 50%;
-  font-size: 1.3rem;
+.member-table {
+  width: 40%;
 }
-.user-table th:nth-of-type(3){
-  text-align: center;
-}
-th {
-  background-color: #333641;
-  color: white;
+ th {
+  background-color: #E0E1E2;
+  color: #383838;
   padding: 4px;
 }
-th:last-of-type {
+ th:last-of-type {
   text-align: center;
 }
-table tr:nth-child(even) {
-  background: #f8f8f8;
+ tr:nth-child(even) {
+  background: #F9FAFC;
 }
 #membership {
   text-align: center;
