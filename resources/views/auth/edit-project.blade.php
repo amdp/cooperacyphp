@@ -52,17 +52,17 @@
               <div class="form-group">
                 <label for="img-project">Cover image</label>
                 <input type="file" id="img-project" name="img_project" class="form-control" accept="image/*" aria-describedby="fileHelp"></input>
-                
+
                 <small id="fileHelp" class="form-text text-muted">Upload JPGs or PNGs files</small>
                 <div style="height:10px;"></div>
                 <input type="hidden" name="MAX_UPLOAD_SIZE" value="5000000">
                 <img src="{{asset('images/projects')}}/{{$project->img_project}}" id="uploadedimage" class="img-responsive"/>
                 <span id="imageerror" style="font-weight: bold; color: red"></span>
               </div>
-              
+
           </div>
-        
-        
+
+
           <div class="col-lg-9 col-xs-12">
             <div class="form-group">
               <label for="title-project">Project title</label>
@@ -75,7 +75,7 @@
           </div>
         </div>
         <!--END ROW-->
-        
+
         <!--BEGIN ROW-->
         <div class="row">
           <div class="col-lg-12 col-xs-12">
@@ -87,7 +87,7 @@
 
       <!--BEGIN ROW-->
       <div class="row">
-      
+
         <!--LOCATION-->
         <div class=" col-lg-3 col-xs-12">
         <div class="form-group" id="world">
@@ -105,8 +105,8 @@
           </div>
         </div>
         </div>
-        
-        
+
+
         <div id="continent-group">
         <div class=" col-lg-3 col-xs-12">
             <div class="row">
@@ -114,10 +114,10 @@
               <div class="col-lg-10">
                 <label for="continent-select">Continent</label>
                 <select id="continent-select" class="form-control">
-                  @foreach($locations['continent'] as $continent) 
-                    @if($continent['selected']=='yes') 
+                  @foreach($locations['continent'] as $continent)
+                    @if($continent['selected']=='yes')
                       <option selected value="{{$continent['id']}}">{{$continent['name']}}</option>
-                    @else 
+                    @else
                       <option value="{{$continent['id']}}">{{$continent['name']}}</option>
                     @endif
                   @endforeach
@@ -130,19 +130,19 @@
               </div>
             </div>
           </div>
-          
+
           <div id="state-group">
           <div class=" col-lg-3 col-xs-12">
             <div class="row">
-              
+
               <div class="form-group" id="state">
               <div class="col-lg-10">
                 <label for="state-select">State</label>
                 <select id="state-select" class="form-control">
-                  @foreach($locations['state'] as $state) 
-                    @if($state['selected']=='yes') 
+                  @foreach($locations['state'] as $state)
+                    @if($state['selected']=='yes')
                       <option selected value="{{$state['id']}}">{{$state['name']}}</option>
-                    @else 
+                    @else
                       <option value="{{$state['id']}}">{{$state['name']}}</option>
                     @endif
                   @endforeach
@@ -155,7 +155,7 @@
               </div>
             </div>
           </div>
-          
+
           <div id="city-group">
           <div class=" col-lg-3 col-xs-12">
           <div class="form-group" id="city">
@@ -164,10 +164,10 @@
             @if(!$cities->isEmpty())
               <option value="new-city">Choose a city or insert new</option>
               <option disabled>---------------</option>
-              @foreach($locations['city'] as $city) 
-                @if($city['selected']=='yes') 
+              @foreach($locations['city'] as $city)
+                @if($city['selected']=='yes')
                   <option selected value="{{$city['id']}}">{{$city['name']}}</option>
-                @else 
+                @else
                   <option value="{{$city['id']}}">{{$city['name']}}</option>
                 @endif
               @endforeach
@@ -182,13 +182,13 @@
             </div>
           </div>
           </div>
-          
-          
+
+
           </div>
-        
+
         </div>
         <!--END LOCATION-->
-      
+
         </div>
         <!--END ROW-->
         <!--BEGIN ROW-->
@@ -198,10 +198,10 @@
           </div>
         </div>
         <!--END ROW-->
-        
+
         <!--BEGIN ROW-->
         <div class="row">
-        
+
           <div class="col-lg-4 col-xs-12">
             <div class="form-group">
               <label for="category-project">Category</label>
@@ -217,7 +217,7 @@
               </select>
             </div>
           </div>
-          
+
           <div class="col-lg-2 col-xs-6">
             <div class="form-group">
               <label for="budget-project">Budget ( &euro; )</label>
@@ -229,17 +229,17 @@
               @else
               <input type="checkbox" id="zero-budget-project"></input>&nbsp;
               @endif
-              <label for="zero-budget-project">Zero budget</label>
+              <label for="zero-budget-project">No funding</label>
             </div>
           </div>
-          
+
           <div class="col-lg-2 col-xs-6">
             <div class="form-group">
               <label for="budget-project">Hudget</label>
               <input type="number" id="hudget-project" name="hudget_project" class="form-control" value="{{$project->hudget_project}}"></input>
             </div>
           </div>
-          
+
           <div class="col-lg-4 col-xs-12">
             @if($project->id_project == 272)
             <input type="hidden" name="parent_project" value="">
@@ -258,13 +258,13 @@
             </div>
             @endif
           </div>
-          
+
         </div>
         <!--END ROW-->
 
         <!--BEGIN ROW-->
         <div class="row">
-        
+
           <!--COORDINATORS-->
           <div class="col-lg-4 col-xs-12">
             <div class="row">
@@ -295,7 +295,7 @@
             </div>
           </div>
           <!--END COORDINATORS-->
-          
+
           <!--EXPERTS-->
           <div class="col-lg-4 col-xs-12">
             <div class="row">
@@ -326,7 +326,7 @@
             </div>
           </div>
           <!--END EXPERTS-->
-          
+
           <!--REPORTERS-->
           <div class="col-lg-4 col-xs-12">
             <div class="row">
@@ -357,7 +357,7 @@
             </div>
           </div>
           <!--END REPORTERS-->
-          
+
         </div>
         <!--END ROW-->
 

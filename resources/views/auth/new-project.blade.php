@@ -211,7 +211,7 @@
             </div>
             <div class="form-group">
               <input type="checkbox" id="zero-budget-project"></input>&nbsp;
-              <label for="zero-budget-project">Zero budget</label>
+              <label for="zero-budget-project">No funding</label>
             </div>
           </div>
 
