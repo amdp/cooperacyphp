@@ -2,11 +2,12 @@
 
 @section('content')
 <div class="container">
-    @if(Auth::check() && Auth::user()->isAdmin())
+    @role('admin')
       @include('auth.admin-dashboard')
-    @else
+    @endrole
+    @role('user')
       @include('auth.user-dashboard')
-     @endif
+    @endrole
     </div>
 </div>
 @endsection
