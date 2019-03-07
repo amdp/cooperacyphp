@@ -248,7 +248,7 @@ class ProjectController extends Controller
 
     $continents = DB::table('coo_project')
       ->where('category_project', 5)
-      ->where('parent_project', 1)
+      ->where('parent_project', 270)
       ->orderBy('title_project')
       ->get();
 
