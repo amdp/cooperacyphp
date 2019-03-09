@@ -4,6 +4,102 @@
 <!--BEGIN CONTAINER-->
 <div class="container">
 <!-- ERRORS -->
+
+<div class="row">
+  <div id="newProject">
+    @{{test}}
+  </div>
+
+  <div class="row">
+
+    <!--LOCATION-->
+    <div class=" col-lg-3 col-xs-12">
+    <div class="form-group" id="world">
+      <div class="row">
+      <div class="col-lg-10">
+      <label for="world-select">Select area</label>
+      <select id="world-select" class="form-control">
+        <option name="world" value="{{$world->id_project}}">{{$world->title_project}}</option>
+      </select>
+      </div>
+      <div class="col-lg-2">
+      <div style="height:30px;"></div>
+      <a id="button-continent" class="btn btn-default btn-xs">>></a>
+      </div>
+      </div>
+    </div>
+    </div>
+
+
+    <div id="continent-group">
+    <div class=" col-lg-3 col-xs-12">
+        <div class="row">
+          <div class="form-group" id="continent">
+          <div class="col-lg-10">
+            <label for="continent-select">Continent</label>
+            <select id="continent-select" class="form-control">
+              @foreach($continents as $continent)
+              <option value="{{$continent->id_project}}">{{$continent->title_project}}</option>
+              @endforeach
+            </select>
+          </div>
+          <div class="col-lg-2">
+          <div style="height:30px;"></div>
+            <a id="button-state" class="btn btn-default btn-xs">>></a>
+          </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="state-group">
+      <div class=" col-lg-3 col-xs-12">
+        <div class="row">
+
+          <div class="form-group" id="state">
+          <div class="col-lg-10">
+            <label for="state-select">State</label>
+            <select id="state-select" class="form-control">
+            @foreach($states as $state)
+              <option value="{{$state->id_project}}">{{$state->title_project}}</option>
+            @endforeach
+            </select>
+          </div>
+          <div class="col-lg-2">
+            <div style="height:30px;"></div>
+            <a id="button-city" class="btn btn-default btn-xs">>></a>
+          </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="city-group">
+      <div class=" col-lg-3 col-xs-12">
+      <div class="form-group" id="city">
+        <label for="city-select">City</label>
+        <select id="city-select" class="form-control">
+        @if(!$cities->isEmpty())
+          <option value="new-city">Choose a city or insert new</option>
+          <option disabled>---------------</option>
+          @foreach($cities as $city)
+            <option value="{{$city->id_project}}">{{$city->title_project}}</option>
+          @endforeach
+        @else
+          <option value="new-city">Insert new city</option>
+        @endif
+        </select>
+      </div>
+        <div id="new-city-form">
+        <label for="new-city">New city name</label>
+        <input type="text" name="new_city_name" id="new-city" class="form-control"></input>
+        </div>
+      </div>
+      </div>
+
+
+      </div>
+
+    </div>
+
 @if($errors->first())
 <div class="row">
   <div class="col-sm-12">

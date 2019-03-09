@@ -1,3 +1,9 @@
+var newProject = new Vue({
+  el: '#newProject',
+  data: {test: "test" }
+})
+
+
     // Hide Location form
     $(document).ready(function(){
       $('#continent-group').hide();
@@ -5,45 +11,45 @@
       $('#city-group').hide();
       $('#new-city-form').hide();
     });
-    
-        
+
+
     // Update Location on visibility
     var updateLocation = function() {
      var LocationID = 1;
      var ParentLocation = null;
      if($('#continent-group').is(':visible')){
-       
+
        LocationID = $('#continent').find(":selected").val();
        ParentLocation = 1;
        if($('#state-group').is(':visible')){
-         
+
          ParentLocation = $('#continent').find(":selected").val();
          LocationID = $('#state').find(":selected").val();
          if($('#city-group').is(':visible')){
-         
+
          ParentLocation = $('#state').find(":selected").val();
          LocationID = $('#city').find(":selected").val();
          }
        }
      } else {
-        
+
         LocationID = 1;
         ParentLocation = null;
      }
      $('#parent-location-value').val(ParentLocation);
      $('#location-value').val(LocationID);
-     
+
      if (LocationID == 'new-city'){
         $('#new-city-form').show();
       } else {
         $('#new-city-form').hide();
       }
-     
+
    };
 
    // Update values on change
     $('#continent').on('change', function() {
-    
+
     var continent = $(this).find(":selected").val();
       $.ajax({
         type: 'GET',
@@ -69,17 +75,17 @@
                   $('#city select').append('<option value="'+ this.id_project +'">'+ this.title_project +'</option>');
                 });
               }
-            
+
             }
           });
         }
       });
       updateLocation();
    });
-   
-   
+
+
    $('#state').on('change', function() {
-     
+
     var state = $(this).find(":selected").val();
       $.ajax({
         type: 'GET',
@@ -99,32 +105,32 @@
       });
     updateLocation();
    });
-   
+
    $('#city').on('change', function() {
      updateLocation();
    });
    // Toggle visibity buttons
-   
-   
-   
+
+
+
    $('#button-continent').click(function(){
     $('#continent-group').toggle();
     updateLocation();
    });
-   
+
    $('#button-state').click(function(){
     $('#state-group').toggle();
     updateLocation();
    });
-   
+
    $('#button-city').click(function(){
     $('#city-group').toggle();
     updateLocation();
    });
-   
-   
-   $(document).on('keyup mouseup', '#budget-project', function() {    
-    var budget = $('#budget-project').val();                                  
+
+
+   $(document).on('keyup mouseup', '#budget-project', function() {
+    var budget = $('#budget-project').val();
     $('#project-budget').val(budget);
     $('#temporary-project-budget').val(budget);
   });
@@ -144,7 +150,7 @@
      $('#budget-project').val(tempbudget);
     }
   });
-  
+
   //ADD COORDINATORS
   var i=0;
   var added=0;
@@ -156,15 +162,15 @@
       $('#array-coordinators').append('<input type="hidden" name="coordinator'+i+'" id="data-coordinator'+i+'" value="'+coordinatorID+'"></input>');
       added++;
       i++;
-      
+
   }
   $('#add-coordinator').attr('disabled', true);
   $('#coordinator-project').val('');
   console.log('added='+added);
   });
-  
 
-  
+
+
   $('#coordinator-list').click(function(e) {
       var id = '#coordinator'+e.target.id;
       var dataid = '#data-coordinator'+e.target.id;
@@ -174,7 +180,7 @@
         added--;
         console.log('i='+i);
   });
-  
+
   // AUTOCOMPLETE COORDINATORS
 $( "#coordinator-project" ).autocomplete({
   source: function (request, response) {
@@ -182,7 +188,7 @@ $( "#coordinator-project" ).autocomplete({
        url: '/get-person/',
        type : 'get',
        cache : false,
-       data: {term: request.term}, 
+       data: {term: request.term},
        success: function(data) {
                         response($.map(data, function (el) {
                          return {
@@ -192,10 +198,10 @@ $( "#coordinator-project" ).autocomplete({
                          };
                  }));
                 },
-        
+
         error: function(jqXHR, textStatus, errorThrown){
              console.log( textStatus);
-        }    
+        }
     });
   },
   select: function( event, ui ) {
@@ -203,7 +209,7 @@ $( "#coordinator-project" ).autocomplete({
         $('#add-coordinator').removeAttr('disabled');
       }
 
-  
+
 });
 
 
@@ -211,7 +217,7 @@ $( "#coordinator-project" ).autocomplete({
   var j=0;
   var addedex=0;
   $('#add-expert').click(function(){
-    
+
       var expert = $('#expert-project').val();
       var expertID = $('#temp-expert').val();
       $('#expert-list').append('<div style="height:3px;"></div><li class="list-group-item" id="experte'+j+'">'+expert+'<span class="pull-right"><i class="icon-remove" id="e'+j+'"></i></span></li>');
@@ -221,9 +227,9 @@ $( "#coordinator-project" ).autocomplete({
       $('#add-expert').attr('disabled', true);
       $('#expert-project').val('');
   });
-  
 
-  
+
+
   $('#expert-list').click(function(e) {
       var id = '#expert'+e.target.id;
       var dataid = '#data-expert'+e.target.id;
@@ -232,7 +238,7 @@ $( "#coordinator-project" ).autocomplete({
         console.log('removed: '+id);
         addedex--;
   });
-  
+
   // AUTOCOMPLETE EXPERTS
   $( "#expert-project" ).autocomplete({
   source: function (request, response) {
@@ -240,7 +246,7 @@ $( "#coordinator-project" ).autocomplete({
        url: '/get-person/',
        type : 'get',
        cache : false,
-       data: {term: request.term}, 
+       data: {term: request.term},
        success: function(data) {
                         response($.map(data, function (el) {
                          return {
@@ -250,10 +256,10 @@ $( "#coordinator-project" ).autocomplete({
                          };
                  }));
                 },
-        
+
         error: function(jqXHR, textStatus, errorThrown){
              console.log( textStatus);
-        }    
+        }
     });
   },
   select: function( event, ui ) {
@@ -261,7 +267,7 @@ $( "#coordinator-project" ).autocomplete({
         $('#add-expert').removeAttr('disabled');
       }
 
-  
+
 });
 
 
@@ -270,7 +276,7 @@ $( "#coordinator-project" ).autocomplete({
   var k=0;
   var addedre=0;
   $('#add-reporter').click(function(){
-    
+
       var reporter = $('#reporter-project').val();
       var reporterID = $('#temp-reporter').val();
       $('#reporter-list').append('<div style="height:3px;"></div><li class="list-group-item" id="reporterr'+k+'">'+reporter+'<span class="pull-right"><i class="icon-remove" id="r'+k+'"></i></span></li>');
@@ -280,9 +286,9 @@ $( "#coordinator-project" ).autocomplete({
       $('#add-reporter').attr('disabled', true);
       $('#reporter-project').val('');
   });
-  
 
-  
+
+
   $('#reporter-list').click(function(e) {
       var id = '#reporter'+e.target.id;
       var dataid = '#data-reporter'+e.target.id;
@@ -291,7 +297,7 @@ $( "#coordinator-project" ).autocomplete({
         console.log('removed: '+id);
         addedre--;
   });
-  
+
   // AUTOCOMPLETE REPORTERS
 $( "#reporter-project" ).autocomplete({
   source: function (request, response) {
@@ -299,7 +305,7 @@ $( "#reporter-project" ).autocomplete({
        url: '/get-person/',
        type : 'get',
        cache : false,
-       data: {term: request.term}, 
+       data: {term: request.term},
        success: function(data) {
                         response($.map(data, function (el) {
                          return {
@@ -309,10 +315,10 @@ $( "#reporter-project" ).autocomplete({
                          };
                  }));
                 },
-        
+
         error: function(jqXHR, textStatus, errorThrown){
              console.log( textStatus);
-        }    
+        }
     });
   },
   select: function( event, ui ) {
@@ -320,7 +326,7 @@ $( "#reporter-project" ).autocomplete({
         $('#add-reporter').removeAttr('disabled');
       }
 
-  
+
 });
 
 // PREVIEW IMAGE COVER
