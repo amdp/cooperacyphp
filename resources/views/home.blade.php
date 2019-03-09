@@ -2,12 +2,7 @@
 
 @section('content')
 <div class="container">
-    @role('admin')
-      @include('auth.admin-dashboard')
-    @endrole
-    @role('user')
-      @include('auth.user-dashboard')
-    @endrole
+      @include('auth.dashboard')
     </div>
 </div>
 @endsection

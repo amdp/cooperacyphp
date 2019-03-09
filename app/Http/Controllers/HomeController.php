@@ -33,6 +33,7 @@ class HomeController extends Controller
 
       $admin->syncPermissions([$admin_permissions, $user_permissions]);
       $user->givePermissionTo($user_permissions);
+      /*auth()->user('amdp')->assignRole('user');*/
 
       return view('home');
     }
