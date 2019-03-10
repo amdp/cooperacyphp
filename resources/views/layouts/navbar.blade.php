@@ -24,33 +24,7 @@
 
             <!-- Right Side Of Navbar -->
             <ul class="nav navbar-nav navbar-right">
-                @if (Auth::guest())
                   @include('layouts.public-menu')
-                @else
-                  @include('layouts.public-menu')
-                    <!--BEGIN AUTH LINKS-->
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle menu-item" data-toggle="dropdown" role="button" aria-expanded="false">
-                            {{ Auth::user()->name }} <span class="caret"></span>
-                        </a>
-
-                        <ul class="dropdown-menu" role="menu">
-                            @include('layouts.protected-menu')
-                            <li>
-                                <a href="{{ route('logout') }}"
-                                    onclick="event.preventDefault();
-                                             document.getElementById('logout-form').submit();" class="menu-item">
-                                    LOGOUT
-                                </a>
-
-                                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                                    {{ csrf_field() }}
-                                </form>
-                            </li>
-                        </ul>
-                    </li>
-                    <!--END AUTH LINKS-->
-                @endif
             </ul>
         </div>
     </div>

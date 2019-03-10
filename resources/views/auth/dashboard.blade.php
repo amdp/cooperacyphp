@@ -5,6 +5,15 @@
 
     <p class="base center">
   <ul>
+    @if(Auth::check())
+    <li><a href="{{ route('logout') }}"
+        onclick="event.preventDefault();
+                 document.getElementById('logout-form').submit();" class="menu-item">
+        Logout
+    </a>
+    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+        {{ csrf_field() }}
+    </form></li>@endif
     <li><a href="{{ route('projects-list') }}">View projects</a></li>
     <li><a href="{{ route('member-list') }}">View members</a></li>
     <li><a href="{{ route('new-project') }}">Insert a new project idea</a></li>

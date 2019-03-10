@@ -76,7 +76,11 @@
 </ul>
 </li>
 <li class="menu-item">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</li>
-@if (Auth::guest())
-<li><a href="{{ route('login') }}" class="menu-item">LOGIN</span></a></li>
+    @if (Auth::guest())
+    <li><a href="{{ route('login') }}" class="menu-item">LOGIN</span></a></li>
+    @elseif(Auth::check())
+    <li><a href="{{ url('/home') }}" class="menu-item">{{ Auth::user()->name }}</a></li>
+    @elseif(Auth::check() && Auth::user()->member==null)
+    <li><a href="{{ route('pool') }}" class="menu-item">REGISTER</a></li>
 @endif
 <!--END PUBLIC MENU-->
