@@ -38,7 +38,7 @@
 <a href="#" class="dropdown-toggle menu-item" data-toggle="dropdown" role="button" aria-expanded="false">SERVICES</a>
 <ul class="dropdown-menu" role="menu">
   <li>
-    <a href="{{URL::to('/services')}}" class="menu-item">SERVICES</a>
+    <a href="{{URL::to('/services')}}" class="menu-item">COOPERATION SERVICES</a>
   </li>
   <li>
     <a href="{{URL::to('/openspace')}}" class="menu-item">OPEN SPACE COOPERATION</a>
