@@ -39,7 +39,7 @@ Route::get('/spread', function () { return view('pages.spread');});
 
 Route::get('/services', function () { return view('pages.services');});
 Route::get('/cohackathon', function () { return view('pages.cohackathon'); });
-Route::get('/openspace', function () { return view('pages.openspace'); });
+Route::get('/coopenspace', function () { return view('pages.coopenspace'); });
 Route::get('/overview', function () { return view('pages.overview'); });
 Route::get('/workshops', function () { return view('pages.workshops'); });
 

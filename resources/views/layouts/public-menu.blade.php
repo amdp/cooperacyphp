@@ -41,7 +41,7 @@
     <a href="{{URL::to('/services')}}" class="menu-item">COOPERATION SERVICES</a>
   </li>
   <li>
-    <a href="{{URL::to('/openspace')}}" class="menu-item">OPEN SPACE COOPERATION</a>
+    <a href="{{URL::to('/coopenspace')}}" class="menu-item">COOPERATIVE OPEN SPACE</a>
   </li>
   <li>
     <a href="{{URL::to('/overview')}}" class="menu-item">COOPERATION OVERVIEW</a>
