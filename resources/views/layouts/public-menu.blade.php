@@ -35,22 +35,22 @@
 </li> -->
 
 <li class="dropdown">
-<a href="#" class="dropdown-toggle menu-item" data-toggle="dropdown" role="button" aria-expanded="false">COORPORATE</a>
+<a href="#" class="dropdown-toggle menu-item" data-toggle="dropdown" role="button" aria-expanded="false">SERVICES</a>
 <ul class="dropdown-menu" role="menu">
   <li>
-    <a href="{{URL::to('/coorporate')}}" class="menu-item">THE PARADOX</a>
+    <a href="{{URL::to('/services')}}" class="menu-item">SERVICES</a>
   </li>
   <li>
-    <a href="{{URL::to('/openecosystem')}}" class="menu-item">OPEN ECOSYSTEM</a>
+    <a href="{{URL::to('/openspace')}}" class="menu-item">OPEN SPACE COOPERATION</a>
   </li>
   <li>
-    <a href="{{URL::to('/overview')}}" class="menu-item">OVERVIEW</a>
+    <a href="{{URL::to('/overview')}}" class="menu-item">COOPERATION OVERVIEW</a>
   </li>
   <li>
-    <a href="{{URL::to('/cohackathon')}}" class="menu-item">COHACKATHON</a>
+    <a href="{{URL::to('/cohackathon')}}" class="menu-item">COOPERATIVE HACKATHON</a>
   </li>
   <li>
-    <a href="{{URL::to('/workshops')}}" class="menu-item">WORKSHOPS</a>
+    <a href="{{URL::to('/workshops')}}" class="menu-item">COOPERATION WORKSHOPS</a>
   </li>
 </ul>
 </li>

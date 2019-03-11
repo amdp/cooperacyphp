@@ -123,7 +123,7 @@
       </div><br><br>
       <p class="base center">Cooperacy is a nonprofit scientific project aiming to spread cooperation amongst humans and in their ecosystem.
 <br><br>We're setting up a very special <a href="/platform" class="ae">platform</a> in which, supported by money, people help each other to realise what they want for their lives and take decisions together in a very productive way. <br><br>
-      <a href="/register" class="ae">Joining</a> Cooperacy is entertaining and makes you learn how to develop enjoyable cooperations in your <a href="/aboutyou" class="ad">personal</a> relations, in the <a href="/coorporate" class="af">corporate</a> world and at the <a href="/cci" class="au">international</a> level.
+      <a href="/register" class="ae">Joining</a> Cooperacy is entertaining and makes you learn how to develop enjoyable cooperations in your <a href="/aboutyou" class="ad">personal</a> relations, in the <a href="/services" class="af">corporate</a> world and at the <a href="/cci" class="au">international</a> level.
       </p><br><br>
       <div class="base center"><a class="ae" href="/register">Join</a> Cooperacy today, or <a class="ai" href="https://www.cooperacy.org/contact">contact us</a> for more information.</p><br></div>
    </div><!--END CONTENT-->

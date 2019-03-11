@@ -56,8 +56,8 @@
   As you can see, we have had fun experimenting. Would you like to test your own? <a class="at" href="/contact">Write us</a> so that we can talk together and organise how to do it!<br><br>
   </p>
 
-  <p class="subheading equivalence center space margin">THE COORPORATE SIDE</p>
-  <p class="base">Cooperation science can <a class"au" href="/coorporate">improve</a> the productivity of your company and the satisfaction of your employees. It could, on a wider scale, even help the world to gain a more respectful awareness accompained with better performances and more sustainability. Are you part of the corporate world? Would you like to apply the Cooperation Science in your company processes? Feel free to <a class="at" href="/contact">contact us</a> and ask for more information!</p>
+  <p class="subheading equivalence center space margin">THE ORGANIZATIONS SIDE</p>
+  <p class="base">Cooperation science can <a class"au" href="/services">improve</a> the productivity of your company and the satisfaction of your employees. It could, on a wider scale, even help the world to gain a more respectful awareness accompained with better performances and more sustainability. Are you part of the corporate world? Would you like to apply the Cooperation Science in your company processes? Feel free to <a class="at" href="/contact">contact us</a> and ask for more information!</p>
 
   <p class="subheading equivalence center space margin">COOPERATION SCIENCE</p>
   <p class="base">This project is the first and most important one as Cooperacy was born from our scientific research about Cooperation.<br><br></p>

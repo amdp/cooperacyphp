@@ -37,9 +37,9 @@ Route::get('/journey', function () { return view('pages.journey'); });
 Route::get('fun', function () {return view('pages.fun');});
 Route::get('/spread', function () { return view('pages.spread');});
 
-Route::get('/coorporate', function () { return view('pages.coorporate');});
+Route::get('/services', function () { return view('pages.services');});
 Route::get('/cohackathon', function () { return view('pages.cohackathon'); });
-Route::get('/openecosystem', function () { return view('pages.openecosystem'); });
+Route::get('/openspace', function () { return view('pages.openspace'); });
 Route::get('/overview', function () { return view('pages.overview'); });
 Route::get('/workshops', function () { return view('pages.workshops'); });
 
