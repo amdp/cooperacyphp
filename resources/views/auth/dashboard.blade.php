@@ -1,19 +1,15 @@
 <div class="row">
   <div class="col-md-2"></div>
   <div class="col-md-8">
-    <p class="subheading center space">COOPERACY PROJECTS BOARD</p>
+    <p class="subheading center space up">{{Auth::user()->name}} DASHBOARD</p>
 
     <p class="base center">
+      Welcome {{Auth::user()->name}}, your rainbow code is:
+      {{Auth::user()->E}}{{Auth::user()->T}}{{Auth::user()->C}}{{Auth::user()->I}}{{Auth::user()->F}}{{Auth::user()->U}}{{Auth::user()->D}}
   <ul>
-    @if(Auth::check())
-    <li><a href="{{ route('logout') }}"
-        onclick="event.preventDefault();
-                 document.getElementById('logout-form').submit();" class="menu-item">
-        Logout
-    </a>
-    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-        {{ csrf_field() }}
-    </form></li>@endif
+    <li><a href="{{ route('logout') }}" onclick="event.preventDefault();
+                 document.getElementById('logout-form').submit();">Logout</a>
+    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">  {{ csrf_field() }} </form></li>
     <li><a href="{{ route('projects-list') }}">View projects</a></li>
     <li><a href="{{ route('member-list') }}">View members</a></li>
     <li><a href="{{ route('new-project') }}">Insert a new project idea</a></li>
@@ -21,7 +17,6 @@
   <p style="font-size: 14px;"><strong>Work in progress</strong><br>
   The dashboard is about to be finished. Here are the feature you are going to find:
   <ul>
-      <li>Your rainbow code</li>
       <li>Modify your profile</li>
       <li>Edit your projects</li>
       <li>Comment projects</li>
