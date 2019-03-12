@@ -31,7 +31,7 @@
 
     <p class="subheading freedom center">THE PLEASURE OF HACKING TOGETHER</p>
     <p class="base">The Cohackathon leverages on the full <a class="ad" href="/diversity">diversity</a> potential of the present participants. The same innovation output of the hackathon, if not even more, is achieved, with the advantage to focus all the available resources on the ideas development and realisation. Avoiding a single winner, moreover, generates a satisfactory feeling in all the attendants, which participate in the future dissemination of the output.<br><br>
-    When the company does not need an application solving its specific indications right away, a different, live, open meeting is possible: the <a class="af" href="/coopenspace">Cooperative Open Space</a>.
+    When the company does not need an application solving its specific indications right away, a different, live, open meeting is possible: the <a class="af" href="/coopenspace">Open Space Cooperation</a>.
     <br><br><br></p>
 
 </div></div></div>

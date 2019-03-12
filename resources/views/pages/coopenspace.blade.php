@@ -1,6 +1,6 @@
 @extends('layouts.lvapp')
 @section('title')
-    Cooperative Open Space - Cooperacy
+    Open Space Cooperation - Cooperacy
 @stop
 @section('content')
 
@@ -24,7 +24,7 @@
   <div class="col-md-8"><br><br>
 
     <p class="subheading freedom center">COOPERATION AND OPEN SPACE TECHNOLOGY</p>
-    <p class="base">The Cooperative Open Space is used by Cooperacy for enabling system thinking and complex approach in meetings. It merges <a class="af" href="/cooperation">Cooperation</a> <a class="af" href="/science">Science</a>, Open Space Technology and the Journey Narratives. It can be organised with a dozens of participants till thousands of people, and it is based on three phases.</p><br><br>
+    <p class="base">The Open Space Cooperation is used by Cooperacy for enabling system thinking and complex approach in meetings. It merges <a class="af" href="/cooperation">Cooperation</a> <a class="af" href="/science">Science</a>, Open Space Technology and the Journey Narratives. It can be organised with a dozens of participants till thousands of people, and it is based on three phases.</p><br><br>
 
     <img src="https://cooperacy.org/images/news/5a8a063bccce6.jpg" alt="null" class="img-responsive"><br><br>
 
