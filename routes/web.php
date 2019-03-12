@@ -19,6 +19,7 @@ Route::get('/', ['as' => 'main', 'uses' => function () { return view('pages.home
 Route::get('/terms', ['as' => 'terms','uses' => function () {return view('pages.terms');}]);
 Route::get('/contact', ['as' => 'contact', 'uses' => function () {return view('pages.contact'); }]);
 
+
 Route::get('/aboutyou', function () {return view('pages.aboutyou');});
 Route::get('/newtest', function () {return view('pages.newtest');});
 Route::get('/aboutus', function () {return view('pages.aboutus');});
@@ -80,6 +81,15 @@ Auth::routes();
 Route::group(['middleware' => ['permission:user-permissions']], function () {
 
 Route::get('/home', ['uses' => 'HomeController@index']);
+
+Route::get('/coo', ['uses' => 'ProjectController@edit'] function () {return view('auth.coo');});
+Route::get('/coo', ['uses' => 'ProjectController@read'] function () {return view('auth.coo');});
+Route::get('/coo', ['uses' => 'ProjectController@single'] function () {return view('auth.coo');});
+Route::get('/coo', ['uses' => 'ProjectController@index'] function () {return view('auth.coo');});
+Route::post('/coo', ['uses' => 'ProjectController@save'] function () {return view('auth.coo');});
+Route::post('/coo', ['uses' => 'ProjectController@updateproject'] function () {return view('auth.coo');});
+
+
 Route::get('/memberlist', ['as' => 'member-list', function () {return view('pages.memberlist');}]);
 
 });
