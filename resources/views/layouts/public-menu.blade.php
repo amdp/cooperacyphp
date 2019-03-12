@@ -52,6 +52,9 @@
   <li>
     <a href="{{URL::to('/workshops')}}" class="menu-item">COOPERATION WORKSHOPS</a>
   </li>
+  <li>
+    <a href="{{URL::to('/journey')}}" class="menu-item">THE COOPERATION JOURNEY</a>
+  </li>
 </ul>
 </li>
 
