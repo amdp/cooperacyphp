@@ -1,22 +1,21 @@
 <div class="row">
-  <div class="col-md-2"></div>
-  <div class="col-md-8">
+  <div class="col-md-2">
     <p class="subheading center space up">{{Auth::user()->name}} DASHBOARD</p>
 
     <p class="base center">
       Welcome {{Auth::user()->name}}, your rainbow code is:
       {{Auth::user()->E}}{{Auth::user()->T}}{{Auth::user()->C}}{{Auth::user()->I}}{{Auth::user()->F}}{{Auth::user()->U}}{{Auth::user()->D}}
-  <ul>
+    <ul>
     <li><a href="{{ route('logout') }}" onclick="event.preventDefault();
                  document.getElementById('logout-form').submit();">Logout</a>
     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">  {{ csrf_field() }} </form></li>
     <li><a href="{{ route('projects-list') }}">View projects</a></li>
     <li><a href="{{ route('member-list') }}">View members</a></li>
     <li><a href="{{ route('new-project') }}">Insert a new project idea</a></li>
-  </ul>
-  <p style="font-size: 14px;"><strong>Work in progress</strong><br>
-  The dashboard is about to be finished. Here are the feature you are going to find:
-  <ul>
+    </ul>
+    <p style="font-size: 14px;"><strong>Work in progress</strong><br>
+    The dashboard is about to be finished. Here are the feature you are going to find:
+    <ul>
       <li>Modify your profile</li>
       <li>Edit your projects</li>
       <li>Comment projects</li>
@@ -34,8 +33,11 @@
       <li>Questionnaire about "cooperation"</li>
       @role('admin')<li>Timer for a bank transfer registration</li>@endrole
       <li>And more...</li>
-  </ul>
-  </p>
+    </ul>
+    </p>
+    </div>
   </div>
+  <div class="col-md-8">
+
   <div class="col-md-2"></div>
 </div>
