@@ -24,7 +24,7 @@
   <div class="col-md-8">
 
 
-  <br><p class="subheading diversity center space margin">THE PERSONAL JOURNEY</p>
+  <br><p class="subheading trust center space margin">THE PERSONAL JOURNEY</p>
   <p class="base">The Journey is a <a class="af" href="/aboutyou">personal</a> adventure that flows through the <a class="ae" href="/cooperation">conditions of cooperation</a> realms. When you <a class="ae" href="/register">join</a> Cooperacy you can ask for a personal mentor that will guide you though the Cooperacy Journey and develop your cooperation skills. Together, you will follow the journey seven steps and learn together -your mentor is just a more experienced learner- the way for accomplishing a profound cooperation awareness and to better understand the Cooperacy project. You will learn how to "read" contexts and groups, how to bring important changes together and how to renovate the social ecosystemic balance around you. The Cooperacy Journey brings you in a new world, showing you a new way of reasoning, empowering your role in your organization, your community or your same social context in order to bring mutual benefits and multirelational balance.</p>
 
 
