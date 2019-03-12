@@ -154,7 +154,6 @@ Route::get('/edit-project/{id}/', [ 'as' => 'edit-project',
 Route::post('/edit-project', [ 'as' => 'edit-project',
   'uses' => 'ProjectController@updateproject']);
 
-});
 
 /*********COMMENT ROUTES***********/
 Route::group(['middleware' => ['permission:user-permissions']], function () {
@@ -173,26 +172,28 @@ Route::post('/modify-comment', [ 'as' => 'modify-comment',
 
 });
 /******AJAX QUERIES*****/
-Route::get('/get-states/{continent}', [   'middleware' => ['auth'],
+Route::get('/get-states/{continent}', [
   'as' => 'get-states',
   'uses' => 'ProjectController@getStates']);
 
-Route::get('/get-cities/{state}', [   'middleware' => ['auth'],
+Route::get('/get-cities/{state}', [
   'as' => 'get-cities',
   'uses' => 'ProjectController@getCities']);
 
 Route::get('/get-continents', [
-  'middleware' => ['auth'],
+
   'as' => 'get-continents',
   'uses' => 'ProjectController@getContinents']);
 
-Route::get('/get-person/', [ 'middleware' => ['auth'],
+Route::get('/get-person/', [
   'as' => 'get-person',
   'uses' => 'ProjectController@getPerson']);
 
-Route::get('/get-expert/', [ 'middleware' => ['auth'],
+Route::get('/get-expert/', [
   'as' => 'get-expert',
   'uses' => 'ProjectController@getExpert']);
+  
+  });
 
 Route::group(['middleware' => ['permission:user-permissions']], function () {
 
@@ -200,6 +201,7 @@ Route::group(['middleware' => ['permission:user-permissions']], function () {
     'uses' => 'VoteController@updateVote']);
 
   });
+
 
 /****************************************
 *******END PRIVATE ROUTES****************
