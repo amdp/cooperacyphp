@@ -1,3 +1,4 @@
+.gitignore
 /node_modules
 /public/storage
 /public/hot
@@ -7,3 +8,5 @@
 Homestead.json
 Homestead.yaml
 .env
+composer.lock
+package-lock.json
