@@ -82,13 +82,7 @@ Route::group(['middleware' => ['permission:user-permissions']], function () {
 
 Route::get('/home', ['uses' => 'HomeController@index']);
 
-Route::get('/coo', ['uses' => 'ProjectController@edit'] function () {return view('auth.coo');});
-Route::get('/coo', ['uses' => 'ProjectController@read'] function () {return view('auth.coo');});
-Route::get('/coo', ['uses' => 'ProjectController@single'] function () {return view('auth.coo');});
-Route::get('/coo', ['uses' => 'ProjectController@index'] function () {return view('auth.coo');});
-Route::post('/coo', ['uses' => 'ProjectController@save'] function () {return view('auth.coo');});
-Route::post('/coo', ['uses' => 'ProjectController@updateproject'] function () {return view('auth.coo');});
-
+Route::get('/coo', function () {return view('auth.coo');});
 
 Route::get('/memberlist', ['as' => 'member-list', function () {return view('pages.memberlist');}]);
 
@@ -202,7 +196,7 @@ Route::get('/get-person/', [
 Route::get('/get-expert/', [
   'as' => 'get-expert',
   'uses' => 'ProjectController@getExpert']);
-  
+
   });
 
 Route::group(['middleware' => ['permission:user-permissions']], function () {
