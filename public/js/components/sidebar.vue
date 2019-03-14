@@ -1,24 +1,36 @@
 <template>
-  <div>
-    <div class="row">
-        <div class="col-lg-11 col-xs-12">
-          <p class="space subheading up">
-            <a href="{{asset('view-project')}}/{{$item['id_project']}}">{{$item['title_project']}}</a>
-            @if($item['coordinator']=='yes')
-             <span style="float:right;"><small><a href="{{asset('edit-project')}}/{{$item['id_project']}}">Edit</a></small></span>
-            @endif
-          </p>
-          <div style="height:2px"></div>
-
-          <p>{{$item['content_project']}}</p><br>
-        </div>
-        <!-- --><div class="col-lg-1 col-xs-12">
-          <img class="img-responsive roundmodule" src="{{asset('images/projects')}}/{{$item['img_project']}}">
-        </div>
-        @include('auth.partials.votedata')
-        @include('auth.partials.activate-popovers',[
-        'id_comment'=>$item['id_project']
-        ])
-    </div>
-  </div>
+  <p class="subheading center space up">{{Auth::user()->name}} DASHBOARD</p>
+  <p class="base center">
+  Welcome {{Auth::user()->name}}, your rainbow code is:
+  {{Auth::user()->E}}{{Auth::user()->T}}{{Auth::user()->C}}{{Auth::user()->I}}{{Auth::user()->F}}{{Auth::user()->U}}{{Auth::user()->D}}
+  <ul>
+  <li><a href="{{ route('logout') }}" onclick="event.preventDefault();
+               document.getElementById('logout-form').submit();">Logout</a>
+  <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">  {{ csrf_field() }} </form></li>
+  <li><a href="{{ route('projects-list') }}">View projects</a></li>
+  <li><a href="{{ route('member-list') }}">View members</a></li>
+  <li><a href="{{ route('new-project') }}">Insert a new project idea</a></li>
+  </ul>
+  <p style="font-size: 14px;"><strong>Work in progress</strong><br>
+  The dashboard is about to be finished. Here are the feature you are going to find:
+  <ul>
+    <li>Modify your profile</li>
+    <li>Edit your projects</li>
+    <li>Comment projects</li>
+    <li>Panel for subscription management</li>
+    <li>Remove me from Cooperacy + Confirmation Email + Payment deactivation</li>
+    <li>Notifications</li>
+    <li>Change email + Confirmation Email</li>
+    <li>Upcoming deadlines</li>
+    <li>Mood ()“+ = -”: everyone has three happiness votes: - = +. These three votes are irrational, they depend on your mood and help the system to understand people happiness besides performance.)</li>
+    <li>Your seven budget project ideas (a user can have a maximum of 7 projects with a budget)</li>
+    <li>Help</li>
+    <li>Cooperation test tool (Cooperation test in companies, group of friends, community, family, pair based on a questionnaire with three possible choices + - =)</li>
+    <li>Journey</li>
+    <li>Questionnaire about you</li>
+    <li>Questionnaire about "cooperation"</li>
+    @role('admin')<li>Timer for a bank transfer registration</li>@endrole
+    <li>And more...</li>
+  </ul>
+  </p>
 </template>
