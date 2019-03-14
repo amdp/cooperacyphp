@@ -9,3 +9,4 @@ Homestead.yaml
 .env
 composer.lock
 package-lock.json
+.gitignore
