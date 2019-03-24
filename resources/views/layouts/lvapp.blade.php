@@ -79,6 +79,12 @@
     <link href="/css/appstyle.css" rel="stylesheet">
     <link href="/css/iubenda.css" rel="stylesheet">
     <link href="/css/tables.css" rel="stylesheet">
+    <link href="/css/modal.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!-- End Font Awesome -->
+
+
 
 
     @if(Route::currentRouteName() == 'research' || Route::currentRouteName() == 'cci')

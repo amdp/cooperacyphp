@@ -1,6 +1,6 @@
 
 <!--BEGIN NAVBAR-->
-<nav class="navbar navbar-default navbar-fixed-top">
+<nav class="navbar navbar-default navbar-fixed-top" style='z-index: 3 !important;'>
     <div>
         <div class="navbar-header">
 
