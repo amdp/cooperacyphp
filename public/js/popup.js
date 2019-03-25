@@ -6,6 +6,7 @@ $(document).ready(function() {
       $("body").css("overflow", "hidden");
     }, 4000);
   }
+
   // Cookies
   function GetCookie(name) {
     var arg = name + "=";
@@ -23,15 +24,15 @@ $(document).ready(function() {
     return null;
   }
 
-  var visit = GetCookie("COOKIE1");
+  var visit = GetCookie("popup-cookie");
 
   if (visit == null) {
     var expire = new Date();
 
     popup();
 
-    expire = new Date(expire.getTime() + 7776000000);
-    document.cookie = "COOKIE1=here; expires=" + expire;
+    expire = new Date(expire.getTime() + 1800);
+    document.cookie = "popup-cookie=here; expires=" + expire;
   }
 
   // Close Button
