@@ -127,6 +127,35 @@
   </head>
 
   <body>
+
+      <!--MODAL SECTION-->
+      <div class="modal-bg">
+        <div class="modal-content container">
+          <div class="row">
+            <img class="img-responsive col-md-6" src="https://images.unsplash.com/photo-1480506132288-68f7705954bd?ixlib=rb-1.2.1&auto=format&fit=crop&w=1693&q=80" alt="null">
+            <div class="content col-md-6">
+                <h1>Hello!</h1>
+                <h4>Got Any Questions? Feel Free to Ask.</h4>
+                <form class='popup-form'>
+                  <div class="row">
+                    <div class="col-md-6 fname">
+                      <input type="text" class="form-control" placeholder="Your Name" required>
+                    </div>
+                    <div class="col-md-6 lname">
+                      <input type="text" class="form-control" placeholder="Your Email Address" required>
+                    </div>
+                    <div class="col-md-12 message">
+                      <textarea class="form-control" placeholder="Message" required></textarea>
+                    </div>
+                    <button class="btn" type="submit">SEND</button>
+                  </div>
+                </form>
+                <i class="far fa-window-close"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      
     <!-- Google Tag Manager (noscript) -->
       <noscript>
         <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WV53RSJ"
