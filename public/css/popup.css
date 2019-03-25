@@ -1,5 +1,16 @@
-.hidden {
-  overflow: hidden;
+@keyframes bottom-in {
+  0% {
+    opacity: 0;
+    display: none;
+  }
+  50% {
+    opacity: 0;
+    display: none;
+  }
+  100% {
+    display: flex;
+    opacity: 1;
+  }
 }
 .modal-bg {
   background-color: rgba(0, 0, 0, 0.6);
@@ -12,6 +23,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  display: none;
+  animation-name: bottom-in;
+  animation-duration: 0.2s;
+  animation-delay: 0.2s;
+  animation-fill-mode: backwards;
+  position: fixed;
 }
 .modal-content {
   height: 400px;
@@ -52,12 +69,6 @@
 .content .contact-btn button {
   color: white;
 }
-.email-btn {
-  background-color: #b466dd;
-}
-.fb-btn {
-  background-color: #4583ee;
-}
 .content .contact-btn:last-of-type {
   margin-top: 0;
 }
@@ -67,6 +78,7 @@
   top: 3%;
   right: 3%;
   color: #a50623;
+  cursor: pointer;
 }
 .fname {
   padding-right: 5px;

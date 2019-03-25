@@ -79,11 +79,10 @@
     <link href="/css/appstyle.css" rel="stylesheet">
     <link href="/css/iubenda.css" rel="stylesheet">
     <link href="/css/tables.css" rel="stylesheet">
-    <link href="/css/modal.css" rel="stylesheet">
+    <link href="/css/popup.css" rel="stylesheet">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <!-- End Font Awesome -->
-
 
 
 
@@ -142,7 +141,9 @@
       @include('layouts.footer')
 
       <!-- Scripts -->
+      <script src="/js/jquery/jquery.js"></script>
       <script src="/js/app.js"></script>
+      <script src="/js/popup.js"></script>
 
       @if(Route::currentRouteName() == 'main')
         <script>

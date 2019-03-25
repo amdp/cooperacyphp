@@ -25,7 +25,7 @@
                 <div class="col-md-12 message">
                   <textarea class="form-control" placeholder="Message" required></textarea>
                 </div>
-                <button class="btn" type="submit">Send</button>
+                <button class="btn" type="submit">SEND</button>
               </div>
             </form>
             <i class="far fa-window-close"></i>
