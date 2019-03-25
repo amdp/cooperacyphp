@@ -1,5 +1,8 @@
 <!--BEGIN PUBLIC MENU-->
 <li class="dropdown">
+<a href="{{URL::to('/contact')}}" class="menu-item" role="button" aria-expanded="false">CONTACT US</a>
+</li>
+<li class="dropdown">
 <a href="#" class="dropdown-toggle menu-item" data-toggle="dropdown" role="button" aria-expanded="false">THE PROJECT</a>
 <ul class="dropdown-menu" role="menu">
   <li>
@@ -33,6 +36,7 @@
   </li>
 </ul>
 </li> -->
+
 
 <li class="dropdown">
 <a href="#" class="dropdown-toggle menu-item" data-toggle="dropdown" role="button" aria-expanded="false">COORPORATE</a>
