@@ -14,19 +14,25 @@
         <div class="content col-md-6">
             <h1>Hello!</h1>
             <h4>Got Any Questions? Feel Free to Ask.</h4>
-            <div class="contact-btn col-md-12">
-              <button type="button" class="btn email-btn" name="button">Send Us an Email</button>
-            </div>
-            <h2>or</h2>
-            <div class="contact-btn col-md-12">
-              <button type="button" class="btn fb-btn" name="button">Check Our Facebook Group</button>
-            </div>
+            <form class='popup-form'>
+              <div class="row">
+                <div class="col-md-6 fname">
+                  <input type="text" class="form-control" placeholder="Your Name" required>
+                </div>
+                <div class="col-md-6 lname">
+                  <input type="text" class="form-control" placeholder="Your Email Address" required>
+                </div>
+                <div class="col-md-12 message">
+                  <textarea class="form-control" placeholder="Message" required></textarea>
+                </div>
+                <button class="btn" type="submit">Send</button>
+              </div>
+            </form>
             <i class="far fa-window-close"></i>
         </div>
       </div>
     </div>
   </div>
-
 
  <!--CIRCLE-->
  <div class="row"><br><br><br>
