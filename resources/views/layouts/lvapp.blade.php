@@ -132,7 +132,7 @@
       <div class="modal-bg">
         <div class="modal-content container">
           <div class="row">
-            <img class="img-responsive col-md-6" src="https://images.unsplash.com/photo-1480506132288-68f7705954bd?ixlib=rb-1.2.1&auto=format&fit=crop&w=1693&q=80" alt="null">
+            <img class="img-responsive col-md-6" src="/images/popup.png" alt="contact us">
             <div class="content col-md-6">
                 <h1>Hello!</h1>
                 <h4>Got Any Questions? Feel Free to Ask.</h4>
@@ -155,6 +155,7 @@
           </div>
         </div>
       </div>
+      <!-- End MODAL SECTION-->
 
     <!-- Google Tag Manager (noscript) -->
       <noscript>
