@@ -1,9 +1,3 @@
-var newProject = new Vue({
-  el: '#newProject',
-  data: {test: "test" }
-})
-
-
     // Hide Location form
     $(document).ready(function(){
       $('#continent-group').hide();

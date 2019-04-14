@@ -125,10 +125,6 @@ Route::post('/deletenewsletter', [   'middleware' => ['auth', 'admin'],
 
 
 /******PROJECT ROUTES********/
-Route::get('/coo', [   'middleware' => ['auth', 'member'],
-  'as' => 'coo',
-  'uses' =>  function () {return view('auth.coo');}]);
-
 Route::get('/new-project', [   'middleware' => ['auth', 'member'],
   'as' => 'new-project',
   'uses' => 'ProjectController@read']);
