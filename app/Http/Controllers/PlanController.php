@@ -37,12 +37,20 @@ use Illuminate\Http\Request;
 class PlanController extends Controller
 {
     private $_api_context;
+    private $_paypal_mode;
 
     public function __construct()
     {
         //setup PayPal api context
         $paypal_conf = \Config::get('paypal');
-        $this->_api_context = new ApiContext(new OAuthTokenCredential($paypal_conf['client_id'], $paypal_conf['secret']));
+        $paypal_conf['settings']['mode'] = env('PAYPAL_MODE'); // override paypal public config options
+        $this->_paypal_mode = env('PAYPAL_MODE');
+
+        if ($paypal_conf['settings']['mode'] == 'live') {
+          $this->_api_context = new ApiContext(new OAuthTokenCredential(env('PAYPAL_LIVE_CLIENT_ID'), env('PAYPAL_LIVE_SECRET')));
+        } else {
+          $this->_api_context = new ApiContext(new OAuthTokenCredential(env('PAYPAL_SANDBOX_CLIENT_ID'), env('PAYPAL_SANDBOX_SECRET')));
+        }
         $this->_api_context->setConfig($paypal_conf['settings']);
     }
 
@@ -150,9 +158,11 @@ class PlanController extends Controller
     public function pool() {
 
       // Get registered plan info
-      $planDesc=DB::table('plans')->where('status', 'ACTIVE')->orderBy('id', 'DESC')->first();// LIVE
-      //$planDesc=DB::table('plans')->where('id', 17)->first(); // SANDBOX ONLY
-
+      if ($this->_paypal_mode == 'live') {
+        $planDesc=DB::table('plans')->where('status', 'ACTIVE')->orderBy('id', 'DESC')->first();// LIVE 
+      } else {
+        $planDesc=DB::table('plans')->where('id', 17)->first(); // SANDBOX ONLY
+      }
       $email = Auth::user()->email;
 
       $atime = strtotime('+1 hour', time()); // PROBLEMA: controllare data server!
