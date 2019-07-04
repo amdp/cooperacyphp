@@ -7,7 +7,12 @@
 
     <!-- CSRF Token -->
       <meta name="csrf-token" content="{{ csrf_token() }}">
-
+      <script>
+        window.Laravel = <?php echo json_encode([
+            'csrfToken' => csrf_token(),
+        ]); ?>
+      </script>
+      
     <!--Open graph-->
       <meta property="og:title" content="Cooperacy" />
       <meta property="og:type" content="website" />
