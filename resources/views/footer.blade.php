@@ -8,7 +8,7 @@
       <div style="margin-left:12px; margin-right:12px;">
         <div id="footerino" name="footerino">
 
-          <a href="{{route('register')}}" style="color: #FF9000;">JOIN</a> or <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=YS7MHXBSVDDEU" style="color: #FFDD00;">DONATE</a>
+          <a href="{{route('register')}}" style="color: #FF9000;">JOIN</a> or <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=NQAB44A9HNLS4" style="color: #FFDD00;">DONATE</a>
           <br>
 
 Via Cappuccini, 11 - 20122 <span style="color: #88DD33;">Milan </span> Fiscal Code:<span style="color: #22DDEE;"> 97725540153</span>
